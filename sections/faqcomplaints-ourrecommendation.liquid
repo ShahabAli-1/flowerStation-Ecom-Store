@@ -1,0 +1,215 @@
+{{ 'faqcomplaints-ourrecommendation.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign products_to_display = section.settings.products_to_show
+-%}
+
+
+<div class="faq-recommendation">
+  <h2>{{ section.settings.faqc-ourrecommendation-title }}</h2>
+  <p>{{ section.settings.faqc-ourrecommendation-desc }}</p>
+  <slider-component class="slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
+    <div class="card">
+      <div class="leftpart">
+        <h3>{{ section.settings.faqc-ourrecommendation-img1-title }}</h3>
+        <p>{{ section.settings.faqc-ourrecommendation-img1-desc }}</p>
+        <p>{{ section.settings.faqc-ourrecommendation-img1-desc2 }}</p>
+      </div>
+      <div class="rightpart">
+        <ul
+          id="Slider-{{ section.id }}"
+          class="grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek"
+          role="list"
+          aria-label="{{ 'general.slider.name' | t }}">
+          <li
+            id="Slide-{{ section.id }}-1"
+            class="grid__item scroll-trigger animate--slide-in"
+            data-cascadestyle="--animation-order: 1;">
+            {% if section.settings.faqc-ourrecommendation-img1 != blank %}
+              <img
+                id="faq-ourrecommendation-img1"
+                src="{{ section.settings.faqc-ourrecommendation-img1 | img_url: 'master' }}"
+                alt="">
+            {% else %}
+              <img
+                id="faq-ourrecommendation-img1"
+                src="{{'faq-ourrecommend1.png' | asset_url}}}"
+                alt="">
+            {% endif %}
+          </li>
+          <li
+            id="Slide-{{ section.id }}-2"
+            class="grid__item scroll-trigger animate--slide-in"
+            data-cascadestyle="--animation-order: 2;">
+            {% if section.settings.faqc-ourrecommendation-img1 != blank %}
+              <img
+                id="faq-ourrecommendation-img1"
+                src="{{ section.settings.faqc-ourrecommendation-img1 | img_url: 'master' }}"
+                alt="">
+            {% else %}
+              <img
+                id="faq-ourrecommendation-img1"
+                src="{{'faq-ourrecommend2.png' | asset_url}}}"
+                alt="">
+            {% endif %}
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="slider-button slider-button--prev"
+          name="previous"
+          aria-label="{{ 'general.slider.previous_slide' | t }}"
+          aria-controls="Slider-{{ section.id }}">
+          {% render 'icon-caret' %}
+        </button>
+        <button
+          type="button"
+          class="slider-button slider-button--next"
+          name="next"
+          aria-label="{{ 'general.slider.next_slide' | t }}"
+          aria-controls="Slider-{{ section.id }}">
+          {% render 'icon-caret' %}
+        </button>
+      </div>
+    </div>
+
+  </slider-component>
+  <slider-component class="slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
+    <div class="card">
+      <div class="leftpart">
+        <h3>{{ section.settings.faqc-ourrecommendation-img2-title }}</h3>
+        <p>{{ section.settings.faqc-ourrecommendation-img2-desc }}</p>
+        <p>{{ section.settings.faqc-ourrecommendation-img2-desc2 }}</p>
+      </div>
+      <div class="rightpart">
+        <ul
+          id="Slider-{{ section.id }}"
+          class="grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek"
+          role="list"
+          aria-label="{{ 'general.slider.name' | t }}">
+          <li
+            id="Slide-{{ section.id }}-1"
+            class="grid__item scroll-trigger animate--slide-in"
+            data-cascadestyle="--animation-order: 1;">
+            {% if section.settings.faqc-ourrecommendation-img1 != blank %}
+              <img
+                id="faq-ourrecommendation-img1"
+                src="{{ section.settings.faqc-ourrecommendation-img1 | img_url: 'master' }}"
+                alt="">
+            {% else %}
+              <img
+                id="faq-ourrecommendation-img1"
+                src="{{'faq-ourrecommend1.png' | asset_url}}}"
+                alt="">
+            {% endif %}
+          </li>
+          <li
+            id="Slide-{{ section.id }}-2"
+            class="grid__item scroll-trigger animate--slide-in"
+            data-cascadestyle="--animation-order: 2;">
+            {% if section.settings.faqc-ourrecommendation-img1 != blank %}
+              <img
+                id="faq-ourrecommendation-img1"
+                src="{{ section.settings.faqc-ourrecommendation-img1 | img_url: 'master' }}"
+                alt="">
+            {% else %}
+              <img
+                id="faq-ourrecommendation-img1"
+                src="{{'faq-ourrecommend2.png' | asset_url}}}"
+                alt="">
+            {% endif %}
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="slider-button slider-button--prev"
+          name="previous"
+          aria-label="{{ 'general.slider.previous_slide' | t }}"
+          aria-controls="Slider-{{ section.id }}">
+          {% render 'icon-caret' %}
+        </button>
+        <button
+          type="button"
+          class="slider-button slider-button--next"
+          name="next"
+          aria-label="{{ 'general.slider.next_slide' | t }}"
+          aria-controls="Slider-{{ section.id }}">
+          {% render 'icon-caret' %}
+        </button>
+      </div>
+    </div>
+
+  </slider-component>
+
+  <p id="seemorecardourrecommedation">see more</p>
+</div>
+
+
+<script src="{{ 'faqcomplaints-ourrecommendation.js' | asset_url }}"></script>
+{% schema %}
+  {
+    "name": "faqc-ourrecommendation",
+    "settings": [
+      {
+        "type": "text",
+        "id": "faqc-ourrecommendation-title",
+        "label": "Title",
+        "default": "Our Recommendation"
+      },
+      {
+        "type": "text",
+        "id": "faqc-ourrecommendation-desc",
+        "label": "Description",
+        "default": "loreim ispum jdnj ifdb khdjjnloreim ispum jdnj ifdb khdjjnloreim ispum jdnj ifdb khdjjn"
+      },
+      {
+        "type": "image_picker",
+        "id": "faqc-ourrecommendation-img1",
+        "label": "Image 1"
+      },
+      {
+        "type": "text",
+        "id": "faqc-ourrecommendation-img1-title",
+        "label": "Image 1 Title",
+        "default": "The Exquite Style"
+      }, {
+        "type": "text",
+        "id": "faqc-ourrecommendation-img1-desc",
+        "label": "Image 1 Description",
+        "default": "A very elegant theme, ideal for couples looking for wedding flower arrangements to suit their garden / outdoor wedding. Our professional florists at Flower Station have managed to create a natural look that complements the green scenery outdoors."
+      }, {
+        "type": "text",
+        "id": "faqc-ourrecommendation-img1-desc2",
+        "label": "Image 1 Description2",
+        "default": "The wedding table floral designs include large-headed white hydrangea mixed beautifully with luxury white and sweet avalanche roses and lisianthus."
+      }, {
+        "type": "image_picker",
+        "id": "faqc-ourrecommendation-img2",
+        "label": "Image 2"
+      }, {
+        "type": "text",
+        "id": "faqc-ourrecommendation-img2-title",
+        "label": "Image 2 Title",
+        "default": "The Tropical Style"
+      }, {
+        "type": "text",
+        "id": "faqc-ourrecommendation-img2-desc",
+        "label": "Image 2 Description",
+        "default": "Our tropical wedding theme will definitely achieve a wow factor on your wedding day. Suitable for bohotheme or beach weddings, this tropical flower design will fill the atmosphere with vibrant colors and freshness."
+      }, {
+        "type": "text",
+        "id": "faqc-ourrecommendation-img2-desc2",
+        "label": "Image 2 Description2",
+        "default": "The wedding table centerpieces include birds of paradise, protea and dahlia with leaves and petals bursting from the rustic vases."
+      }, {
+        "type": "range",
+        "id": "products_to_show",
+        "min": 2,
+        "max": 25,
+        "step": 1,
+        "default": 2,
+        "label": "Products to display"
+      }
+    ]
+  }
+{% endschema %}

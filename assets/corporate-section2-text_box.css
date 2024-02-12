@@ -1,0 +1,73 @@
+/* Banner container styles */
+.text__container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  margin-top: 2.6vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.text__container > h2 {
+  font-size: 2.917vw;
+  line-height: 3.765vw;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: 300;
+  font-family: "Frank Ruhl Libre";
+  margin-block-end: 0;
+  margin-bottom: 2vw;
+}
+.text__container > p {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.972vw;
+  line-height: 1.389vw;
+  font-family: "Open Sans";
+  letter-spacing: 0;
+}
+
+@media only screen and (max-width: 749px) {
+  /* For screens up to 767px width (mobile devices) */
+  .text__container > h2 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 31.04px;
+    margin-bottom: 1vw;
+    width: 100%;
+    text-align: center;
+  }
+
+  .text__container > p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  /* For screens between 768px and 991px width (tablets) */
+  .text__container > h2 {
+    font-size: 4.301vw;
+    font-weight: 300;
+    line-height: 5.552vw;
+    margin-bottom: 1vw;
+    width: 100%;
+    text-align: center;
+  }
+
+  .text__container > p {
+    font-size: 1.613vw;
+    line-height: 2.096vw;
+    font-weight: 400;
+    text-align: center;
+  }
+}

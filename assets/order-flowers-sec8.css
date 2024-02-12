@@ -1,0 +1,577 @@
+/* Carousal */
+
+.sec8-head-text {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vw;
+}
+
+.sec8-head-text > h2 {
+  font-family: "Frank Ruhl Libre";
+  font-size: 3.889vw;
+  line-height: 4.306vw;
+  letter-spacing: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 2vw;
+  font-weight: 300;
+  text-align: center;
+}
+
+.sec8-head-text > p {
+  font-family: "Open Sans";
+  font-size: 0.972vw;
+  width: 62%;
+  font-weight: 300;
+  margin-block-start: 0;
+  line-height: 1.361vw;
+  letter-spacing: 0;
+}
+
+.out-sec8-content-ipad-mob {
+  display: none;
+}
+.carousel-sec8 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 3vw;
+}
+
+.carousel-container-8 {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  align-items: center;
+  /* height: 100%; */
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* position: relative; */
+}
+
+.info-left-sec8 > h3 {
+  font-size: 2.778vw;
+  letter-spacing: 0;
+  font-weight: 600;
+  line-height: 3.056vw;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: "Frank Ruhl Libre";
+}
+.p-1 {
+  font-size: 1.389vw;
+  line-height: 1.944vw;
+  letter-spacing: 0;
+  font-weight: 500;
+  font-family: "Open Sans";
+}
+.p-2 {
+  font-size: 1.667vw;
+  line-height: 1.806vw;
+  letter-spacing: 0;
+  font-weight: 500;
+  font-family: "Open Sans";
+}
+.p-3 {
+  font-size: 1.25vw;
+  line-height: 1.75vw;
+  letter-spacing: 0;
+  font-weight: 500;
+  font-family: "Open Sans";
+  margin-bottom: 1vw;
+}
+
+.info-buttons {
+  display: flex;
+  gap: 1vw;
+}
+
+.btn-1 {
+  width: 13.611vw;
+  height: 3.125vw;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1.111vw;
+  font-weight: 400;
+  cursor: pointer;
+  letter-spacing: 0;
+  line-height: 1.513vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-2 {
+  width: 13.611vw;
+  height: 3.125vw;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 1.111vw;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.513vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item-8 {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  text-align: center;
+  width: 100%;
+  /* position: relative; */
+}
+
+.carousel-item-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-left-sec8 {
+  text-align: left;
+  width: 44.167vw;
+}
+.carousal-item-image {
+  width: 43.75vw;
+}
+
+.nav-btn-sec8 {
+  background-color: white;
+  color: #ffc7c7;
+  border: none;
+
+  font-size: 2.778vw;
+  cursor: pointer;
+}
+
+.carousal-nav {
+  width: 80%;
+  margin-top: 2vw;
+  /* position: relative; */
+
+  display: flex;
+  justify-content: space-evenly;
+}
+.carousel-dots-8 {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 10px; */
+}
+
+.dot-8 {
+  width: 0.5vw;
+  height: 2px;
+  background-color: black;
+  border-radius: 10%;
+  border: none;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.active-dot {
+  width: 3vw;
+  background-color: orange;
+}
+
+/* #prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+} */
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  .slideshow-container {
+    display: none;
+  }
+  .carousal-nav {
+    display: none;
+  }
+  .sec8-head-text {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vw;
+  }
+
+  .sec8-head-text > h2 {
+    font-size: 4.301vw;
+    line-height: 4.704vw;
+    margin-bottom: 2vw;
+    font-weight: 300;
+  }
+
+  .sec8-head-text > p {
+    font-size: 1.613vw;
+    width: 90%;
+    font-weight: 300;
+    line-height: 2.258vw;
+    text-align: center;
+  }
+
+  .carousel-sec8 {
+    display: none;
+  }
+  .out-sec8-content-ipad-mob {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .position-1 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 0.5px solid lightgray;
+    padding: 3% 2% 3% 2%;
+    margin-bottom: 5vw;
+  }
+  .position-1 > h2 {
+    font-family: "Frank Ruhl Libre";
+    font-size: 5.376vw;
+    line-height: 5.914vw;
+    letter-spacing: 0;
+    font-weight: 400;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    text-align: left;
+    margin-bottom: 3vw;
+  }
+  .job-btns {
+    display: flex;
+    gap: 2vw;
+  }
+  .job-btn1 {
+    width: 26.344vw;
+    height: 6.048vw;
+    font-size: 2.151vw;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: "Open Sans";
+    line-height: 2.929vw;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .job-btn2 {
+    width: 26.344vw;
+    height: 6.048vw;
+    font-size: 2.151vw;
+    font-weight: 400;
+    font-family: "Open Sans";
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    line-height: 2.929vw;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 749px) {
+  .slideshow-container {
+    display: none;
+  }
+  .carousal-nav {
+    display: none;
+  }
+
+  .sec8-head-text {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vw;
+    margin-bottom: 2vw;
+  }
+
+  .sec8-head-text > h2 {
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 3vw;
+    font-weight: 300;
+  }
+
+  .sec8-head-text > p {
+    font-size: 12px;
+    width: 90%;
+    font-weight: 300;
+    line-height: 16.8px;
+    text-align: center;
+  }
+
+  .carousel-sec8 {
+    display: none;
+  }
+  .out-sec8-content-ipad-mob {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .position-1 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 0.5px solid lightgray;
+    padding: 3% 2% 3% 2%;
+    margin-bottom: 5vw;
+  }
+  .position-1 > h2 {
+    font-family: "Frank Ruhl Libre";
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 0;
+    font-weight: 400;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    text-align: left;
+    margin-bottom: 3vw;
+  }
+  .job-btns {
+    display: flex;
+    gap: 2vw;
+  }
+  .job-btn1 {
+    width: 26.344vw;
+    /* height: 6.048vw; */
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: "Open Sans";
+    line-height: 21.79px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .job-btn2 {
+    width: 26.344vw;
+    /* height: 6.048vw; */
+    font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: 400;
+    font-family: "Open Sans";
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    line-height: 21.79px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .slideshow-container {
+    display: none;
+  }
+  .carousal-nav {
+    display: none;
+  }
+
+  .sec8-head-text {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vw;
+    margin-bottom: 2vw;
+  }
+
+  .sec8-head-text > h2 {
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 3vw;
+    font-weight: 300;
+  }
+
+  .sec8-head-text > p {
+    font-size: 12px;
+    width: 90%;
+    font-weight: 300;
+    line-height: 16.8px;
+    text-align: center;
+  }
+
+  .carousel-sec8 {
+    display: none;
+  }
+  .out-sec8-content-ipad-mob {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .position-1 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 0.5px solid lightgray;
+    padding: 3% 2% 3% 2%;
+    margin-bottom: 5vw;
+  }
+  .position-1 > h2 {
+    font-family: "Frank Ruhl Libre";
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 0;
+    font-weight: 400;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    text-align: left;
+    margin-bottom: 3vw;
+  }
+  .job-btns {
+    display: flex;
+    gap: 2vw;
+  }
+  .job-btn1 {
+    width: 150px;
+    /* height: 6.048vw; */
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: "Open Sans";
+    line-height: 21.79px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .job-btn2 {
+    width: 150px;
+    /* height: 6.048vw; */
+    font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: 400;
+    font-family: "Open Sans";
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    line-height: 21.79px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.slideshow-container > ul {
+  width: 100% !important;
+  margin-left: 0 !important;
+  overflow-y: hidden !important;
+  scroll-padding-left: 0 !important;
+}
+.slideshow-container > ul > li {
+  width: 100% !important;
+  margin-left: 0 !important;
+  height: 100% !important;
+  margin-right: 0 !important;
+  overflow-y: hidden !important;
+  /* padding-left: 0 !important;
+  padding-right: 0 !important; */
+}
+
+/* Next & previous buttons */
+.carousal-nav {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: center;
+}
+.prev,
+.next {
+  cursor: pointer;
+  /* width: 40%; */
+
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  /* right: 0; */
+  margin-left: 17%;
+}
+.prev {
+  margin-right: 18%;
+}
+
+/* The dots/bullets/indicators */
+.dot-8 {
+  cursor: pointer;
+  height: 4px;
+  width: 1vw;
+  /* margin: 0 2px; */
+  background-color: black;
+
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active,
+.dot-8:hover {
+  background-color: orange;
+  width: 2vw;
+}

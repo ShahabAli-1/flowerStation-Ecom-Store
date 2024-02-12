@@ -1,0 +1,62 @@
+.brands-parent {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7.222vw 20.486vw;
+}
+
+.brands-parent h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.667vw;
+    font-weight: 300;
+    line-height: 2.292vw;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #2D2D2D;
+}
+
+.brands-parent .logos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.brands-parent .logos svg {
+    width: 10.486vw;
+    height: 2.083vw;
+}
+@media (max-width: 989px) {
+    .brands-parent {
+        padding: 6.586vw 5.511vw;
+    }
+    
+    .brands-parent h3 {
+        font-size: 2.878vw;
+        line-height: 3.918vw;
+    }
+    
+    .brands-parent .logos svg {
+        width: 20.296vw;
+        height: 4.032vw;
+    }
+}
+@media (max-width: 749px) {
+    .brands-parent {
+        padding: 7.477vw 6.075vw;
+        padding-top: 0;
+    }
+    
+    .brands-parent h3 {
+        font-size: 24px;
+        line-height: 32.68px;
+    }
+    
+    .brands-parent .logos svg {
+        width: 19.860vw;
+        height: 3.972vw;
+    }
+}

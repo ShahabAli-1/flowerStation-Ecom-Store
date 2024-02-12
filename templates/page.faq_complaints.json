@@ -1,0 +1,130 @@
+{
+  "sections": {
+    "complaints-sec1": {
+      "type": "complaints-sec1",
+      "settings": {}
+    },
+    "complaints-sec2": {
+      "type": "complaints-sec2",
+      "settings": {}
+    },
+    "complaints-sec3": {
+      "type": "complaints-sec3",
+      "settings": {}
+    },
+    "complaints-sec4": {
+      "type": "complaints-sec4",
+      "settings": {}
+    },
+    "complaints-sec5": {
+      "type": "complaints-sec5",
+      "settings": {}
+    },
+    "complaints-sec6": {
+      "type": "complaints-sec6",
+      "settings": {}
+    },
+
+    "faqcomplaints-wedswecovered": {
+      "type": "faqcomplaints-wedswecovered",
+      "settings": {}
+    },
+    "faqcomplaints-bridalbouquets": {
+      "type": "faqcomplaints-bridalbouquets",
+      "settings": {}
+    },
+    "faqcomplaints-ourrecommendation": {
+      "type": "faqcomplaints-ourrecommendation",
+      "settings": {}
+    },
+    "faqcomplaints-weddingpkg": {
+      "type": "faqcomplaints-weddingpkg",
+      "settings": {}
+    },
+    "faqcomplaints-togglecard": {
+      "type": "faqcomplaints-togglecard",
+      "settings": {}
+    },
+    "faqcomplaints-reviews": {
+      "type": "faqcomplaints-reviews",
+      "settings": {}
+    },
+    "faqcomplaints-quoteform": {
+      "type": "faqcomplaints-quoteform",
+      "settings": {}
+    },
+    "faqcomplaints-offices": {
+      "type": "faqcomplaints-offices",
+      "settings": {}
+    },
+    "faqcomplaints-imageslider": {
+      "type": "faqcomplaints-imageslider",
+      "settings": {}
+    },
+    "faqcomplaints-faqs": {
+      "type": "faqcomplaints-faqs",
+      "settings": {}
+    },
+    "faqcomplaints-form2": {
+      "type": "faqcomplaints-form2",
+      "settings": {}
+    },
+    "faqcomplaints-creviews": {
+      "type": "faqcomplaints-creviews",
+      "settings": {}
+    },
+    "delivery-northwest": {
+      "type": "delivery-northwest",
+      "settings": {}
+    },
+    "best-selling-flowers": {
+      "type": "best-selling-flowers",
+      "settings": {}
+    },
+    "shopnowbutton": {
+      "type": "shopnowbutton",
+      "settings": {}
+    },
+    "delivery-north-payment-brands": {
+      "type": "delivery-north-payment-brands",
+      "settings": {}
+    },
+    "delivery-north-sec2": {
+      "type": "delivery-north-sec2",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "complaints-sec1",
+    "complaints-sec2",
+    "complaints-sec3",
+    "complaints-sec4",
+    "complaints-sec5",
+    "complaints-sec6",
+    "faqcomplaints-wedswecovered",
+    "faqcomplaints-bridalbouquets",
+    "faqcomplaints-ourrecommendation",
+    "faqcomplaints-weddingpkg",
+    "faqcomplaints-togglecard",
+    "faqcomplaints-reviews",
+    "faqcomplaints-quoteform",
+    "faqcomplaints-offices",
+    "faqcomplaints-imageslider",
+    "faqcomplaints-faqs",
+    "faqcomplaints-form2",
+    "faqcomplaints-creviews",
+    "delivery-northwest",
+    "best-selling-flowers",
+    "shopnowbutton",
+    "delivery-north-payment-brands",
+    "delivery-north-sec2"
+  ]
+}

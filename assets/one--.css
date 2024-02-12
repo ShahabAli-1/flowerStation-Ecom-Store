@@ -1,0 +1,84 @@
+/* Desktop */
+
+.h1 {
+  font-family: "Frank Ruhl Libre";
+  font-size: 4.241vw;
+  font-weight: 400;
+  line-height: 6.065vw;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.h2 {
+  font-family: "Frank Ruhl Libre";
+  font-size: 3.313vw;
+  font-weight: 300;
+  line-height: 4.278vw;
+  letter-spacing: 0;
+  text-align: center;
+}
+.p {
+  font-family: "Open Sans";
+  font-size: 1.06vw;
+  font-weight: 400;
+  line-height: 1.696vw;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/* mid */
+/* 834 */
+
+.h1 {
+  font-family: "Frank Ruhl Libre";
+  font-size: 4.077vw;
+  font-weight: 500;
+  line-height: 5.83vw;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.h2 {
+  font-family: "Frank Ruhl Libre";
+  font-size: 3.118vw;
+  font-weight: 300;
+  line-height: 4.156vw;
+  letter-spacing: 0;
+  text-align: center;
+}
+.p {
+  font-family: "Open Sans";
+  font-size: 1.799vw;
+  font-weight: 400;
+  line-height: 2.608vw;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/* 428  */
+
+.h1 {
+  font-family: "Frank Ruhl Libre";
+  font-size: 6.542vw;
+  font-weight: 500;
+  line-height: 8.72vw;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.h2 {
+  font-family: "Frank Ruhl Libre";
+  font-size: 6.075vw;
+  font-weight: 300;
+  line-height: 4.156vw;
+  letter-spacing: 0;
+  text-align: center;
+}
+.p {
+  font-family: "Open Sans";
+  font-size: 3.271vw;
+  font-weight: 400;
+  line-height: 4.678vw;
+  letter-spacing: 0;
+  text-align: center;
+}

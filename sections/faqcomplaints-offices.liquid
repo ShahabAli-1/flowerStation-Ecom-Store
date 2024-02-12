@@ -1,0 +1,190 @@
+{{ 'faqcomplaints-offices.css' | asset_url | stylesheet_tag }}
+<div class="faqcomplaints-offices">
+  <h2>{{ section.settings.faqcomplaints-offices-title }}</h2>
+  <p>{{ section.settings.faqcomplaints-offices-subtitle }}</p>
+  <div class="faqcomplaints-office">
+    <div class="faqcomplaints-left">
+      {% if section.settings.faqcomplaints-offices-image1 != blank %}
+        <img src="{{ section.settings.faqcomplaints-offices-image1 | img_url: 'master' }}" alt="offices">
+      {% else %}
+        <img src="{{ 'faqcomplaints-office1.png' | asset_url}}" alt="offices">
+      {% endif %}
+    </div>
+    <div class="faqcomplaints-right">
+      <h3>{{ section.settings.faqcomplaints-offices-image1-heading1 }}</h3>
+      <p>{{ section.settings.faqcomplaints-offices-image1-text1 }}</p>
+      <h3>{{ section.settings.faqcomplaints-offices-image1-heading2 }}</h3>
+      <p>{{ section.settings.faqcomplaints-offices-image1-text2 }}</p>
+    </div>
+  </div>
+  <div class="faqcomplaints-office">
+    <div class="faqcomplaints-left">
+      {% if section.settings.faqcomplaints-offices-image2 != blank %}
+        <img src="{{ section.settings.faqcomplaints-offices-image2 | img_url: 'master' }}" alt="offices">
+      {% else %}
+        <img src="{{ 'faqcomplaints-office2.png' | asset_url}}" alt="offices">
+      {% endif %}
+    </div>
+    <div class="faqcomplaints-right">
+      <h3>{{ section.settings.faqcomplaints-offices-image2-heading1 }}</h3>
+      <p>{{ section.settings.faqcomplaints-offices-image2-text1 }}</p>
+      <h3>{{ section.settings.faqcomplaints-offices-image2-heading2 }}</h3>
+      <p>{{ section.settings.faqcomplaints-offices-image2-text2 }}</p>
+    </div>
+  </div>
+  <div class="faqcomplaints-office">
+    <div class="faqcomplaints-left">
+      {% if section.settings.faqcomplaints-offices-image3 != blank %}
+        <img src="{{ section.settings.faqcomplaints-offices-image3 | img_url: 'master' }}" alt="offices">
+      {% else %}
+        <img src="{{ 'faqcomplaints-office3.png' | asset_url}}" alt="offices">
+      {% endif %}
+    </div>
+    <div class="faqcomplaints-right">
+      <h3>{{ section.settings.faqcomplaints-offices-image3-heading1 }}</h3>
+      <p>{{ section.settings.faqcomplaints-offices-image3-text1 }}</p>
+      <h3>{{ section.settings.faqcomplaints-offices-image3-heading2 }}</h3>
+      <p>{{ section.settings.faqcomplaints-offices-image3-text2 }}</p>
+    </div>
+  </div>
+  <div class="faqcomplaints-office">
+    <div class="faqcomplaints-left">
+      {% if section.settings.faqcomplaints-offices-image4 != blank %}
+        <img src="{{ section.settings.faqcomplaints-offices-image4 | img_url: 'master' }}" alt="offices">
+      {% else %}
+        <img src="{{ 'faqcomplaints-office4.png' | asset_url}}" alt="offices">
+      {% endif %}
+    </div>
+    <div class="faqcomplaints-right">
+      <h3>{{ section.settings.faqcomplaints-offices-image4-heading1 }}</h3>
+      <p>{{ section.settings.faqcomplaints-offices-image4-text1 }}</p>
+      <h3>{{ section.settings.faqcomplaints-offices-image4-heading2 }}</h3>
+      <p>{{ section.settings.faqcomplaints-offices-image4-text2 }}</p>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "faqcomplaints-offices",
+    "settings": [
+      {
+        "type": "text",
+        "id": "faqcomplaints-offices-title",
+        "label": "Title",
+        "default": "Flower & Plants for Offices"
+      },
+      {
+        "type": "text",
+        "id": "faqcomplaints-offices-subtitle",
+        "label": "Subtitle",
+        "default": "Weekly office flowers and floral services available for delivery in London. View our gallery below or contact our corporate team for your free consultation."
+      },
+      {
+        "type": "image_picker",
+        "id": "faqcomplaints-offices-image1",
+        "label": "Image 1"
+      },
+      {
+        "type": "text",
+        "id": "faqcomplaints-offices-image1-heading1",
+        "label": "Image 1 Heading 1",
+        "default": "Office Flowers And Plants"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-offices-image1-text1",
+        "label": "Image 1 Text 1",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut. Risus vestibulum eu, lorem lorem eget vitae elit enim aliquam. Purus eget facilisis arcu id ac. Orci etiam faucibus amet vitae eu enim malesuada aenean pellentesque."
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-offices-image1-heading2",
+        "label": "Image 1 Heading 2",
+        "default": "Our Promise"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-offices-image1-text2",
+        "label": "Image 1 Text 2",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut."
+      }, {
+        "type": "image_picker",
+        "id": "faqcomplaints-offices-image2",
+        "label": "Image 2"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-offices-image2-heading1",
+        "label": "Image 2 Heading 1",
+        "default": "Ambiance Flowers"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-offices-image2-text1",
+        "label": "Image 2 Text 1",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut. Risus vestibulum eu, lorem lorem eget vitae elit enim aliquam. Purus eget facilisis arcu id ac. Orci etiam faucibus amet vitae eu enim malesuada aenean pellentesque."
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-offices-image2-heading2",
+        "label": "Image 2 Heading 2",
+        "default": "We have got the florists to do the job"
+
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-offices-image2-text2",
+        "label": "Image 2 Text 2",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut."
+      }, {
+        "type": "image_picker",
+        "id": "faqcomplaints-offices-image3",
+        "label": "Image 3"
+      }, {
+
+        "type": "text",
+        "id": "faqcomplaints-offices-image3-heading1",
+        "label": "Image 3 Heading 1",
+        "default": "Table Arrangements"
+
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-offices-image3-text1",
+        "label": "Image 3 Text 1",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut. Risus vestibulum eu, lorem lorem eget vitae elit enim aliquam. Purus eget facilisis arcu id ac. Orci etiam faucibus amet vitae eu enim malesuada aenean pellentesque."
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-offices-image3-heading2",
+        "label": "Image 3 Heading 2",
+        "default": "We have got the florists to do the job"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-offices-image3-text2",
+        "label": "Image 3 Text 2",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut."
+      }, {
+        "type": "image_picker",
+        "id": "faqcomplaints-offices-image4",
+        "label": "Image 4"
+
+
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-offices-image4-heading1",
+        "label": "Image 4 Heading 1",
+        "default": "Display Flowers"
+
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-offices-image4-text1",
+        "label": "Image 4 Text 1",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut. Risus vestibulum eu, lorem lorem eget vitae elit enim aliquam. Purus eget facilisis arcu id ac. Orci etiam faucibus amet vitae eu enim malesuada aenean pellentesque."
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-offices-image4-heading2",
+        "label": "Image 4 Heading 2",
+        "default": "We have got the florists to do the job"
+
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-offices-image4-text2",
+        "label": "Image 4 Text 2",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut."
+      }
+    ]
+
+  }
+{% endschema %}

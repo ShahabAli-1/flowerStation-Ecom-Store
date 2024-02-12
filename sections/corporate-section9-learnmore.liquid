@@ -1,0 +1,109 @@
+{{ 'corporate-section9-learnmore.css' | asset_url | stylesheet_tag }}
+
+
+
+<section class="learnmore">
+  <div class="learnmore__section">
+    {% if section.settings.corp-sec9-img-1 != blank %}
+      <img
+        class="learnmore-image1"
+        src="{{ section.settings.corp-sec9-img-1 | img_url}}"
+        alt="">
+    {% else %}
+      <img
+        class="learnmore-image1"
+        src="{{ 'learnmore1.jpg' | asset_url }}"
+        alt="">
+    {% endif %}
+    <div class="learnmore__section-rightpart">
+      <h2>{{ section.settings.corp-sec9-title-1 }}
+      </h2>
+      <p class="learnmore-bold">{{ section.settings.corp-sec9-subtitle-1 }}</p>
+      <p class="learnmore-light">{{ section.settings.corp-sec9-para-1 }}</p>
+      <button class="learnmore__button">{{ section.settings.corp-sec9-btn-1 }}</button>
+    </div>
+  </div>
+  <div class="learnmore__section2">
+    <div class="learnmore__section2-leftpart">
+      <h2>{{ section.settings.corp-sec9-title-2 }}</h2>
+      <p class="learnmore-bold">{{ section.settings.corp-sec9-subtitle-2 }}</p>
+      <p class="learnmore-light">{{ section.settings.corp-sec9-para-2 }}</p>
+      <button class="learnmore__button">{{ section.settings.corp-sec9-btn-2 }}</button>
+    </div>
+
+
+    {% if section.settings.corp-sec9-img-2 != blank %}
+      <img
+        class="learnmore-image2"
+        src="{{ section.settings.corp-sec9-img-2 | img_url}}"
+        alt="">
+    {% else %}
+      <img
+        class="learnmore-image2"
+        src="{{ 'learnmore2.jpg' | asset_url }}"
+        alt="">
+    {% endif %}
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "corp-sec9-learnmore",
+    "settings": [
+      {
+        "type": "text",
+        "id": "corp-sec9-title-1",
+        "label": "Enter Your Title",
+        "default": "Floristry Classes for Teams"
+      },
+      {
+        "type": "text",
+        "id": "corp-sec9-subtitle-1",
+        "label": "Enter Your Text",
+        "default": "Learning together"
+      },
+      {
+        "type": "text",
+        "id": "corp-sec9-para-1",
+        "label": "Enter Your Text",
+        "default": "Our floral design classes are the ideal team building activity. Set in our wonderful Flower School in North London or brought to your own chosen space. Whatever you like!"
+      },
+      {
+        "type": "image_picker",
+        "id": "corp-sec9-img-1",
+        "label": "Select Image"
+      }, {
+        "type": "text",
+        "id": "corp-sec9-btn-1",
+        "label": "Enter Button Text",
+        "default": "Learn More"
+      }, {
+        "type": "text",
+        "id": "corp-sec9-title-2",
+        "label": "Enter Your Title",
+        "default": "Corporate Gifts"
+      }, {
+        "type": "text",
+        "id": "corp-sec9-subtitle-2",
+        "label": "Enter Your Text",
+        "default": "Employee Gifting"
+      }, {
+        "type": "text",
+        "id": "corp-sec9-para-2",
+        "label": "Enter Your Text",
+        "default": "Providing for any kind of space, our team often design arrangements for large spaces that require a range of vase sizes. To create a variation and to prevent a repetitive feel within the space, the design at this particular venue is split into three larger vases and four small cubes, helping to evenly distribute the flowers around the"
+      }, {
+        "type": "image_picker",
+        "id": "corp-sec9-img-2",
+        "label": "Select Image"
+      }, {
+        "type": "text",
+        "id": "corp-sec9-btn-2",
+        "label": "Enter Button Text",
+        "default": "Learn More"
+      }
+
+    ]
+  }
+{% endschema %}

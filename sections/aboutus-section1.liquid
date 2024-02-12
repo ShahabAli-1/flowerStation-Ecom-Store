@@ -1,0 +1,53 @@
+{{ 'aboutus-section1.css' | asset_url | stylesheet_tag }}
+
+<div>
+  <div class="banner-container" {% if section.settings.about-us-section1-banner-image != blank %}style="background-image: url({{section.settings.about-us-section1-banner-image}});"{% endif %}>
+    <div class="banner-text">
+      <h1 class="banner-heading">{{ section.settings.aoutus-section1-banner-title }}</h1>
+      <p class="banner-description">{{ section.settings.aboutus-section1-banner-para }}</p>
+      <div class="banner-buttons">
+        <p class="learn">{{ section.settings.aboutus-section1-banner-btn1-text }}</p>
+        <div class="video-btn">
+          <p class="watch">{{ section.settings.aboutus-section1-banner-btn2-text }}</p>
+          <img src="{{ 'vidicon.png' | asset_url }}" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "aboutus-section1",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "about-us-section1-banner-image",
+        "label": "Select Banner Image"
+      },
+      {
+        "type": "text",
+        "id": "aoutus-section1-banner-title",
+        "label": "Enter header",
+        "default": "About Flower Station"
+      },
+      {
+        "type": "text",
+        "id": "aboutus-section1-banner-para",
+        "label": "Enter Banner Description",
+        "default": "Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      },
+      {
+        "type": "text",
+        "id": "aboutus-section1-banner-btn1-text",
+        "label": "Enter Button Text",
+        "default": "Learn More"
+      }, {
+        "type": "text",
+        "id": "aboutus-section1-banner-btn2-text",
+        "label": "Enter Button Text",
+        "default": "Watch More"
+      }
+    ]
+  }
+{% endschema %}

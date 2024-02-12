@@ -1,0 +1,39 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "delivery-header": {
+      "type": "delivery-header",
+      "settings": {}
+    },
+    "delivery-navbar": {
+      "type": "delivery-navbar",
+      "settings": {}
+    },
+    "delivery-flower-delivery": {
+      "type": "delivery-flower-delivery",
+      "settings": {}
+    },
+    "delivery-internationl-delivery": {
+      "type": "delivery-internationl-delivery",
+      "settings": {}
+    },
+    "delivery-bankholidays": {
+      "type": "delivery-bankholidays",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "delivery-header",
+    "delivery-navbar",
+    "delivery-flower-delivery",
+    "delivery-internationl-delivery",
+    "delivery-bankholidays"
+  ]
+}

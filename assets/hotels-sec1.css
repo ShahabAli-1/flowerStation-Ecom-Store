@@ -1,0 +1,314 @@
+/* ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+} */
+.upper_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.611vw;
+  margin-top: 7vw;
+}
+
+.flower_text {
+  margin-top: 4.375vw;
+  color: #353535;
+  font-family: "Frank Ruhl Libre";
+  font-weight: 300;
+  line-height: 3.765vw;
+  font-size: 2.917vw;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 0.925vw;
+}
+.p_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 44.722vw;
+}
+.weekly_text {
+  padding-top: 0.625vw;
+  font-family: "Open Sans";
+  font-size: 0.972vw;
+  font-weight: 400;
+  line-height: 1.389vw;
+  letter-spacing: 0.14px;
+}
+
+.images_text-div {
+  display: flex;
+  padding-left: 4.861%;
+  padding-right: 4.833%;
+  /* margin-top: 3.611vw; */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.img_div {
+  width: 50%;
+}
+.first_img {
+  height: 45.139vw;
+  width: 45.139vw;
+}
+
+.text-div {
+  width: 50%;
+  padding-left: 7.083vw;
+}
+
+.header1 {
+  color: #353535;
+  font-family: "Open Sans";
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 1.111vw;
+  font-weight: 600;
+  line-height: 1.513vw;
+  margin-bottom: 0.833vw;
+}
+
+.p_1 {
+  color: #353535;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: "Open Sans";
+  font-size: 0.972vw;
+  font-weight: 400;
+  line-height: 1.389vw;
+  letter-spacing: 0.01vw;
+  margin-bottom: 5vw;
+}
+
+.header2 {
+  color: #353535;
+  font-family: "Open Sans";
+  font-size: 1.111vw;
+  letter-spacing: 0;
+  font-weight: 600;
+  line-height: 1.513vw;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 0.833vw;
+}
+
+.p_2 {
+  margin-top: 0.833vw;
+  color: #353535;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: "Open Sans";
+  font-size: 0.972vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.389vw;
+  letter-spacing: 0.01vw;
+}
+
+.img-text-reverse {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4.861%;
+  padding-right: 4.833%;
+}
+
+.left-text-box {
+  width: 50%;
+  padding-right: 7.055vw;
+}
+.reverse-img {
+  height: 45.139vw;
+  width: 45.139vw;
+}
+
+/* IPAD */
+@media screen and (max-width: 989px) {
+  .upper_text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vw;
+  }
+
+  .flower_text {
+    margin-top: 5.507vw;
+    text-align: center;
+    font-size: 4.301vw;
+    font-weight: 300;
+    line-height: 5.552vw;
+    margin-bottom: 1vw;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .weekly_text {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.613vw;
+    font-weight: 400;
+    line-height: 2.151vw;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .images_text-div {
+    width: 100%;
+    padding-left: 5.376%;
+    padding-right: 5.376%;
+    margin-bottom: 3.629vw;
+  }
+
+  .text-div {
+    width: 50%;
+    padding-left: 3.495vw;
+  }
+
+  .first_img {
+    width: 43.414vw;
+    height: 43.414vw;
+  }
+
+  .header1 {
+    font-size: 2.151vw;
+    line-height: 2.929vw;
+    margin-bottom: 1.613vw;
+  }
+
+  .p_1 {
+    font-size: 1.613vw;
+    font-weight: 400;
+    line-height: 2.151vw;
+    margin-bottom: 4.57vw;
+  }
+
+  .header2 {
+    font-size: 2.151vw;
+    line-height: 2.929vw;
+  }
+
+  .p_2 {
+    font-size: 1.613vw;
+    font-weight: 400;
+    line-height: 2.151vw;
+  }
+
+  .img-text-reverse {
+    width: 100%;
+    padding-left: 5.376%;
+    padding-right: 5.376%;
+    margin-bottom: 3.629vw;
+  }
+  .left-text-box {
+    width: 50%;
+    padding-right: 3.495vw;
+  }
+  .reverse-img {
+    width: 43.414vw;
+    height: 43.414vw;
+  }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 749px) {
+  .upper_text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flower_text {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 36px;
+    margin-bottom: 2.5vw;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .weekly_text {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .images_text-div {
+    width: 100%;
+    flex-direction: column;
+    padding-left: 6.075%;
+    padding-right: 6.075%;
+  }
+
+  .text-div {
+    width: 100%;
+    padding-left: 0vw;
+  }
+  .first_img {
+    height: 53.738vw;
+    width: 87.85vw;
+    margin-bottom: 2.804vw;
+  }
+
+  .header1 {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 1.869vw;
+    text-align: center;
+  }
+
+  .p_1 {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 2.804vw;
+  }
+
+  .header2 {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 1.869vw;
+    text-align: center;
+  }
+
+  .p_2 {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+  }
+  .img-text-reverse {
+    width: 100%;
+    flex-direction: column-reverse;
+    padding-left: 6.075%;
+    padding-right: 6.075%;
+  }
+  .reverse-img {
+    height: 53.738vw;
+    width: 87.85vw;
+    margin-bottom: 2.804vw;
+  }
+  .left-text-box {
+    width: 100%;
+    padding-right: 0;
+  }
+}

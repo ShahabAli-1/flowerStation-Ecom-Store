@@ -1,0 +1,111 @@
+.navbar-parent {
+    display: flex;
+    height: 9.722vw;
+    width: 100vw;
+}
+
+.logo {
+    padding-top: 2.389vw;
+    padding-left: 3.056vw;
+}
+
+.logo-svg {
+    width: 12.153vw;
+    height: 3.750vw;
+}
+
+.nav2rightnav {
+    margin-left: 6.944vw;
+    width: 76.75vw;
+}
+
+.nav2rightnav .signcart {
+    display: flex;
+    float: right;
+    margin-right: 2.014vw;
+    margin-top: 1.667vw;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.nav2rightnav .signcart .sign {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 0.972vw;
+    line-height: 1.324vw;
+    color: #353535;
+    margin-right: 1.944vw;
+    height: 100%;
+}
+
+.nav2rightnav .navheadings {
+    clear: both;
+    display: flex;
+    margin-top: 0.972vw;
+    width: 76.75vw;
+    height: 2.292vw;
+}
+
+.nav2rightnav .navheadings .text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.972vw;
+    font-weight: 400;
+    line-height: 1.319vw;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-right: 2.292vw;
+    color: #504F4F;
+}
+
+
+
+.burgerbutton,
+.search,
+.userlogo,
+.carticon {
+    display: none;
+}
+
+@media (max-width: 428px) {
+    .navbar-parent {
+        height: 13.318vw;
+    }
+
+    .nav2rightnav {
+        display: none;
+    }
+
+    .burgerbutton {
+        display: block;
+        padding-top: 3.972vw;
+        padding-left: 2.570vw;
+    }
+
+    .search {
+        display: block;
+        padding-top: 3.037vw;
+        padding-left: 7.243vw;
+    }
+
+    .logo {
+        padding-left: 16.056vw;
+        padding-top: 1.780vw;
+    }
+
+    .logo-svg {
+        width: 27.103vw;
+        height: 8.348vw;
+    }
+
+    .userlogo {
+        display: block;
+        padding-top: 3.271vw;
+        padding-left: 16.991vw;
+    }
+
+    .carticon {
+        display: block;
+        padding-left: 7.009vw;
+        padding-top: 2.937vw;
+    }
+}

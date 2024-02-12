@@ -1,0 +1,60 @@
+{{ 'aboutus-section4.css' | asset_url | stylesheet_tag }}
+
+<div class="aim-container">
+  <div class="aim-left">
+    <div class="aim-left-inner">
+      {% if section.settings.aboutus-sec4-img1 != blank %}
+        <img
+          class="aim-left-img1"
+          src="{{section.settings.aboutus-sec4-img1 | img_url}}"
+          alt="">
+      {% else %}
+        <img class="aim-left-img1" src="{{ 'abt-sec4-img1.png' | asset_url }}">
+      {% endif %}
+      {% if section.settings.aboutus-sec4-img2 != blank %}
+        <img
+          class="aim-left-img2"
+          src="{{section.settings.aboutus-sec4-img2 | img_url}}"
+          alt="">
+      {% else %}
+        <img class="aim-left-img2" src="{{ 'abt-sec4-img2.png' | asset_url }}">
+      {% endif %}
+
+    </div>
+  </div>
+  <div class="aim-right">
+    <div class="aim-right-inner">
+      <h2>{{ section.settings.aboutus-sec4-title }}</h2>
+      <p>{{ section.settings.aboutus-sec4-para }}</p>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "aboutus-section4",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "aboutus-sec4-img1",
+        "label": "Select Image"
+      }, {
+        "type": "image_picker",
+        "id": "aboutus-sec4-img2",
+        "label": "Select Image"
+      }, {
+        "type": "text",
+        "id": "aboutus-sec4-title",
+        "label": "Enter Your Heading",
+        "default": "Our aim was and still is, to bring great florist work at affordable prices"
+      }, {
+        "type": "text",
+        "id": "aboutus-sec4-para",
+        "label": "Enter Your Text",
+        "default": "Our bouquets are made to order by expert florists, from all over the world, and flowers are our passion. Through this journey, we have embraced social media channels and we like to share our news and tips as well as show that there are real people working behind the website and that we do care."
+      }
+
+    ]
+  }
+{% endschema %}

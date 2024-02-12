@@ -1,0 +1,43 @@
+{{ 'order-flowers-sec1.css' | asset_url | stylesheet_tag }}
+
+<div>
+  <div class="banner-container" {% if section.settings.ord-sec1-banner != blank %}style="background-image: url({{ section.settings.ord-sec1-banner | img_url }});"{% endif %}>
+    <div class="banner-text">
+      <h1 class="banner-heading">{{ section.settings.ord-sec1-title }}</h1>
+      <p class="banner-description">{{ section.settings.ord-sec1-para }}</p>
+      <div class="banner-buttons">
+        <button class="learn">{{ section.settings.ord-sec1-btn }}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "ord-sec1-banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "ord-sec1-banner",
+        "label": "Select Banner Image"
+      }, {
+        "type": "text",
+        "id": "ord-sec1-title",
+        "label": "Enter Your Title",
+        "default": "Flower Station Careers"
+      }, {
+        "type": "text",
+        "id": "ord-sec1-para",
+        "label": "Enter Text",
+        "default": "Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      }, {
+        "type": "text",
+        "id": "ord-sec1-btn",
+        "label": "Enter Text",
+        "default": "View Available Jobs"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,66 @@
+.aboutus-banner {
+    width: 100%;
+    padding: 6.250vw 27.361vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus-banner h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: ' Frank Ruhl Libre', serif;
+    font-size: 8.333vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 9.028vw;
+    text-transform: uppercase;
+    margin: 0
+}
+
+.aboutus-banner-heading {
+    padding: 4.167vw;
+    border: 2px solid #FFF;
+    background: rgba(45, 45, 45, 0.25);
+}
+
+@media screen and (max-width:989px) {
+    .aboutus-banner {
+        margin-bottom: 3.673vw;
+    }
+
+    .aboutus-banner h2 {
+        font-size: 8.602vw;
+        line-height: normal;
+    }
+
+    .aboutus-banner-heading {
+        padding: 0.672vw 3.629vw;
+        border: 1px solid #FFF;
+        background: rgba(45, 45, 45, 0.25);
+    }
+}
+
+@media screen and (max-width:749px) {
+    .aboutus-banner {
+        margin-bottom: 29.75px;
+    }
+
+    .aboutus-banner h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .aboutus-banner-heading {
+        padding: 4.704vw;
+        border: 1px solid #FFF;
+        background: rgba(45, 45, 45, 0.25);
+    }
+}
+
+@media screen and (max-width:428px) {
+    .aboutus-banner h2 {
+        font-size: 7.477vw;
+        line-height: 8.411vw;
+    }
+}

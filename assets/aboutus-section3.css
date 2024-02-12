@@ -1,0 +1,139 @@
+.about-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1.8vw;
+}
+
+.about-container-inner {
+  width: 89.583vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-desc {
+  width: 40.903vw;
+}
+.about-desc > p {
+  font-size: 1.111vw;
+  font-weight: 400;
+  line-height: 1.361vw;
+  font-family: "Open Sans";
+}
+.red_p {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  color: pink;
+}
+
+.about-desc > h2 {
+  font-size: 3.889vw;
+  font-family: "Frank Ruhl Libre";
+  text-align: left;
+}
+.abt-sec3-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.abt-sec3-image > img {
+  width: 100%;
+  /* height: 39.236vw; */
+  height: 100%;
+  object-fit: cover;
+}
+.abt-sec3-image > picture > img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  /* height: 39.236vw; */
+}
+
+@media only screen and (max-width: 749px) {
+  .about-container-inner {
+    width: 89.583vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .about-desc {
+    width: 87.85vw;
+  }
+  .about-desc > p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16.8px;
+  }
+  .about-desc > h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    /* letter-spacing: 0; */
+    margin-bottom: 1.5vw;
+    text-align: center;
+  }
+  .about-container-inner > img {
+    width: 87.85vw;
+    height: 53.271vw;
+  }
+  .about-container-inner > picture > img {
+    width: 87.85vw;
+    height: 53.271vw;
+  }
+
+  .abt-sec3-image {
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+  }
+  .abt-sec3-image > img {
+    width: 100%;
+    height: 53.271vw;
+    /* height: 100%; */
+    object-fit: contain;
+  }
+  .abt-sec3-image > picture > img {
+    width: 100%;
+    height: 53.271vw;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .about-desc > p {
+    font-size: 1.613vw;
+    line-height: 2.258vw;
+    font-weight: 300;
+  }
+  .about-container-inner > img {
+    width: 43.683vw;
+    height: 60.484vw;
+  }
+  .about-container-inner > picture > img {
+    width: 43.683vw;
+    height: 60.484vw;
+  }
+
+  .abt-sec3-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .abt-sec3-image > img {
+    width: 100%;
+    height: 53.271vw;
+    /* height: 100%; */
+  }
+  .abt-sec3-image > picture > img {
+    width: 100%;
+    height: 60.484vw;
+  }
+}

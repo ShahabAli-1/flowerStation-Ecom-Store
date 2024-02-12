@@ -1,0 +1,34 @@
+{{ 'faqcomplaints-weddingpkg.css' | asset_url | stylesheet_tag }}
+  <div class="faq-com-weddingpkg">
+  <h2>{{ section.settings.faqc-weddingpkg-title }}</h2>
+  <p>{{ section.settings.faqc-weddingpkg-subtitle }}</p>
+  {% comment %} if image available then showing else defaulf {% endcomment %}
+  {% if section.settings.faqc-weddingpkg-image != blank %}
+    <img src="{{ section.settings.faqc-weddingpkg-image | img_url: 'master' }}" alt="Size Chart">
+  {% else %}
+    <img src="{{ 'faq-com-sizechart.png' | asset_url }}" alt="Size Chart">
+  {% endif %}
+</div>
+{% schema %}
+  {
+    "name": "faqcomplaints-weddingpkg",
+    "settings": [
+      {
+        "type": "text",
+        "id": "faqc-weddingpkg-title",
+        "label": "Title",
+        "default": "Wedding Packages"
+      }, {
+        "type": "text",
+        "id": "faqc-weddingpkg-subtitle",
+        "label": "Subtitle",
+        "default": "Fulfil your floral dreams with one of our brilliant wedding packages. All of our packages can be tailored according to your colour scheme, preference and theme."
+      }, {
+        "type": "image_picker",
+        "id": "faqc-weddingpkg-image",
+        "label": "Image",
+        "info": "Size Chart"
+      }
+    ]
+  }
+{% endschema %}

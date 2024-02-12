@@ -1,0 +1,215 @@
+.aboutus-review {
+    padding: 0 10.278vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.611vw;
+}
+
+.aboutus-review .aboutusr-content {
+    width: 46%;
+    padding-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.aboutus-review .aboutusr-content .rating-svg {
+    width: 7.083vw;
+    height: 1.111vw;
+    margin-bottom: 0.850vw;
+
+}
+
+.aboutus-review .aboutusr-content p {
+    color: #2D2D2D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.972vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.389vw;
+    letter-spacing: 0.010vw;
+    margin: 0;
+    margin-bottom: 2.361vw;
+}
+
+.aboutus-review .aboutusr-content button {
+    width: 12.847vw;
+    height: 3.125vw;
+    background: #2D2D2D;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.111vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    box-shadow: none;
+}
+
+.aboutus-review .aboutusr-content h2 {
+    color: #2D2D2D;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2.917vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 0.833vw;
+}
+
+.aboutus-review .aboutusr-content h6 {
+    color: #2D2D2D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.111vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+}
+
+.aboutus-review .aboutusr-images {
+    width: 54%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.319vw;
+}
+
+
+.aboutus-review .aboutusr-images img {
+    width: 20.764vw;
+    height: 26.389vw;
+}
+
+.aboutus-review .aboutusr-images img:nth-child(1) {
+    margin-top: 10vw;
+}
+
+.aboutus-reviews .aboutus-review:nth-child(even) .aboutusr-content {
+    padding-left: 5vw;
+    padding-right: 0;
+}
+
+
+.aboutus-reviews .aboutus-review:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.aboutus-reviews .aboutus-review:nth-child(even) .aboutusr-images {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width:989px) {
+    .aboutus-review {
+        padding: 0 5.376vw;
+        margin-top: 3.763vw;
+    }
+
+    .aboutus-review .aboutusr-content {
+        width: 46%;
+        padding-right: 5.617vw;
+    }
+
+    .aboutus-review .aboutusr-content .rating-svg {
+        width: 8.065vw;
+        height: 1.210vw;
+        margin-bottom: 0.806vw;
+
+    }
+
+    .aboutus-review .aboutusr-content p {
+        font-size: 1.613vw;
+        line-height: 2.151vw;
+        margin-bottom: 2.550vw;
+    }
+
+    .aboutus-review .aboutusr-content button {
+        width: 12.903vw;
+        height: 3.495vw;
+        font-size: 1.248vw;
+    }
+
+    .aboutus-review .aboutusr-content h2 {
+        font-size: 4.301vw;
+        margin-bottom: 0.806vw;
+    }
+
+    .aboutus-review .aboutusr-content h6 {
+        font-size: 1.344vw;
+        margin-bottom: 0.806vw;
+    }
+
+    .aboutus-review .aboutusr-images {
+        gap: 1.483vw;
+    }
+
+    .aboutus-review .aboutusr-images img {
+        width: 23.253vw;
+        height: 29.570vw;
+    }
+
+    .aboutus-review .aboutusr-images img:nth-child(1) {
+        margin-top: 13vw;
+    }
+
+}
+
+@media screen and (max-width:749px) {
+    .aboutus-reviews .aboutus-review:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .aboutus-review {
+        padding: 0 6.308vw;
+        flex-direction: column-reverse;
+        margin-top: 4.673vw;
+    }
+
+    .aboutus-review .aboutusr-content {
+        width: 100%;
+        padding: 4.673vw 12vw;
+    }
+
+    .aboutus-review .aboutusr-content .rating-svg {
+        width: 62px;
+        height: 10px;
+        margin-bottom: 6px;
+
+    }
+
+    .aboutus-review .aboutusr-content p {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 12px;
+    }
+
+    .aboutus-review .aboutusr-content button {
+        width: 100px;
+        height: 28px;
+        font-size: 9.724px;
+    }
+
+    .aboutus-review .aboutusr-content h2 {
+        font-size: 32px;
+        margin-bottom: 13.22px;
+    }
+
+    .aboutus-review .aboutusr-content h6 {
+        font-size: 10px;
+        margin-bottom: 7px;
+    }
+
+    .aboutus-review .aboutusr-images {
+        width: 100%;
+    }
+
+    .aboutus-review .aboutusr-images img {
+        width: 44vw;
+        height: 53.738vw;
+    }
+
+    .aboutus-review .aboutusr-images img:nth-child(1) {
+        margin-top: 16vw;
+    }
+}

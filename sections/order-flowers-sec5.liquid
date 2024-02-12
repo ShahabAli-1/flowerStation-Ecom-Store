@@ -1,0 +1,61 @@
+{{ 'order-flowers-sec5.css' | asset_url | stylesheet_tag }}
+
+
+<div class="ord-sec5-container">
+  <div class="ord-sec5-container-inner">
+    <h2 class="sec5-h2">How it Working With Us</h2>
+    <div class="ord-sec5-vid">
+
+
+      {% if section.settings.ord-sec5-banner-img != blank %}
+        <img
+          class="sec5-img"
+          src="{{ section.settings.ord-sec5-banner-img | img_url }}"
+          alt="">
+      {% else %}
+        <img
+          class="sec5-img"
+          src="{{'ord-sec5-img.png' | asset_url}}"
+          alt="">
+      {% endif %}
+
+      {% if section.settings.ord-sec5-icon != blank %}
+        <img
+          class="sec5-vid-icon"
+          src="{{ section.settings.ord-sec5-icon | img_url }}"
+          alt="">
+      {% else %}
+        <img
+          class="sec5-vid-icon"
+          src="{{'ord-sec5-vid-icon.png' | asset_url}}"
+          alt="">
+      {% endif %}
+
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "order-section3",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "ord-sec5-banner-img",
+        "label": "Select Image"
+      }, {
+        "type": "image_picker",
+        "id": "ord-sec5-icon",
+        "label": "Select Image"
+      }, {
+        "type": "text",
+        "id": "ord-sec5-title",
+        "label": "Enter Your Heading",
+        "default": "How it Working With Us"
+      }
+
+    ]
+  }
+{% endschema %}

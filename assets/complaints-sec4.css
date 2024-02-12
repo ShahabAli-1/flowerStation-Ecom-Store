@@ -1,0 +1,210 @@
+.complaint-sec4-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vw;
+}
+
+.inner-box-left {
+  width: 27.303vw;
+}
+
+.inner-box-right {
+  width: 48.178vw;
+  height: 38.171vw;
+  position: relative;
+}
+
+.inner-box-right-img1 {
+  width: 39.43vw;
+  height: 33.4vw;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+.inner-box-right-img2 {
+  width: 23.724vw;
+  height: 20.676vw;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  position: absolute;
+}
+
+h2.custom-border {
+  position: relative;
+  padding-bottom: 0.53vw; /* Adjust this value to control the height of the border */
+}
+
+h2.custom-border::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Adjust this value to position the border width as you like */
+  transform: translateX(0%);
+  width: 11.73vw; /* Set the specific width of the border here */
+  height: 1px; /* Set the thickness of the border here */
+  background-color: black; /* Set the color of the border here */
+}
+
+.inner-box-left > p {
+  font-family: "Open Sans";
+  font-size: 1.06vw;
+  font-weight: 400;
+  line-height: 1.696vw;
+  letter-spacing: 0;
+}
+.inner-box-left > h2 {
+  font-family: "Frank Ruhl Libre";
+  font-size: 3.313vw;
+  font-weight: 300;
+  line-height: 4.278vw;
+  letter-spacing: 0;
+}
+
+@media only screen and (max-width: 749px) {
+  .complaints-sec4-inner-container {
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .inner-box-left {
+    width: 83.879vw;
+  }
+
+  .inner-box-right {
+    width: 85.549vw;
+    height: 59.843vw;
+    position: relative;
+  }
+
+  .inner-box-right-img1 {
+    width: 70.168vw;
+    height: 52.467vw;
+    right: 0;
+    top: 0;
+    position: absolute;
+  }
+
+  .inner-box-right-img2 {
+    width: 42.353vw;
+    height: 32.451vw;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    position: absolute;
+  }
+
+  h2.custom-border {
+    position: relative;
+    padding-bottom: 0.53vw; /* Adjust this value to control the height of the border */
+  }
+
+  h2.custom-border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Adjust this value to position the border width as you like */
+    transform: translateX(0%);
+    width: 34.73vw; /* Set the specific width of the border here */
+    height: 1px; /* Set the thickness of the border here */
+    background-color: black; /* Set the color of the border here */
+  }
+
+  .inner-box-left > p {
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.3px;
+    letter-spacing: 0;
+  }
+  .inner-box-left > h2 {
+    font-family: "Frank Ruhl Libre";
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 34.66px;
+    letter-spacing: 0;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  .complaints-sec4-inner-container {
+    width: 100%;
+    margin-left: 5.995vw;
+    margin-right: 3.597vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .inner-box-left {
+    width: 39.089vw;
+  }
+
+  .inner-box-right {
+    width: 46.403vw;
+    height: 38.369vw;
+    position: relative;
+  }
+
+  .inner-box-right-img1 {
+    width: 39.568vw;
+    height: 33.4vw;
+    right: 0;
+    top: 0;
+    position: absolute;
+  }
+
+  .inner-box-right-img2 {
+    width: 23.861vw;
+    height: 20.743vw;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    position: absolute;
+  }
+
+  h2.custom-border {
+    position: relative;
+    padding-bottom: 0.53vw; /* Adjust this value to control the height of the border */
+  }
+
+  h2.custom-border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Adjust this value to position the border width as you like */
+    transform: translateX(0%);
+    width: 21.223vw; /* Set the specific width of the border here */
+    height: 1px; /* Set the thickness of the border here */
+    background-color: black; /* Set the color of the border here */
+  }
+
+  .inner-box-left > p {
+    font-size: 1.799vw;
+    font-weight: 400;
+    line-height: 2.608vw;
+    letter-spacing: 0;
+  }
+  .inner-box-left > h2 {
+    font-size: 3.118vw;
+    font-weight: 700;
+    line-height: 4.156vw;
+    letter-spacing: 0;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .complaints-sec4-inner-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10.669vw;
+    margin-right: 2.386vw;
+  }
+}

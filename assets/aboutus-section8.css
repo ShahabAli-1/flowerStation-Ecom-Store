@@ -1,0 +1,92 @@
+.collab-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("./aboutus-section8bg.png");
+  background-size: cover; */
+  background-color: #e5f6e6;
+  padding-top: 3vw;
+  padding-bottom: 3.5vw;
+  margin-top: 2vw;
+}
+
+.collab-container-inner {
+  width: 61.111vw;
+  text-align: center;
+}
+
+.collab-container-inner > img {
+  width: 10.417vw;
+  height: 10.417vw;
+}
+.collab-container-inner > h2 {
+  font-size: 3.889vw;
+  font-weight: 300;
+  font-family: "Frank Ruhl Libre";
+  line-height: 4.306vw;
+  text-align: center;
+}
+
+.collab-container-inner > h3 {
+  font-size: 1.667vw;
+  font-weight: 300;
+  font-family: "Frank Ruhl Libre";
+  line-height: 1.806vw;
+}
+.collab-container-inner > p {
+  font-size: 0.972vw;
+  line-height: 1.361vw;
+  font-weight: 300;
+  font-family: "Open Sans";
+}
+
+@media only screen and (max-width: 749px) {
+  .collab-container {
+    margin-top: 4vw;
+  }
+  .collab-container-inner {
+    width: 89.516vw;
+  }
+  .collab-container-inner > h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    /* letter-spacing: 0; */
+    margin-bottom: 1.5vw;
+  }
+  .collab-container-inner > h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .collab-container-inner > p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16.8px;
+  }
+  .collab-container-inner > img {
+    width: 20.161vw;
+    height: 20.161vw;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .collab-container-inner {
+    width: 89.516vw;
+  }
+  .collab-container-inner > h3 {
+    font-size: 2.688vw;
+    font-weight: 400;
+    line-height: 2.957vw;
+  }
+  .collab-container-inner > p {
+    font-size: 1.613vw;
+    font-weight: 300;
+    line-height: 2.258vw;
+  }
+  .collab-container-inner > img {
+    width: 20.161vw;
+    height: 20.161vw;
+  }
+}

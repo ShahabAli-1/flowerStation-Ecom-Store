@@ -1,0 +1,42 @@
+{{ 'aboutus-consultation.css' | asset_url | stylesheet_tag }}
+<div class="aboutus-consultation">
+  <div class="aboutus-consultation-left">
+    {% if section.settings.aboutus-consultation-image != blank %}
+      <img src="{{ section.settings.aboutus-consultation-image | img_url: 'master' }}" alt="background image">
+    {% else %}
+      <img src="{{'aboutus-consultation.png' | asset_url}}" alt="background image">
+    {% endif %}
+  </div>
+  <div class="aboutus-consultation-right">
+    <h2>{{ section.settings.aboutus-consultation-title }}</h2>
+    <p>{{ section.settings.aboutus-consultation-description }}</p>
+    <button>{{ section.settings.aboutus-consultation-button }}</button>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "aboutus-consultation",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "aboutus-consultation-image",
+        "label": "Background Image"
+      }, {
+        "type": "text",
+        "id": "aboutus-consultation-title",
+        "label": "Title",
+        "default": "Free Consultation"
+      }, {
+        "type": "text",
+        "id": "aboutus-consultation-description",
+        "label": "Description",
+        "default": "Start your wedding planning with a free consultation with wedding florists at our store in Marlylebone, London. Use the opportunity to browse our portfolio, get a feel for different wedding flower arrangements and consider options for vases, candelabras and plinths."
+      }, {
+        "type": "text",
+        "id": "aboutus-consultation-button",
+        "label": "Button",
+        "default": "Book Now"
+      }
+    ]
+  }
+{% endschema %}

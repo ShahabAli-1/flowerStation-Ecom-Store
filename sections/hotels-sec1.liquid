@@ -1,0 +1,222 @@
+{{ 'hotels-sec1.css' | asset_url | stylesheet_tag }}
+
+<div class="upper_text">
+  <h1 class="flower_text">{{ section.settings.hotels-title }}</h1>
+  
+    <p class="weekly_text">
+      {{ section.settings.hotels-description }}
+    </p>
+</div>
+
+<div class="images_text-div">
+  {% if section.settings.hotels-sec1-box1-img != blank %}
+    <img class="first_img" src="{{ section.settings.hotels-sec1-box1-img | img_url }}" alt="">
+  {% else %}
+    <img class="first_img" src="{{ 'hotel-sec1-1.png' | asset_url }}" alt="">
+  {% endif %}
+
+
+  <div class="text-div">
+    <p class="header1">{{ section.settings.hotels-sec1-box-1-subtitle-1 }}</p>
+    <p class="p_1">
+      {{ section.settings.hotels-sec1-box-1-para-1 }}
+    </p>
+    <p class="header2">{{ section.settings.hotels-sec1-box-1-subtitle-2 }}</p>
+    <p class="p_2">{{ section.settings.hotels-sec1-box-1-para-2 }}
+    </p>
+  </div>
+</div>
+<div class="img-text-reverse">
+    <div class="left-text-box">
+        <p class="header1">{{ section.settings.hotels-sec1-box-2-subtitle-1 }}</p>
+        <p class="p_1">{{ section.settings.hotels-sec1-box-2-para-1 }}</p>
+        <p class="header2">{{ section.settings.hotels-sec1-box-2-subtitle-2 }}</p>
+        <p class="p_2">{{ section.settings.hotels-sec1-box-2-para-2 }} </p>
+    </div>
+    {% if section.settings.hotels-sec1-box2-img != blank %}
+    <img class="reverse-img" src="{{ section.settings.hotels-sec1-box2-img | img_url }}" alt="">
+  {% else %}
+    <img class="reverse-img" src="{{ 'hotel-sec1-2.png' | asset_url }}" alt="">
+  {% endif %}
+
+
+</div>
+
+<div class="images_text-div">
+  {% if section.settings.hotels-sec1-box3-img != blank %}
+  <img class="first_img" src="{{ section.settings.hotels-sec1-box3-img | img_url }}" alt="">
+{% else %}
+  <img class="first_img" src="{{ 'hotel-sec1-3.png' | asset_url }}" alt="">
+{% endif %}
+
+
+  <div class="text-div">
+    <p class="header1">{{ section.settings.hotels-sec1-box-3-subtitle-1 }}</p>
+    <p class="p_1">
+      {{ section.settings.hotels-sec1-box-3-para-1 }}
+    </p>
+    <p class="header2">{{ section.settings.hotels-sec1-box-3-subtitle-2 }}</p>
+    <p class="p_2">
+      {{ section.settings.hotels-sec1-box-3-para-2 }}
+    </p>
+  </div>
+</div>
+<div class="img-text-reverse">
+    <div class="left-text-box">
+        <p class="header1">{{ section.settings.hotels-sec1-box-4-subtitle-1 }}</p>
+        <p class="p_1">{{ section.settings.hotels-sec1-box-4-para-1 }}</p>
+        <p class="header2">{{ section.settings.hotels-sec1-box-4-subtitle-2 }}</p>
+        <p class="p_2">{{ section.settings.hotels-sec1-box-4-para-2 }}</p>
+    </div>
+    {% if section.settings.hotels-sec1-box4-img != blank %}
+  <img class="reverse-img" src="{{ section.settings.hotels-sec1-box4-img | img_url }}" alt="">
+{% else %}
+  <img class="reverse-img" src="{{ 'hotel-sec1-4.png' | asset_url }}" alt="">
+{% endif %}
+
+</div>
+
+
+</div>
+
+{% schema %}
+  {
+    "name":"hotels-sec1",
+    "settings": [
+      {
+        "type": "text",
+        "id": "hotels-title",
+        "label": "Enter Your Title",
+        "default": "Flower & Plants for Hotels"
+      },
+      {
+        "type": "text",
+        "id": "hotels-description",
+        "label": "Enter Your Description",
+        "default": "Weekly office flowers and floral services available for delivery in London. View our gallery below or contact our corporate team for your free consultation."
+      },
+      {
+        "type":"image_picker",
+        "id": "hotels-sec1-box1-img",
+        "label": "Select Your Image"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-1-subtitle-1",
+        "label": "Enter Your Text",
+        "default": "Hotel Flowers And Plants"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-1-para-1",
+        "label": "Enter Your Text",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut. Risus vestibulum eu, lorem lorem eget vitae elit enim aliquam. Purus eget facilisis arcu id ac. Orci etiam faucibus amet vitae eu enim malesuada aenean pellentesque."
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-1-subtitle-2",
+        "label": "Enter Your Text",
+        "default": "Our Promise"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-1-para-2",
+        "label": "Enter Your Text",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut."
+      },
+
+
+
+      {
+        "type":"image_picker",
+        "id": "hotels-sec1-box2-img",
+        "label": "Select Your Image"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-2-subtitle-1",
+        "label": "Enter Your Text",
+        "default": "Table Arrangements"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-2-para-1",
+        "label": "Enter Your Text",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut. Risus vestibulum eu, lorem lorem eget vitae elit enim aliquam. Purus eget facilisis arcu id ac. Orci etiam faucibus amet vitae eu enim malesuada aenean pellentesque."
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-2-subtitle-2",
+        "label": "Enter Your Text",
+        "default": "Client satisfaction is our priority"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-2-para-2",
+        "label": "Enter Your Text",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut."
+      },
+
+      {
+        "type":"image_picker",
+        "id": "hotels-sec1-box3-img",
+        "label": "Select Your Image"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-3-subtitle-1",
+        "label": "Enter Your Text",
+        "default": "Luxury Flowers"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-3-para-1",
+        "label": "Enter Your Text",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut. Risus vestibulum eu, lorem lorem eget vitae elit enim aliquam. Purus eget facilisis arcu id ac. Orci etiam faucibus amet vitae eu enim malesuada aenean pellentesque."
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-3-subtitle-2",
+        "label": "Enter Your Text",
+        "default": "Client satisfaction is our priority"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-3-para-2",
+        "label": "Enter Your Text",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut."
+      },
+
+
+      {
+        "type":"image_picker",
+        "id": "hotels-sec1-box4-img",
+        "label": "Select Your Image"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-4-subtitle-1",
+        "label": "Enter Your Text",
+        "default": "Table Arrangements"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-4-para-1",
+        "label": "Enter Your Text",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut. Risus vestibulum eu, lorem lorem eget vitae elit enim aliquam. Purus eget facilisis arcu id ac. Orci etiam faucibus amet vitae eu enim malesuada aenean pellentesque."
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-4-subtitle-2",
+        "label": "Enter Your Text",
+        "default": "Client satisfaction is our priority"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec1-box-4-para-2",
+        "label": "Enter Your Text",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc. Velit cursus odio odio vulputate sed nec libero. Hendrerit tincidunt aliquet sagittis laoreet eget pellentesque tellus massa ut."
+      }
+    ]
+  }
+{% endschema %}

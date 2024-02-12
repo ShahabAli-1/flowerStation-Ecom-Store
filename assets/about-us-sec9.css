@@ -1,0 +1,410 @@
+.abt-us-sec9-container {
+  width: 100%;
+  display: flex;
+  margin-top: 7vw;
+  margin-bottom: 7vw;
+}
+
+.form-container {
+  width: 50%;
+  padding: 1vw;
+  background-color: #f4f4f4;
+}
+.abt-sec9left {
+  width: 100%;
+  height: 100%;
+  padding-left: 6.875vw;
+  padding-right: 6.875vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.form-left-text {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1vw;
+  font-family: "Open Sans";
+  font-size: 0.972vw;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.abt-sec9-svg {
+  width: 6.944vw;
+  height: 6.944vw;
+}
+
+.abt-sec9left > h2 {
+  font-family: "Frank Ruhl Libre";
+  font-size: 2.917vw;
+  font-weight: 400;
+  line-height: 3.765vw;
+  letter-spacing: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 1.5vw;
+  text-align: center;
+  margin-top: 1vw;
+}
+
+.abt-sec9-right {
+  width: 50%;
+  padding-top: 3vw;
+  padding-bottom: 1.5vw;
+  padding-left: 3.611vw;
+  padding-right: 4.931vw;
+  background-color: #f4f4f4;
+}
+
+.abt-sec9-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form-inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5vw;
+}
+
+.form-input-field {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+.form-input-field > input {
+  height: 2.778vw;
+  padding-left: 0.4vw;
+  font-family: "Open Sans";
+  font-weight: 300;
+  line-height: 1.199vw;
+  font-size: 0.972vw;
+  letter-spacing: 0;
+  border: 1px solid #2d2d2d;
+}
+.form-input-field > input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form-input-field-full > input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.form-input-field-full > input::placeholder {
+  color: #d3d0d0;
+}
+.form-input-field > input::placeholder {
+  color: #d3d0d0;
+}
+
+.form-inputs {
+  width: 100%;
+}
+.form-input-field-full {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1.5vw;
+}
+.form-input-field-full > input {
+  width: 100%;
+  height: 2.778vw;
+  padding-left: 0.4vw;
+  font-family: "Open Sans";
+  font-weight: 300;
+  line-height: 1.199vw;
+  font-size: 0.972vw;
+  letter-spacing: 0;
+}
+
+.form-input-field-full > textarea {
+  width: 100%;
+  font-family: "Open Sans";
+  font-weight: 300;
+  padding-left: 0.4vw;
+  padding-top: 0.4vw;
+  line-height: 1.199vw;
+  font-size: 0.972vw;
+  letter-spacing: 0;
+}
+.form-input-field-full > textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+.form-input-field-full > textarea::placeholder {
+  color: #d3d0d0;
+}
+
+.fields-label {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 1.111vw;
+  letter-spacing: 0;
+  margin-bottom: 0.8vw;
+  color: #2d2d2d;
+}
+.submit-btn {
+  font-family: "Open Sans";
+  font-size: 1.111vw;
+  line-height: 1.667vw;
+  letter-spacing: 0;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  border: none;
+  background-color: #2d2d2d;
+  width: 17.222vw;
+  padding-top: 0.7vw;
+  padding-bottom: 0.7vw;
+  color: white;
+  margin-top: 2.5vw;
+  margin-bottom: 2vw;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  .abt-us-sec9-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .abt-sec9left {
+    width: 100%;
+    height: 100%;
+    padding-left: 16.129vw;
+    padding-right: 16.129vw;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+  .abt-sec9-right {
+    width: 100%;
+    padding-left: 8.602vw;
+    padding-right: 8.602vw;
+  }
+  .abt-sec9left > h2 {
+    font-size: 4.301vw;
+    line-height: 5.552vw;
+  }
+  .abt-sec9-svg {
+    width: 10.753vw;
+    height: 10.753vw;
+  }
+  .form-left-text {
+    font-size: 1.882vw;
+    line-height: 2.688vw;
+    font-weight: 400;
+  }
+  .fields-label {
+    font-size: 2.151vw;
+    line-height: 2.929vw;
+    margin-bottom: 1.2vw;
+  }
+  .form-inputs {
+    margin-bottom: 2.5vw;
+  }
+  .form-input-field > input {
+    height: 5.376vw;
+    font-size: 1.882vw;
+    padding-left: 0.6vw;
+    line-height: 2.32vw;
+  }
+  .form-input-field-full > input {
+    height: 6.048vw;
+    font-size: 1.882vw;
+    line-height: 2.32vw;
+    padding-left: 0.6vw;
+  }
+  .form-input-field-full > textarea {
+    font-size: 1.882vw;
+    line-height: 2.32vw;
+    padding-left: 0.6vw;
+  }
+  .submit-btn {
+    width: 33.333vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    font-size: 2.151vw;
+    line-height: 3.226vw;
+    margin-top: 4vw;
+  }
+  .abt-sec9-form {
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 749px) {
+  .abt-us-sec9-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .abt-sec9left {
+    width: 100%;
+    height: 100%;
+    padding-left: 11.682vw;
+    padding-right: 11.682vw;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+  }
+  .abt-sec9left > ol {
+    padding-inline-start: 0;
+  }
+  .abt-sec9-right {
+    width: 100%;
+    padding-left: 6.075vw;
+    padding-right: 6.075vw;
+  }
+  .abt-sec9left > h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 3.5vw;
+  }
+  .abt-sec9-svg {
+    width: 70px;
+    height: 70px;
+  }
+  .form-left-text {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 300;
+    margin-bottom: 3vw;
+  }
+  .fields-label {
+    font-size: 10px;
+    line-height: 13.62px;
+    margin-bottom: 1.2vw;
+    font-weight: 600;
+  }
+  .form-inputs {
+    margin-bottom: 2.5vw;
+  }
+  .form-input-field > input {
+    height: 5.706vw;
+    font-size: 8.55px;
+    padding-left: 0.7vw;
+    line-height: 10.6px;
+  }
+  .form-input-field-full > input {
+    height: 6.418vw;
+    font-size: 8.55px;
+    line-height: 10.6px;
+    padding-left: 0.7vw;
+  }
+  .form-input-field-full > textarea {
+    font-size: 8.55px;
+    line-height: 10.6px;
+    padding-left: 0.7vw;
+    padding-top: 0.7vw;
+  }
+  .submit-btn {
+    width: 151.38px;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    font-size: 9.77px;
+    line-height: 14.65px;
+    margin-top: 4vw;
+  }
+  .abt-sec9-form {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 419px) {
+  .abt-us-sec9-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .abt-sec9left {
+    width: 100%;
+    height: 100%;
+    padding-left: 11.682vw;
+    padding-right: 11.682vw;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+  }
+  .abt-sec9left > ol {
+    padding-inline-start: 0;
+  }
+  .abt-sec9-right {
+    width: 100%;
+    padding-left: 6.075vw;
+    padding-right: 6.075vw;
+  }
+  .abt-sec9left > h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 3.5vw;
+  }
+  .abt-sec9-svg {
+    width: 70px;
+    height: 70px;
+  }
+  .form-left-text {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 300;
+    margin-bottom: 3vw;
+  }
+  .fields-label {
+    font-size: 2.336vw;
+    line-height: 3.182vw;
+    margin-bottom: 1.2vw;
+    font-weight: 600;
+  }
+  .form-inputs {
+    margin-bottom: 2.5vw;
+  }
+
+  .form-input-field > input {
+    height: 5.706vw;
+    font-size: 1.998vw;
+    line-height: 2.477vw;
+    padding-left: 0.8vw;
+  }
+  .form-input-field-full > input {
+    height: 6.418vw;
+    font-size: 1.998vw;
+    line-height: 2.477vw;
+    padding-left: 0.8vw;
+  }
+  .form-input-field-full > textarea {
+    font-size: 1.998vw;
+    line-height: 2.477vw;
+    padding-left: 0.8vw;
+    padding-top: 0.6vw;
+  }
+
+  .submit-btn {
+    width: 151.38px;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    font-size: 2.283vw;
+    line-height: 3.423vw;
+    margin-top: 4vw;
+  }
+  .abt-sec9-form {
+    align-items: center;
+  }
+}

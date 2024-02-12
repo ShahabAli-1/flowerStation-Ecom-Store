@@ -1,0 +1,195 @@
+.delivery-north-sec2 {
+    padding-right: 0.625vw;
+    max-width: 100%;
+}
+
+.delivery-north-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+}
+
+.delivery-north-right {
+    width: 55%;
+}
+.delivery-north-container:nth-child(odd) .delivery-north-right {
+    padding-left: 4.5%;
+    padding-right: 5.5%;
+}
+
+.delivery-north-container:nth-child(even) .delivery-north-right {
+    padding-left: 5.5%;
+    padding-right: 4.5%;
+}
+
+.delivery-north-left {
+    display: flex;
+    width: 45%;
+}
+
+.delivery-north-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.delivery-north-container:nth-of-type(even) {
+    flex-direction: row;
+}
+
+.delivery-north-sec2 .arrow-svg {
+    width: 9.306vw;
+}
+
+.delivery-north-sec2 .arrowtext {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.delivery-north-right h2 {
+    font-family: 'Frank Ruhl Libre';
+    font-size: 2.917vw;
+    font-weight: 300;
+    line-height: 3.750vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1.667vw;
+    color: #2D2D2D;
+}
+
+.delivery-north-right p {
+    font-family: 'Open Sans';
+    font-size: 0.972vw;
+    font-weight: 400;
+    line-height: 1.389vw;
+    letter-spacing: 0.01em;
+    text-align: justify;
+    margin: 0;
+    margin-bottom: 1.667vw;
+    color: #2D2D2D;
+}
+
+.delivery-north-right h3 {
+    font-family: 'Open Sans';
+    font-size: 1.736vw;
+    font-weight: 300;
+    line-height: 2.361vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 0.3vw;
+    align-self: start;
+    color: #2D2D2D;
+}
+
+@media screen and (max-width: 989px) {
+
+    .delivery-north-sec2 {
+        padding-right: 0;
+    }
+
+    .delivery-north-right {
+        width: 51%;
+        padding: 0;
+    }
+    .delivery-north-container:nth-child(odd) .delivery-north-right {
+        padding-left: 4%;
+        padding-right: 2.8%;
+    }
+    
+    .delivery-north-container:nth-child(even) .delivery-north-right {
+        padding-left: 2.8%;
+        padding-right: 4%;
+    }
+
+    .delivery-north-left {
+        width: 49%;
+        height: 54.704vw;
+    }
+
+    .delivery-north-container {
+        margin-bottom: 3.226vw;
+    }
+
+
+    .delivery-north-sec2 .arrow-svg {
+        width: 12.097vw;
+    }
+
+    .delivery-north-right h2 {
+        font-size: 4.301vw;
+        line-height: 5.552vw;
+        margin-bottom: 1.613vw;
+    }
+
+    .delivery-north-right p {
+        font-size: 1.613vw;
+        line-height: 2.151vw;
+        margin-bottom: 1.613vw;
+    }
+
+    .delivery-north-right h3 {
+        font-size: 2.688vw;
+        line-height: 3.661vw;
+        margin-bottom: 0.3vw;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .delivery-north-sec2 {
+        padding: 0 6.075vw;
+    }
+
+    .delivery-north-container {
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .delivery-north-container:nth-of-type(even) {
+        flex-direction: column;
+    }
+
+        .delivery-north-right,
+        .delivery-north-left {
+            width: 100%;
+        }
+
+        .delivery-north-sec2 .arrow-svg {
+            width: 18.458vw;
+        }
+
+        .delivery-north-right h2 {
+            font-size: 32px;
+            line-height: 36px;
+            margin-bottom: 22px;
+        }
+
+        .delivery-north-right p {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 18px;
+            margin-bottom: 12px;
+        }
+
+        .delivery-north-right h3 {
+            font-size: 19px;
+            line-height: 25.87px;
+        }
+        .delivery-north-container:nth-of-type(odd) .delivery-north-right {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .delivery-north-container:nth-of-type(even) .delivery-north-right {
+            margin: 0;
+            padding: 0;
+        }
+    .delivery-north-left {
+        height: 100%;
+    }
+    }

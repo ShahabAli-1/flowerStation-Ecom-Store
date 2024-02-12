@@ -1,0 +1,188 @@
+{{ 'corporate-section5-why.css' | asset_url | stylesheet_tag }}
+
+
+<div class="main-bg">
+  <div class="main-h1">
+    <h2 class="why-choose-h2">{{ section.settings.corp-sec5-title }}</h1>
+  </div>
+  <div class="main-text">
+    <p class="main-text-p">
+      {{ section.settings.corp-sec5-para-1 }}
+    </p>
+  </div>
+
+  <div class="centered-wrapper">
+    <div class="text-sec">
+      <div class="text-sec-top">
+        {% if section.settings.why-icon-1 != blank %}
+          <img src="{{ section.settings.why-icon-1 | img_url }}" alt="">
+        {% else %}
+          <img src="{{'o.png' | asset_url}}" alt="">
+        {% endif %}
+        <h3>{{ section.settings.corp-sec5-why-title-1 }}</h3>
+      </div>
+      <div class="text-sec-bottom">
+        <p>{{ section.settings.corp-sec5-why-para-1 }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="centered-wrapper">
+    <div class="text-sec">
+      <div class="text-sec-top">
+
+        {% if section.settings.why-icon-2 != blank %}
+          <img src="{{ section.settings.why-icon-2 | img_url }}" alt="">
+        {% else %}
+          <img src="{{'o.png' | asset_url}}" alt="">
+        {% endif %}
+
+        <h3>{{ section.settings.corp-sec5-why-title-2 }}</h3>
+      </div>
+      <div class="text-sec-bottom">
+        <p>{{ section.settings.corp-sec5-why-para-2 }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="centered-wrapper">
+    <div class="text-sec">
+      <div class="text-sec-top">
+
+
+        {% if section.settings.why-icon-3 != blank %}
+          <img src="{{ section.settings.why-icon-3 | img_url }}" alt="">
+        {% else %}
+          <img src="{{'o.png' | asset_url}}" alt="">
+        {% endif %}
+
+        <h3>{{ section.settings.corp-sec5-why-title-3 }}</h3>
+      </div>
+      <div class="text-sec-bottom">
+        <p>{{ section.settings.corp-sec5-why-para-3 }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="centered-wrapper">
+    <div class="text-sec">
+      <div class="text-sec-top">
+        {% if section.settings.why-icon-4 != blank %}
+          <img src="{{ section.settings.why-icon-4 | img_url }}" alt="">
+        {% else %}
+          <img src="{{'o.png' | asset_url}}" alt="">
+        {% endif %}
+        <h3>{{ section.settings.corp-sec5-why-title-4 }}</h3>
+      </div>
+      <div class="text-sec-bottom">
+        <p>{{ section.settings.corp-sec5-why-para-4 }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="centered-wrapper">
+    <div class="text-sec">
+      <div class="text-sec-top">
+
+        {% if section.settings.why-icon-5 != blank %}
+          <img src="{{ section.settings.why-icon-5 | img_url }}" alt="">
+        {% else %}
+          <img src="{{'o.png' | asset_url}}" alt="">
+        {% endif %}
+        <h3>{{ section.settings.corp-sec5-why-title-5 }}</h3>
+      </div>
+      <div class="text-sec-bottom">
+        <p>{{ section.settings.corp-sec5-why-para-5 }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "corporate-section5-why",
+    "settings": [
+      {
+        "type": "text",
+        "id": "corp-sec5-title",
+        "label": "Enter Your Title",
+        "default": "Why choose Flower Station"
+      },
+      {
+        "type": "text",
+        "id": "corp-sec5-para-1",
+        "label": "Enter Text",
+        "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros lisi."
+      },
+      {
+        "type": "text",
+        "id": "corp-sec5-why-title-1",
+        "label": "Enter Text",
+        "default": "Lorem Ipsum"
+      },
+      {
+        "type": "text",
+        "id": "corp-sec5-why-para-1",
+        "label": "Enter Text",
+        "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci."
+      }, {
+        "type": "text",
+        "id": "corp-sec5-why-title-2",
+        "label": "Enter Text",
+        "default": "Lorem Ipsum"
+      }, {
+        "type": "text",
+        "id": "corp-sec5-why-para-2",
+        "label": "Enter Text",
+        "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci."
+      }, {
+        "type": "text",
+        "id": "corp-sec5-why-title-3",
+        "label": "Enter Text",
+        "default": "Lorem Ipsum"
+      }, {
+        "type": "text",
+        "id": "corp-sec5-why-para-3",
+        "label": "Enter Text",
+        "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci."
+      }, {
+        "type": "text",
+        "id": "corp-sec5-why-title-4",
+        "label": "Enter Text",
+        "default": "Lorem Ipsum"
+      }, {
+        "type": "text",
+        "id": "corp-sec5-why-para-4",
+        "label": "Enter Text",
+        "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci."
+      }, {
+        "type": "text",
+        "id": "corp-sec5-why-title-5",
+        "label": "Enter Text",
+        "default": "Lorem Ipsum"
+      }, {
+        "type": "text",
+        "id": "corp-sec5-why-para-5",
+        "label": "Enter Text",
+        "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci"
+      }, {
+        "type": "image_picker",
+        "id": "why-icon-1",
+        "label": "Select Icon"
+      }, {
+        "type": "image_picker",
+        "id": "why-icon-2",
+        "label": "Select Icon"
+      }, {
+        "type": "image_picker",
+        "id": "why-icon-3",
+        "label": "Select Icon"
+      }, {
+        "type": "image_picker",
+        "id": "why-icon-4",
+        "label": "Select Icon"
+      }, {
+        "type": "image_picker",
+        "id": "why-icon-5",
+        "label": "Select Icon"
+      }
+    ]
+  }
+{% endschema %}

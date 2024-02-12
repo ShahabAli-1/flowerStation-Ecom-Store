@@ -1,0 +1,357 @@
+.home-sec1 {
+    padding: 0 9.028vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.111vw;
+    margin-bottom: 4.444vw;
+}
+
+.home-sec1 .home-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+    width: fit-content;
+}
+
+.home-sec1 .home-left {
+    width: 28.472vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home-sec1 .home-left h2 {
+    font-family: 'Frank Ruhl Libre';
+    font-size: 4.306vw;
+    font-weight: 400;
+    line-height: 4.861vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1.111vw;
+}
+
+.home-sec1 .home-left h6 {
+    font-family: 'Open Sans';
+    font-size: 1.111vw;
+    font-weight: 400;
+    line-height: 1.875vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 2.222vw;
+    color: #2D2D2D;;
+}
+
+.home-sec1 .home-rating {
+    display: flex;
+    gap: 0.556vw;
+    margin: 0;
+    margin-left: 1.181vw;
+    margin-bottom: 0.278vw;
+    align-items: center;
+}
+.home-sec1 .home-rating svg {
+    width: 7.431vw;
+    height: 1.389vw;
+}
+
+.home-sec1 .home-rating h3 {
+    font-family: 'Open Sans';
+    font-size: 1.667vw;
+    font-weight: 400;
+    line-height: 1.875vw;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin: 0;
+}
+
+.home-sec1 .home-reviews {
+    display: flex;
+    gap: 0.556vw;
+    margin-bottom: 2.222vw;
+    align-items: center;
+}
+.home-sec1 .home-reviews svg {
+    width: 5.625vw;
+    height: 1.458vw;
+}
+
+.home-sec1 .home-reviews p {
+    font-family: 'Open Sans';
+    font-size: 1.111vw;
+    font-weight: 300;
+    line-height: 1.875vw;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin: 0;
+    text-decoration: underline;
+    color: #2D2D2D;
+}
+
+.home-sec1 button {
+    width: 13.611vw;
+    height: 3.125vw;
+    border: none;
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-size: 1.111vw;
+    font-weight: 600;
+    line-height: 1.528vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 4.653vw;
+}
+
+.home-sec1 p {
+    font-family: 'Open Sans';
+    font-size: 0.972vw;
+    font-weight: 400;
+    line-height: 1.667vw;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.home-sec1 .home-right {
+    display: flex;
+    align-items: flex-start;
+    width: 46.250vw;
+}
+
+.home-sec1 .home-right .home-border {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 50%;
+    border-right: 1.5vw solid #FCEFEF;
+    width: 100%;
+    height: 38vw;
+    position: relative;
+}
+
+.home-sec1 .home-right img {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 50%;
+    border-top: 1.5vw solid #FCEFEF;
+    position: absolute;
+    width: 45.139vw;
+    height: 41.667vw;
+    object-fit: cover;
+    top: -0.7vw;
+    right: -0.4vw;
+}
+
+@media screen and (max-width:989px) {
+    .home-sec1 {
+        padding: 0 5.755vw 0 4.796vw;
+        margin: 0;
+    }
+
+    .home-sec1 .home-left {
+        width: 35.971vw;
+    }
+
+    .home-sec1 .home-left h2 {
+        font-size: 4.796vw;
+        line-height: 5.434vw;
+        margin-bottom: 0.959vw;
+    }
+
+    .home-sec1 .home-left h6 {
+        font-size: 1.679vw;
+        line-height: 2.854vw;
+        margin-bottom: 2.878vw;
+    }
+
+    .home-sec1 .home-rating {
+        gap: 1.075vw;
+        margin-left: 2.285vw;
+        margin-bottom: 0.538vw;
+    }
+    .home-sec1 .home-rating svg {
+        width: 12.830vw;
+        height: 2.398vw;
+    }
+
+    .home-sec1 .home-rating h3 {
+        font-size: 3.226vw;
+        line-height: 3.629vw;
+    }
+
+    .home-sec1 .home-reviews {
+        gap: 1.075vw;
+        margin-bottom: 3.226vw;
+    }
+    .home-sec1 .home-reviews svg {
+        width: 9.712vw;
+        height: 2.518vw;
+    }
+    .home-sec1 .home-reviews p {
+        font-size: 2.151vw;
+        line-height: 3.629vw;
+    }
+
+    .home-sec1 button {
+        width: 26.344vw;
+        height: 6.048vw;
+        font-size: 2.151vw;
+        line-height: 2.929vw;
+        margin-bottom: 3.226vw;
+    }
+
+    .home-sec1 p {
+        font-size: 1.613vw;
+        line-height: 3.226vw;
+    }
+
+    .home-sec1 .home-right {
+        width: 51.799vw;
+    }
+
+    .home-sec1 .home-right .home-border {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 50%;
+        border-right: 1.8vw solid #FCEFEF;
+        width: 100%;
+        height: 50vw;
+        position: relative;
+    }
+
+    .home-sec1 .home-right img {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 50%;
+        border-top: 1.8vw solid #FCEFEF;
+        position: absolute;
+        width: 50.600vw;
+        height: 46.763vw;
+        top: -0.2vw;
+        right: -0.3vw;
+    }
+}
+
+@media screen and (max-width:749px) {
+    .home-sec1 .home-reviews svg {
+        width: 14.019vw;
+        height: 3.972vw;
+    }
+    .home-sec1 {
+        padding: 0;
+        flex-direction: column-reverse;
+        gap: 7.477vw;
+        margin-top: 16px;
+    }
+
+    .home-sec1 .home-left {
+        width: 79.439vw;
+        align-items: center;
+        margin: auto;
+    }
+
+    .home-sec1 .home-left h2 {
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .home-sec1 .home-left h6 {
+        font-size: 14px;
+        line-height: 19.6px;
+        text-align: center;
+        margin-bottom: 16px;
+        width: 77.103vw;
+    }
+
+    .home-sec1 .home-flex {
+        flex-direction: column-reverse;
+        gap: 5.607vw;
+        align-items: center;
+    }
+
+    .home-sec1 .home-reviewrating {
+        background-color: #f0f0f5;
+        height: 12vw;
+        width: 50.467vw;
+        height: 12.617vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1.2vw;
+        margin: 0;
+        margin-bottom: 40px;
+
+    }
+    .home-sec1 .home-rating {
+        gap: 1vw;
+        margin-left: 0;
+        align-items: center;
+    }
+    .home-sec1 .home-rating svg {
+        width: 27vw;
+        height: 4.7vw;
+    }
+
+    .home-sec1 .home-rating h3 {
+        font-size: 3.738vw;
+        line-height: 5.091vw;
+    }
+
+    .home-sec1 .home-reviews {
+        gap: 2vw;
+        margin-bottom: 40px;
+    }
+
+    .home-sec1 .home-reviews p {
+        font-size: 3.271vw;
+        font-weight: 400;
+        line-height: 4.579vw;
+        text-align: center;
+    }
+
+    .home-sec1 button {
+        width: 38.551vw;
+        height: 10.280vw;
+        font-size: 16px;
+        line-height: 21.79px;
+        margin: 0;
+    }
+
+    .home-sec1 p {
+        font-size: 14px;
+        line-height:19.79px;
+        text-align: center;
+    }
+
+    .home-sec1 .home-right {
+        width: 100%;
+    }
+
+    .home-sec1 .home-right .home-border {
+        border-radius: 0;
+        border-right: 0;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .home-sec1 .home-right img {
+        border-radius: 0;
+        border-top: 0;
+        position: relative;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        top: 0;
+        right: 0;
+    }
+
+}

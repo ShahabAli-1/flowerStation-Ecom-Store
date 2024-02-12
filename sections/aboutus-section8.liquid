@@ -1,0 +1,66 @@
+{{ 'aboutus-section8.css' | asset_url | stylesheet_tag }}
+
+<div class="collab-container">
+  <div class="collab-container-inner">
+    {% if section.settings.aboutus-sec8-icon != blank %}
+      <img src="{{section.settings.aboutus-sec8-icon | img_url}}" alt="">
+
+    {% else %}
+      <img src="{{ 'about-section8-img.png' | asset_url }}">
+    {% endif %}
+
+    <h2>{{ section.settings.aboutus-sec8-title }}</h2>
+    <p>
+      {{ section.settings.aboutus-sec8-para1 }}
+    </p>
+    <p>
+      {{ section.settings.aboutus-sec8-para2 }}
+    </p>
+    <h3>
+      {{ section.settings.aboutus-sec8-subtitle }}</h4>
+    <p>
+      {{ section.settings.aboutus-sec8-para3 }}
+    </p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "aboutus-sec8",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "aboutus-sec8-icon",
+        "label": "Select Icon"
+      },
+      {
+        "type": "text",
+        "id": "aboutus-sec8-title",
+        "label": "Enter Title",
+        "default": "Collaboration with CarbonClick"
+      },
+      {
+        "type": "text",
+        "id": "aboutus-sec8-para1",
+        "label": "Enter Body Text",
+        "default": "We’re making an effort to use sustainable practices in every part of our business. We’ve teamed up with CarbonClick, a New Zealand company making it easy for people and businesses to help fight climate change."
+      },
+      {
+        "type": "text",
+        "id": "aboutus-sec8-para2",
+        "label": "Enter Body Text",
+        "default": "CarbonClick looks like a green button at checkout. When you click it, a small contribution is added to your basket which purchases carbon offsets. These offsets reduce the environmental impact of the carbon emissions related to the purchase. CarbonClick’s offsets fund forest restoration, tree planting, and renewable energy projects around the world."
+      }, {
+        "type": "text",
+        "id": "aboutus-sec8-subtitle",
+        "label": "Enter Subtitle",
+        "default": "We’re proud to be part of the fight against climate change."
+      }, {
+        "type": "text",
+        "id": "aboutus-sec8-para3",
+        "label": "Enter Body Text",
+        "default": "We’ll be making our own contributions, and changing our practices to reduce our carbon footprint. We hope you’ll join us in creating a sustainable future, by choosing to CarbonClick with your purchase."
+      }
+    ]
+  }
+{% endschema %}

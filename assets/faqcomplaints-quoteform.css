@@ -1,0 +1,285 @@
+.faq-quoteform h2 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 3.307vw;
+    font-weight: 300;
+    line-height: 4.299vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 6.614vw;
+    margin-bottom: 2.646vw;
+    color: #353535;
+}
+
+.faq-quoteform .faq-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 7.672vw;
+}
+
+.faq-quoteform .faq-rightdiv {
+    width: 56.875%;
+    padding: 0;
+    height: 43.386vw;
+    overflow: hidden
+}
+
+.faq-quoteform .faq-leftdiv {
+    width: 43.125%;
+    padding: 4vw 3.505vw;
+    background-color: #FFFAF4;
+    height: 43.386vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.faq-quoteform .faq-rightdiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+.faq-quoteform .faq-leftdiv label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.190vw;
+    font-weight: 400;
+    line-height: 1.522vw;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+    color: #353535;
+    margin: 0;
+}
+
+.faq-quoteform .faq-leftdiv .faq-inputrow {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 2.7vw;
+}
+
+.faq-quoteform .faq-leftdiv .faq-inputrowfull {
+    margin-top: 2.7vw;
+}
+
+.faq-quoteform .faq-leftdiv .faq-inputrowfull .faq-input {
+    width: 100%;
+
+}
+
+.faq-quoteform .faq-leftdiv .faq-input {
+    border-bottom: 0.5px solid #919191;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+}
+
+.faq-quoteform .faq-mobile option {
+    background-color: #FFFAF4;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.190vw;
+    font-weight: 400;
+    line-height: 1.522vw;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+    color: #353535;
+}
+
+.faq-quoteform .faq-mobile select {
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.190vw;
+    font-weight: 400;
+    line-height: 1.522vw;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+    color: #353535;
+    width: 40%;
+}
+
+.faq-quoteform .faq-mobile {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.faq-quoteform .faq-leftdiv input {
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    width: 100%;
+    height: fit-content;
+    margin-top: 0.8vw;
+    padding: 5px 0;
+}
+
+.faq-quoteform .faq-leftdiv input::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.860vw;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #353535;
+}
+
+.faq-quoteform .faq-leftdiv button {
+    width: 13.492vw;
+    height: 3.042vw;
+    background-color: #353535;
+    color: #ffffff;
+    font-family: Open Sans;
+    font-size: 1.058vw;
+    font-weight: 400;
+    line-height: 1.455vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    margin-top: 2.7vw;
+    border: 0;
+}
+
+@media (max-width: 989px) {
+    .faq-quoteform .faq-leftdiv input {
+        margin-top: 1.214vw;
+    }
+
+    .faq-quoteform h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 3.365vw;
+        font-weight: 700;
+        line-height: 4.486vw;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .faq-quoteform .faq-card {
+        padding: 0 3.606vw;
+    }
+
+
+    .faq-quoteform .faq-rightdiv {
+        width: 47%;
+        height: 54vw;
+
+    }
+
+    .faq-quoteform .faq-leftdiv {
+        width: 53%;
+        padding: 3vw 3.245vw;
+        height: 54vw;
+    }
+
+    .faq-quoteform .faq-leftdiv label {
+        font-size: 1.773vw;
+        line-height: 2.267vw;
+    }
+
+    .faq-quoteform .faq-mobile option {
+        font-size: 1.773vw;
+        line-height: 2.267vw;
+    }
+
+    .faq-quoteform .faq-mobile select {
+        font-size: 1.773vw;
+        line-height: 2.267vw;
+    }
+
+    .faq-quoteform .faq-leftdiv input::placeholder {
+        font-size: 1.339vw;
+        line-height: 1.713vw;
+    }
+
+    .faq-quoteform .faq-leftdiv button {
+        width: 22.356vw;
+        height: 5.529vw;
+        font-size: 1.773vw;
+        line-height: 2.413vw;
+    }
+}
+
+@media (max-width: 749px) {
+    .faq-quoteform .faq-leftdiv input {
+        margin-top: 2.229vw;
+    }
+
+    .faq-quoteform h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 30px;
+
+    }
+
+    .faq-quoteform .faq-rightdiv img {
+        height: 43.458vw;
+    }
+
+    .faq-quoteform .faq-rightdiv {
+        width: 100%;
+        height: 43.458vw;
+    }
+
+    .faq-quoteform .faq-leftdiv {
+        width: 100%;
+        padding: 6.308vw;
+        height: fit-content;
+    }
+
+    .faq-quoteform .faq-leftdiv label {
+        font-size: 14px;
+        line-height: 17.91px;
+    }
+
+    .faq-quoteform .faq-mobile select {
+        font-size: 14px;
+        line-height: 17.91px;
+        width: 65%;
+    }
+
+    .faq-quoteform .faq-mobile option {
+        font-size: 14px;
+        line-height: 17.91px;
+    }
+
+    .faq-quoteform .faq-leftdiv input::placeholder {
+        font-size: 10.58px;
+        line-height: 13.53px;
+    }
+
+    .faq-quoteform .faq-card {
+        flex-direction: column-reverse;
+    }
+
+    .faq-quoteform .faq-leftdiv button {
+        width: 41.121vw;
+        height: 10.280vw;
+        font-size: 14px;
+        line-height: 19.07px;
+    }
+
+    .faq-quoteform .faq-leftdiv .faq-inputrow {
+        margin-top: 25px;
+    }
+
+    .faq-quoteform .faq-leftdiv .faq-inputrowfull {
+        margin-top: 25px;
+    }
+
+    .faq-quoteform .faq-leftdiv button {
+        margin-top: 25px;
+    }
+}

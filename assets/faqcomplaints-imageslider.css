@@ -1,0 +1,110 @@
+.faq-imageslider {
+    margin-top: 3.611vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-imageslider .faq-largeimage {
+    width: 100%;
+}
+
+.faq-images {
+    display: flex;
+    width: 72.222vw;
+    margin-top: 1.389vw;
+    overflow: hidden;
+}
+
+.faq-images-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 3.611vw;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+
+.faq-images-wrapper::-webkit-scrollbar {
+    display: none;
+    /* Hide the default scrollbar (for Chrome, Safari, Edge) */
+}
+
+.faq-images img {
+    flex-shrink: 0;
+    width: 9.028vw;
+    scroll-snap-align: start;
+}
+
+.faq-scrolling-imgaes {
+    width: 100%;
+    padding: 2.361vw 6.944vw 0 6.944vw;
+    display: flex;
+    margin-top: 1.389vw;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.faq-scrolling-imgaes img {
+    width: 9.028vw;
+}
+
+.faq-largeimage-container {
+    display: flex;
+    width: 100%;
+    height: 45.139vw;
+    overflow: hidden;
+}
+
+.faq-largeimage-container img {
+    width: 100%;
+    height: auto;
+}
+
+.scroll-left,
+.scroll-right {
+    width: 2.5VW;
+    height: 3.889vw;
+}
+
+@media screen and (max-width:989px) {
+    .faq-imageslider {
+        padding: 0 5.376vw;
+    }
+
+    .faq-images {
+        width: 74.462vw;
+    }
+
+    .faq-scrolling-imgaes {
+        padding: 0;
+    }
+
+    .scroll-left,
+    .scroll-right {
+        width: 2.1VW;
+        height: 3.629vw;
+    }
+    .faq-scrolling-imgaes img {
+        width: 9.409vw;
+    }
+}
+@media screen and (max-width:749px) {
+    .faq-imageslider {
+        padding: 0 6.075vw;
+    }
+
+    .faq-images {
+        width: 75vw;
+    }
+
+    .scroll-left,
+    .scroll-right {
+        width: 3.037vw;
+        height: 5.140vw;
+    }
+    .faq-scrolling-imgaes img {
+        width: 15vw;
+    }
+}

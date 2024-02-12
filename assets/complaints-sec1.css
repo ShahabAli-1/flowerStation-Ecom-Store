@@ -1,0 +1,134 @@
+/* Banner container styles */
+.banner-container {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  height: 50.895vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./comp-sec1-img.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* Banner text styles */
+.banner-heading {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: "Frank Ruhl Libre";
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-description {
+  font-family: "Open Sans";
+  text-align: center;
+  width: 38.502vw;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 749px) {
+  /* For screens up to 767px width (mobile devices) */
+  .banner-container {
+    width: 100%;
+    height: 99.065vw;
+    display: flex;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("./comp-sec1-mob-img.png");
+    justify-content: center;
+  }
+  .banner-heading {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 37.32px;
+    padding-bottom: 1.3vw;
+  }
+  .banner-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.02px;
+    width: 69.626vw;
+    font-family: "Open Sans";
+    text-align: center;
+    margin-top: 2.103vw;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  /* For screens between 768px and 991px width (tablets) */
+  .banner-container {
+    width: 100%;
+    height: 60.072vw;
+  }
+  .banner-heading {
+    font-size: 4.077vw;
+    font-weight: 500;
+    line-height: 5.83vw;
+    letter-spacing: 0;
+    padding-bottom: 0.6vw;
+  }
+  .banner-description {
+    font-size: 1.799vw;
+    font-weight: 400;
+    line-height: 2.608vw;
+    letter-spacing: 0;
+    text-align: center;
+    width: 47.602vw;
+    margin-top: 2.098vw;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .banner-heading {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: "Frank Ruhl Libre";
+    font-size: 4.241vw;
+    font-weight: 400;
+    line-height: 6.065vw;
+    letter-spacing: 0;
+    text-align: center;
+    color: white;
+    padding-bottom: 0.7vw;
+  }
+
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-description {
+    font-family: "Open Sans";
+    font-size: 1.06vw;
+    font-weight: 400;
+    line-height: 1.696vw;
+    letter-spacing: 0;
+    text-align: center;
+    width: 38.502vw;
+    margin-top: 2.152vw;
+  }
+}

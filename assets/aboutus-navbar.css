@@ -1,0 +1,140 @@
+.aboutus-navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.389vw 4.514vw 0.903vw 3.542vw;
+}
+
+.aboutus-navbar-logo {
+    width: 14.236vw;
+    height: 4.444vw;
+    margin-right: 4.083vw;
+}
+
+.aboutus-heading {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.111vw;
+    margin-right: 4.028vw;
+}
+
+.aboutus-navicons h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.972vw;
+    font-weight: 600;
+    line-height: 1.319vw;
+    letter-spacing: 0em;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.aboutus-heading h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.972vw;
+    font-weight: 400;
+    line-height: 1.319vw;
+    letter-spacing: 0em;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.aboutus-navicons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.111vw;
+    align-items: center;
+}
+
+.aboutus-navbar-burger {
+    display: none;
+}
+
+.aboutus-search1 {
+    display: none;
+}
+
+.aboutus-profileicon {
+    display: none;
+}
+
+.aboutus-navicons svg {
+    width: 1.389vw;
+    height: 1.389vw;
+}
+
+@media screen and (max-width:989px) {
+    .aboutus-navbar {
+        padding: 1.613vw 5.376vw 3.629vw 5.376vw;
+    }
+
+    .aboutus-heading {
+        display: none;
+    }
+
+    .aboutus-navicons h3 {
+        display: none;
+    }
+
+    .aboutus-navicons {
+        flex-direction: row-reverse;
+        gap: 4.032vw;
+    }
+
+    .aboutus-navbar-burger {
+        display: block;
+        width: 2.957vw;
+        height: 1.882vw;
+    }
+
+    .aboutus-navbar-logo {
+        margin-left: 33.871vw;
+        margin-right: 20.968vw;
+        width: 15.591vw;
+        height: 4.839vw;
+    }
+
+    .aboutus-navicons svg {
+        width: 2.688vw;
+        height: 2.688vw;
+    }
+
+    .aboutus-profileicon {
+        display: block;
+    }
+}
+
+@media screen and (max-width:749px) {
+    .aboutus-navbar {
+        padding: 2.570vw 2.570vw 6.308vw 2.336vw;
+    }
+
+    .aboutus-navicons svg {
+        width: 4.673vw;
+        height: 4.673vw;
+    }
+
+    .aboutus-navbar-logo {
+        margin-left: 17.056vw;
+        margin-right: 17.991vw;
+        width: 27.103vw;
+        height: 8.411vw;
+    }
+
+    .aboutus-navbar-burger {
+        width: 5.140vw;
+        height: 3.271vw;
+    }
+
+    .aboutus-search1 {
+        display: block;
+        width: 5.140vw;
+        height: 5.140vw;
+        margin-left: 7.243vw;
+    }
+
+    .aboutus-search2 {
+        display: none;
+    }
+
+}

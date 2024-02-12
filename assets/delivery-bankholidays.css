@@ -1,0 +1,189 @@
+.delivery-bankholidays {
+    padding: 3.889vw 19.653vw;
+}
+
+.delivery-bankholidays h2 {
+    font-family: 'Frank Ruhl Libre';
+    font-size: 2.778vw;
+    font-weight: 400;
+    line-height: 3.056vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1.667vw;
+}
+
+.delivery-bankholidays h3 {
+    font-family: 'Frank Ruhl Libre';
+    font-size: 1.667vw;
+    font-weight: 400;
+    line-height: 1.806vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1.667vw;
+}
+
+.delivery-bankholidays h5 {
+    font-family: 'Open Sans';
+    font-size: 1.111vw;
+    font-weight: 400;
+    line-height: 1.528vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1.667vw;
+}
+
+.delivery-flower-image {
+    margin: 0px;
+    width: 100%;
+}
+
+.delivery-bankholidays span {
+    font-family: 'Open Sans';
+    font-size: 1.111vw;
+    font-weight: 600;
+    line-height: 1.528vw;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.delivery-banksection2 {
+    padding: 2.222vw 2.708vw;
+}
+
+.delivery-banksection2 p {
+    font-family: 'Open Sans';
+    font-size: 1.111vw;
+    font-weight: 400;
+    line-height: 1.528vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+
+.delivery-banksection2 a {
+    font-family: 'Open Sans';
+    font-size: 1.111vw;
+    font-weight: 400;
+    line-height: 1.528vw;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: underline;
+    display: block;
+    margin: 0;
+    margin-bottom: 2.222vw;
+}
+
+.delivery-banksection2 h5 {
+    font-family: 'Frank Ruhl Libre';
+    font-size: 1.667vw;
+    font-weight: 700;
+    line-height: 1.806vw;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #EB9FA9;
+    margin: 0;
+}
+
+
+@media screen and  (max-width: 989px) {
+    .delivery-bankholidays {
+        padding: 7.527vw 5.242vw;
+    }
+
+    .delivery-bankholidays h2 {
+        font-size: 4.301vw;
+        line-height: 4.301vw;
+        margin-bottom: 3.226vw;
+    }
+
+    .delivery-bankholidays h3 {
+        font-size: 3.226vw;
+        line-height: 2.957vw;
+        margin-bottom: 2.151vw;
+    }
+
+    .delivery-bankholidays h5 {
+        font-size: 1.613vw;
+        line-height: 2.258vw;
+        margin-bottom: 3.226vw;
+    }
+
+    .delivery-bankholidays span {
+        font-size: 1.882vw;
+        line-height: 3.011vw;
+    }
+    .delivery-banksection2 {
+        padding: 4.301vw 5.242vw;
+    }
+    
+    .delivery-banksection2 p {
+        font-size: 1.613vw;
+        line-height: 2.258vw;
+    }
+    
+    .delivery-banksection2 a {
+        font-size: 1.613vw;
+        line-height: 2.258vw;
+        margin-bottom: 2.185vw;
+    }
+    
+    .delivery-banksection2 h5 {
+        font-size: 1.882vw;
+        font-weight: 400;
+        line-height: 2.957vw;
+        margin-bottom: 2.249vw;
+    }
+}
+
+@media screen and  (max-width: 749px) {
+    .delivery-bankholidays {
+        padding: 9.346vw 6.075vw;
+    }
+
+    .delivery-bankholidays h2 {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 32px;
+    }
+
+    .delivery-bankholidays h3 {
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 16px;
+    }
+
+    .delivery-bankholidays h5 {
+        font-size: 12px;
+        line-height: 16.8px;
+        margin-bottom: 32px;
+    }
+
+    .delivery-bankholidays span {
+        font-size: 14px;
+        line-height: 22.4px;
+    }
+    .delivery-banksection2 {
+        padding: 5.607vw 6.075vw;
+    }
+    
+    .delivery-banksection2 p {
+        font-size: 12px;
+        line-height: 16.8px;
+        margin-bottom: 8px;
+    }
+    
+    .delivery-banksection2 a {
+        font-size: 12px;
+        line-height: 16.8px;
+        margin-bottom: 16px;
+    }
+    
+    .delivery-banksection2 h5 {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 16px;
+    }
+}

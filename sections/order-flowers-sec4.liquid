@@ -1,0 +1,96 @@
+{{ 'order-flowers-sec4.css' | asset_url | stylesheet_tag }}
+
+
+<div class="abt-sec9-container">
+  <div class="abt-sec9-container-inner">
+    <div class="sec9-inner-left">
+      {% if section.settings.ord-sec4-img1 != blank %}
+        <img
+          class="sec9-img1"
+          src="{{ section.settings.ord-sec4-img1 | img_url }}"
+          alt="">
+      {% else %}
+        <img
+          class="sec9-img1"
+          src="{{'ord-sec4-pc-img2.png' | asset_url}}"
+          alt="">
+      {% endif %}
+
+      {% if section.settings.ord-sec4-img2 != blank %}
+        <img
+          class="sec9-img2"
+          src="{{ section.settings.ord-sec4-img2 | img_url }}"
+          alt="">
+      {% else %}
+        <img
+          class="sec9-img2"
+          src="{{'ord-sec4-pc-img1.png' | asset_url}}"
+          alt="">
+      {% endif %}
+
+
+
+    </div>
+    <div class="sec9-inner-right">
+      <h2>{{ section.settings.ord-sec4-title }}</h2>
+      <p>
+        {{ section.settings.ord-sec4-para-1 }}
+      </p>
+      <p>
+        {{ section.settings.ord-sec4-para-2 }}
+      </p>
+      <p>
+        {{ section.settings.ord-sec4-para-3 }}
+      </p>
+      <p>
+        <strong>{{ section.settings.ord-sec4-para-4 }}</strong>
+      </p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "order-section4",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "ord-sec4-img1",
+        "label": "Select Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "ord-sec4-img2",
+        "label": "Select Image"
+      },
+      {
+        "type": "text",
+        "id": "ord-sec4-title",
+        "label": "Enter Your Heading",
+        "default": "Work-life balance and our focus on mental health"
+      },
+      {
+        "type": "text",
+        "id": "ord-sec4-para-1",
+        "label": "Enter Your Text",
+        "default": "We understand the level of physical commitment that is needed in this industry. As well as this, we know that working in our industry comes with heavy pressures, especially during busy periods where there are constant requirements to be met."
+      }, {
+        "type": "text",
+        "id": "ord-sec4-para-2",
+        "label": "Enter Your Text",
+        "default": "While working in this industry can be challenging, the high energy of the job excites us. We excel under pressure and use high demands and tight deadlines as motivation to work even harder and achieve the best results."
+      }, {
+        "type": "text",
+        "id": "ord-sec4-para-3",
+        "label": "Enter Your Text",
+        "default": "Although work can be stressful at times, we don’t want you to be stressed. We place a strong emphasis on creating a fun workplace as a positive environment fosters motivation, support and ultimately success. Our staff are the driving force of our business and we value every single member. We monitor progress, give constant support and guidance and do everything in our power to create a nurturing, family atmosphere where all work and effort is not only noticed but also appreciated."
+      }, {
+        "type": "text",
+        "id": "ord-sec4-para-4",
+        "label": "Enter Your Text",
+        "default": "Our amazing team is a delicate and important part of who we are and we look to protect and support this model."
+      }
+
+    ]
+  }
+{% endschema %}

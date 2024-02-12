@@ -1,0 +1,325 @@
+.faqcomplaints-form2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vw;
+}
+
+.faq-form-left {
+    background: rgba(244, 244, 244, 0.70);
+    padding: 7.292vw 6.806vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+}
+
+.faq-form-left svg {
+    width: 6.944vw;
+    height: 6.944vw;
+    align-self: center;
+    margin: 0;
+    margin-bottom: 0.833vw;
+}
+
+.faq-form-left h3 {
+    color: #2D2D2D;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2.917vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2.361vw;
+}
+
+.faq-form-left ol,
+.faq-form-left li {
+    color: #2D2D2D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.972vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.389vw;
+    letter-spacing: 0.14px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.111vw;
+}
+
+.faq-form-left p {
+    color: #2D2D2D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.972vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.389vw;
+    letter-spacing: 0.14px;
+    margin: 0;
+    margin-top: 1vw;
+}
+
+.faq-form-right {
+    background: #F4F4F4;
+    width: 52%;
+}
+
+.faq-row:last-of-type{
+    margin-bottom: 0;
+}
+.faq-row {
+    display: flex;
+    gap: 3.750vw;
+    margin: 0;
+    margin-bottom: 1.736vw;
+}
+
+.faq-row.faq-full {
+    gap: 0;
+    margin-bottom: 0;
+}
+
+.faq-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.faq-form-right {
+    padding: 1.458vw 4.861vw 1.389vw 3.611vw;
+}
+
+.faq-input label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.111vw;
+    font-weight: 600;
+    line-height: 1.528vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 0.833vw;
+    color: #2D2D2D;
+}
+
+.faq-input input {
+    width: 100%;
+    height: 2.778vw;
+    border: 1px solid #2D2D2D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.972vw;
+    font-weight: 300;
+    line-height: 1.181vw;
+    letter-spacing: 0.46028581261634827px;
+    text-align: left;
+    padding: 0.833vw;
+}
+
+.faq-input textarea {
+    width: 100%;
+    height: 10.764vw;
+    border: 1px solid #2D2D2D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.972vw;
+    font-weight: 300;
+    line-height: 1.181vw;
+    letter-spacing: 0.46028581261634827px;
+    text-align: left;
+    padding: 0.833vw;
+}
+
+.faq-input input:focus,
+.faq-input textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.faq-input input::placeholder,
+.faq-input textarea::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.972vw;
+    font-weight: 300;
+    line-height: 1.181vw;
+    letter-spacing: 0.46028581261634827px;
+    text-align: left;
+    color: #D3D0D0;
+}
+
+.faq-form-right button {
+    width: 17.222vw;
+    height: 2.639vw;
+    border: 0;
+    background-color: #2D2D2D;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.111vw;
+    font-weight: 400;
+    line-height: 1.667vw;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 3.439vw;
+}
+
+@media screen and (max-width: 989px) {
+    .faqcomplaints-form2 {
+        flex-direction: column;
+        margin: 3.629vw 5.376vw;
+        background: #F4F4F4;
+        padding: 2.151vw;
+    }
+
+    .faq-form-left {
+        padding: 12.634vw 8.602vw;
+        width: 100%;
+        background: #FFFFFF;
+    }
+
+    .faq-form-left svg {
+        width: 10.753vw;
+        height: 10.753vw;
+        margin-bottom: 3.629vw;
+    }
+
+    .faq-form-left h3 {
+        font-size: 4.301vw;
+        margin-bottom: 4.570vw;
+    }
+
+    .faq-form-left ol,
+    .faq-form-left li {
+        font-size: 1.882vw;
+        line-height: 2.688vw;
+        margin-bottom: 2.5vw;
+    }
+
+    .faq-form-left p {
+        font-size: 1.882vw;
+        line-height: 2.688vw;
+        margin-bottom: 2.5vw;
+    }
+
+    .faq-form-right {
+        background: #F4F4F4;
+        width: 100%;
+        padding: 8.602vw 1.075vw 0 1.075vw;
+    }
+
+    .faq-row {
+        gap: 7.270vw;
+        margin-bottom: 3.360vw;
+    }
+    .faq-input label {
+        font-size: 2.151vw;
+        line-height: 2.957vw;
+        margin-bottom: 1.613vw;
+    }
+
+    .faq-input input {
+        height: 5.376vw;
+        font-size: 1.882vw;
+        line-height: 2.333vw;
+        padding: 1.613vw;
+    }
+
+    .faq-input textarea {
+        height: 20.833vw;
+        font-size: 0.972vw;
+        font-size: 1.882vw;
+        line-height: 2.333vw;
+        padding: 1.613vw;
+        margin: 0;
+        margin-bottom: 6.989vw;
+    }
+    .faq-input input::placeholder,
+    .faq-input textarea::placeholder {
+        font-size: 1.882vw;
+        line-height: 2.333vw;
+    }
+
+    .faq-form-right button {
+        width: 33.333vw;
+        height: 5.108vw;
+        font-size: 2.151vw;
+        line-height: 3.226vw;
+        letter-spacing: 0px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .faqcomplaints-form2 {
+        margin: 0;
+        padding: 12px 11px 0 10px; 
+    }
+
+    .faq-form-left {
+        padding: 9.813vw;
+    }
+
+    .faq-form-left svg {
+        width: 16.355vw;
+        height: 16.355vw;
+        margin-bottom: 12px;
+    }
+
+    .faq-form-left h3 {
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 28px;
+    }
+
+    .faq-form-left ol,
+    .faq-form-left li {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 14px;
+    }
+
+    .faq-form-left p {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 14px;
+    }
+
+    .faq-form-right {
+        padding:6.075vw 3.738vw;
+    }
+
+    .faq-row {
+        gap: 7.710vw;
+        margin-bottom: 16px;
+        align-items: self-end;
+    }
+    .faq-input label {
+        font-size: 10px;
+        line-height: 13.62px;
+        margin-bottom: 6.785px;
+    }
+
+    .faq-input input {
+        height: 5.706vw;
+        font-size: 8.55px;
+        line-height: 9.6px;
+        padding: 6px;
+    }
+
+    .faq-input textarea {
+        height: 17.290vw;
+        font-size: 8.55px;
+        line-height: 9.6px;
+        padding: 6px;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+    .faq-input input::placeholder,
+    .faq-input textarea::placeholder {
+        font-size: 8.55px;
+        line-height: 9.6px;
+    }
+
+    .faq-form-right button {
+        width: 151px;
+        height: 23px;
+        font-size: 9.75px;
+        line-height: 14.65px;
+    }
+}

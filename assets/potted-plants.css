@@ -1,0 +1,211 @@
+.pottedplants .heading {
+  font-family: "Frank Ruhl Libre", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 3.472vw;
+  font-weight: 300;
+  line-height: 4.483vw;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.pottedplants .cardholder {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  gap: 3vw;
+  padding: 5.556vw;
+}
+
+.pottedplants .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 18vw;
+}
+
+.pottedplants .card img {
+  mix-blend-mode: multiply;
+  max-width: 100%;
+}
+
+.pottedplants .shopbest {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+}
+
+.pottedplants .shopbest .arrow {
+  align-self: flex-end;
+}
+
+.pottedplants .shopbest .text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.736vw;
+  font-weight: 300;
+  line-height: 2.361vw;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.pottedplants .arrow-svg {
+  width: 8.958vw;
+  height: 2vw;
+}
+
+.pottedplants .rating-svg {
+  width: 7.083vw;
+  height: 1.111vw;
+}
+
+.pottedplants .pinksale-svg {
+  width: 3.264vw;
+  height: 3.264vw;
+  align-self: flex-end;
+  position: absolute;
+  z-index: 1;
+}
+
+.pottedplants .greensale-svg {
+  width: 4vw;
+  height: 4vw;
+  align-self: flex-end;
+  position: absolute;
+  z-index: 1;
+}
+
+.pottedplants .card h6 {
+  margin: 5px;
+  font-family: "Frank Ruhl Libre", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 1.389vw;
+  font-weight: 400;
+  line-height: 1.806vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #353535;
+}
+
+.pottedplants .card h5 {
+  margin: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.111vw;
+  font-weight: 600;
+  line-height: 1.528vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #353535;
+}
+@media (max-width: 989px) {
+  .pottedplants .heading {
+    font-size: 4.366vw;
+    line-height: 5.635vw;
+  }
+  
+  .pottedplants .cardholder {
+    gap: 6vw;
+    padding: 4.796vw;
+  }
+  
+  .pottedplants .card {
+    width: 26vw;
+  }
+  .pottedplants .card:nth-of-type(3){
+    display: none;
+  }
+  
+  .pottedplants .shopbest .text {
+    font-size: 2.728vw;
+    line-height: 3.716vw;
+  }
+  .pottedplants .card h6 {
+    font-size: 1.918vw;
+    line-height: 2.465vw;
+  }
+  
+  .pottedplants .card h5 {
+    font-size: 1.637vw;
+    font-weight: 400;
+    line-height: 2.229vw;
+  }
+}
+@media (max-width: 749px) {
+  .pottedplants .cardholder {
+    flex-wrap: wrap;
+  }
+  .pottedplants .arrow-svg {
+    width: 15vw;
+    height: 2vw;
+  }
+  .pottedplants .card:nth-of-type(3){
+    display: flex;
+  }
+  .pottedplants .shopbest{
+    display: none;
+  }
+  .pottedplants .shopbest .text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 4.439vw;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0em;
+  }
+
+  .pottedplants .shopbest .arrow {
+    align-self: flex-end;
+  }
+
+  .pottedplants .heading {
+    font-family: "Frank Ruhl Libre", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    font-size: 8.411vw;
+    font-weight: 300;
+    line-height: 10.748vw;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .pottedplants .card {
+    width: 40vw;
+  }
+
+  .pottedplants .rating-svg {
+    width: 25.5vw;
+    height: 4vw;
+  }
+
+  .pottedplants .pinksale-svg {
+    width: 6.075vw;
+    height: 6.075vw;
+    align-self: flex-end;
+    position: absolute;
+  }
+
+  .pottedplants .greensale-svg {
+    width: 7.5vw;
+    height: 7.5vw;
+    align-self: flex-end;
+    position: absolute;
+  }
+
+  .pottedplants .card h6 {
+    margin: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .pottedplants .card h5 {
+    margin: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}

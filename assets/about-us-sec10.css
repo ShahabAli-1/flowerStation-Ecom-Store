@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600;700&display=swap");
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* gap: 20px; */
+}
+.slideshow-container-10 {
+  display: none;
+}
+
+.reviews-mainheading {
+  font-size: 2.917vw;
+  font-weight: 300;
+  line-height: 3.765vw;
+  font-family: "Frank Ruhl Libre";
+  letter-spacing: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-bottom: 1.5vw;
+}
+.reviews-subheading {
+  font-size: 1.111vw;
+  line-height: 1.513vw;
+  font-weight: 800;
+  font-family: "Open Sans";
+  letter-spacing: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.reviews-subheading-text {
+  margin: 0;
+  font-size: 0.972vw;
+  line-height: 1.389vw;
+  letter-spacing: 0;
+  font-weight: 400;
+  padding-left: 17.139vw;
+  padding-right: 17.139vw;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+.reviews__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews__carousel {
+  padding-left: 4.931vw;
+  padding-right: 4.931vw;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+/* .reviews__carousel-reviews {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid black;
+  border-radius: 10px;
+
+  padding: 10px 30px;
+} */
+
+.reviews__carousel-reviews {
+  width: 32%;
+  /* height: 11.111vw; */
+  padding-top: 1.5vw;
+  padding-bottom: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 1%;
+  padding-right: 2%;
+}
+
+.reviews-div-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reviews__carousel-reviews-heading {
+  font-size: 1.111vw;
+  line-height: 1.875vw;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: "Frank Ruhl Libre";
+  color: black;
+}
+
+.reviews-body-text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 0.972vw;
+  line-height: 1.389vw;
+  margin-bottom: 1vw;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+}
+
+.reviews__carousel-reviews-rating {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviews__carousel-reviews-date {
+  font-style: italic;
+  font-size: 0.972vw;
+  font-weight: 400;
+  line-height: 1.389vw;
+  color: #2d2d2d80;
+  letter-spacing: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+.stars-svg {
+  width: 7.083vw;
+  height: 1.085vw;
+}
+
+.reviews__dots {
+  display: none;
+}
+
+.reviews__dots div:nth-child(3) {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.reviews__dots div {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  .reviews__carousel {
+    display: none;
+  }
+
+  .reviews__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+  }
+  .slideshow-container-10 {
+    width: 100%;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
+  }
+  .mySlides-10 {
+    display: none;
+  }
+
+  .reviews-mainheading {
+    font-size: 5.645vw;
+    line-height: 7.288vw;
+
+    margin-bottom: 1.5vw;
+  }
+  .reviews-subheading {
+    font-size: 2.151vw;
+    line-height: 2.929vw;
+    margin-block-start: 0;
+  }
+  .reviews-subheading-text {
+    font-size: 1.882vw;
+    line-height: 2.988vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 2.5vw;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-10 {
+    cursor: pointer;
+    height: 1.478vw;
+    width: 1.478vw;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: black;
+  }
+  .review-boxes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .reviews__carousel-reviews {
+    width: 49%;
+    padding-left: 1.5%;
+    padding-right: 2.5%;
+  }
+  .reviews__carousel-reviews-heading {
+    font-size: 2.151vw;
+    line-height: 3.629vw;
+  }
+  .reviews-body-text {
+    font-size: 1.882vw;
+    line-height: 2.688vw;
+  }
+  .reviews__carousel-reviews-date {
+    font-size: 1.882vw;
+    line-height: 2.688vw;
+  }
+  .stars-svg {
+    width: 13.71vw;
+    height: 2.118vw;
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  .reviews__carousel {
+    display: none;
+  }
+
+  .mySlides-10 {
+    display: none;
+  }
+  .review-boxes .reviews__carousel-reviews:nth-child(2) {
+    display: none;
+  }
+
+  .reviews-mainheading {
+    font-size: 32px;
+    line-height: 36px;
+
+    margin-bottom: 2.5vw;
+  }
+  .reviews-subheading {
+    font-size: 13px;
+    line-height: 18px;
+    margin-block-start: 0;
+  }
+  .reviews-subheading-text {
+    font-size: 13px;
+    line-height: 15.2px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 3vw;
+  }
+
+  /* Slideshow container */
+  .slideshow-container-10 {
+    width: 100%;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-10 {
+    cursor: pointer;
+    height: 11px;
+    width: 11px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: black;
+  }
+  .review-boxes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .reviews__carousel-reviews {
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .reviews__carousel-reviews-heading {
+    font-size: 16px;
+    line-height: 27px;
+
+    color: black;
+  }
+  .reviews-body-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 3vw;
+  }
+  .reviews__carousel-reviews-date {
+    font-size: 14px;
+    line-height: 27px;
+  }
+  .stars-svg {
+    width: 117.69px;
+    height: 15.76px;
+  }
+}

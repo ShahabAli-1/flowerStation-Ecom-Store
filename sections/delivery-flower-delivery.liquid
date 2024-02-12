@@ -1,0 +1,259 @@
+{{ 'delivery-flower-delivery.css' | asset_url | stylesheet_tag }}
+<div class="delivery-section1">
+  <h1>{{ section.settings.delivery_flower_delivery-title }}</h1>
+  <p class="delivery-content">{{ section.settings.delivery_flower_delivery-description }}</p>
+  <div class="delivery-card1">
+    <div class="delivery-card">
+      <div class="delivery-card1-img">
+        {% if section.settings.delivery_flower_delivery-card1-image != blank %}
+          <img src="{{ section.settings.delivery_flower_delivery-card1-image | img_url: 'master' }}" alt="Flower Delivery">
+        {% else %}
+          <img src="{{'delivery-card1.png' |asset_url}}" alt="Flower Delivery">
+        {% endif %}
+      </div>
+      <div class="delivery-card1-text">
+        <h2>{{ section.settings.delivery_flower_delivery-card1-title }}</h2>
+        <h6>
+          <span>{{ section.settings.delivery_flower_delivery-card1-day1 }}
+          </span>
+          {{ section.settings.delivery_flower_delivery-card1-day1-description }}
+        </h6>
+        <h6>
+          <span>{{ section.settings.delivery_flower_delivery-card1-day2 }}
+          </span>
+          {{ section.settings.delivery_flower_delivery-card1-day2-description }}
+        </h6>
+        <p>{{ section.settings.delivery_flower_delivery-card1-description }}</p>
+        <h5>{{ section.settings.delivery_flower_delivery-card1-bold-text }}</h5>
+        <p>{{ section.settings.delivery_flower_delivery-card1--description2 }}</p>
+        <a href="{{ section.settings.delivery_flower_delivery-card1-button-url }}">
+          {{ section.settings.delivery_flower_delivery-card1-button-text }}</a>
+      </div>
+    </div>
+  </div>
+  <div class="delivery-card2">
+    <div class="delivery-card">
+      <div class="delivery-card1-img">
+        {% if section.settings.delivery_flower_delivery-card2-image != blank %}
+          <img src="{{ section.settings.delivery_flower_delivery-card2-image | img_url: 'master' }}" alt="Flower Delivery">
+        {% else %}
+          <img src="{{'delivery-card2.png' |asset_url}}" alt="Flower Delivery">
+        {% endif %}
+      </div>
+      <div class="delivery-card1-text">
+        <h2>{{ section.settings.delivery_flower_delivery-card2-title }}</h2>
+        <h6>
+          <span>{{ section.settings.delivery_flower_delivery-card2-day1 }}
+          </span>
+          {{ section.settings.delivery_flower_delivery-card2-day1-description }}
+        </h6>
+        <h6>
+          <span>{{ section.settings.delivery_flower_delivery-card2-day2 }}
+          </span>
+          {{ section.settings.delivery_flower_delivery-card2-day2-description }}
+        </h6>
+        <p>{{ section.settings.delivery_flower_delivery-card2-description }}</p>
+        <p>{{ section.settings.delivery_flower_delivery-card2-description2 }}</p>
+        <a href="{{ section.settings.delivery_flower_delivery-card2-button-url }}">
+          {{ section.settings.delivery_flower_delivery-card2-button-text }}</a>
+      </div>
+    </div>
+  </div>
+  <div class="delivery-card1">
+    <div class="delivery-card">
+      <div class="delivery-card1-img">
+        {% if section.settings.delivery_flower_delivery-card3-image != blank %}
+          <img src="{{ section.settings.delivery_flower_delivery-card3-image | img_url: 'master' }}" alt="Flower Delivery">
+        {% else %}
+          <img src="{{'delivery-card3.png' |asset_url}}" alt="Flower Delivery">
+        {% endif %}
+      </div>
+      <div class="delivery-card1-text">
+        <h2>{{ section.settings.delivery_flower_delivery-card3-title }}</h2>
+        <h6>
+          <span>{{ section.settings.delivery_flower_delivery-card3-day1 }}
+          </span>
+          {{ section.settings.delivery_flower_delivery-card3-day1-description }}
+        </h6>
+        <h6>
+          <span>{{ section.settings.delivery_flower_delivery-card3-day2 }}
+          </span>
+          {{ section.settings.delivery_flower_delivery-card3-day2-description }}
+        </h6>
+        <p>{{ section.settings.delivery_flower_delivery-card3-description }}</p>
+        <a href="{{ section.settings.delivery_flower_delivery-card3-button-url }}">
+          {{ section.settings.delivery_flower_delivery-card3-button-text }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "delivery-flower-delivery",
+    "settings": [
+      {
+        "type": "text",
+        "id": "delivery_flower_delivery-title",
+        "label": "Title",
+        "default": "Flower Delivery"
+      },
+      {
+        "type": "text",
+        "id": "delivery_flower_delivery-description",
+        "label": "Description",
+        "default": "Same Day or Named Day service is available in London with Next Day delivery for the rest of the UK. 24 Hour Service is available in London only."
+      },
+      {
+        "type": "text",
+        "id": "delivery_flower_delivery-card1-title",
+        "label": "Card1 Title",
+        "default": "London Delivery"
+      },
+      {
+        "type": "text",
+        "id": "delivery_flower_delivery-card1-day1",
+        "label": "Card1 Day1",
+        "default": "Mon - Sat:"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card1-day1-description",
+        "label": "Card1 Day1 Description",
+        "default": "Order before 6 PM (UK time) for same day flower delivery."
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card1-day2",
+        "label": "Card1 Day2",
+        "default": "Sunday:"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card1-day2-description",
+        "label": "Card1 Day2 Description",
+        "default": "Order before 6 PM (UK time) for same day flower delivery."
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card1-description",
+        "label": "Card1 Description",
+        "default": "The deliveries in London start from 09:00 AM Monday to Sunday. For our deliveries in London, we use our own well organised delivery fleet."
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card1-bold-text",
+        "label": "Card1 Bold Text",
+        "default": "FOR THE LATE-NIGHT SHOPPERS"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card1--description2",
+        "label": "Card1 Description2",
+        "default": "Our head florist shop near Baker Street is a driver-through florist open 24/7."
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card1-button-text",
+        "label": "Card1 Button Text",
+        "default": "Check availability for May Bank Holidays here"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card1-button-url",
+        "label": "Card1 Button Url",
+        "default": "#delivery_holidays"
+      }, {
+        "type": "image_picker",
+        "id": "delivery_flower_delivery-card1-image",
+        "label": "Card1 Image"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card2-title",
+        "label": "Card2 Title",
+        "default": "London - Next Three Hours"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card2-day1",
+        "label": "Card2 Day1",
+        "default": "Sunday:"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card2-day1-description",
+        "label": "Card2 Day1 Description",
+        "default": "Order before 4 PM (UK time) for London Sunday flower delivery in the next three hours."
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card2-day2",
+        "label": "Card2 Day2",
+        "default": "Mon - Sat:"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card2-day2-description",
+        "label": "Card2 Day2 Description",
+        "default": "Order before 4PM (UK time) for London delivery in the next three hours."
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card2-description",
+        "label": "Card2 Description",
+        "default": "Note: For our next three-hour delivery, please contact first our customer care team below:"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card2-description2",
+        "label": "Card2 Description2",
+        "default": "(*) Additional fee for express service delivery will apply. Only available for deliveries to a London address. Customer care team must be contacted and should confirm if the delivery to the requested address is possible, before placing the order that requires 3-hours delivery slot."
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card2-button-text",
+        "label": "Card2 Button Text",
+        "default": "Check availability for May Bank Holidays here"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card2-button-url",
+        "label": "Card2 Button Url",
+        "default": "#delivery_holidays"
+      }, {
+        "type": "image_picker",
+        "id": "delivery_flower_delivery-card2-image",
+        "label": "Card2 Image"
+
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card3-title",
+        "label": "Card3 Title",
+        "default": "Nationwide Flower Delivery (UK only)"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card3-day1",
+        "label": "Card3 Day1",
+        "default": "Sunday and Monday:"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card3-day1-description",
+        "label": "Card3 Day1 Description",
+        "default": "Sorry, Sunday or Monday flower delivery is currently not possible, even for orders placed on an earlier day."
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card3-day2",
+        "label": "Card3 Day2",
+        "default": "Tues - Sat:"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card3-day2-description",
+        "label": "Card3 Day2 Description",
+        "default": "Order before 3PM (UK time) the previous day for next day flower delivery."
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card3-description",
+        "label": "Card3 Description",
+        "default": "Note: For our next three-hour delivery, please contact first our customer care team below:"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card3-button-text",
+        "label": "Card3 Button Text",
+        "default": "Check availability for May Bank Holidays here"
+      }, {
+        "type": "text",
+        "id": "delivery_flower_delivery-card3-button-url",
+        "label": "Card3 Button Url",
+        "default": "#delivery_holidays"
+      }, {
+        "type": "image_picker",
+        "id": "delivery_flower_delivery-card3-image",
+        "label": "Card3 Image"
+      }
+    ]
+  }
+{% endschema %}

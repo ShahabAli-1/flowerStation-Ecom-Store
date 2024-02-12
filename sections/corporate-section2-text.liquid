@@ -1,0 +1,36 @@
+{{ 'corporate-section2-text_box.css' | asset_url | stylesheet_tag }}
+
+
+
+<div class="text__container">
+  {% if section.settings.enabletext %}
+    <h2>{{ section.settings.corporate-section2-text-header }}</h2>
+  {% endif %}
+  {% if section.settings.enabletext %}
+    <p>{{ section.settings.corporate-section2-text-body }}</p>
+  {% endif %}
+</div>
+
+{% schema %}
+  {
+    "name": "corporate-section2-text",
+    "settings": [
+      {
+        "type": "text",
+        "id": "corporate-section2-text-header",
+        "label": "Enter Heading",
+        "default": "What are Corporate Flowers?"
+      }, {
+        "type": "text",
+        "id": "corporate-section2-text-body",
+        "label": "Enter Body Text",
+        "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim  ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit  esse molestie consequat, vel illum dolore eu feugiat nula facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nula facilisi."
+      }, {
+        "type": "checkbox",
+        "id": "enabletext",
+        "label": "Enable Your Text",
+        "default": true
+      }
+    ]
+  }
+{% endschema %}

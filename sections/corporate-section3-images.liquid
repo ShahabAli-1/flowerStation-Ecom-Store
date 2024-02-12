@@ -1,0 +1,139 @@
+{{ 'corporate-section3-images.css' | asset_url | stylesheet_tag }}
+
+
+<div class="main-div1">
+
+  <div class="left-div1">
+    {% if section.settings.corp-sec2-img1 != blank %}
+      <img
+        class="long-image"
+        src="{{ section.settings.corp-sec2-img1 | img_url }}"
+        alt="">
+    {% else %}
+      <img
+        class="long-image"
+        src="{{ 'corporate-sec3-1.png' | asset_url }}"
+        alt="">
+    {% endif %}
+
+    <p class="img-title">{{ section.settings.image-caption-1 }}</p>
+  </div>
+  <div class="mid-div1">
+    {% if section.settings.corp-sec2-img2 != blank %}
+      <img
+        class="wide-image"
+        src="{{ section.settings.corp-sec2-img2 | img_url }}"
+        alt="">
+    {% else %}
+      <img
+        class="wide-image"
+        src="{{ 'corporate-sec3-2.png' | asset_url }}"
+        alt="">
+    {% endif %}
+
+    <p class="img-title">{{ section.settings.image-caption-2 }}</p>
+
+    {% if section.settings.corp-sec2-img3 != blank %}
+      <img
+        class="wide-image"
+        src="{{ section.settings.corp-sec2-img3 | img_url }}"
+        alt="">
+    {% else %}
+      <img
+        class="wide-image"
+        src="{{ 'corporate-sec3-3.png' | asset_url }}"
+        alt="">
+    {% endif %}
+
+
+    <p class="img-title">
+      {{ section.settings.image-caption-3 }}</p>
+  </div>
+  <div class="right-div1">
+    {% if section.settings.corp-sec2-img4 != blank %}
+      <img
+        class="wide-image"
+        src="{{ section.settings.corp-sec2-img4 | img_url }}"
+        alt="">
+    {% else %}
+      <img
+        class="wide-image"
+        src="{{ 'corporate-sec3-4.png' | asset_url }}"
+        alt="">
+    {% endif %}
+
+    <p class="img-title">{{ section.settings.image-caption-4 }}</p>
+
+    {% if section.settings.corp-sec2-img5 != blank %}
+      <img
+        class="wide-image"
+        src="{{ section.settings.corp-sec2-img5 | img_url }}"
+        alt="">
+    {% else %}
+      <img
+        class="wide-image"
+        src="{{ 'corporate-sec3-5.png' | asset_url }}"
+        alt="">
+    {% endif %}
+
+    <p class="img-title">{{ section.settings.image-caption-5 }}</p>
+
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "corporate-section3-images",
+    "settings": [
+      {
+        "type": "text",
+        "id": "image-caption-1",
+        "label": "Enter Caption",
+        "default": "Office Flowers"
+      },
+      {
+        "type": "text",
+        "id": "image-caption-2",
+        "label": "Enter Caption",
+        "default": "Table Flowers"
+      },
+      {
+        "type": "text",
+        "id": "image-caption-3",
+        "label": "Enter Caption",
+        "default": "Library Flowers"
+      },
+      {
+        "type": "text",
+        "id": "image-caption-4",
+        "label": "Enter Caption",
+        "default": "Decoration Flowers"
+      }, {
+        "type": "text",
+        "id": "image-caption-5",
+        "label": "Enter Caption",
+        "default": "Home Flowers"
+      }, {
+        "type": "image_picker",
+        "id": "corp-sec2-img1",
+        "label": "Select Image"
+      }, {
+        "type": "image_picker",
+        "id": "corp-sec2-img2",
+        "label": "Select Image"
+      }, {
+        "type": "image_picker",
+        "id": "corp-sec2-img3",
+        "label": "Select Image"
+      }, {
+        "type": "image_picker",
+        "id": "corp-sec2-img4",
+        "label": "Select Image"
+      }, {
+        "type": "image_picker",
+        "id": "corp-sec2-img5",
+        "label": "Select Image"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,177 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* padding-left: 5%;
+  padding-right: 5%; */
+  overflow-x: hidden;
+  margin-top: 7vw;
+}
+
+.carousel-container > ul {
+  width: 100% !important;
+}
+.carousel-container > ul > li {
+  width: 100% !important;
+  margin-left: 0 !important;
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 749px) {
+  .carousel-thumbnails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .thumbnail {
+    width: 8.495vw; /* Set the width and height as per your requirement */
+    height: 8.495vw;
+    margin: 5px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .carousal-arrows-hotels {
+    width: 1.735vw;
+    height: 2.891vw;
+  }
+
+  .carousel-arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .carousel-selected {
+    width: 100%;
+    /* Set the width and height as per your requirement */
+    height: 58.411vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5vw;
+  }
+
+  .carousel-selected > img {
+    width: 100%;
+    height: 58.411vw;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  /* For screens between 768px and 991px width (tablets) */
+  /* .carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .carousel-thumbnails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .thumbnail {
+    width: 9.031vw; /* Set the width and height as per your requirement */
+    height: 9.031vw;
+    /* margin: 5px; */
+    /* object-fit: contain; */
+    cursor: pointer;
+  }
+
+  .carousel-arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .carousal-arrows-hotels {
+    width: 2.168vw;
+    height: 3.614vw;
+  }
+
+  .carousel-selected {
+    width: 100%; /* Set the width and height as per your requirement */
+    height: 40.054vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vw;
+  }
+
+  .carousel-selected > img {
+    width: 100%;
+    height: 40.054vw;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  /* For screens larger than 992px width (desktops and larger) */
+  /* .carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .carousel-thumbnails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 7px;
+  }
+
+  .thumbnail {
+    width: 9.028vw; /* Set the width and height as per your requirement */
+    height: 9.028vw;
+    margin: 15px;
+    /* object-fit: contain; */
+    cursor: pointer;
+  }
+
+  .carousel-arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .arrows-box-left {
+    margin-right: 2.5vw;
+  }
+  .arrows-box-right {
+    margin-left: 2.5vw;
+  }
+
+  .carousal-arrows-hotels {
+    width: 2.1vw;
+    height: 3.5vw;
+  }
+  .arrow:hover {
+    color: blue;
+  }
+
+  .carousel-selected {
+    width: 100%;
+    height: 45.139vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-selected img {
+    width: 100%;
+    height: 45.139vw;
+  }
+}

@@ -1,0 +1,215 @@
+{{ 'faqcomplaints-reviews.css' | asset_url | stylesheet_tag }}
+<div class="faq-reviews">
+  <h2>{{ section.settings.faqcomplaints-reviews-title }}</h2>
+  <p>{{ section.settings.faqcomplaints-reviews-description }}</p>
+  <div class="faq-review-container">
+    <div class="faq-card">
+      <div class="faq-left">
+        <svg
+          viewBox="0 0 77 78"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle
+            cx="38.5"
+            cy="39.4688"
+            r="38.5"
+            fill="#F6E2C9B2" />
+        </svg>
+        <h3>
+          {{ section.settings.faqcomplaints-reviews-name1 | split: " " | first | truncate: 1, "" | upcase }}
+          {{ section.settings.faqcomplaints-reviews-name1 | split: " " | last | truncate: 1, "" | upcase }}
+        </h3>
+      </div>
+      <div class="faq-right">
+        <h3>{{ section.settings.faqcomplaints-reviews-name1 }}</h3>
+        <h6>{{ section.settings.faqcomplaints-reviews-date1 }}</h6>
+        {% include 'home-rating-svg' %}
+        <div class="horizontalline">.</div>
+        <h5>{{ section.settings.faqcomplaints-reviews-heading1 }}</h5>
+        <p>{{ section.settings.faqcomplaints-reviews-paragraph1 }}</p>
+      </div>
+    </div>
+    <div class="faq-card">
+      <div class="faq-left">
+        <svg
+          viewBox="0 0 77 78"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle
+            cx="38.5"
+            cy="39.4688"
+            r="38.5"
+            fill="#F6E2C9B2" />
+        </svg>
+        <h3>
+          {{ section.settings.faqcomplaints-reviews-name2 | split: " " | first | truncate: 1, "" | upcase }}
+          {{ section.settings.faqcomplaints-reviews-name2 | split: " " | last | truncate: 1, "" | upcase }}
+        </h3>
+      </div>
+      <div class="faq-right">
+        <h3>{{ section.settings.faqcomplaints-reviews-name2 }}</h3>
+        <h6>{{ section.settings.faqcomplaints-reviews-date2 }}</h6>
+        {% include 'home-rating-svg' %}
+        <div class="horizontalline">.</div>
+        <h5>{{ section.settings.faqcomplaints-reviews-heading2 }}</h5>
+        <p>{{ section.settings.faqcomplaints-reviews-paragraph2 }}</p>
+      </div>
+
+    </div>
+    <div class="faq-card">
+      <div class="faq-left">
+        <svg
+          viewBox="0 0 77 78"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle
+            cx="38.5"
+            cy="39.4688"
+            r="38.5"
+            fill="#F6E2C9B2" />
+        </svg>
+        <h3>
+          {{ section.settings.faqcomplaints-reviews-name3 | split: " " | first | truncate: 1, "" | upcase }}
+          {{ section.settings.faqcomplaints-reviews-name3 | split: " " | last | truncate: 1, "" | upcase }}
+        </h3>
+      </div>
+      <div class="faq-right">
+        <h3>{{ section.settings.faqcomplaints-reviews-name3 }}</h3>
+        <h6>{{ section.settings.faqcomplaints-reviews-date3 }}</h6>
+        {% include 'home-rating-svg' %}
+        <div class="horizontalline">.</div>
+        <h5>{{ section.settings.faqcomplaints-reviews-heading3 }}</h5>
+        <p>{{ section.settings.faqcomplaints-reviews-paragraph3 }}</p>
+      </div>
+
+    </div>
+
+    <div class="faq-card">
+      <div class="faq-left">
+        <svg
+          viewBox="0 0 77 78"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle
+            cx="38.5"
+            cy="39.4688"
+            r="38.5"
+            fill="#F6E2C9B2" />
+        </svg>
+        <h3>
+          {{ section.settings.faqcomplaints-reviews-name4 | split: " " | first | truncate: 1, "" | upcase }}
+          {{ section.settings.faqcomplaints-reviews-name4 | split: " " | last | truncate: 1, "" | upcase }}
+        </h3>
+      </div>
+      <div class="faq-right">
+        <h3>{{ section.settings.faqcomplaints-reviews-name4 }}</h3>
+        <h6>{{ section.settings.faqcomplaints-reviews-date4 }}</h6>
+        {% include 'home-rating-svg' %}
+        <div class="horizontalline">.</div>
+        <h5>{{ section.settings.faqcomplaints-reviews-heading4 }}</h5>
+        <p>{{ section.settings.faqcomplaints-reviews-paragraph4 }}</p>
+      </div>
+    </div>
+  </div>
+  <p id="seemorecardreview">see more</p>
+</div>
+
+{% schema %}
+  {
+    "name": "faqcomplaints-reviews",
+    "settings": [
+      {
+        "type": "text",
+        "id": "faqcomplaints-reviews-title",
+        "label": "Title",
+        "default": "Wedding Reviews"
+      },
+      {
+        "type": "text",
+        "id": "faqcomplaints-reviews-description",
+        "label": "Description",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis nulla lobortis quis donec aliquam tellus tortor. Condimentum orci tortor urna, fermentum, augue et."
+      },
+      {
+        "type": "text",
+        "id": "faqcomplaints-reviews-name1",
+        "label": "Name 1",
+        "default": "Qudrah Hashmi"
+      },
+      {
+        "type": "text",
+        "id": "faqcomplaints-reviews-date1",
+        "label": "Date 1",
+        "default": "Apr 23, 2021"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-reviews-heading1",
+        "label": "Heading 1",
+        "default": "5 Stars! Very Impressed"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-reviews-paragraph1",
+        "label": "Paragraph 1",
+        "default": "I had asked for a flower centrepiece for our table as i was going to be proposing to my girlfriend. They did an astounding job, absolutely perfect! My future wife was very impressed."
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-reviews-name2",
+        "label": "Name 2",
+        "default": "Steph K"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-reviews-date2",
+        "label": "Date 2",
+        "default": "Apr 23, 2021"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-reviews-heading2",
+        "label": "Heading 2",
+        "default": "Bespoke service"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-reviews-paragraph2",
+        "label": "Paragraph 2",
+        "default": "Bespoke service. I ordered all my wedding flowers here. Salina and the team were happy for me to pick each flower that went into the table arrangements and for my wedding bouquet. The flowers were arranged beautifully and a week later, they still look magical. I have used their service a few times, and every time the flowers and service are 5 star. I would recommend them."
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-reviews-name3",
+        "label": "Name 3",
+        "default": "Fatima E.K"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-reviews-date3",
+        "label": "Date 3",
+        "default": "Apr 23, 2021"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-reviews-heading3",
+        "label": "Heading 3"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-reviews-paragraph3",
+        "label": "Paragraph 3",
+        "default": "I was looking for a florist for my wedding photoshoot and I knew I had to go to Flower Station after the beautiful bouquet I received for my birthday. The events and wedding specialist, Salina, listened to my needs and created beautiful flowers and a beautiful flower bouquet that I am airdrying so I can frame it!!! Flower Station has become my go to florist to use for any other events!!! They are super professional and kind."
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-reviews-name4",
+        "label": "Name 4",
+        "default": "Kevyah Cardoso"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-reviews-date4",
+        "label": "Date 4",
+        "default": "Jul 30, 2021"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-reviews-heading4",
+        "label": "Heading 4"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-reviews-paragraph4",
+        "label": "Paragraph 4",
+        "default": "Received a gorgeous bouquet of flowers from my boyfriend on our anniversary today. Perfectly presented and packaged. Thank you 💐"
+      }
+    ]
+  }
+{% endschema %}

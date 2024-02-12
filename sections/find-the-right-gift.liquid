@@ -1,0 +1,177 @@
+{{ 'find-the-right-gift.css' | asset_url | stylesheet_tag }}
+
+<div class="findgift">
+  <h2>{{ section.settings.title }}</h2>
+  <h4>{{ section.settings.subtitle }}</h4>
+
+  <slider-component class="slider-mobile-gutter slider-component-full-width scroll-trigger animate--slide-in">
+    <div class="slider-buttons no-js-hidden">
+      <button
+        type="button"
+        class="slider-button slider-button--prev"
+        name="previous"
+        aria-label="{{ 'general.slider.previous_slide' | t }}"
+        aria-controls="Slider-{{ section.id }}">
+        <svg
+          width="27"
+          height="12"
+          viewBox="0 0 27 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.635096 6.56569C0.322676 6.25327 0.322676 5.74674 0.635096 5.43432L5.72626 0.343148C6.03868 0.0307282 6.54522 0.0307282 6.85764 0.343148C7.17005 0.655567 7.17005 1.1621 6.85764 1.47452L2.33215 6L6.85764 10.5255C7.17006 10.8379 7.17006 11.3444 6.85764 11.6569C6.54522 11.9693 6.03868 11.9693 5.72627 11.6569L0.635096 6.56569ZM26.8008 6.8L1.20078 6.8L1.20078 5.2L26.8008 5.2L26.8008 6.8Z" />
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="slider-button slider-button--next"
+        name="next"
+        aria-label="{{ 'general.slider.next_slide' | t }}"
+        aria-controls="Slider-{{ section.id }}">
+        <svg
+          width="27"
+          height="12"
+          viewBox="0 0 27 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M26.3649 6.56569C26.6773 6.25327 26.6773 5.74674 26.3649 5.43432L21.2737 0.343148C20.9613 0.0307282 20.4548 0.0307282 20.1424 0.343148C19.8299 0.655567 19.8299 1.1621 20.1424 1.47452L24.6678 6L20.1424 10.5255C19.8299 10.8379 19.8299 11.3444 20.1424 11.6569C20.4548 11.9693 20.9613 11.9693 21.2737 11.6569L26.3649 6.56569ZM0.199219 6.8L25.7992 6.8L25.7992 5.2L0.199219 5.2L0.199219 6.8Z" />
+        </svg>
+      </button>
+    </div>
+    <ul
+      id="Slider-{{ section.id }}"
+      class="cardholder grid product-grid contains-card contains-card--product contains-card--standard  slider slider--tablet grid--peek"
+      role="list"
+      aria-label="{{ 'general.slider.name' | t }}">
+      <li id="Slide-{{ section.id }}-0"class="card grid__item scroll-trigger animate--slide-in"data-cascadestyle="--animation-order: 0;">
+        {% if section.settings.image1 != blank %}
+          <img src="{{ section.settings.image1 | img_url: 'master' }}" alt="image1">
+        {% else %}
+          <img src="{{ 'home-find1.png' | asset_url }}" alt="image1">
+        {% endif %}
+        <div class="card-content">
+          <h3>{{ section.settings.title1 }}</h3>
+          <p>{{ section.settings.description1 }}</p>
+        </div>
+        <div class="card__button">
+          <h3>Shop Now</h3>
+          <svg
+            viewBox="0 0 61 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M60.7071 8.70711C61.0976 8.31658 61.0976 7.68342 60.7071 7.29289L54.3432 0.928932C53.9526 0.538408 53.3195 0.538408 52.9289 0.928932C52.5384 1.31946 52.5384 1.95262 52.9289 2.34315L58.5858 8L52.9289 13.6569C52.5384 14.0474 52.5384 14.6805 52.9289 15.0711C53.3195 15.4616 53.9526 15.4616 54.3432 15.0711L60.7071 8.70711ZM0 9H60V7H0V9Z" fill="#FFC7C7" />
+          </svg>
+        </div>
+      </li>
+      <li
+        id="Slide-{{ section.id }}-1"
+        class="card grid__item scroll-trigger animate--slide-in"
+        data-cascadestyle="--animation-order: 1;">
+        {% if section.settings.image2 != blank %}
+          <img src="{{ section.settings.image2 | img_url: 'master' }}" alt="image2">
+        {% else %}
+          <img src="{{ 'home-find2.png' | asset_url }}" alt="image2">
+        {% endif %}
+        <div class="card__content">
+          <h3>{{ section.settings.title2 }}</h3>
+          <p>{{ section.settings.description2 }}</p>
+          <div class="card__button">
+            <h3>Shop Now</h3>
+            <svg
+              viewBox="0 0 61 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M60.7071 8.70711C61.0976 8.31658 61.0976 7.68342 60.7071 7.29289L54.3432 0.928932C53.9526 0.538408 53.3195 0.538408 52.9289 0.928932C52.5384 1.31946 52.5384 1.95262 52.9289 2.34315L58.5858 8L52.9289 13.6569C52.5384 14.0474 52.5384 14.6805 52.9289 15.0711C53.3195 15.4616 53.9526 15.4616 54.3432 15.0711L60.7071 8.70711ZM0 9H60V7H0V9Z" fill="#FFC7C7" />
+            </svg>
+          </div>
+        </div>
+      </li>
+      <li
+        id="Slide-{{ section.id }}-1"
+        class="card grid__item scroll-trigger animate--slide-in"
+        data-cascadestyle="--animation-order: 1;">
+        {% if section.settings.image3 != blank %}
+          <img src="{{ section.settings.image3 | img_url: 'master' }}" alt="image3">
+        {% else %}
+          <img src="{{ 'home-find3.png' | asset_url }}" alt="image3">
+        {% endif %}
+        <div class="card__content">
+          <h3>{{ section.settings.title3 }}</h3>
+          <p>{{ section.settings.description3 }}</p>
+          <div class="card__button">
+            <h3>Shop Now</h3>
+            <svg
+              viewBox="0 0 61 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M60.7071 8.70711C61.0976 8.31658 61.0976 7.68342 60.7071 7.29289L54.3432 0.928932C53.9526 0.538408 53.3195 0.538408 52.9289 0.928932C52.5384 1.31946 52.5384 1.95262 52.9289 2.34315L58.5858 8L52.9289 13.6569C52.5384 14.0474 52.5384 14.6805 52.9289 15.0711C53.3195 15.4616 53.9526 15.4616 54.3432 15.0711L60.7071 8.70711ZM0 9H60V7H0V9Z" fill="#FFC7C7" />
+            </svg>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+  </slider-component>
+</div>
+{% schema %}
+  {
+    "name": "Find The Right Gift",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Find The Right Gift"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle",
+        "default": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputa"
+      },
+      {
+        "type": "image_picker",
+        "id": "image1",
+        "label": "Image 1"
+      },
+      {
+        "type": "text",
+        "id": "title1",
+        "label": "Title 1",
+        "default": "Birthday Flowers"
+      }, {
+        "type": "text",
+        "id": "description1",
+        "label": "Description 1",
+        "default": "Celebrate the Big Day!"
+      }, {
+        "type": "image_picker",
+        "id": "image2",
+        "label": "Image 2"
+      }, {
+        "type": "text",
+        "id": "title2",
+        "label": "Title 2",
+        "default": "Planted Gifts"
+      }, {
+        "type": "text",
+        "id": "description2",
+        "label": "Description 2",
+        "default": "Plants for Everyone"
+      }, {
+        "type": "image_picker",
+        "id": "image3",
+        "label": "Image 3"
+      }, {
+        "type": "text",
+        "id": "title3",
+        "label": "Title 3",
+        "default": "Sale Flowers"
+      }, {
+        "type": "text",
+        "id": "description3",
+        "label": "Description 3",
+        "default": "Flowers with up to 70% discount!"
+      }
+    ]
+  }
+{% endschema %}

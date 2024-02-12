@@ -1,0 +1,380 @@
+{% comment %} {{ 'about-us-sec8.css' | asset_url | stylesheet_tag }}
+<h2 class="abt-us-sec8-h">Featured Work</h2>
+<p class="abt-us-sec8-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+<div class="slideshow-container-8">
+<div class="mySlides-8_">
+<div class="date-bg">.</div>
+<p class="date-text">{{ section.settings.abt-us-slide1-date }}</p>
+<h1 class="banner-heading-slider">{{ section.settings.abt-us-slider1-title }}</h1>
+
+{% if section.settings.abt-us-slider1-img != blank %}
+<img
+class="abt-sec8-banner-image"
+style="width:100%"
+src="{{ 'section.settings.abt-us-slider1-img' | img_url }}"
+alt="">
+{% else %}
+<img
+class="abt-sec8-banner-image"
+style="width:100%"
+src="{{ 'wedding-bg.png' | asset_url  }}"
+alt="">
+{% endif %}
+
+<div class="ban-box3">
+<div class="arrows">
+
+<svg
+onclick="plusSlides(-1)"
+class="arrow-svg"
+width="45"
+height="45"
+viewBox="0 0 45 45"
+fill="none"
+xmlns="http://www.w3.org/2000/svg">
+<circle
+cx="22.5"
+cy="22.5"
+r="21.5"
+transform="rotate(-180 22.5 22.5)"
+stroke="white"
+stroke-width="2" />
+<path d="M30.8724 21.5097L16.7154 21.5097L21.8527 16.3724L20.4803 15L13 22.4803L20.4803 29.9606L21.8527 28.5882L16.7154 23.4509L30.8724 23.4509L30.8724 21.5097Z" fill="white" />
+</svg>
+<svg
+onclick="plusSlides(1)"
+class="arrow-svg"
+width="45"
+height="45"
+viewBox="0 0 45 45"
+fill="none"
+xmlns="http://www.w3.org/2000/svg">
+<circle
+cx="22.5"
+cy="22.5"
+r="21.5"
+stroke="white"
+stroke-width="2" />
+<path d="M14.1276 23.4903L28.2846 23.4903L23.1473 28.6276L24.5197 30L32 22.5197L24.5197 15.0394L23.1473 16.4118L28.2846 21.5491L14.1276 21.5491L14.1276 23.4903Z" fill="white" />
+</svg>
+</div>
+<div class="ban-body-text">
+<p>{{ section.settings.abt-us-slider1-description }}</p>
+</div>
+<div class="line">
+<p>.</p>
+</div>
+</div>
+</div>
+
+<div class="mySlides-8_">
+<div class="date-bg">.</div>
+<p class="date-text">{{ section.settings.abt-us-slide2-date }}</p>
+
+<h1 class="banner-heading-slider">{{ section.settings.abt-us-slider2-title }}</h1>
+
+
+{% if section.settings.abt-us-slider2-img != blank %}
+<img
+class="abt-sec8-banner-image"
+style="width:100%"
+src="{{ 'section.settings.abt-us-slider2-img' | img_url }}"
+alt="">
+{% else %}
+<img
+class="abt-sec8-banner-image"
+style="width:100%"
+src="{{ 'wedding-bg.png' | asset_url  }}"
+alt="">
+{% endif %}
+
+
+
+<div class="ban-box3">
+<div class="arrows">
+
+<svg
+onclick="plusSlides(-1)"
+class="arrow-svg"
+width="45"
+height="45"
+viewBox="0 0 45 45"
+fill="none"
+xmlns="http://www.w3.org/2000/svg">
+<circle
+cx="22.5"
+cy="22.5"
+r="21.5"
+transform="rotate(-180 22.5 22.5)"
+stroke="white"
+stroke-width="2" />
+<path d="M30.8724 21.5097L16.7154 21.5097L21.8527 16.3724L20.4803 15L13 22.4803L20.4803 29.9606L21.8527 28.5882L16.7154 23.4509L30.8724 23.4509L30.8724 21.5097Z" fill="white" />
+</svg>
+<svg
+onclick="plusSlides(1)"
+class="arrow-svg"
+width="45"
+height="45"
+viewBox="0 0 45 45"
+fill="none"
+xmlns="http://www.w3.org/2000/svg">
+<circle
+cx="22.5"
+cy="22.5"
+r="21.5"
+stroke="white"
+stroke-width="2" />
+<path d="M14.1276 23.4903L28.2846 23.4903L23.1473 28.6276L24.5197 30L32 22.5197L24.5197 15.0394L23.1473 16.4118L28.2846 21.5491L14.1276 21.5491L14.1276 23.4903Z" fill="white" />
+</svg>
+</div>
+<div class="ban-body-text">
+<p>{{ section.settings.abt-us-slider2-description }}</p>
+</div>
+<div class="line">
+<p>.</p>
+</div>
+</div>
+</div>
+
+
+</div>
+<br>
+
+
+{{ 'about-us-sec8.js' | asset_url | script_tag }}
+
+<script src="{{ 'about-us-sec8.js' | asset_url }}" defer></script> {% endcomment %}
+
+{{ 'about-us-sec8.css' | asset_url | stylesheet_tag }}
+<slider-component class="slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
+  <div class="slideshow-container-8">
+    <ul
+      id="Slider-{{ section.id }}"
+      class="grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek"
+      role="list"
+      aria-label="{{ 'general.slider.name' | t }}">
+      <li
+        id="Slide-{{ section.id }}-1"
+        class="grid__item scroll-trigger animate--slide-in"
+        data-cascadestyle="--animation-order: 1;">
+        <div class="mySlides-8_">
+          <div class="date-bg">.</div>
+          <p class="date-text">{{ section.settings.abt-us-slide2-date }}</p>
+
+          <h1 class="banner-heading-slider">{{ section.settings.abt-us-slider2-title }}</h1>
+
+
+          {% if section.settings.abt-us-slider2-img != blank %}
+            <img
+              class="abt-sec8-banner-image"
+              style="width:100%"
+              src="{{ section.settings.abt-us-slider2-img | img_url }}"
+              alt="">
+          {% else %}
+            <img
+              class="abt-sec8-banner-image"
+              style="width:100%"
+              src="{{ 'wedding-bg.png' | asset_url  }}"
+              alt="">
+          {% endif %}
+
+
+
+          <div class="ban-box3">
+
+            <div class="ban-body-text">
+              <p>{{ section.settings.abt-us-slider2-description }}</p>
+            </div>
+            <div class="line">
+              <p>.</p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        id="Slide-{{ section.id }}-2"
+        class="grid__item scroll-trigger animate--slide-in"
+        data-cascadestyle="--animation-order: 2;">
+        <div class="mySlides-8_">
+          <div class="date-bg">.</div>
+          <p class="date-text">{{ section.settings.abt-us-slide2-date }}</p>
+
+          <h1 class="banner-heading-slider">{{ section.settings.abt-us-slider2-title }}</h1>
+
+
+          {% if section.settings.abt-us-slider2-img != blank %}
+            <img
+              class="abt-sec8-banner-image"
+              style="width:100%"
+              src="{{ section.settings.abt-us-slider2-img | img_url }}"
+              alt="">
+          {% else %}
+            <img
+              class="abt-sec8-banner-image"
+              style="width:100%"
+              src="{{ 'wedding-bg.png' | asset_url  }}"
+              alt="">
+          {% endif %}
+
+          <div class="ban-box3">
+
+            <div class="ban-body-text">
+              <p>{{ section.settings.abt-us-slider2-description }}</p>
+            </div>
+            <div class="line">
+              <p>.</p>
+            </div>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+    <div class="arrows-abt8-box">
+      <button
+        type="button"
+        class="slider-button slider-button--prev"
+        name="previous"
+        aria-label="{{ 'general.slider.previous_slide' | t }}"
+        aria-controls="Slider-{{ section.id }}">
+        <svg
+          onclick="plusSlides(-1)"
+          class="arrow-svg"
+          width="45"
+          height="45"
+          viewBox="0 0 45 45"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle
+            cx="22.5"
+            cy="22.5"
+            r="21.5"
+            transform="rotate(-180 22.5 22.5)"
+            stroke="white"
+            stroke-width="2" />
+          <path d="M30.8724 21.5097L16.7154 21.5097L21.8527 16.3724L20.4803 15L13 22.4803L20.4803 29.9606L21.8527 28.5882L16.7154 23.4509L30.8724 23.4509L30.8724 21.5097Z" fill="white" />
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="slider-button slider-button--next"
+        name="next"
+        aria-label="{{ 'general.slider.next_slide' | t }}"
+        aria-controls="Slider-{{ section.id }}">
+        <svg
+          onclick="plusSlides(1)"
+          class="arrow-svg"
+          width="45"
+          height="45"
+          viewBox="0 0 45 45"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle
+            cx="22.5"
+            cy="22.5"
+            r="21.5"
+            stroke="white"
+            stroke-width="2" />
+          <path d="M14.1276 23.4903L28.2846 23.4903L23.1473 28.6276L24.5197 30L32 22.5197L24.5197 15.0394L23.1473 16.4118L28.2846 21.5491L14.1276 21.5491L14.1276 23.4903Z" fill="white" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  {% comment %} <div class="carousel-thumbnails">
+  <button
+  type="button"
+  class="arrows-box-left slider-button slider-button--prev"
+  name="previous"
+  aria-label="{{ 'general.slider.previous_slide' | t }}"
+  aria-controls="Slider-{{ section.id }}">
+  <svg
+  class="carousal-arrows-hotels"
+  width="36"
+  height="56"
+  viewBox="0 0 36 56"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+  d="M33.2383 2.6L2.99838 27.8L33.2383 53"
+  stroke="#FFC7C7"
+  stroke-width="5.03999"
+  stroke-linecap="round"
+  stroke-linejoin="round" />
+  </svg>
+  </button>
+  <!-- Add more images and their respective onclick functions here -->
+  <button
+  type="button"
+  class="arrows-box-right slider-button slider-button--next"
+  name="next"
+  aria-label="{{ 'general.slider.next_slide' | t }}"
+  aria-controls="Slider-{{ section.id }}">
+  <svg
+  class="carousal-arrows-hotels"
+  width="37"
+  height="56"
+  viewBox="0 0 37 56"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+  d="M3.24219 2.6L33.4821 27.8L3.24219 53"
+  stroke="#FFC7C7"
+  stroke-width="5.03999"
+  stroke-linecap="round"
+  stroke-linejoin="round" />
+  </svg>
+  </button>
+  </div>
+  {% endcomment %}</slider-component>
+
+
+
+{% schema %}
+  {
+    "name": "about-us-slider",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "abt-us-slider1-img",
+        "label": "Select Slider Image 1"
+      },
+      {
+        "type": "text",
+        "id": "abt-us-slide1-date",
+        "label": "Enter Your Date",
+        "default": "12 SEPTEMBER 2020"
+      },
+      {
+        "type": "text",
+        "id": "abt-us-slider1-title",
+        "label": "Enter Your Title",
+        "default": "Sara & Shane's Wedding"
+      },
+      {
+        "type": "text",
+        "id": "abt-us-slider1-description",
+        "label": "Enter Slider Description",
+        "default": "It was fun providing floral design services for wedding"
+      }, {
+        "type": "image_picker",
+        "id": "abt-us-slider2-img",
+        "label": "Select Slider Image 1"
+      }, {
+        "type": "text",
+        "id": "abt-us-slide2-date",
+        "label": "Enter Your Date",
+        "default": "14th May 2023"
+      }, {
+        "type": "text",
+        "id": "abt-us-slider2-title",
+        "label": "Enter Your Title",
+        "default": "Joel & Arya's Wedding"
+      }, {
+        "type": "text",
+        "id": "abt-us-slider2-description",
+        "label": "Enter Slider Description",
+        "default": "It was fun providing floral design services for wedding"
+      }
+    ]
+  }
+{% endschema %}

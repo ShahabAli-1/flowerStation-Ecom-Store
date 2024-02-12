@@ -1,0 +1,67 @@
+
+.ord-sec5-container {
+  width: 100%;
+}
+
+.ord-sec5-container-inner {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec5-h2 {
+  font-family: "Frank Ruhl Libre";
+  font-size: 3.889vw;
+  line-height: 4.306vw;
+  letter-spacing: 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+.ord-sec5-vid {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.sec5-img {
+  width: 100%;
+  object-fit: contain;
+  /* position: absolute; */
+}
+.sec5-vid-icon {
+  position: absolute;
+  width: 8%;
+  object-fit: contain;
+  top: 45%;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  .sec5-h2 {
+    font-size: 4.301vw;
+    line-height: 4.704vw;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 749px) {
+  .sec5-h2 {
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .sec5-h2 {
+    font-size: 7.477vw;
+    line-height: 8.178vw;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,231 @@
+.findgift {
+    margin-top: 4.444vw;
+}
+.findgift slider-component {
+    padding: 0 2.083vw;
+}
+
+.findgift .slider-buttons {
+    display: none;
+}
+
+.findgift h2 {
+    font-family: "Frank Ruhl Libre", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3.889vw;
+    font-weight: 300;
+    line-height: 4.306vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2.014vw;
+}
+
+.findgift h4 {
+    display: none;
+}
+
+.findgift .cardholder {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2.083vw;
+    flex-wrap: nowrap;
+}
+
+.findgift .card {
+    width: 30.556vw;
+    display: flex;
+    align-items: center;
+}
+
+.findgift .card:nth-last-of-type(2) {
+    margin-top: 4.861vw;
+}
+
+.findgift h3 {
+    font-family: "Frank Ruhl Libre", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2.778vw;
+    font-weight: 400;
+    line-height: 3.056vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    margin-top: 2.014vw;
+    margin-bottom: 1.111vw;
+    color: #353535;
+}
+
+.findgift p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.111vw;
+    font-weight: 400;
+    line-height: 1.556vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1.111vw;
+    color: #2D2D2D;
+}
+
+.findgift .card__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.findgift .card__button h3 {
+    font-family: "Frank Ruhl Libre", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.111vw;
+    font-weight: 700;
+    line-height: 1.778vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    color: #353535;
+}
+
+.findgift .card__button svg {
+    width: 4.167vw;
+    margin-left: 1vw;
+}
+
+.findgift img {
+    width: 100%;
+}
+
+@media screen and (max-width: 989px) {
+    .findgift slider-component {
+        padding: 0 4.796vw;
+    }
+
+    .findgift h2 {
+        font-size: 3.837vw;
+        font-weight: 400;
+        line-height: 4.753vw;
+        margin-bottom: 3.957vw;
+    }
+
+    .findgift .cardholder {
+        gap: 2.082vw;
+    }
+
+    .findgift .card {
+        width: 28.777vw;
+    }
+
+    .findgift .card:nth-last-of-type(2) {
+        margin-top: 5vw;
+    }
+
+    .findgift h3 {
+        font-size: 2.878vw;
+        line-height: 3.531vw;
+        margin-top: 1.918vw;
+        margin-bottom: 1.918vw;
+    }
+
+    .findgift p {
+        font-size: 1.679vw;
+        line-height: 2.282vw;
+        margin-bottom: 1.918vw;
+    }
+
+    .findgift .card__button h3 {
+        font-size: 1.918vw;
+        line-height: 3.070vw;
+    }
+
+    .findgift .card__button svg {
+        width: 4.077vw;
+        margin-left: 1vw;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .findgift {
+        padding: 0 3.037vw;
+    }
+
+    .findgift slider-component {
+        padding: 0;
+    }
+
+    .findgift .slider-buttons {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .findgift .slider-buttons svg path {
+        fill: #2D2D2D;
+    }
+    .findgift .slider-buttons button[disabled] svg path {
+        fill: #8A8A8A;
+    }
+
+    .findgift h2 {
+        font-size: 32px;
+        line-height: 41.31px;
+        margin-bottom: 16px;
+        padding:0 35px;
+    }
+
+    .findgift h4 {
+        display: block;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+    }
+
+    .findgift .cardholder {
+        gap: 32px;
+        justify-content: flex-start;
+
+    }
+
+    .findgift .card {
+        width: 63.084vw;
+        max-width: 100%;
+    }
+
+    .findgift .card:nth-last-of-type(2) {
+        margin-top: 0;
+    }
+
+    .findgift h3 {
+        font-family: "Frank Ruhl Libre", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 24px;
+        line-height: 26px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .findgift p {
+        font-size: 14px;
+        line-height: 19.6px;
+        margin-bottom: 0;
+    }
+
+    .findgift .card__button {
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .findgift img {
+        width: 100%;
+    }
+    .findgift .card__button h3 {
+        display: none;
+    }
+    .findgift .card__button svg{
+        width: 14vw;
+        margin-top: 2vw;
+    }
+
+}

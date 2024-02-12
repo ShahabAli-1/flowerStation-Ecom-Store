@@ -1,0 +1,246 @@
+{{ 'best-selling-flowers.css' | asset_url | stylesheet_tag }}
+
+<div class="bestselling">
+  <div class="cardholder">
+    <div class="card1">
+      <div class="image">
+        {% if section.settings.bs_flowers-image1 != blank %}
+          <img src="{{ section.settings.bs_flowers-image1 | img_url: 'master' }}" alt="">
+        {% else %}
+          <img src="{{ 'flower1.png'  | asset_url}}" alt="best selling flower">
+        {% endif %}
+      </div>
+      <div class="content">
+        <h6>{{ section.settings.bs_flowers-title1 }}</h6>
+        {% include 'home-rating-svg' %}
+        <h5>{{ section.settings.bs_flowers-price1 }}</h5>
+      </div>
+    </div>
+    <div class="card1">
+      <div class="image">
+        {% if section.settings.bs_flowers-image2 != blank %}
+          <img src="{{ section.settings.bs_flowers-image2 | img_url: 'master' }}" alt="">
+        {% else %}
+          <img src="{{ 'flower2.png'  | asset_url}}" alt="best selling flower">
+        {% endif %}
+      </div>
+      <div class="content">
+        <h6>{{ section.settings.bs_flowers-title2 }}</h6>
+        {% include 'home-rating-svg' %}
+        <h5>{{ section.settings.bs_flowers-price2 }}</h5>
+      </div>
+    </div>
+    <div class="card1">
+      <div class="image">
+        {% if section.settings.bs_flowers-image3 != blank %}
+          <img src="{{ section.settings.bs_flowers-image3 | img_url: 'master' }}" alt="">
+        {% else %}
+          <img src="{{ 'flower3.png'  | asset_url}}" alt="best selling flower">
+        {% endif %}
+      </div>
+      <div class="content">
+        <h6>{{ section.settings.bs_flowers-title3 }}</h6>
+        {% include 'home-rating-svg' %}
+        <h5>{{ section.settings.bs_flowers-price3 }}</h5>
+      </div>
+
+
+    </div>
+    <div class="card1">
+      <div class="image">
+        {% if section.settings.bs_flowers-image4 != blank %}
+          <img src="{{ section.settings.bs_flowers-image4 | img_url: 'master' }}" alt="">
+        {% else %}
+          <img src="{{ 'flower4.png'  | asset_url}}" alt="best selling flower">
+        {% endif %}
+      </div>
+      <div class="content">
+        <h6>{{ section.settings.bs_flowers-title4 }}</h6>
+        {% include 'home-rating-svg' %}
+        <h5>{{ section.settings.bs_flowers-price4 }}</h5>
+      </div>
+    </div>
+    <div class="card1">
+      <div class="image">
+        {% if section.settings.bs_flowers-image5 != blank %}
+          <img src="{{ section.settings.bs_flowers-image5 | img_url: 'master' }}" alt="">
+        {% else %}
+          <img src="{{ 'flower3.png'  | asset_url}}" alt="best selling flower">
+        {% endif %}
+      </div>
+      <div class="content">
+        <h6>{{ section.settings.bs_flowers-title5 }}</h6>
+        {% include 'home-rating-svg' %}
+        <h5>{{ section.settings.bs_flowers-price5 }}</h5>
+      </div>
+    </div>
+    <div class="card1">
+      <div class="image">
+        {% if section.settings.bs_flowers-image6 != blank %}
+          <img src="{{ section.settings.bs_flowers-image6 | img_url: 'master' }}" alt="">
+        {% else %}
+          <img src="{{ 'flower1.png'  | asset_url}}" alt="best selling flower">
+        {% endif %}
+      </div>
+      <div class="content">
+        <h6>{{ section.settings.bs_flowers-title6 }}</h6>
+        {% include 'home-rating-svg' %}
+        <h5>{{ section.settings.bs_flowers-price6 }}</h5>
+      </div>
+
+    </div>
+    <div class="card1">
+      <div class="image">
+        {% if section.settings.bs_flowers-image7 != blank %}
+          <img src="{{ section.settings.bs_flowers-image7 | img_url: 'master' }}" alt="">
+        {% else %}
+          <img src="{{ 'flower4.png'  | asset_url}}" alt="best selling flower">
+        {% endif %}
+      </div>
+      <div class="content">
+        <h6>{{ section.settings.bs_flowers-title7 }}</h6>
+        {% include 'home-rating-svg' %}
+        <h5>{{ section.settings.bs_flowers-price7 }}</h5>
+      </div>
+    </div>
+    <div class="card1">
+      <div class="image">
+        {% if section.settings.bs_flowers-image8 != blank %}
+          <img src="{{ section.settings.bs_flowers-image8 | img_url: 'master' }}" alt="">
+        {% else %}
+          <img src="{{ 'flower2.png'  | asset_url}}" alt="best selling flower">
+        {% endif %}
+      </div>
+      <div class="content">
+        <h6>{{ section.settings.bs_flowers-title8 }}</h6>
+        {% include 'home-rating-svg' %}
+        <h5>{{ section.settings.bs_flowers-price8 }}</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Best Selling Flowers",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bs_flowers-image1",
+        "label": "Image 1"
+      },
+      {
+        "type": "text",
+        "id": "bs_flowers-title1",
+        "label": "Title 1",
+        "default": "Lavender Sky"
+      },
+      {
+        "type": "text",
+        "id": "bs_flowers-price1",
+        "label": "Price 1",
+        "default": "£345.76"
+      },
+      {
+        "type": "image_picker",
+        "id": "bs_flowers-image2",
+        "label": "Image 2"
+      }, {
+        "type": "text",
+        "id": "bs_flowers-title2",
+        "label": "Title 2",
+        "default": "Lavender Sky"
+      }, {
+        "type": "text",
+        "id": "bs_flowers-price2",
+        "label": "Price 2",
+        "default": "£345.76"
+      }, {
+        "type": "image_picker",
+        "id": "bs_flowers-image3",
+        "label": "Image 3"
+      }, {
+        "type": "text",
+        "id": "bs_flowers-title3",
+        "label": "Title 3",
+        "default": "Lavender Sky"
+      }, {
+        "type": "text",
+        "id": "bs_flowers-price3",
+        "label": "Price 3",
+        "default": "£345.76"
+      }, {
+        "type": "image_picker",
+        "id": "bs_flowers-image4",
+        "label": "Image 4"
+      }, {
+        "type": "text",
+        "id": "bs_flowers-title4",
+        "label": "Title 4",
+        "default": "Lavender Sky"
+      }, {
+        "type": "text",
+        "id": "bs_flowers-price4",
+        "label": "Price 4",
+        "default": "£345.76"
+      }, {
+        "type": "image_picker",
+        "id": "bs_flowers-image5",
+        "label": "Image 5"
+
+      }, {
+        "type": "text",
+        "id": "bs_flowers-title5",
+        "label": "Title 5",
+        "default": "Lavender Sky"
+      }, {
+        "type": "text",
+        "id": "bs_flowers-price5",
+        "label": "Price 5",
+        "default": "£345.76"
+      }, {
+        "type": "image_picker",
+        "id": "bs_flowers-image6",
+        "label": "Image 6"
+      }, {
+        "type": "text",
+        "id": "bs_flowers-title6",
+        "label": "Title 6",
+        "default": "Lavender Sky"
+      }, {
+        "type": "text",
+        "id": "bs_flowers-price6",
+        "label": "Price 6",
+        "default": "£345.76"
+      }, {
+        "type": "image_picker",
+        "id": "bs_flowers-image7",
+        "label": "Image 7"
+      }, {
+        "type": "text",
+        "id": "bs_flowers-title7",
+        "label": "Title 7",
+        "default": "Lavender Sky"
+      }, {
+        "type": "text",
+        "id": "bs_flowers-price7",
+        "label": "Price 7",
+        "default": "£345.76"
+      }, {
+        "type": "image_picker",
+        "id": "bs_flowers-image8",
+        "label": "Image 8"
+      }, {
+        "type": "text",
+        "id": "bs_flowers-title8",
+        "label": "Title 8",
+        "default": "Lavender Sky"
+      }, {
+        "type": "text",
+        "id": "bs_flowers-price8",
+        "label": "Price 8",
+        "default": "£345.76"
+      }
+    ]
+  }
+{% endschema %}

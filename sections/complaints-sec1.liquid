@@ -1,0 +1,38 @@
+{{ 'complaints-sec1.css' | asset_url | stylesheet_tag }}
+
+
+<div>
+  <div
+    class="banner-container"
+    {% if section.settings.comp-sec1-banner != blank %}
+    style="background-image: url({{ section.settings.comp-sec1-banner | img_url}})"
+    {% endif %}>
+    <div class="banner-text">
+      <h1 class="banner-heading">{{ section.settings.complaint-sec1-text-header }}</h1>
+      <p class="banner-description">{{ section.settings.complaint-sec1-text-body }}</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "complaints-sec1",
+    "settings": [
+      {
+        "type": "text",
+        "id": "complaint-sec1-text-header",
+        "label": "Enter Heading",
+        "default": "Wedding Flowers"
+      }, {
+        "type": "text",
+        "id": "complaint-sec1-text-body",
+        "label": "Enter Body Text",
+        "default": "Installed and delivered across the capital, our flowers will not disappoint, any occasion, any request, our weddings and events team is here to help."
+      }, {
+        "type": "image_picker",
+        "id": "comp-sec1-banner",
+        "label": "Select Banner Image"
+      }
+    ]
+  }
+{% endschema %}

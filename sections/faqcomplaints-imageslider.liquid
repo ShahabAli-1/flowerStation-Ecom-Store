@@ -1,0 +1,116 @@
+{{ 'faqcomplaints-imageslider.css' | asset_url | stylesheet_tag }}
+
+<div class="faq-imageslider">
+  <div class="faq-largeimage-container">
+    {% if section.settings.faqcomplaintsimageslider1 != blank %}
+      <img
+        class="faq-largeimage"
+        src="{{ section.settings.faqcomplaintsimageslider1 | img_url: 'master' }}"
+        alt="Office image">
+    {% else %}
+      <img
+        class="faq-largeimage"
+        src="{{ 'faq-slider1.png' | asset_url }}"
+        alt="Office image">
+    {% endif %}
+  </div>
+  <div class="faq-scrolling-imgaes">
+    <svg
+      class="scroll-left"
+      viewBox="0 0 36 56"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M33.2383 2.6L2.99838 27.8L33.2383 53"
+        stroke="#FFC7C7"
+        stroke-width="5.03999"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+    <div class="faq-images">
+      <div class="faq-images-wrapper">
+        {% if section.settings.faqcomplaintsimageslider1 != blank %}
+          <img src="{{ section.settings.faqcomplaintsimageslider1 | img_url: 'master' }}" alt="small images">
+        {% else %}
+          <img src="{{ 'faq-slider1.png' | asset_url }}" alt="small images">
+        {% endif %}
+        {% if section.settings.faqcomplaintsimageslider2 != blank %}
+          <img src="{{ section.settings.faqcomplaintsimageslider2 | img_url: 'master' }}" alt="small images">
+        {% else %}
+          <img src="{{ 'wedding-bg.png' | asset_url }}" alt="small images">
+        {% endif %}
+        {% if section.settings.faqcomplaintsimageslider3 != blank %}
+          <img src="{{ section.settings.faqcomplaintsimageslider3 | img_url: 'master' }}" alt="small images">
+        {% else %}
+          <img src="{{ 'crousal2.png' | asset_url}}" alt="small images">
+        {% endif %}
+        {% if section.settings.faqcomplaintsimageslider4 != blank %}
+          <img src="{{ section.settings.faqcomplaintsimageslider4 | img_url: 'master' }}" alt="small images">
+        {% else %}
+          <img src="{{ 'faq-bgimg1.png' | asset_url }}" alt="small images">
+        {% endif %}
+        {% if section.settings.faqcomplaintsimageslider5 != blank %}
+          <img src="{{ section.settings.faqcomplaintsimageslider5 | img_url: 'master' }}" alt="small images">
+        {% else %}
+          <img src="{{ 'faq-bgimg2.png' | asset_url}}" alt="small images">
+        {% endif %}
+        {% if section.settings.faqcomplaintsimageslider6 != blank %}
+          <img src="{{ section.settings.faqcomplaintsimageslider6 | img_url: 'master' }}" alt="small images">
+        {% else %}
+          <img src="{{ 'faq-bgimg3.png' | asset_url }}" alt="small images">
+        {% endif %}
+
+      </div>
+    </div>
+    <svg
+      class="scroll-right"
+      viewBox="0 0 37 56"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M3.24219 2.6L33.4821 27.8L3.24219 53"
+        stroke="#FFC7C7"
+        stroke-width="5.03999"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </div>
+</div>
+
+<script src="{{ 'faqcomplaints-imageslider.js' | asset_url }}"></script>
+
+{% schema %}
+  {
+    "name": "FAQ Image Slider",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "faqcomplaintsimageslider1",
+        "label": "FAQ Complaints Image Slider 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "faqcomplaintsimageslider2",
+        "label": "FAQ Complaints Image Slider 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "faqcomplaintsimageslider3",
+        "label": "FAQ Complaints Image Slider 3"
+      },
+      {
+        "type": "image_picker",
+        "id": "faqcomplaintsimageslider4",
+        "label": "FAQ Complaints Image Slider 4"
+      }, {
+        "type": "image_picker",
+        "id": "faqcomplaintsimageslider5",
+        "label": "FAQ Complaints Image Slider 5"
+      }, {
+        "type": "image_picker",
+        "id": "faqcomplaintsimageslider6",
+        "label": "FAQ Complaints Image Slider 6"
+      }
+    ]
+  }
+{% endschema %}

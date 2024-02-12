@@ -1,0 +1,311 @@
+.faq-reviews {
+    padding: 0 10.648vw;
+    margin-top: 7.937vw;
+}
+
+.faq-reviews h2 {
+    font-family: "Frank Ruhl Libre", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3.307vw;
+    font-weight: 300;
+    line-height: 4.299vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1.323vw;
+}
+
+.faq-reviews p {
+    font-family: "Open Sans";
+    font-size: 1.058vw;
+    font-weight: 400;
+    line-height: 1.521vw;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 31.614vw;
+    margin: 0;
+}
+
+.faq-review-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5.357vw;
+    gap: 5vw;
+    flex-wrap: wrap;
+}
+
+.faq-review-container .faq-card {
+    display: flex;
+    align-items: flex-start;
+}
+
+.faq-review-container .faq-left svg {
+    position: absolute;
+    z-index: -1;
+}
+
+.faq-review-container .faq-left {
+    position: relative;
+    width: 16%;
+    padding: 5px 0;
+}
+
+.faq-review-container .faq-left h3 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 2.116vw;
+    font-weight: 400;
+    line-height: 2.712vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 1.3vw;
+}
+
+.faq-review-container .faq-right {
+    width: 84%;
+    padding: 0 1vw;
+}
+
+.faq-review-container .faq-right h3 {
+    font-family: "Frank Ruhl Libre", sans-serif;
+    font-size: 1.323vw;
+    font-weight: 300;
+    line-height: 1.720vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 0.661vw;
+}
+
+.faq-review-container .faq-right p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.058vw;
+    font-weight: 600;
+    line-height: 1.521vw;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 27.778vw;
+}
+
+.faq-review-container .faq-right h5 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.058vw;
+    font-weight: 400;
+    line-height: 1.521vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.faq-review-container .faq-right h6 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.794vw;
+    font-weight: 300;
+    line-height: 0.992vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 0.661vw;
+}
+
+.faq-review-container .faq-right .rating-svg {
+    width: 7.209vw;
+}
+
+.faq-review-container .faq-right .horizontalline {
+    width: 5.886vw;
+    color: white;
+    height: 10px;
+    border-bottom: 1px solid #353535;
+    content: "";
+    margin-bottom: 1.323vw;
+}
+
+.faq-reviews #seemorecardreview {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.190vw;
+    font-weight: 400;
+    line-height: 1.720vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: auto;
+    margin-top: 5.291vw;
+    text-decoration: underline;
+}
+
+@media (max-width: 989px) {
+    .faq-reviews h2 {
+        margin-bottom: 2.016vw;
+    }
+
+    .faq-reviews {
+        padding: 0 9.976vw;
+        margin-top: 10.817vw;
+    }
+
+    .faq-reviews h2 {
+        font-family: "Playfair Display", sans-serif;
+        font-size: 3.365vw;
+        font-weight: 700;
+        line-height: 4.447vw;
+        text-align: center;
+    }
+
+    .faq-reviews p {
+        font-family: "Open Sans";
+        font-size: 1.803vw;
+        line-height: 2.614vw;
+        text-align: center;
+        width: 37.019vw;
+        margin: auto;
+    }
+
+    .faq-review-container {
+        margin-top: 4.207vw;
+    }
+
+    .faq-review-container .faq-left {
+        width: 20%;
+    }
+
+    .faq-review-container .faq-left h3 {
+        font-size: 3.346vw;
+        line-height: 4.280vw;
+    }
+
+    .faq-review-container .faq-right {
+        width: 80%;
+    }
+
+    .faq-review-container .faq-right h3 {
+        font-family: "Playfair Display", sans-serif;
+        font-size: 1.923vw;
+        font-weight: 400;
+        line-height: 2.404vw;
+        margin-bottom: 0.721vw;
+    }
+
+    .faq-review-container .faq-right p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.803vw;
+        font-weight: 600;
+        line-height: 2.614vw;
+    }
+
+    .faq-review-container .faq-right h5 {
+        font-size: 1.803vw;
+        line-height: 2.578vw;
+        margin-top: 20px;
+    }
+
+    .faq-review-container .faq-right h6 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.202vw;
+        font-weight: 300;
+        line-height: 1.537vw;
+        margin: 0;
+        margin-bottom: 0.721vw;
+    }
+
+    .faq-review-container .faq-right .rating-svg {
+        width: 10.096vw;
+    }
+
+    .faq-review-container .faq-right .horizontalline {
+        width: 10.697vw;
+        height: 3px;
+        margin-bottom: 1.202vw;
+    }
+
+    .faq-reviews #seemorecardreview {
+        font-size: 2.163vw;
+        line-height: 3.094vw;
+        margin-top: 4.808vw;
+    }
+
+}
+
+@media (max-width: 749px) {
+    .faq-reviews h2 {
+        margin-bottom: 3.505vw;
+    }
+    .faq-review-container {
+        flex-direction: column;
+    }
+
+    .faq-review-container .faq-card {
+        width: 100%;
+    }
+
+    .faq-reviews {
+        padding: 0 7.477vw;
+        margin-top: 16.355vw;
+    }
+
+    .faq-reviews h2 {
+        font-size: 26px;
+        line-height: 34.66px;
+    }
+
+    .faq-reviews p {
+        font-size: 14px;
+        line-height: 21.56px;
+        width: 71.963vw;
+    }
+
+    .faq-review-container {
+        margin-top: 9.346vw;
+    }
+
+    .faq-review-container .faq-left h3 {
+        font-size: 6.308vw;
+        line-height: 35.61px;
+        margin-top: 3vw;
+    }
+
+    .faq-review-container .faq-right {
+        width: 80%;
+        padding-left: 10px;
+    }
+
+    .faq-review-container .faq-right h3 {
+        font-size: 16px;
+        line-height: 20.46px;
+        margin-bottom: 6px;
+    }
+
+    .faq-review-container .faq-right p {
+        font-size: 14px;
+        line-height: 20.02px;
+        margin: 0;
+        width: 65.654vw;
+    }
+
+    .faq-review-container .faq-right h5 {
+        font-size: 14px;
+        line-height: 20.02px;
+        margin-top: 14px;
+    }
+
+    .faq-review-container .faq-right h6 {
+        font-size: 10px;
+        line-height: 12.79px;
+        margin-bottom: 6px;
+    }
+
+    .faq-review-container .faq-right .rating-svg {
+        width: 19.626vw;
+    }
+
+    .faq-review-container .faq-right .horizontalline {
+        width: 19.626vw;
+        height: 1px;
+        margin-bottom: 3.271vw;
+    }
+
+    .faq-reviews #seemorecardreview {
+        font-size: 14px;
+        line-height: 20.02px;
+        margin-top: 9.346vw;
+    }
+}

@@ -1,0 +1,154 @@
+{{ 'about-sec7.css' | asset_url | stylesheet_tag }}
+
+
+<div class="abt-sec7-container">
+  <h2>Find The Right Gift</h2>
+
+  <div class="abt-sec7-container-inner">
+    <div class="abt-sec7-card">
+      <div class="card-img-box">
+        {% if section.settings.about-sec7-gift-image-1 != blank %}
+          <img
+            class="card-img"
+            src="{{ section.settings.about-sec7-gift-image-1 | img_url }}"
+            alt="">
+        {% else %}
+          <img
+            class="card-img"
+            src="{{ 'about-section7img1.png' | asset_url}}"
+            alt="">
+        {% endif %}
+      </div>
+      <div class="card-body">
+        <h3>{{ section.settings.gift-title-1 }}</h3>
+        <p>{{ section.settings.gift-text-1 }}</p>
+        <div class="card-button">
+          <p>{{ section.settings.gift-btn-1 }}</p>
+          <img src="{{'about-arrow.png' | asset_url}}" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="abt-sec7-card-center">
+      <div>
+        {% if section.settings.about-sec7-gift-image-2 != blank %}
+          <img
+            class="card-img"
+            src="{{ section.settings.about-sec7-gift-image-2 | img_url }}"
+            alt="">
+        {% else %}
+          <img
+            class="card-img"
+            src="{{ 'about-section7img2.png' | asset_url}}"
+            alt="">
+        {% endif %}
+      </div>
+      <div class="card-body">
+        <h3>{{ section.settings.gift-title-2 }}</h3>
+        <p>{{ section.settings.gift-text-2 }}</p>
+        <div class="card-button">
+          <p>{{ section.settings.gift-btn-2 }}</p>
+          <img src="{{  'about-arrow.png' | asset_url}}" alt="" />
+        </div>
+      </div>
+
+    </div>
+    <div class="abt-sec7-card">
+      <div>
+        {% if section.settings.about-sec7-gift-image-3 != blank %}
+          <img
+            class="card-img"
+            src="{{ section.settings.about-sec7-gift-image-3 | img_url }}"
+            alt="">
+        {% else %}
+          <img
+            class="card-img"
+            src="{{ 'about-section7img3.png' | asset_url}}"
+            alt="">
+        {% endif %}
+      </div>
+      <div class="card-body">
+        <h3>{{ section.settings.gift-title-3 }}</h3>
+        <p>{{ section.settings.gift-text-3 }}</p>
+        <div class="card-button">
+          <p>{{ section.settings.gift-btn-3 }}</p>
+          <img src="{{'about-arrow.png' | asset_url}}" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "about-sec7",
+    "settings": [
+      {
+        "type": "text",
+        "id": "about-sec7-title",
+        "label": "Enter Title",
+        "default": "Find The Right Gift"
+      },
+      {
+        "type": "image_picker",
+        "id": "about-sec7-gift-image-1",
+        "label": "Pick Image"
+      },
+      {
+        "type": "text",
+        "id": "gift-title-1",
+        "label": "Enter Title",
+        "default": "Flower for Newborns"
+      },
+      {
+        "type": "text",
+        "id": "gift-text-1",
+        "label": "Enter Text",
+        "default": "Congratulate the new arrival!"
+      }, {
+        "type": "text",
+        "id": "gift-btn-1",
+        "label": "Enter Button Text",
+        "default": "Shop Now"
+      }, {
+        "type": "image_picker",
+        "id": "about-sec7-gift-image-2",
+        "label": "Pick Image"
+      }, {
+        "type": "text",
+        "id": "gift-title-2",
+        "label": "Enter Title",
+        "default": "Bouquet of the Week"
+      }, {
+        "type": "text",
+        "id": "gift-text-2",
+        "label": "Enter Text",
+        "default": "Discover our special BQ from 19.99"
+      }, {
+        "type": "text",
+        "id": "gift-btn-2",
+        "label": "Enter Button Text",
+        "default": "Shop Now"
+      }, {
+        "type": "image_picker",
+        "id": "about-sec7-gift-image-3",
+        "label": "Pick Image"
+      }, {
+        "type": "text",
+        "id": "gift-title-3",
+        "label": "Enter Title",
+        "default": "Special Rose Boxes"
+      }, {
+        "type": "text",
+        "id": "gift-text-3",
+        "label": "Enter Text",
+        "default": "Flowers with up to 70% discount!"
+      }, {
+        "type": "text",
+        "id": "gift-btn-3",
+        "label": "Enter Button Text",
+        "default": "Shop Now"
+      }
+    ]
+  }
+{% endschema %}

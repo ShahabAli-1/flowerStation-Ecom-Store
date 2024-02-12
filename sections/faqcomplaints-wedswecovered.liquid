@@ -1,0 +1,138 @@
+{{ 'faqcomplaints-wedswecovered.css' | asset_url | stylesheet_tag }}
+<div class="faqcomplaints">
+  <h2>{{ section.settings.faqcomplaints-wwc-title }}</h2>
+  <p>{{ section.settings.faqcomplaints-wwc-desc }}</p>
+  <div class="faq-picture-card">
+    {% if section.settings.faqcomplaints-wwc-img1 != blank %}
+      <img src="{{ section.settings.faqcomplaints-wwc-img1 | img_url: 'master' }}">
+    {% else %}
+      <img src="{{ 'faq-bgimg1.png' | asset_url }}">
+    {% endif %}
+    <div class="card">
+      <h3>{{ section.settings.faqcomplaints-wwc-img1-title }}</h3>
+      <p>{{ section.settings.faqcomplaints-wwc-img1-para }}</p>
+      <button>{{ section.settings.faqcomplaints-wwc-btntext }}</button>
+    </div>
+  </div>
+  <div class="faq-picture-card">
+    {% if section.settings.faqcomplaints-wwc-img2 != blank %}
+      <img src="{{ section.settings.faqcomplaints-wwc-img2 | img_url: 'master' }}">
+    {% else %}
+      <img src="{{ 'faq-bgimg2.png' | asset_url }}">
+    {% endif %}
+    <div class="card">
+      <h3>{{ section.settings.faqcomplaints-wwc-img2-title }}</h3>
+      <p>{{ section.settings.faqcomplaints-wwc-img2-para }}</p>
+      <button>{{ section.settings.faqcomplaints-wwc-btntext }}</button>
+    </div>
+  </div>
+  <div class="faq-picture-card">
+    {% if section.settings.faqcomplaints-wwc-img3 != blank %}
+      <img src="{{ section.settings.faqcomplaints-wwc-img3 | img_url: 'master' }}">
+    {% else %}
+      <img src="{{ 'faq-bgimg3.png' | asset_url }}">
+    {% endif %}
+    <div class="card">
+      <h3>{{ section.settings.faqcomplaints-wwc-img3-title }}</h3>
+      <p>{{ section.settings.faqcomplaints-wwc-img3-para }}</p>
+      <button>{{ section.settings.faqcomplaints-wwc-btntext }}</button>
+    </div>
+  </div>
+  <div class="faq-picture-card seemorecard">
+    {% if section.settings.faqcomplaints-wwc-img4 != blank %}
+      <img src="{{ section.settings.faqcomplaints-wwc-img4 | img_url: 'master' }}">
+    {% else %}
+      <img src="{{ 'faq-bgimg4.png' | asset_url }}">
+    {% endif %}
+    <div class="card">
+      <h3>{{ section.settings.faqcomplaints-wwc-img4-title }}</h3>
+      <p>{{ section.settings.faqcomplaints-wwc-img4-para }}</p>
+      <button>{{ section.settings.faqcomplaints-wwc-btntext }}</button>
+    </div>
+  </div>
+  <p id="seemorecard">see more</p>
+</div>
+
+<script src="{{ 'faqcomplaints-wedswecovered.js' | asset_url }}"></script>
+{% schema %}
+  {
+    "name": "faqcomplaints-wwc",
+    "settings": [
+      {
+        "type": "text",
+        "id": "faqcomplaints-wwc-title",
+        "label": "Main Heading",
+        "default": "Weds we have covered"
+      },
+      {
+        "type": "text",
+        "id": "faqcomplaints-wwc-desc",
+        "label": "Weds we have covered description",
+        "default": "loreim ispum jdnj ifdb khdjjnloreim ispum jdnj ifdb khdjjnloreim ispum jdnj ifdb khdjjn"
+      },
+      {
+        "type": "image_picker",
+        "id": "faqcomplaints-wwc-img1",
+        "label": "Weds we have covered-img1"
+      },
+      {
+        "type": "text",
+        "id": "faqcomplaints-wwc-img1-title",
+        "label": "Weds we have covered-img1-title",
+        "default": "Sara & Shane Wedding"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-wwc-img1-para",
+        "label": "Weds we have covered-img1-para",
+        "default": "Some details about the wedding and the wedding details. The way flower station covered the event and little about the client preferences etc."
+      }, {
+        "type": "image_picker",
+        "id": "faqcomplaints-wwc-img2",
+        "label": "Weds we have covered-img2"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-wwc-img2-title",
+        "label": "Weds we have covered-img2-title",
+        "default": "Kirsty & Colin Wedding"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-wwc-img2-para",
+        "label": "Weds we have covered-img2-para",
+        "default": "Some details about the wedding and the wedding details. The way flower station covered the event and little about the client preferences etc."
+      }, {
+        "type": "image_picker",
+        "id": "faqcomplaints-wwc-img3",
+        "label": "Weds we have covered-img3"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-wwc-img3-title",
+        "label": "Weds we have covered-img3-title",
+        "default": "Iona & Myles Wedding"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-wwc-img3-para",
+        "label": "Weds we have covered-img3-para",
+        "default": "Some details about the wedding and the wedding details. The way flower station covered the event and little about the client preferences etc."
+      }, {
+        "type": "image_picker",
+        "id": "faqcomplaints-wwc-img4",
+        "label": "Weds we have covered-img4"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-wwc-img4-title",
+        "label": "Weds we have covered-img4-title",
+        "default": "Jovanna & Asher Wedding"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-wwc-img4-para",
+        "label": "Weds we have covered-img4-para",
+        "default": "Some details about the wedding and the wedding details. The way flower station covered the event and little about the client preferences etc."
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-wwc-btntext",
+        "label": "Weds we have covered button text",
+        "default": "SEE FULL STORY"
+      }
+    ]
+  }
+{% endschema %}

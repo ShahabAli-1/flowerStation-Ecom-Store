@@ -1,0 +1,216 @@
+.florists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.florists h2 {
+    font-family: 'Frank Ruhl Libre', sans-serif;
+    font-size: 3.889vw;
+    font-weight: 300;
+    line-height: 4.306vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    margin-top: 7.222vw;
+    margin-bottom: 1.667vw;
+}
+
+.florists .desc {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.250vw;
+    font-weight: 300;
+    line-height: 1.750vw;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 45.139vw;
+    margin: 0;
+    margin-bottom: 3.333vw;
+}
+
+.florists .cardholder {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 7vw;
+    padding: 0;
+}
+
+.florists slider-component {
+    padding: 0 5.208vw;
+    margin: 0;
+    max-width: 100%;
+}
+
+.florists slider-component ul {
+    gap: 2.778vw;
+}
+
+.florists .slider--tablet.grid--peek .grid__item:first-of-type {
+    margin-left: 0;
+}
+.florists slider-component ul li {
+    width: 20.278vw;
+}
+
+.florists .cardholder .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.florists .cardholder .card img {
+    width: 100%;
+}
+
+.florists .card h6 {
+    font-family: "Frank Ruhl Libre", sans-serif;
+    font-size: 2.222vw;
+    font-weight: 600;
+    line-height: 2.431vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0.7vw 0;
+    color: #2d2d2d;
+}
+
+.florists .card p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.972vw;
+    font-weight: 400;
+    line-height: 1.361vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    width: 14.444vw;
+    color: #2D2D2D;
+}
+
+.florists .roundcardholder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 2.083vw 0;
+    gap: 4vw;
+    padding: 0 8vw;
+
+}
+
+.florists .roundcardholder .cards h2 {
+    font-family: "Frank Ruhl Libre", sans-serif;
+    font-size: 3.472vw;
+    font-weight: 300;
+    line-height: 3.819vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 1.042vw;
+}
+
+.florists .roundcardholder .cards {
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    background-color: #B3FFA0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.florists .roundcardholder .svg {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 20%;
+}
+
+.florists .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+}
+
+.moregift {
+    display: none;
+}
+
+@media screen and (max-width:989px) {
+    .florists h2 {
+        font-size: 4.090vw;
+        font-weight: 400;
+        line-height: 4.474vw;
+        margin-top: 5.785vw;
+        margin-bottom: 1.963vw;
+    }
+
+    .florists .desc {
+        font-size: 1.534vw;
+        font-weight: 400;
+        line-height: 2.147vw;
+        width: 48.082vw;
+        margin-bottom: 4.137vw;
+    }
+
+    .florists .cardholder {
+        margin-bottom: 5.785vw;
+    }
+
+    .florists slider-component {
+        padding: 0;
+        padding-left: 5.376vw;
+
+    }
+
+    .florists slider-component ul {
+        gap: 5.113vw;
+    }
+
+    .florists .slider--tablet.grid--peek .grid__item{
+        width: 33.333vw;
+    }
+
+    .florists .card h6 {
+        font-size: 2.556vw;
+        font-weight: 400;
+        line-height: 2.812vw;
+        margin-top: 3.068vw;
+        margin-bottom: 2.046vw;
+    }
+
+    .florists .card p {
+        font-size: 1.534vw;
+        line-height: 2.147vw;
+        width: 25.659vw;
+    }
+}
+@media (max-width: 749px) {
+    .florists h2,
+    .florists p,
+    .florists slider-component
+     {
+        display: none;
+    }
+
+    .florists .roundcardholder .cards h2 {
+        display: block;
+        font-family: "Frank Ruhl Libre", sans-serif;
+        font-size: 3.5vw;
+        font-weight: 300;
+        line-height: 3.505vw;
+        letter-spacing: 0em;
+        text-align: center;
+
+    }
+
+}

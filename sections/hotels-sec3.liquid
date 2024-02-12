@@ -1,0 +1,103 @@
+{{ 'hotels-sec3.css' | asset_url | stylesheet_tag }}
+
+<div class="hotel-sec3-container">
+  <div class="hotel-sec3-left">
+    {% if section.settings.hotels-sec3-img != blank %}
+      <img
+        class="hotel-sec3-img"
+        src="{{ section.settings.hotels-sec3-img | img_url}}"
+        alt="">
+    {% else %}
+      <img
+        class="hotel-sec3-img"
+        src="{{ 'hotel-sec3-img.png' | asset_url }}"
+        alt="">
+    {% endif %}
+
+
+  </div>
+  <div class="hotel-sec3-right">
+    <h2>{{ section.settings.hotels-sec3-title }}</h2>
+    <div class="faq-q_a">
+      <p class="question">{{ section.settings.hotels-sec3-question1 }}</p>
+      <p class="answer">{{ section.settings.hotels-sec3-answer1 }}
+      </p>
+    </div>
+    <div class="faq-q_a">
+      <p class="question">{{ section.settings.hotels-sec3-question2 }}</p>
+      <p class="answer">{{ section.settings.hotels-sec3-answer2 }}
+      </p>
+    </div>
+    <div class="faq-q_a">
+      <p class="question">{{ section.settings.hotels-sec3-question3 }}</p>
+      <p class="answer">{{ section.settings.hotels-sec3-answer3 }}
+      </p>
+    </div>
+    <div class="faq-q_a">
+      <p class="question">{{ section.settings.hotels-sec3-question4 }}</p>
+      <p class="answer">{{ section.settings.hotels-sec3-answer4 }}
+      </p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "hotels-sec3",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "hotels-sec3-img",
+        "label": "Select Image"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec3-title",
+        "label": "Enter Your Title",
+        "default": "FAQs"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec3-question1",
+        "label": "Enter Your Question",
+        "default": "How can I order?"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec3-answer1",
+        "label": "Enter Your Answer",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc."
+      }, {
+        "type": "text",
+        "id": "hotels-sec3-question2",
+        "label": "Enter Your Question",
+        "default": "How can I pay?"
+      }, {
+        "type": "text",
+        "id": "hotels-sec3-answer2",
+        "label": "Enter Your Answer",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc."
+      }, {
+        "type": "text",
+        "id": "hotels-sec3-question3",
+        "label": "Enter Your Question",
+        "default": "What other servies you provide for corporate?"
+      }, {
+        "type": "text",
+        "id": "hotels-sec3-answer3",
+        "label": "Enter Your Answer",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc."
+      }, {
+        "type": "text",
+        "id": "hotels-sec3-question4",
+        "label": "Enter Your Question",
+        "default": "I would like to get in touch. What should I do?"
+      }, {
+        "type": "text",
+        "id": "hotels-sec3-answer4",
+        "label": "Enter Your Answer",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc."
+      }
+    ]
+  }
+{% endschema %}

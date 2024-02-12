@@ -1,0 +1,208 @@
+.complaint-sec6-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vw;
+}
+.complaint-sec6-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.complaint-sec6-left {
+  flex: 0.5;
+  display: flex;
+}
+
+.sec6-text {
+  width: 48.68vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sec6-text > h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: "Frank Ruhl Libre";
+  font-size: 3.313vw;
+  font-weight: 600;
+  line-height: 4.278vw;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 1.399vw;
+}
+
+.sec6-text > p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: "Open Sans";
+  font-size: 1.06vw;
+  font-weight: 400;
+  line-height: 1.696vw;
+  letter-spacing: 0;
+  margin-bottom: 3.2vw;
+}
+
+.left-box1 {
+  flex: 0.5;
+  /* width: 25vw; */
+  height: 19.616vw;
+  background-image: url("./comp-sec6-img1.png");
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: flex-end;
+}
+.left-box2 {
+  /* width: 25vw; */
+  flex: 0.5;
+  height: 19.616vw;
+  background-image: url("./comp-sec6-img2.png");
+  background-size: cover;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: flex-end;
+}
+.right-box1 {
+  /* width: 25vw; */
+  flex: 0.5;
+  height: 19.616vw;
+  background-image: url("./comp-sec6-img3.png");
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: flex-end;
+}
+.right-box2 {
+  /* width: 25vw; */
+  flex: 0.5;
+  height: 19.616vw;
+  background-image: url("./comp-sec6-img4.png");
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: flex-end;
+}
+
+.complaint-sec6-right {
+  display: flex;
+  flex: 0.5;
+}
+
+.complaint-sec6-container h2 {
+  /* width: 19.814vw; */
+  width: 77%;
+  color: white;
+  font-size: 2.982vw;
+  font-weight: 400;
+  line-height: 3.547vw;
+  font-family: "Frank Ruhl Libre";
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  .sec6-text {
+    width: 48vw;
+  }
+  .sec6-text > h2 {
+    font-size: 3.118vw;
+    font-weight: 600;
+    line-height: 4.156vw;
+    letter-spacing: 0;
+    margin-bottom: 1.399vw;
+    text-align: center;
+  }
+
+  .sec6-text > p {
+    font-size: 1.799vw;
+    font-weight: 400;
+    line-height: 2.608vw;
+    letter-spacing: 0;
+    margin-block-start: 0;
+    text-align: center;
+    margin-bottom: 3.799vw;
+  }
+
+  .complaint-sec6-container h2 {
+    /* width: 19.917vw; */
+    width: 77%;
+    color: white;
+    font-size: 2.878vw;
+    font-weight: 400;
+    line-height: 3.159vw;
+    font-family: "Frank Ruhl Libre";
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  .sec6-text {
+    width: 57.477vw;
+  }
+  .sec6-text > h2 {
+    font-family: "Frank Ruhl Libre";
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 34.66px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 2.57vw;
+  }
+  .sec6-text > p {
+    font-family: "Open Sans";
+    font-size: 14px;
+    margin-block-start: 0;
+    font-weight: 400;
+    line-height: 20.3px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 4.3vw;
+  }
+
+  .complaint-sec6-container h2 {
+    /* width: 33.178vw; */
+    width: 80%;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22.73px;
+    font-family: "Frank Ruhl Libre";
+  }
+
+  .complaint-sec6-container {
+    width: 100%;
+    height: 77.336vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .complaint-sec6-left {
+    width: 100%;
+  }
+  .left-box1 {
+    flex: 0.5;
+    height: 38.668vw;
+  }
+  .left-box2 {
+    flex: 0.5;
+    height: 38.668vw;
+  }
+  .complaint-sec6-right {
+    width: 100%;
+  }
+  .right-box1 {
+    flex: 0.5;
+    height: 38.668vw;
+  }
+  .right-box2 {
+    flex: 0.5;
+    height: 38.668vw;
+  }
+}

@@ -1,0 +1,130 @@
+.aboutus-consultation {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 4.65vw;
+}
+
+.aboutus-consultation-left {
+    width: 60%;
+    position: relative;
+}
+
+.aboutus-consultation-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutus-consultation-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2.708vw 4.792vw;
+    background-color: #FCEFEF;
+}
+
+.aboutus-consultation-right h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2.917vw;
+    font-weight: 300;
+    line-height: 3.750vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1.667vw;
+}
+
+.aboutus-consultation-right p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.972vw;
+    font-weight: 400;
+    line-height: 1.389vw;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin: 0;
+    color: #2D2D2D;
+    margin-bottom: 1.667vw;
+}
+
+.aboutus-consultation-right button {
+    width: 11.458vw;
+    height: 3.125vw;
+    background-color: #2D2D2D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.111vw;
+    font-weight: 400;
+    line-height: 1.528vw;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    border: none;
+}
+
+@media screen and (max-width:989px) {
+    .aboutus-consultation {
+        flex-direction: column;
+    }
+
+    .aboutus-consultation-left {
+        width: 100%;
+        height: 27.554vw;
+    }
+
+    .aboutus-consultation-right {
+        width: 100%;
+        padding: 1.613vw 5.376vw;
+    }
+
+    .aboutus-consultation-right h2 {
+        font-size: 4.301vw;
+        line-height: 5.552vw;
+        margin-bottom: 0.672vw;
+    }
+
+    .aboutus-consultation-right p {
+        font-size: 1.613vw;
+        line-height: 2.151vw;
+        margin-bottom: 1.613vw;
+    }
+
+    .aboutus-consultation-right button {
+        width: 11.425vw;
+        height: 3.226vw;
+        font-size: 1.112vw;
+        line-height: 1.513vw;
+    }
+}
+@media screen and (max-width:749px) {
+
+    .aboutus-consultation-left {
+        width: 100%;
+        height: 37.383vw;
+    }
+
+    .aboutus-consultation-right {
+        padding: 6.542vw 6.075vw;
+    }
+
+    .aboutus-consultation-right h2 {
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 12px;
+    }
+
+    .aboutus-consultation-right p {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 20px;
+    }
+
+    .aboutus-consultation-right button {
+        width: 40.187vw;
+        height:10.280vw;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

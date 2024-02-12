@@ -1,0 +1,172 @@
+{{ 'corporate-section4-services.css' | asset_url | stylesheet_tag }}
+
+
+
+<div class="services__main">
+  <h2 class="services-heading">{{ section.settings.corp-sec4-title }}</h2>
+  <div class="services">
+    <div class="services__container">
+      <div class="services__left">
+        {% if section.settings.corp-service-img-1 != blank %}
+          <img
+            class="services__image"
+            src="{{ section.settings.corp-service-img-1 | img_url}}"
+            alt="">
+        {% else %}
+          <img
+            class="services__image"
+            src="{{ 'corporate-sec4-1.png' | asset_url }}"
+            alt="">
+        {% endif %}
+
+
+
+      </div>
+      <div class="services__right">
+        <h2>{{ section.settings.corp-service-title-1 }}</h2>
+        <p class="services-p1">{{ section.settings.corp-service-subtitle-1 }}</p>
+        <p class="services-p2">{{ section.settings.corp-service-para-1 }}</p>
+        <button class="services__btn">{{ section.settings.corp-service-btn-1 }}</button>
+      </div>
+    </div>
+  </div>
+  <div class="services">
+    <div class="services__container">
+      <div class="services__left">
+        {% if section.settings.corp-service-img-2 != blank %}
+          <img
+            class="services__image"
+            src="{{ section.settings.corp-service-img-2 | img_url}}"
+            alt="">
+        {% else %}
+          <img
+            class="services__image"
+            src="{{ 'corporate-sec4-2.png' | asset_url }}"
+            alt="">
+        {% endif %}
+
+
+      </div>
+      <div class="services__right">
+        <h2>{{ section.settings.corp-service-title-2 }}</h2>
+        <p class="services-p1">{{ section.settings.corp-service-subtitle-2 }}</p>
+        <p class="services-p2">{{ section.settings.corp-service-para-2 }}</p>
+        <button class="services__btn">{{ section.settings.corp-service-btn-2 }}</button>
+      </div>
+    </div>
+  </div>
+  <div class="services">
+    <div class="services__container">
+      <div class="services__left">
+        {% if section.settings.corp-service-img-3 != blank %}
+          <img
+            class="services__image"
+            src="{{ section.settings.corp-service-img-3 | img_url}}"
+            alt="">
+        {% else %}
+          <img
+            class="services__image"
+            src="{{ 'corporate-sec4-3.png' | asset_url }}"
+            alt="">
+        {% endif %}
+
+      </div>
+      <div class="services__right">
+        <h2>{{ section.settings.corp-service-title-3 }}</h2>
+        <p class="services-p1">{{ section.settings.corp-service-subtitle-3 }}</p>
+        <p class="services-p2">{{ section.settings.corp-service-para-3 }}</p>
+        <button class="services__btn">{{ section.settings.corp-service-btn-3 }}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "corp-sec4-services",
+    "settings": [
+      {
+        "type": "text",
+        "id": "corp-sec4-title",
+        "label": "Enter Your Title",
+        "default": "Services We Provide"
+      },
+      {
+        "type": "image_picker",
+        "id": "corp-service-img-1",
+        "label": "Select Service Image"
+      },
+      {
+        "type": "text",
+        "id": "corp-service-title-1",
+        "label": "Enter Text",
+        "default": "Pubs Flowers"
+      },
+      {
+        "type": "text",
+        "id": "corp-service-subtitle-1",
+        "label": "Enter Subtitle",
+        "default": "Office, Hotel, Restaurant & Bar Flowers - London"
+      }, {
+        "type": "text",
+        "id": "corp-service-para-1",
+        "label": "Enter Text",
+        "default": "Weekly office flowers and floral services available for delivery in London. View our gallery below or contact our corporate team for your free consultation."
+      }, {
+        "type": "text",
+        "id": "corp-service-btn-1",
+        "label": "Enter Button Text",
+        "default": "Explore More"
+      }, {
+        "type": "image_picker",
+        "id": "corp-service-img-2",
+        "label": "Select Service Image"
+      }, {
+        "type": "text",
+        "id": "corp-service-title-2",
+        "label": "Enter Text",
+        "default": "Office Flowers"
+      }, {
+        "type": "text",
+        "id": "corp-service-subtitle-2",
+        "label": "Enter Subtitle",
+        "default": "Office, Hotel, Restaurant & Bar Flowers - London"
+      }, {
+        "type": "text",
+        "id": "corp-service-para-2",
+        "label": "Enter Text",
+        "default": "Weekly office flowers and floral services available for delivery in London. View our gallery below or contact our corporate team for your free consultation."
+      }, {
+        "type": "text",
+        "id": "corp-service-btn-2",
+        "label": "Enter Text",
+        "default": "Explore More"
+      }, {
+        "type": "image_picker",
+        "id": "corp-service-img-3",
+        "label": "Select Service Image"
+      }, {
+        "type": "text",
+        "id": "corp-service-title-3",
+        "label": "Enter Text",
+        "default": "Hotel Flowers"
+      }, {
+        "type": "text",
+        "id": "corp-service-subtitle-3",
+        "label": "Enter Subtitle",
+        "default": "Office, Hotel, Restaurant & Bar Flowers - London"
+      }, {
+        "type": "text",
+        "id": "corp-service-para-3",
+        "label": "Enter Text",
+        "default": "Weekly office flowers and floral services available for delivery in London. View our gallery below or contact our corporate team for your free consultation."
+      }, {
+        "type": "text",
+        "id": "corp-service-btn-3",
+        "label": "Enter Text",
+        "default": "Explore More"
+      }
+    ]
+  }
+{% endschema %}

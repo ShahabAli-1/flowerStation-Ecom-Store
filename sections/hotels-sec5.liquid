@@ -1,0 +1,723 @@
+{{ 'hotels-sec5.css' | asset_url | stylesheet_tag }}
+
+<section class="reviews">
+  <h2 class="reviews-mainheading">{{ section.settings.hotels-sec5-review-title }}</h2>
+  <div class="reviews__heading">
+    <h2 class="reviews-subheading">{{ section.settings.hotels-sec5-review-subtitle }}</h2>
+    <p class="reviews-subheading-text">{{ section.settings.hotels-sec5-reviews-para }}</p>
+  </div>
+  <div class="reviews__carousel">
+    <div class="reviews__carousel-reviews">
+      <div class="reviews-div-top">
+        <p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-1 }}</p>
+        <p class="reviews-body-text">{{ section.settings.hotels-sec5-review-para-1 }}</p>
+      </div>
+      <div class="reviews__carousel-reviews-rating">
+        <p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-1 }}</p>
+        {% if section.settings.reviews-stars-1 != blank %}
+          <img
+            class="stars-svg"
+            src="{{ section.settings.reviews-stars-1 | img_url }}"
+            alt="">
+        {% else %}
+          <svg
+            class="stars-svg"
+            width="102"
+            height="16"
+            viewBox="0 0 102 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+            <path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+            <path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+            <path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+            <path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+          </svg>
+
+        {% endif %}
+
+      </div>
+    </div>
+    <div class="reviews__carousel-reviews">
+      <div class="reviews-div-top">
+        <p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-2 }}</p>
+        <p class="reviews-body-text">{{ section.settings.hotels-sec5-review-para-2 }}</p>
+      </div>
+      <div class="reviews__carousel-reviews-rating">
+        <p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-2 }}</p>
+        {% if section.settings.reviews-stars-2 != blank %}
+          <img
+            class="stars-svg"
+            src="{{ section.settings.reviews-stars-2 | img_url }}"
+            alt="">
+        {% else %}
+          <svg
+            class="stars-svg"
+            width="102"
+            height="16"
+            viewBox="0 0 102 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+            <path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+            <path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+            <path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+            <path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+          </svg>
+
+        {% endif %}
+
+      </div>
+    </div>
+    <div class="reviews__carousel-reviews">
+      <div class="reviews-div-top">
+        <p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-3 }}</p>
+        <p class="reviews-body-text">{{ section.settings.hotels-sec5-review-para-3 }}</p>
+      </div>
+      <div class="reviews__carousel-reviews-rating">
+        <p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-3 }}</p>
+        {% if section.settings.reviews-stars-3 != blank %}
+          <img
+            class="stars-svg"
+            src="{{ section.settings.reviews-stars-3 | img_url }}"
+            alt="">
+        {% else %}
+          <svg
+            class="stars-svg"
+            width="102"
+            height="16"
+            viewBox="0 0 102 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+            <path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+            <path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+            <path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+            <path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+          </svg>
+
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+  <div class="reviews__dots">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</section>
+
+
+<slider-component class="slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
+  <div class="slideshow-container-hotel">
+    <ul
+      id="Slider-{{ section.id }}"
+      class="grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek"
+      role="list"
+      aria-label="{{ 'general.slider.name' | t }}">
+
+      <li
+        id="Slide-{{ section.id }}-2"
+        class="grid__item scroll-trigger animate--slide-in"
+        data-cascadestyle="--animation-order: 2;">
+        <div class="mySlides-hotel">
+          <div class="review-boxes">
+            <div class="reviews__carousel-reviews">
+              <div class="reviews-div-top">
+                <p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-1 }}</p>
+                <p class="reviews-body-text">{{ section.settings.hotels-sec5-review-para-1 }}</p>
+              </div>
+              <div class="reviews__carousel-reviews-rating">
+                <p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-1 }}</p>
+                {% if section.settings.reviews-stars-1 != blank %}
+                  <img
+                    class="stars-svg"
+                    src="{{ section.settings.reviews-stars-1 | img_url }}"
+                    alt="">
+                {% else %}
+                  <svg
+                    class="stars-svg"
+                    width="102"
+                    height="16"
+                    viewBox="0 0 102 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+                    <path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+                    <path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+                    <path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+                    <path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+                  </svg>
+
+                {% endif %}
+
+              </div>
+            </div>
+
+            <div class="reviews__carousel-reviews">
+              <div class="reviews-div-top">
+                <p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-2 }}</p>
+                <p class="reviews-body-text">{{ section.settings.hotels-sec5-review-para-2 }}</p>
+              </div>
+              <div class="reviews__carousel-reviews-rating">
+                <p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-2 }}</p>
+                {% if section.settings.reviews-stars-2 != blank %}
+                  <img
+                    class="stars-svg"
+                    src="{{ section.settings.reviews-stars-2 | img_url }}"
+                    alt="">
+                {% else %}
+                  <svg
+                    class="stars-svg"
+                    width="102"
+                    height="16"
+                    viewBox="0 0 102 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+                    <path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+                    <path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+                    <path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+                    <path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+                  </svg>
+
+                {% endif %}
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </li>
+      <li
+        id="Slide-{{ section.id }}-2"
+        class="grid__item scroll-trigger animate--slide-in"
+        data-cascadestyle="--animation-order: 2;">
+        <div class="mySlides-hotel">
+          <div class="review-boxes">
+            <div class="reviews__carousel-reviews">
+              <div class="reviews-div-top">
+                <p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-3 }}</p>
+                <p class="reviews-body-text">{{ section.settings.hotels-sec5-review-para-3 }}</p>
+              </div>
+              <div class="reviews__carousel-reviews-rating">
+                <p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-3 }}</p>
+                {% if section.settings.reviews-stars-3 != blank %}
+                  <img
+                    class="stars-svg"
+                    src="{{ section.settings.reviews-stars-3 | img_url }}"
+                    alt="">
+                {% else %}
+                  <svg
+                    class="stars-svg"
+                    width="102"
+                    height="16"
+                    viewBox="0 0 102 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+                    <path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+                    <path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+                    <path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+                    <path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+                  </svg>
+
+                {% endif %}
+              </div>
+            </div>
+
+            <div class="reviews__carousel-reviews">
+              <div class="reviews-div-top">
+                <p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-4 }}</p>
+                <p class="reviews-body-text">
+                  {{ section.settings.hotels-sec5-review-para-4 }}</p>
+              </div>
+              <div class="reviews__carousel-reviews-rating">
+                <p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-4 }}</p>
+                {% if section.settings.reviews-stars-4 != blank %}
+                  <img
+                    class="stars-svg"
+                    src="{{ section.settings.reviews-stars-4 | img_url }}"
+                    alt="">
+                {% else %}
+                  <svg
+                    class="stars-svg"
+                    width="102"
+                    height="16"
+                    viewBox="0 0 102 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+                    <path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+                    <path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+                    <path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+                    <path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+                  </svg>
+
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </li>
+      <li
+        id="Slide-{{ section.id }}-2"
+        class="grid__item scroll-trigger animate--slide-in"
+        data-cascadestyle="--animation-order: 2;">
+        <div class="mySlides-hotel">
+          <div class="review-boxes">
+            <div class="reviews__carousel-reviews">
+              <div class="reviews-div-top">
+                <p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-5 }}</p>
+                <p class="reviews-body-text">
+                  {{ section.settings.hotels-sec5-review-para-5 }}
+                </p>
+              </div>
+              <div class="reviews__carousel-reviews-rating">
+                <p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-5 }}</p>
+                {% if section.settings.reviews-stars-5 != blank %}
+                  <img
+                    class="stars-svg"
+                    src="{{ section.settings.reviews-stars-5 | img_url }}"
+                    alt="">
+                {% else %}
+                  <svg
+                    class="stars-svg"
+                    width="102"
+                    height="16"
+                    viewBox="0 0 102 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+                    <path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+                    <path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+                    <path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+                    <path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+                  </svg>
+
+                {% endif %}
+              </div>
+            </div>
+            <div class="reviews__carousel-reviews">
+              <div class="reviews-div-top">
+                <p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-6 }}</p>
+                <p class="reviews-body-text">{{ section.settings.hotels-sec5-review-para-6 }}</p>
+              </div>
+              <div class="reviews__carousel-reviews-rating">
+                <p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-6 }}</p>
+                {% if section.settings.reviews-stars-6 != blank %}
+                  <img
+                    class="stars-svg"
+                    src="{{ section.settings.reviews-stars-6 | img_url }}"
+                    alt="">
+                {% else %}
+                  <svg
+                    class="stars-svg"
+                    width="102"
+                    height="16"
+                    viewBox="0 0 102 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+                    <path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+                    <path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+                    <path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+                    <path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+                  </svg>
+
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="reviews-arrows">
+      <button
+        type="button"
+        class="slider-button slider-button--prev"
+        name="previous"
+        aria-label="{{ 'general.slider.previous_slide' | t }}"
+        aria-controls="Slider-{{ section.id }}">
+        <svg
+          class="reviews-arrow-left"
+          width="36"
+          height="56"
+          viewBox="0 0 36 56"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M33.2383 2.6L2.99838 27.8L33.2383 53"
+            stroke="#000"
+            stroke-width="5.03999"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="slider-button slider-button--next"
+        name="next"
+        aria-label="{{ 'general.slider.next_slide' | t }}"
+        aria-controls="Slider-{{ section.id }}">
+        <svg
+          class="reviews-arrow-right"
+          width="37"
+          height="56"
+          viewBox="0 0 37 56"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M3.24219 2.6L33.4821 27.8L3.24219 53"
+            stroke="#000"
+            stroke-width="5.03999"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</slider-component>
+
+
+{% comment %} 
+
+<div class="slideshow-container-hotel">
+
+<div class="mySlides-hotel">
+<div class="review-boxes">
+<div class="reviews__carousel-reviews">
+<div class="reviews-div-top">
+<p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-1 }}</p>
+<p class="reviews-body-text">{{ section.settings.hotels-sec5-review-para-1 }}</p>
+</div>
+<div class="reviews__carousel-reviews-rating">
+<p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-1 }}</p>
+<svg
+class="stars-svg"
+width="102"
+height="16"
+viewBox="0 0 102 16"
+fill="none"
+xmlns="http://www.w3.org/2000/svg">
+<path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+<path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+<path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+<path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+<path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+</svg>
+
+</div>
+</div>
+
+<div class="reviews__carousel-reviews">
+<div class="reviews-div-top">
+<p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-2 }}</p>
+<p class="reviews-body-text">{{ section.settings.hotels-sec5-review-para-2 }}</p>
+</div>
+<div class="reviews__carousel-reviews-rating">
+<p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-2 }}</p>
+<svg
+class="stars-svg"
+width="102"
+height="16"
+viewBox="0 0 102 16"
+fill="none"
+xmlns="http://www.w3.org/2000/svg">
+<path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+<path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+<path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+<path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+<path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+</svg>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="mySlides-hotel">
+<div class="review-boxes">
+<div class="reviews__carousel-reviews">
+<div class="reviews-div-top">
+<p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-3 }}</p>
+<p class="reviews-body-text">{{ section.settings.hotels-sec5-review-para-3 }}</p>
+</div>
+<div class="reviews__carousel-reviews-rating">
+<p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-3 }}</p>
+<svg
+class="stars-svg"
+width="102"
+height="16"
+viewBox="0 0 102 16"
+fill="none"
+xmlns="http://www.w3.org/2000/svg">
+<path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+<path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+<path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+<path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+<path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+</svg>
+
+</div>
+</div>
+
+<div class="reviews__carousel-reviews">
+<div class="reviews-div-top">
+<p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-4 }}</p>
+<p class="reviews-body-text">
+{{ section.settings.hotels-sec5-review-para-4 }}</p>
+</div>
+<div class="reviews__carousel-reviews-rating">
+<p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-4 }}</p>
+<svg
+class="stars-svg"
+width="102"
+height="16"
+viewBox="0 0 102 16"
+fill="none"
+xmlns="http://www.w3.org/2000/svg">
+<path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+<path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+<path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+<path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+<path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+</svg>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="mySlides-hotel">
+<div class="review-boxes">
+<div class="reviews__carousel-reviews">
+<div class="reviews-div-top">
+<p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-5 }}</p>
+<p class="reviews-body-text">
+{{ section.settings.hotels-sec5-review-para-5 }}
+</p>
+</div>
+<div class="reviews__carousel-reviews-rating">
+<p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-5 }}</p>
+<svg
+class="stars-svg"
+width="102"
+height="16"
+viewBox="0 0 102 16"
+fill="none"
+xmlns="http://www.w3.org/2000/svg">
+<path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+<path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+<path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+<path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+<path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+</svg>
+</div>
+</div>
+<div class="reviews__carousel-reviews">
+<div class="reviews-div-top">
+<p class="reviews__carousel-reviews-heading">{{ section.settings.hotels-sec5-review-title-6 }}</p>
+<p class="reviews-body-text">{{ section.settings.hotels-sec5-review-para-6 }}</p>
+</div>
+<div class="reviews__carousel-reviews-rating">
+<p class="reviews__carousel-reviews-date">{{ section.settings.hotels-sec5-review-date-6 }}</p>
+<svg
+class="stars-svg"
+width="102"
+height="16"
+viewBox="0 0 102 16"
+fill="none"
+xmlns="http://www.w3.org/2000/svg">
+<path d="M7.87805 0L9.64678 5.4436H15.3705L10.7399 8.80793L12.5086 14.2515L7.87805 10.8872L3.24745 14.2515L5.01618 8.80793L0.385579 5.4436H6.10932L7.87805 0Z" fill="#FFCE1F" />
+<path d="M29.4387 0L31.2074 5.4436H36.9312L32.3006 8.80793L34.0693 14.2515L29.4387 10.8872L24.8081 14.2515L26.5768 8.80793L21.9462 5.4436H27.67L29.4387 0Z" fill="#FFCE1F" />
+<path d="M50.9991 0L52.7679 5.4436H58.4916L53.861 8.80793L55.6297 14.2515L50.9991 10.8872L46.3685 14.2515L48.1373 8.80793L43.5067 5.4436H49.2304L50.9991 0Z" fill="#FFCE1F" />
+<path d="M72.5616 0L74.3304 5.4436H80.0541L75.4235 8.80793L77.1922 14.2515L72.5616 10.8872L67.931 14.2515L69.6998 8.80793L65.0692 5.4436H70.7929L72.5616 0Z" fill="#FFCE1F" />
+<path d="M94.1222 0L95.8909 5.4436H101.615L96.9841 8.80793L98.7528 14.2515L94.1222 10.8872L89.4916 14.2515L91.2603 8.80793L86.6297 5.4436H92.3535L94.1222 0Z" fill="#FFCE1F" />
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br> {% endcomment %}{% comment %} <div style="text-align:center">
+<span class="dot-hotel" onclick="currentSlide(1)"></span>
+<span class="dot-hotel" onclick="currentSlide(2)"></span>
+<span class="dot-hotel" onclick="currentSlide(3)"></span>
+</div> {% endcomment %}{{ 'hotels-sec5.js' | asset_url | script_tag }}
+
+<script src="{{ 'hotels-sec5.js' | asset_url }}" defer></script>
+
+
+
+{% schema %}
+  {
+    "name": "hotels-sec5",
+    "settings": [
+      {
+        "type": "text",
+        "id": "hotels-sec5-review-title",
+        "label": "Enter Your Title",
+        "default": "Corporate Reviews"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec5-review-subtitle",
+        "label": "Enter Your Title",
+        "default": "Services Reviewed"
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec5-reviews-para",
+        "label": "Enter Text",
+        "default": "Services Reviewed Corporate flower displays for office, receptions, restaurants and bars. Table vase, main."
+      },
+      {
+        "type": "text",
+        "id": "hotels-sec5-review-title-1",
+        "label": "Enter Reviewer Name",
+        "default": "Ellie - Londnon"
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-para-1",
+        "label": "Enter Text",
+        "default": "We receive weekly flowers for our restaurant and I have to say they are spot on when it comes to designs, delivery is on time, and very affordable."
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-date-1",
+        "label": "Enter Review Date",
+        "default": "6-November-2022"
+      }, {
+        "type": "image_picker",
+        "id": "hotels-sec5-review-stars-1",
+        "label": "Select Rating Image"
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-title-2",
+        "label": "Enter Reviewer Name",
+        "default": "Ghost - Riley"
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-para-2",
+        "label": "Enter Text",
+        "default": "We receive weekly flowers for our restaurant and I have to say they are spot on when it comes to designs, delivery is on time, and very affordable."
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-date-2",
+        "label": "Enter Review Date",
+        "default": "8-August-2022"
+      }, {
+        "type": "image_picker",
+        "id": "hotels-sec5-review-stars-2",
+        "label": "Select Rating Image"
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-title-3",
+        "label": "Enter Reviewer Name",
+        "default": "Capt-Price"
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-para-3",
+        "label": "Enter Text",
+        "default": "We receive weekly flowers for our restaurant and I have to say they are spot on when it comes to designs, delivery is on time, and very affordable."
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-date-3",
+        "label": "Enter Review Date",
+        "default": "12-December-2021"
+      }, {
+        "type": "image_picker",
+        "id": "hotels-sec5-review-stars-3",
+        "label": "Select Rating Image"
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-title-4",
+        "label": "Enter Reviewer Name",
+        "default": "Micheal - Houston"
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-para-4",
+        "label": "Enter Text",
+        "default": "We receive weekly flowers for our restaurant and I have to say they are spot on when it comes to designs, delivery is on time, and very affordable."
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-date-4",
+        "label": "Enter Review Date",
+        "default": "25-July-2020"
+      }, {
+        "type": "image_picker",
+        "id": "hotels-sec5-review-stars-4",
+        "label": "Select Rating Image"
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-title-5",
+        "label": "Enter Reviewer Name",
+        "default": "Imran - Khan"
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-para-5",
+        "label": "Enter Text",
+        "default": "We receive weekly flowers for our restaurant and I have to say they are spot on when it comes to designs, delivery is on time, and very affordable."
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-date-5",
+        "label": "Enter Review Date",
+        "default": "24-March-2020"
+      }, {
+        "type": "image_picker",
+        "id": "hotels-sec5-review-stars-5",
+        "label": "Select Rating Image"
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-title-6",
+        "label": "Enter Reviewer Name",
+        "default": "Nate - Drake"
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-para-6",
+        "label": "Enter Text",
+        "default": "We receive weekly flowers for our restaurant and I have to say they are spot on when it comes to designs, delivery is on time, and very affordable."
+      }, {
+        "type": "text",
+        "id": "hotels-sec5-review-date-6",
+        "label": "Enter Review Date",
+        "default": "19-January-2022"
+      }, {
+        "type": "image_picker",
+        "id": "hotels-sec5-review-stars-6",
+        "label": "Select Rating Image"
+      }, {
+        "type": "image_picker",
+        "id": "reviews-stars-1",
+        "label": "Select Your Svg review 1"
+      }, {
+        "type": "image_picker",
+        "id": "reviews-stars-2",
+        "label": "Select Your Svg review 2"
+      }, {
+        "type": "image_picker",
+        "id": "reviews-stars-3",
+        "label": "Select Your Svg review 3"
+      }, {
+        "type": "image_picker",
+        "id": "reviews-stars-4",
+        "label": "Select Your Svg review 4"
+      }, {
+        "type": "image_picker",
+        "id": "reviews-stars-5",
+        "label": "Select Your Svg review 5"
+      }, {
+        "type": "image_picker",
+        "id": "reviews-stars-6",
+        "label": "Select Your Svg review 6"
+      }
+    ]
+  }
+{% endschema %}

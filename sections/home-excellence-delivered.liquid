@@ -1,0 +1,66 @@
+{{ 'home-excellence-delivered.css' | asset_url | stylesheet_tag }}
+<div class="excellence-parent">
+  <div class="content">
+    <h2>{{ section.settings.home_featured_title }}</h2>
+    <div class="images">
+      {% if section.settings.home_featured_round1 != blank %}
+        <img class="img1" src="{{ section.settings.home_featured_round1 | img_url: 'master' }}" alt="home featured image">
+      {% else %}
+        <img class="img1" src="{{ 'home-featured-round1.png' | asset_url }}" alt="home featured image">
+      {% endif %}
+      {% if section.settings.home_featured_round2 != blank %}
+        <img class="img2" src="{{ section.settings.home_featured_round2 | img_url: 'master' }}" alt="home featured image">
+      {% else %}
+            <img class="img2" src="{{ 'home-featured-round2.png' | asset_url }}" alt="home featured image">
+      {%  endif %}
+    </div>
+    <div class="description">
+        <h2>{{ section.settings.home_featured_title }}</h2>
+        <p>{{ section.settings.home_featured_description }}<p>
+        <div class="shopnow">
+            <h3>Shop Now</h3>
+            {% include 'pink-arrow' %}
+        </div>
+    </div>
+  </div>
+</div>
+{%  schema  %} 
+  {
+    "name": "Excellence. Delivered",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "home_featured_round1",
+        "label": "Image 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "home_featured_round2",
+        "label": "Image 2"
+      },
+      {
+        "type": "text",
+        "id": "home_featured_title",
+        "label": "Title",
+        "default": "Excellence. Delivered"
+      },
+      {
+        "type": "text",
+        "id": "home_featured_description",
+        "label": "Description",
+        "default": "With our own fleet of vans in London, we are able to reach you same day with a smile on our face."
+      },
+      {
+        "type": "url",
+        "id": "home_featured_url",
+        "label": "URL"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Excellence. Delivered",
+        "category": "Home Page"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,100 @@
+{{ 'about-sec9.css' | asset_url | stylesheet_tag }}
+
+
+<div class="abt-sec9-container">
+  <div class="abt-sec9-container-inner">
+    <div class="sec9-inner-left">
+
+      {% if section.settings.about-sec9-img1 != blank %}
+        <img
+          class="sec9-img1"
+          src="{{section.settings.about-sec9-img1 | img_url }}"
+          alt="">
+      {% else %}
+        <img class="sec9-img1" src="{{ 'abt-sec9-1.png' | asset_url }}">
+      {% endif %}
+      {% if section.settings.about-sec9-img2 != blank %}
+        <img
+          class="sec9-img2"
+          src="{{section.settings.about-sec9-img2 | img_url}}"
+          alt="">
+      {% else %}
+        <img class="sec9-img2" src="{{ 'abt-sec9-2.png' | asset_url }}">
+      {% endif %}
+
+    </div>
+    <div class="sec9-inner-right">
+      <h2>{{ section.settings.about-sec9-title }}</h2>
+      <p>{{ section.settings.about-sec9-para1 }}
+      </p>
+      <h5>{{ section.settings.about-sec9-subtitle }}</h5>
+      <p>{{ section.settings.about-sec9-para2 }}</p>
+      <p class="p-large">
+        <strong>
+          {{ section.settings.about-sec9-para3 }}
+        </strong>
+      </p>
+      <p>
+        {{ section.settings.about-sec9-para4 }}
+      </p>
+      <p>
+        {{ section.settings.about-sec9-para5 }}
+      </p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "about-sec9",
+    "settings": [
+      {
+        "type": "text",
+        "id": "about-sec9-title",
+        "label": "Enter Title",
+        "default": "Diversity and Inclusion"
+      },
+      {
+        "type": "text",
+        "id": "about-sec9-para1",
+        "label": "Enter Body Text",
+        "default": "We have developed a strong team of staff from diverse backgrounds and cultures across the globe, bringing energy and togetherness that is rarely experienced in the workplace. We value having a wide range of views and individual thinking, as this is key to remaining innovative in our market."
+      },
+      {
+        "type": "text",
+        "id": "about-sec9-subtitle",
+        "label": "Enter Subtitle",
+        "default": "Partnership with Mencap"
+      },
+      {
+        "type": "text",
+        "id": "about-sec9-para2",
+        "label": "Enter Body Text",
+        "default": "We’ll be making our own contributions, and changing our practices to reduce our carbon footprint. We hope you’ll join us in creating a sustainable future, by choosing to CarbonClick with your purchase."
+      }, {
+        "type": "text",
+        "id": "about-sec9-para3",
+        "label": "Enter Body Text",
+        "default": "Mencap’s vision is for the UK to be the best place in the world for people with a learning disability to live happy and healthy lives."
+      }, {
+        "type": "text",
+        "id": "about-sec9-para4",
+        "label": "Enter Body Text",
+        "default": "There is still so much to do so that people with a learning disability have the same rights as everyone else and are treated equally in society."
+      }, {
+        "type": "text",
+        "id": "about-sec9-para5",
+        "label": "Enter Body Text",
+        "default": "We're helping Mencap change the lives of young people with a learning disability, offering paid jobs and internships. We also hold annual fundraising events at our Garden Centre like celebrating Learning Disability Week."
+      }, {
+        "type": "image_picker",
+        "id": "about-sec9-img1",
+        "label": "Select Image 1"
+      }, {
+        "type": "image_picker",
+        "id": "about-sec9-img2",
+        "label": "Select Image 2"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,241 @@
+.faq-bridalbouquets h2 {
+  color: #353535;
+  text-align: center;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3.307vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 6.614vw;
+  margin-bottom: 2.712vw;
+}
+
+.faq-bridalbouquets .faq-cardcontainer .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s ease, opacity 0.1s ease;
+  width: 25vw;
+  height: auto;
+  margin: 0 2vw;
+}
+
+.faq-bridalbouquets .faq-cardcontainer .card img {
+  width: 100%;
+  height: auto;
+}
+
+.faq-bridalbouquets .bridal-buttoncon button svg {
+  width: 100%;
+  height: 100%;
+  color: #ddb98c;
+}
+
+.faq-bridalbouquets .bridal-buttoncon button[disabled] svg {
+  width: 100%;
+  height: 100%;
+  color: #ddb98c;
+  /* color: #b5a48e; */
+}
+
+.faq-bridalbouquets .bridal-buttoncon button svg:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.faq-bridalbouquets .bridal-buttoncon button {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+.faq-bridalbouquets .bridal-buttoncon {
+  display: none;
+}
+
+.faq-bridalbouquets slider-component ul {
+  gap: 0;
+}
+
+.faq-bridalbouquets .faq-cardcontainer .slider--desktop.grid--1-col-desktop .grid__item {
+  max-width: 100%;
+  width: fit-content;
+}
+
+.faq-bridalbouquets .faq-cardcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.646vw;
+  flex-direction: column;
+}
+
+.faq-cardcontainer .card h6 {
+  margin: 10px;
+  color: #000;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.907vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.faq-cardcontainer .card p {
+  margin: 0;
+  color: #000;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.907vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 2.222vw;
+}
+
+@media (max-width: 989px) {
+  .faq-bridalbouquets .bridal-buttoncon button {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+
+  .faq-bridalbouquets slider-component ul li {
+    scroll-snap-align: end;
+  }
+
+  .faq-bridalbouquets slider-component ul {
+    gap: 0;
+    padding: 0 8vw;
+  }
+
+  .faq-bridalbouquets .faq-cardcontainer .card {
+    width: 37vw;
+    height: auto;
+    margin: 0 9vw 0 0;
+  }
+
+  .faq-bridalbouquets .bridal-buttoncon {
+    display: flex;
+    gap: 5vw;
+  }
+
+  .faq-bridalbouquets h2 {
+    color: #353535;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 3.365vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 4.808vw;
+  }
+
+  .faq-cardcontainer .card h6 {
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.803vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .faq-cardcontainer .card p {
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.803vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .faq-cardcontainer .card {
+    width: 28.726vw;
+    height: 36vw;
+    opacity: 1;
+  }
+
+  .slider--tablet.grid--peek .grid__item:first-of-type {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 749px) {
+  .slider--tablet.grid--peek .grid__item:first-of-type {
+    margin-left: 6vw;
+  }
+
+  .faq-bridalbouquets .slider--desktop.grid--1-col-desktop .grid__item {
+    margin-right: 16vw;
+    scroll-snap-align: center;
+  }
+
+  .faq-bridalbouquets .bridal-buttoncon button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .faq-bridalbouquets slider-component ul {
+    gap: 0;
+    padding: 0 13vw;
+    scroll-padding-left: 0
+  }
+
+  .faq-bridalbouquets .faq-cardcontainer .card {
+    width: 70vw;
+    height: auto;
+    margin: 0 3.5vw 0 0;
+  }
+
+  .faq-bridalbouquets .bridal-buttoncon {
+    display: flex;
+    gap: 5vw;
+  }
+
+  .faq-bridalbouquets h2 {
+    color: #353535;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .faq-bridalbouquets .faq-cardcontainer {
+    flex-direction: column;
+    margin-top: 12vw;
+  }
+
+  .faq-cardcontainer .card h6 {
+    color: #000;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .faq-cardcontainer .card p {
+    color: #000;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .faq-cardcontainer .card {
+    width: 63.318vw;
+    height: 80vw;
+  }
+}
+
+/* @media (max-width: 400px) {
+  .faq-bridalbouquets slider-component ul {
+    padding-left: 0;
+  }
+} */

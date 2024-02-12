@@ -1,0 +1,94 @@
+{{ 'pay-sec4.css' | asset_url | stylesheet_tag }}
+
+<form class="pay-sec4-form">
+  <h2>{{ section.settings.pay-sec4-title }}</h2>
+  <div class="form-fields">
+    <div class="input-field">
+      <label class="input-label" for="orderid">{{ section.settings.pay-sec4-input-label-1 }}
+        <span class="steric">*</span>
+      </label>
+      <input
+        class="pay-input"
+        placeholder="{{ section.settings.pay-sec4-placeholder-1 }}"
+        name="orderid"
+        type="text">
+    </div>
+    <div class="input-field">
+      <label class="input-label" for="email">{{ section.settings.pay-sec4-input-label-2 }}
+        <span class="steric">*</span>
+      </label>
+      <input
+        class="pay-input"
+        placeholder="{{ section.settings.pay-sec4-placeholder-2 }}"
+        name="email"
+        type="email">
+    </div>
+
+  </div>
+  <div class="comments-field">
+    <label class="input-label" for="comment">{{ section.settings.pay-sec4-input-label-3 }}
+      <span class="steric">*</span>
+    </label>
+    <textarea
+      class="pay-textarea"
+      name="comment"
+      id=""
+      placeholder="{{ section.settings.pay-sec4-placeholder-3 }}"
+      cols="30"
+      rows="10"></textarea>
+  </div>
+  <button class="submit-pay">{{ section.settings.pay-sec4-btn }}</button>
+
+</form>
+
+{% schema %}
+  {
+    "name": "pay-sec4",
+    "settings": [
+      {
+        "type": "text",
+        "id": "pay-sec4-title",
+        "label": "Enter Title",
+        "default": "Contact Us"
+      },
+      {
+        "type": "text",
+        "id": "pay-sec4-input-label-1",
+        "label": "Enter Label",
+        "default": "Order Id"
+      },
+      {
+        "type": "text",
+        "id": "pay-sec4-input-label-2",
+        "label": "Enter Label",
+        "default": "Email Address"
+      },
+      {
+        "type": "text",
+        "id": "pay-sec4-input-label-3",
+        "label": "Enter Label",
+        "default": "Additional Comments"
+      }, {
+        "type": "text",
+        "id": "pay-sec4-placeholder-1",
+        "label": "Enter Placeholder",
+        "default": "Order Id here"
+      }, {
+        "type": "text",
+        "id": "pay-sec4-placeholder-2",
+        "label": "Enter Placeholder",
+        "default": "Your Email here"
+      }, {
+        "type": "text",
+        "id": "pay-sec4-placeholder-3",
+        "label": "Enter Placeholder",
+        "default": "Please put your additional comments, questions here"
+      }, {
+        "type": "text",
+        "id": "pay-sec4-btn",
+        "label": "Enter Button text",
+        "default": "Submit Request"
+      }
+    ]
+  }
+{% endschema %}

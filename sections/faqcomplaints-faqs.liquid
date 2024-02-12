@@ -1,0 +1,104 @@
+{{ 'faqcomplaints-faqs.css' | asset_url | stylesheet_tag }}
+<div class="faqcompliants-faq">
+  <div class="faqc-left">
+
+    {% if section.settings['faqcomplaints-faqs-image'] != blank %}
+      <img src="{{ section.settings['faqcomplaints-faqs-image'] | img_url: 'master' }}">
+    {% else %}
+      <img src="{{'faqcomplaints-faq.png' |asset_url}}">
+    {% endif %}
+  </div>
+  <div class="faqc-right">
+    <h2>
+      {{ section.settings['faqcomplaints-faqs-title'] }}
+    </h2>
+    <h3>{{ section.settings['faqcomplaints-faqs-q1'] }}</h3>
+    <p>{{ section.settings['faqcomplaints-faqs-a1'] }}</p>
+    <h3>{{ section.settings['faqcomplaints-faqs-q2'] }}</h3>
+    <p>{{ section.settings['faqcomplaints-faqs-a2'] }}</p>
+    <h3>{{ section.settings['faqcomplaints-faqs-q3'] }}</h3>
+    <p>{{ section.settings['faqcomplaints-faqs-a3'] }}</p>
+    <h3>{{ section.settings['faqcomplaints-faqs-q4'] }}</h3>
+    <p>{{ section.settings['faqcomplaints-faqs-a4'] }}</p>
+    <h3>{{ section.settings['faqcomplaints-faqs-q5'] }}</h3>
+    <p>{{ section.settings['faqcomplaints-faqs-a5'] }}</p>
+    <h3>{{ section.settings['faqcomplaints-faqs-q6'] }}</h3>
+    <p>{{ section.settings['faqcomplaints-faqs-a6'] }}</p>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "FAQs",
+    "settings": [
+      {
+        "type": "text",
+        "id": "faqcomplaints-faqs-title",
+        "label": "Main Title",
+        "default": "FAQs"
+      },
+      {
+        "type": "text",
+        "id": "faqcomplaints-faqs-q1",
+        "label": "Question 1",
+        "default": "How can I order?"
+      },
+      {
+        "type": "text",
+        "id": "faqcomplaints-faqs-a1",
+        "label": "Answer 1",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc."
+      },
+      {
+        "type": "text",
+        "id": "faqcomplaints-faqs-q2",
+        "label": "Question 2",
+        "default": "How can I pay?"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-faqs-a2",
+        "label": "Answer 2",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc."
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-faqs-q3",
+        "label": "Question 3",
+        "default": "What other servies you provide for corporate?"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-faqs-a3",
+        "label": "Answer 3",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc."
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-faqs-q4",
+        "label": "Question 4",
+        "default": "I would like to get in touch. What should I do?"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-faqs-a4",
+        "label": "Answer 4",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque consectetur vitae maecenas sit neque magna nunc."
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-faqs-q5",
+        "label": "Question 5"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-faqs-a5",
+        "label": "Answer 5"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-faqs-q6",
+        "label": "Question 6"
+      }, {
+        "type": "text",
+        "id": "faqcomplaints-faqs-a6",
+        "label": "Answer 6"
+      }, {
+        "type": "image_picker",
+        "id": "faqcomplaints-faqs-image",
+        "label": "Image"
+      }
+    ]
+  }
+{% endschema %}

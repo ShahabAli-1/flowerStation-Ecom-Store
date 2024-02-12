@@ -1,0 +1,45 @@
+{{ 'pay-sec3.css' | asset_url | stylesheet_tag }}
+
+<div class="pay-sec3-container">
+  <h2>
+    {{ section.settings.pay-sec3-title }}</h2>
+  <p class="plarge">
+    {{ section.settings.pay-sec3-para1 }}
+  </p>
+  <p class="plarge">
+    {{ section.settings.pay-sec3-para2 }}
+  </p>
+  <p class="p-body">
+    {{ section.settings.pay-sec3-para3 }}
+  </p>
+</div>
+
+
+{% schema %}
+  {
+    "name": "pay-sec3",
+    "settings": [
+      {
+        "type": "text",
+        "id": "pay-sec3-title",
+        "label": "Enter Title",
+        "default": "Delivery"
+      }, {
+        "type": "text",
+        "id": "pay-sec3-para1",
+        "label": "Enter Text",
+        "default": "When you are placing an order, you will be given a selection of delivery options."
+      }, {
+        "type": "text",
+        "id": "pay-sec3-para2",
+        "label": "Enter Text",
+        "default": "All our products can be ordered for same day delivery in London and next delivery in rest of UK."
+      }, {
+        "type": "text",
+        "id": "pay-sec3-para3",
+        "label": "Enter Text",
+        "default": "It is the responsibility of the sender to ensure the recipient of the delivery is at home to receive their items. If we attempt a delivery and the recipient is not at home we will leave the package in the safest place possible, this is down to the sole discretion of the driver. We will always leave a delivery note with details on where the delivery package was left. Once we have delivered the item to the delivery address its safety is no longer our responsibility rather that of the sender."
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,186 @@
+.excellence-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.excellence-parent .blackband {
+    width: 100%;
+    height: 17vw;
+    background-color: #2D2D2D;
+    color: #fff;
+    padding: 2vw;
+    padding-top: 4vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.excellence-parent .blackband h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.083vw;
+    font-weight: 300;
+    line-height: 2.847vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    margin: 0px;
+}
+
+.excellence-parent .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7.222vw;
+}
+
+.excellence-parent .logos img {
+    width: 13.889vw;
+}
+
+.excellence-parent .arrow-svg {
+    width: 8.889vw;
+}
+
+.excellence-parent .description {
+    width: 39.583vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.excellence-parent .description h2 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 3.472vw;
+    font-weight: 300;
+    line-height: 4.514vw;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.excellence-parent .description p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.111vw;
+    font-weight: 300;
+    line-height: 1.875vw;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 31.181vw;
+    margin-top: 2.778vw;
+}
+
+.excellence-parent .shopnow {
+    display: flex;
+    gap: 0.903vw;
+    flex-direction: column;
+}
+
+.excellence-parent .shopnow h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.736vw;
+    font-weight: 300;
+    line-height: 2.361vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+
+.excellence-parent .content {
+    padding-top: 7.569vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.excellence-parent .content h2 {
+    display: none;
+}
+
+.excellence-parent .images {
+    display: flex;
+    gap: 1.389vw;
+}
+
+.excellence-parent .img1 {
+    width: 24.583vw;
+    height: 33.681vw;
+}
+
+.excellence-parent .img2 {
+    width: 25.347vw;
+    height: 33.681vw;
+    margin-top: 4.444vw;
+}
+
+.excellence-parent .description h2 {
+    display: block;
+}
+
+@media (max-width: 749px) {
+    .excellence-parent .description h2 {
+        display: none !important;
+    }
+
+    .excellence-parent .description p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 77.804vw;
+    }
+
+    .excellence-parent .img1 {
+        width: 39.720vw;
+        height: 54.439vw;
+    }
+
+    .excellence-parent .img2 {
+        width: 40.888vw;
+        height: 54.439vw;
+    }
+
+    .excellence-parent .content {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .excellence-parent .shopnow {
+        display: none;
+    }
+
+    .excellence-parent .content h2 {
+        display: block;
+        font-family: "Frank Ruhl Libre", serif;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 46px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+    }
+
+    .excellence-parent {
+        flex-direction: column-reverse;
+    }
+
+    .excellence-parent .blackband h3 {
+        font-family: Open Sans;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+
+    }
+}

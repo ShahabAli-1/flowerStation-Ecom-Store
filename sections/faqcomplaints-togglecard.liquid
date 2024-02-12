@@ -1,0 +1,107 @@
+{{ 'faqcomplaints-togglecard.css' | asset_url | stylesheet_tag }}
+<div class="faq-wedding-toggle">
+  <div class="faq-header">
+    <h2>Weddings</h2>
+    <h2>London Wedding Florist</h2>
+  </div>
+  <div class="faq-card">
+    <div class="faq-leftpart">
+      <p>{{ section.settings.faq_wedding_toggle_card1-paragraph1 }}</p>
+      <p>{{ section.settings.faq_wedding_toggle_card1-paragraph2 }}</p>
+      <p>{{ section.settings.faq_wedding_toggle_card1-paragraph3 }}</p>
+      <p>{{ section.settings.faq_wedding_toggle_card1-paragraph4 }}</p>
+    </div>
+    <div class="faq-rightpart">
+      {% if section.settings.faq_wedding_toggle_card1-image1 != blank %}
+        <img src="{{ section.settings.faq_wedding_toggle_card1-image1 | img_url: 'master' }}" alt="wedding image">
+      {% else %}
+        <img src="{{ 'faq-toggle-card1.png' | asset_url }}" alt="wedding image">
+      {% endif %}
+    </div>
+  </div>
+  <div class="faq-card">
+    <div class="faq-paragraph">
+      <p>{{ section.settings.faq_wedding_toggle_card2-paragraph1 }}</p>
+      <p>{{ section.settings.faq_wedding_toggle_card2-paragraph2 }}</p>
+      <p>{{ section.settings.faq_wedding_toggle_card2-paragraph3 }}</p>
+      <p>{{ section.settings.faq_wedding_toggle_card2-paragraph4 }}</p>
+      <p>{{ section.settings.faq_wedding_toggle_card2-paragraph5 }}</p>
+      <p>{{ section.settings.faq_wedding_toggle_card2-paragraph6 }}</p>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "FAQ Wedding Toggle Card",
+    "settings": [
+      {
+        "type": "text",
+        "id": "faq_wedding_toggle_card-title1",
+        "label": "Title1",
+        "default": "Weddings"
+      },
+      {
+        "type": "text",
+        "id": "faq_wedding_toggle_card-title2",
+        "label": "Title2",
+        "default": "London Wedding Florist"
+      },
+      {
+        "type": "text",
+        "id": "faq_wedding_toggle_card1-paragraph1",
+        "label": "Paragraph1",
+        "default": "Here at Flower Station, we have accumulated a wealth of experience in dealing with wedding clients. We understand that choosing wedding flowers can be one of the most challenging choices for the couple. That is why our wedding florists are always on hand to offer advice and make sure your wedding flower arrangements are created just the way our you have imagined them."
+      },
+      {
+        "type": "text",
+        "id": "faq_wedding_toggle_card1-paragraph2",
+        "label": "Paragraph2",
+        "default": "We know that the choice of colours and flower types is sometimes daunting, but with our florists' expertise and our huge portfolio of weddings we believe that choosing flowers has really never been much easier."
+      }, {
+        "type": "text",
+        "id": "faq_wedding_toggle_card1-paragraph3",
+        "label": "Paragraph3",
+        "default": "Our London wedding specialists are accustomed in dealing with all sorts of different clients and whether they have a truly lush bespoke flower design idea or are just after some simple and elegant flowers, we will recognize those needs and do utmost to make that special day truly special."
+      }, {
+        "type": "text",
+        "id": "faq_wedding_toggle_card1-paragraph4",
+        "label": "Paragraph4"
+      }, {
+        "type": "text",
+        "id": "faq_wedding_toggle_card2-paragraph1",
+        "label": "Paragraph1",
+        "default": "Flower Station is not just an ordinary London florist. We pride ourselves on giving people great deals on all luxury wedding flowers. We are also pleased to recommend venues in London, caterers, musicians, photographers, expert cake bakers, or even special effects companies if needs require them."
+      }, {
+        "type": "text",
+        "id": "faq_wedding_toggle_card2-paragraph2",
+        "label": "Paragraph2",
+        "default": "Flower Station mostly operates weddings inside London and the Home Counties. However in-house florists have been known to travel throughout Great Britain and even abroad."
+      }, {
+        "type": "text",
+        "id": "faq_wedding_toggle_card2-paragraph3",
+        "label": "Paragraph3",
+        "default": "Flower Station offers free, no-obligation quotes to all that may need them, and once invited to our flagship store in London you will see why we are often the florist of choice for many people. Our wedding flower specialists will cater from start to finish and you will always be looked after by no more than two people. As we are a family business, this will usually be one of the owners, or senior managers, who will look to cater to every need and use the full might of our company to the full effect to create truly wonderful wedding flowers. We also use our vases meaning that you will not have to pay any rental fees as with other companies."
+      }, {
+        "type": "text",
+        "id": "faq_wedding_toggle_card2-paragraph4",
+        "label": "Paragraph4",
+        "default": "Our wedding team of florists has managed to collect a very large collection of photographs in our library and all of them will be available to you in your free consultation with us."
+      }, {
+        "type": "text",
+        "id": "faq_wedding_toggle_card2-paragraph5",
+        "label": "Paragraph5",
+        "default": "We have a very large and quite an international team of florists on our hands too who can cater for all sorts of designs and weddings flowers that follow different traditions, be they Indian, Jewish, Russian, Arabic; they would all be types of events that we would have done many times over before. Please check the following 5 wedding flower ideas by our expert florists."
+      }, {
+        "type": "text",
+        "id": "faq_wedding_toggle_card2-paragraph6",
+        "label": "Paragraph6"
+      }, {
+        "type": "image_picker",
+        "id": "faq_wedding_toggle_card1-image1",
+        "label": "Image1"
+      }
+    ]
+  }
+{% endschema %}
+
+<script src="{{ 'faqcomplaints-togglecard.js' | asset_url }}"></script>

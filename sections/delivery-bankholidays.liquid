@@ -1,0 +1,154 @@
+{{ 'delivery-bankholidays.css' | asset_url | stylesheet_tag }}
+<div class="delivery-bankholidays">
+  <h2 id="delivery_holidays">{{ section.settings.delivery_bankholidays-title }}</h2>
+  <h3>{{ section.settings.delivery_bankholidays-heading1 }}</h3>
+  <h5>{{ section.settings.delivery_bankholidays-p1 }}
+    <span>{{ section.settings.delivery_bankholidays-span1 }}</span>
+    {{ section.settings.delivery_bankholidays-pr1 }}</h5>
+  <h3>{{ section.settings.delivery_bankholidays-heading2 }}</h3>
+  <h5>{{ section.settings.delivery_bankholidays-p2 }}
+    <span>{{ section.settings.delivery_bankholidays-span2 }}</span>
+    {{ section.settings.delivery_bankholidays-pr2 }}</h5>
+  <h3>{{ section.settings.delivery_bankholidays-heading3 }}</h3>
+  <h5>{{ section.settings.delivery_bankholidays-p3 }}
+    <span>{{ section.settings.delivery_bankholidays-span3 }}</span>
+    {{ section.settings.delivery_bankholidays-pr3 }}</h5>
+  <h3>{{ section.settings.delivery_bankholidays-heading4 }}</h3>
+  <h5>{{ section.settings.delivery_bankholidays-p4 }}
+    <span>{{ section.settings.delivery_bankholidays-span4 }}</span>
+    {{ section.settings.delivery_bankholidays-pr4 }}</h5>
+</div>
+{% if section.settings.delivery_bankholidays-image != blank %}
+  <img
+    class="delivery-flower-image"
+    src="{{ section.settings.delivery_bankholidays-image | img_url: 'master' }}"
+    alt="Big Flower Image">
+{% else %}
+  <img
+    class="delivery-flower-image"
+    src="{{ 'delivery-bankholidays.png' | asset_url }}"
+    alt="Big Flower Image">
+{% endif %}
+<div class="delivery-banksection2">
+  <p>{{ section.settings.delivery_bankholidays-contact }}</p>
+  <a href="mailto:{{ section.settings.delivery_bankholidays-email }}">{{ section.settings.delivery_bankholidays-email }}</a>
+  <h5>{{ section.settings.delivery_bankholidays-heading5 }}</h5>
+  <p>{{ section.settings.delivery_bankholidays-p5 }}</p>
+</div>
+{% schema %}
+
+  {
+    "name": "Delivery Bank Holidays",
+    "settings": [
+      {
+        "type": "text",
+        "id": "delivery_bankholidays-title",
+        "label": "Title",
+        "default": "May Bank Holidays 2023 Update"
+      },
+      {
+        "type": "text",
+        "id": "delivery_bankholidays-heading1",
+        "label": "Heading 1",
+        "default": "Early May Bank Holiday"
+      },
+      {
+        "type": "text",
+        "id": "delivery_bankholidays-p1",
+        "label": "Paragraph 1",
+        "default": "Any London deliveries will operate as normal. Nationwide delivery (outside London) will not be available the following days:"
+      },
+      {
+        "type": "text",
+        "id": "delivery_bankholidays-span1",
+        "label": "Span 1",
+        "default": "Sunday 30th April to Tuesday 2nd May 2023 (both inclusive)."
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-pr1",
+        "label": "Paragraph 1 remaining",
+        "default": "Nationwide deliveries will resume as normal on Wednesday 3th May 2023."
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-heading2",
+        "label": "Heading 2",
+        "default": "Bank Holiday for the Coronation of King Charles III"
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-p2",
+        "label": "Paragraph 2",
+        "default": "Any London deliveries will operate as normal. Nationwide delivery (outside London) will not be available the following days:"
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-span2",
+        "label": "Span 2",
+        "default": "Sunday 7th May to Tuesday 9th May 2023 (both inclusive)."
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-pr2",
+        "label": "Paragraph 2 remaining",
+        "default": "Nationwide deliveries will resume as normal on Wednesday 10th May 2023."
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-heading3",
+        "label": "Heading 3",
+        "default": "Spring Bank Holiday"
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-p3",
+        "label": "Paragraph 3",
+        "default": "Any London deliveries will operate as normal. Nationwide delivery (outside London) will not be available the following days:"
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-span3",
+        "label": "Span 3",
+        "default": "Sunday 28th May to Tuesday 30th May 2023 (both inclusive)."
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-pr3",
+        "label": "Paragraph 3 remaining",
+        "default": "Nationwide deliveries will resume as normal on Wednesday 31st May 2023."
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-heading4",
+        "label": "Heading 4"
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-p4",
+        "label": "Paragraph 4"
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-span4",
+        "label": "Span 4"
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-pr4",
+        "label": "Paragraph 4 remaining"
+      }, {
+        "type": "image_picker",
+        "id": "delivery_bankholidays-image",
+        "label": "Image"
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-contact",
+        "label": "Contact",
+        "default": "Please contact our customer care team for any clarifications or to rearrange your delivery via email at"
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-email",
+        "label": "Email",
+        "default": "info@flowerstation.co.uk"
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-heading5",
+        "label": "Heading 5",
+        "default": "FOR THE LATE-NIGHT SHOPPERS"
+      }, {
+        "type": "text",
+        "id": "delivery_bankholidays-p5",
+        "label": "Paragraph 5",
+        "default": "Our head florist shop near Baker Street is a driver-through florist open 24/7."
+      }
+    ]
+  }
+{% endschema %}

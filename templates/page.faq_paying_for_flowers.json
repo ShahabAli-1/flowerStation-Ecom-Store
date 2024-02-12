@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "pay-sec1": {
+      "type": "pay-sec1",
+      "settings": {}
+    },
+
+    "pay-sec2": {
+      "type": "pay-sec2",
+      "settings": {}
+    },
+
+    "pay-sec3": {
+      "type": "pay-sec3",
+      "settings": {}
+    },
+
+    "pay-sec4": {
+      "type": "pay-sec4",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": ["main", "pay-sec1", "pay-sec2", "pay-sec3", "pay-sec4"]
+}

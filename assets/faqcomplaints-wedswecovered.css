@@ -1,0 +1,234 @@
+.faqcomplaints h2 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 3.307vw;
+    font-weight: 300;
+    line-height: 4.269vw;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #353535;
+    margin: 0;
+    margin-bottom: 1.076vw;
+    margin-top: 6.680vw;
+}
+
+.faqcomplaints p {
+    color: #353535;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.058vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    width: 26.852vw;
+    margin: 0 auto;
+    margin-bottom: 3.505vw;
+}
+
+.faqcomplaints .faq-picture-card {
+    position: relative;
+    width: 100%;
+    padding: 0 5.820vw;
+    margin-bottom: 3.373vw;
+}
+
+.faqcomplaints .faq-picture-card img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.faqcomplaints .faq-picture-card .card {
+    background: #FFFFFF;
+    position: absolute;
+    width: 37.500vw;
+    padding: 4.762vw 2.976vw;
+    left: 10.648vw;
+    border: 0.066vw solid #C1C1C1;
+    background: #FFFCF9;
+    top: 50%;
+    transform: translate(0, -51%);
+}
+
+.faqcomplaints .faq-picture-card .card h3 {
+    color: #353535;
+    text-align: left;
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 2.976vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 143%;
+    margin: 0;
+    margin-bottom: 1.058vw;
+}
+
+.faqcomplaints .faq-picture-card .card p {
+    color: #353535;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.058vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    margin: 0;
+    text-align: left;
+    width: 22.024vw;
+}
+
+.faqcomplaints .faq-picture-card .card button {
+    border: 0.054vw solid #353535;
+    width: 13.492vw;
+    height: 2.866vw;
+    color: #353535;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.058vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #FFFFFF;
+    margin-top: 2.116vw;
+}
+
+.faqcomplaints .faq-picture-card .card button:hover {
+    cursor: pointer;
+}
+
+.faqcomplaints .seemorecard {
+    display: none;
+}
+
+.faqcomplaints #seemorecard {
+    color: #727070;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.190vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    text-decoration-line: underline;
+}
+
+.faqcomplaints #seemorecard:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 990px) {
+    .faqcomplaints h2 {
+        font-family: "Play Fair Display", serif;
+        font-size: 3.365vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 1.803vw;
+
+    }
+
+    .faqcomplaints p {
+        font-size: 1.923vw;
+        font-weight: 400;
+        line-height: 145%;
+        /* 23.2px */
+        width: 48.798vw;
+        margin: 0 auto;
+        margin-bottom: 4.808vw;
+    }
+
+    .faqcomplaints .faq-picture-card {
+        padding: 0;
+        margin-bottom: 4.808vw;
+    }
+
+    .faqcomplaints .faq-picture-card .card {
+        width: 49.760vw;
+        left: 4.928vw;
+        padding: 4.556vw 8.393vw 4.556vw 5.516vw;
+    }
+
+    .faqcomplaints .faq-picture-card .card h3 {
+        font-family: "Play Fair Display", serif;
+        font-size: 2.885vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 143%;
+        margin-bottom: 1.824vw;
+    }
+
+    .faqcomplaints .faq-picture-card .card p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.803vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 143%;
+        text-align: left;
+        width: 35.697vw;
+    }
+
+    .faqcomplaints .faq-picture-card .card button {
+        border: 0.126vw solid #353535;
+        width: 22.236vw;
+        height: 5.514vw;
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.803vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-color: #FFFFFF;
+        margin-top: 2.518vw;
+    }
+
+    .faqcomplaints #seemorecard {
+        font-size: 2.163vw;
+    }
+}
+
+@media (max-width: 750px) {
+    .faqcomplaints h2 {
+        font-size: 26px;
+        margin-bottom: 2.336vw;
+    }
+
+    .faqcomplaints p {
+        font-size: 14px;
+        width: 65vw;
+        margin: 0 auto;
+        margin-bottom: 5.841vw;
+    }
+
+    .faqcomplaints .faq-picture-card {
+        margin-bottom: 60vw;
+    }
+
+    .faqcomplaints .faq-picture-card .card {
+        padding:8.411vw 19.626vw 8.411vw 8.879vw;
+        width: 86.449vw;
+        top: 65%;
+        left: 6.776vw;
+        transform: translate(0, 0);
+    }
+
+    .faqcomplaints .faq-picture-card .card h3 {
+        font-family: "Play Fair Display", serif;
+        font-size: 5.140vw;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .faqcomplaints .faq-picture-card .card p {
+        font-size: 3.271vw;
+        line-height: 145%;
+        text-align: left;
+        width: 57.944vw;
+    }
+
+    .faqcomplaints .faq-picture-card .card button {
+        border: 0.126vw solid #353535;
+        width: 41.121vw;
+        height: 10.280vw;
+        font-size: 3.271vw;
+        margin-top: 20px;
+    }
+
+    .faqcomplaints #seemorecard {
+        font-size: 14px;
+    }
+}

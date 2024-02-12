@@ -1,0 +1,325 @@
+{{ 'order-flowers-sec8.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{% comment %} <div class="sec8-head-text">
+<h2>{{ section.settings.ord-sec8-title }}</h2>
+<p>
+{{ section.settings.ord-sec8-para }}
+</p>
+</div>
+<div class="slideshow-container">
+<div class="mySlides">
+<div class="carousel-item-info">
+<div class="info-left-sec8">
+<h3>{{ section.settings.ord-sec8-position-title-1 }}</h3>
+<p class="p-1">Required experience: {{ section.settings.required-exp-1 }}</p>
+<p class="p-2">Role duties:</p>
+<p class="p-3">
+{{ section.settings.duties-1-point-1 }} <br> {{ section.settings.duties-1-point-2 }} <br>
+{{ section.settings.duties-1-point-3 }}
+</p>
+<div class="info-buttons">
+<button class="btn-1">{{ section.settings.ord-sec8-btn-1 }}</button>
+<button class="btn-2">{{ section.settings.ord-sec8-btn-2 }}</button>
+</div>
+</div>
+<div class="info-right">
+{% if section.settings.ord-sec8-position-1-img != blank %}
+<img
+class="carousal-item-image"
+src="{{ 'section.settings.ord-sec8-position-1-img' | img_url }}"
+alt="">
+{% else %}
+<img
+class="carousal-item-image"
+src="{{ 'ord-sec8-img.png' | asset_url }}"
+alt="">
+{% endif %}
+
+</div>
+</div>
+</div>
+
+<div class="mySlides">
+
+<div class="carousel-item-info">
+<div class="info-left-sec8">
+<h3>{{ section.settings.ord-sec8-position-title-2 }}</h3>
+<p class="p-1">Required experience: {{ section.settings.required-exp-2 }}</p>
+<p class="p-2">Role duties:</p>
+<p class="p-3">
+{{ section.settings.duties-2-point-1 }} <br> {{ section.settings.duties-2-point-2 }} <br>
+{{ section.settings.duties-2-point-3 }}
+</p>
+<div class="info-buttons">
+<button class="btn-1">{{ section.settings.ord-sec8-btn-1 }}</button>
+<button class="btn-2">{{ section.settings.ord-sec8-btn-2 }}</button>
+</div>
+</div>
+<div class="info-right">
+{% if section.settings.ord-sec8-position-2-img != blank %}
+<img
+class="carousal-item-image"
+src="{{ 'section.settings.ord-sec8-position-2-img' | img_url }}"
+alt="">
+{% else %}
+<img
+class="carousal-item-image"
+src="{{ 'ord-sec8-img.png' | asset_url }}"
+alt="">
+{% endif %}
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+<br> {% endcomment %}{% comment %} ========== Slider Component new ========== {% endcomment %}
+
+  <slider-component class="slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in"> <div class="slideshow-container">
+
+    <ul
+      id="Slider-{{ section.id }}"
+      class="grid product-grid contains-card contains-card--product contains-card--standard grid--1-col-desktop grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek"
+      role="list"
+      aria-label="{{ 'general.slider.name' | t }}">
+      <li
+        id="Slide-{{ section.id }}-1"
+        class="grid__item scroll-trigger animate--slide-in"
+        data-cascadestyle="--animation-order: 1;">
+        <div class="carousel-item-info">
+          <div class="info-left-sec8">
+            <h3>{{ section.settings.ord-sec8-position-title-2 }}</h3>
+            <p class="p-1">Required experience: {{ section.settings.required-exp-2 }}</p>
+            <p class="p-2">Role duties:</p>
+            <p class="p-3">
+              {{ section.settings.duties-2-point-1 }} <br> {{ section.settings.duties-2-point-2 }} <br>
+              {{ section.settings.duties-2-point-3 }}
+            </p>
+            <div class="info-buttons">
+              <button class="btn-1">{{ section.settings.ord-sec8-btn-1 }}</button>
+              <button class="btn-2">{{ section.settings.ord-sec8-btn-2 }}</button>
+            </div>
+          </div>
+          <div class="info-right">
+            {% if section.settings.ord-sec8-position-2-img != blank %}
+              <img
+                class="carousal-item-image"
+                src="{{ section.settings.ord-sec8-position-2-img | img_url }}"
+                alt="">
+            {% else %}
+              <img
+                class="carousal-item-image"
+                src="{{ 'ord-sec8-img.png' | asset_url }}"
+                alt="">
+            {% endif %}
+
+          </div>
+        </div>
+
+      </li>
+      <li
+        id="Slide-{{ section.id }}-2"
+        class="grid__item scroll-trigger animate--slide-in"
+        data-cascadestyle="--animation-order: 2;">
+        <div class="carousel-item-info">
+          <div class="info-left-sec8">
+            <h3>{{ section.settings.ord-sec8-position-title-1 }}</h3>
+            <p class="p-1">Required experience: {{ section.settings.required-exp-1 }}</p>
+            <p class="p-2">Role duties:</p>
+            <p class="p-3">
+              {{ section.settings.duties-1-point-1 }} <br> {{ section.settings.duties-1-point-2 }} <br>
+              {{ section.settings.duties-1-point-3 }}
+            </p>
+            <div class="info-buttons">
+              <button class="btn-1">{{ section.settings.ord-sec8-btn-1 }}</button>
+              <button class="btn-2">{{ section.settings.ord-sec8-btn-2 }}</button>
+            </div>
+          </div>
+          <div class="info-right">
+            {% if section.settings.ord-sec8-position-1-img != blank %}
+              <img
+                class="carousal-item-image"
+                src="{{ section.settings.ord-sec8-position-1-img | img_url }}"
+                alt="">
+            {% else %}
+              <img
+                class="carousal-item-image"
+                src="{{ 'ord-sec8-img.png' | asset_url }}"
+                alt="">
+            {% endif %}
+
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  {% comment %} 
+  <button
+  type="button"
+  class="slider-button slider-button--prev"
+  name="previous"
+  aria-label="{{ 'general.slider.previous_slide' | t }}"
+  aria-controls="Slider-{{ section.id }}">
+  {% render 'icon-caret' %}
+  </button>
+  <button
+  type="button"
+  class="slider-button slider-button--next"
+  name="next"
+  aria-label="{{ 'general.slider.next_slide' | t }}"
+  aria-controls="Slider-{{ section.id }}">
+  {% render 'icon-caret' %}
+  </button> {% endcomment %}<div style="text-align:center" class="carousal-nav">
+
+    <button
+      type="button"
+      class=" prev icon slider-button slider-button--prev"
+      name="previous"
+      onclick="plusSlides(-1)"
+      aria-label="{{ 'general.slider.previous_slide' | t }}"
+      aria-controls="Slider-{{ section.id }}">{% render 'order-flowers-carousel-arrow-left-svg' %}
+    </button>
+    <span class="dot-8" onclick="currentSlide(1)"></span>
+    <span class="dot-8" onclick="currentSlide(2)"></span>
+
+    <button
+      type="button"
+      class="next icon slider-button slider-button--next"
+      name="next"
+      onclick="plusSlides(1)"
+      aria-label="{{ 'general.slider.next_slide' | t }}"
+      aria-controls="Slider-{{ section.id }}">
+      {% render 'order-flowers-carousel-arrow-right-svg' %}
+    </button>
+
+  </div>
+
+
+
+</slider-component>
+
+
+{% comment %} ========== Slider Component End ========= {% endcomment %}
+{% comment %} <div style="text-align:center" class="carousal-nav">
+
+<button class="prev icon" onclick="plusSlides(-1)">{% render 'order-flowers-carousel-arrow-left-svg' %}
+</button>
+<span class="dot-8" onclick="currentSlide(1)"></span>
+<span class="dot-8" onclick="currentSlide(2)"></span>
+
+<button class="next icon" onclick="plusSlides(1)">
+{% render 'order-flowers-carousel-arrow-right-svg' %}
+</button>
+
+</div> {% endcomment %}<div class="out-sec8-content-ipad-mob">
+  <div class="position-1">
+    <h2>Senior Florist - Freelance</h2>
+    <div class="job-btns">
+      <button class="job-btn1">Apply Now</button>
+      <button class="job-btn2">More Details</button>
+    </div>
+  </div>
+  <div class="position-1">
+    <h2>Flower Conditioner - Valentine's Day</h2>
+    <div class="job-btns">
+      <button class="job-btn1">Apply Now</button>
+      <button class="job-btn2">More Details</button>
+    </div>
+  </div>
+</div>
+{{ 'order-flowerd-sec8.js' | asset_url | script_tag }}
+
+<script src="{{ 'order-flowers-sec8.js' | asset_url }}" defer></script>
+
+
+{% schema %}
+  {
+    "name": "order-sec8",
+    "settings": [
+      {
+        "type": "text",
+        "id": "ord-sec8-title",
+        "label": "Enter Your Title",
+        "default": "Current Available positions"
+      },
+      {
+        "type": "text",
+        "id": "ord-sec8-para",
+        "label": "Enter Your Description",
+        "default": "We offer a variety of work here at Flower Station. Jobs are diverse and range from office positions in marketing, customer services and operations, as well as floristry in all sectors, gardening, delivery driving and even more. We pride ourselves on having personal, committed relationships with members of staff at all echelons of the business. Support is always readily available."
+      },
+      {
+        "type": "text",
+        "id": "ord-sec8-position-title-1",
+        "label": "Enter Text",
+        "default": "Senior Florist - Freelance"
+      },
+      {
+        "type": "text",
+        "id": "required-exp-1",
+        "label": "Enter Required Experience",
+        "default": "1+ Years"
+      }, {
+        "type": "text",
+        "id": "duties-1-point-1",
+        "label": "Enter Text",
+        "default": "• Creating Interactive Graphics"
+      }, {
+        "type": "text",
+        "id": "duties-1-point-2",
+        "label": "Enter Text",
+        "default": "• Creating custom Designs"
+      }, {
+        "type": "text",
+        "id": "duties-1-point-3",
+        "label": "Enter Text",
+        "default": "• 6th to 16th of Feb- Possibility of full time contact after."
+      }, {
+        "type": "text",
+        "id": "ord-sec8-btn-1",
+        "label": "Enter Button Text",
+        "default": "Apply Now"
+      }, {
+        "type": "text",
+        "id": "ord-sec8-btn-2",
+        "label": "Enter Button Text",
+        "default": "More Details"
+      }, {
+        "type": "image_picker",
+        "id": "ord-sec8-position-1-img",
+        "label": "Select Image"
+      }, {
+        "type": "text",
+        "id": "ord-sec8-position-title-2",
+        "label": "Enter Text",
+        "default": "Flower Conditioner - Valentine's Day"
+      }, {
+        "type": "text",
+        "id": "required-exp-2",
+        "label": "Enter Required Experience",
+        "default": "1+ Years"
+      }, {
+        "type": "text",
+        "id": "duties-2-point-1",
+        "label": "Enter Text",
+        "default": "• Creating Interactive Graphics"
+      }, {
+        "type": "text",
+        "id": "duties-2-point-2",
+        "label": "Enter Text",
+        "default": "• Creating custom Designs"
+      }, {
+        "type": "text",
+        "id": "duties-2-point-3",
+        "label": "Enter Text",
+        "default": "• 6th to 16th of Feb- Possibility of full time contact after."
+      }, {
+        "type": "image_picker",
+        "id": "ord-sec8-position-2-img",
+        "label": "Select Image"
+      }
+    ]
+  }
+{% endschema %}

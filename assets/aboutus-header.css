@@ -1,0 +1,108 @@
+.aboutus-header {
+    height: 38px;
+    width: 100%;
+    background-color: #9AC0E3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.aboutus-instalogo {
+    width: 1.319vw;
+    height: 1.319vw;
+}
+
+.aboutus-fblogo {
+    width: 0.486vw;
+    height: 1.042vw;
+}
+
+.aboutus-pinlogo {
+    width: 0.764vw;
+    height: 1.042vw;
+}
+
+.aboutus-phonelogo {
+    width: 0.764vw;
+    height: 1.042vw;
+}
+
+.aboutus-linkdinlogo {
+    width: 0.833vw;
+    height: 0.903vw;
+}
+
+.aboutus-msglogo {
+    width: 1.111vw;
+    height: 0.903vw;
+}
+
+.aboutus-right-heading h3 {
+    border-left: 1px solid #FFFFFF;
+}
+
+.aboutus-logos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.111vw;
+    margin-left: 3.264vw;
+}
+
+.aboutus-right-heading {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0;
+}
+
+.aboutus-right-heading h3 {
+    width: 8.403vw;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.042vw;
+    font-weight: 600;
+    line-height: 4vw;
+    letter-spacing: 0em;
+}
+
+.aboutus-header h4 {
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.833vw;
+    font-weight: 400;
+    line-height: 1.667vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 3.264vw;
+}
+
+@media screen and (max-width:989px) {
+    .aboutus-logos {
+        display: none;
+    }
+
+    .aboutus-right-heading {
+        display: none;
+    }
+
+    .aboutus-header {
+        justify-content: center;
+    }
+
+    .aboutus-header h4 {
+        color: #FFFFFF;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.344vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+}
+
+@media screen and (max-width:749px) {
+    .aboutus-header h4 {
+        font-size: 10px;
+    }
+}

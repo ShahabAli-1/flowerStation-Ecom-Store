@@ -1,0 +1,75 @@
+{{ 'aboutus-section10.css' | asset_url | stylesheet_tag }}
+
+
+<div class="equality-container">
+  <div class="equality-container-inner">
+    <div class="inner-left">
+      <h2>{{ section.settings.aboutus-sec10-title }}</h2>
+      <p>
+        {{ section.settings.aboutus-sec10-para1 }}
+      </p>
+      <p class="p_red">
+        {{ section.settings.aboutus-sec10-para2 }}
+      </p>
+      <p>
+        {{ section.settings.aboutus-sec10-para3 }}
+      </p>
+    </div>
+    <div class="inner-right">
+      {% comment %} {% if section.settings.aboutus-sec10-image != blank %}
+      <img src="{{'section.settings.aboutus-sec10-image' | img_url}}" alt="">
+      {% else %}
+      <img src="{{'about-sect10-img.png' | asset_url}}" alt="">
+      {% endif %} {% endcomment %}
+
+      {% if section.settings.aboutus-sec10-image != blank %}
+        <img src="{{section.settings.aboutus-sec10-image | img_url}}" alt="">
+      {% else %}
+        <picture>
+          <source media="(min-width: 750px) and (max-width: 989px)" srcset="{{ 'abt-sec10-tab-img.png' | asset_url }}">
+          <source media="(min-width: 990px)" srcset="{{ 'abt-sec10-pc-img.png' | asset_url }}">
+          <img src="{{ 'abt-us-sec10-mob-img.png' | asset_url }}" alt="Responsive Image">
+        </picture>
+      {% endif %}
+
+
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "aboutus-section10",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "aboutus-sec10-image",
+        "label": "Select Image"
+      },
+      {
+        "type": "text",
+        "id": "aboutus-sec10-title",
+        "label": "Enter Title",
+        "default": "Gender Equality"
+      },
+      {
+        "type": "text",
+        "id": "aboutus-sec10-para1",
+        "label": "Enter Text",
+        "default": "We work toward a diverse and equitable workplace by creating accurate and inclusive job descriptions, sourcing a gender-diverse candidate pipeline, and conducting fair interviews."
+      },
+      {
+        "type": "text",
+        "id": "aboutus-sec10-para2",
+        "label": "Enter Text",
+        "default": "We offer our employees equal pay for equal work, regardless of their gender."
+      }, {
+        "type": "text",
+        "id": "aboutus-sec10-para3",
+        "label": "Enter Text",
+        "default": "To bridge the gap, we strive to create a culture where employees feel a sense of belonging and acceptance. We focus on improving our culture to increase inclusion and enhance employee experience and engagement."
+      }
+    ]
+  }
+{% endschema %}

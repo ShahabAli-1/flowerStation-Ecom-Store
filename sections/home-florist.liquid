@@ -1,0 +1,233 @@
+{{ 'home-florist.css' | asset_url | stylesheet_tag }}
+<div class="florists">
+  <h2>{{ section.settings['home-florist-title'] }}</h2>
+  <p class="desc">{{ section.settings['home-florist-description'] }}</p>
+  <slider-component class="slider-mobile-gutter slider-component-full-width page-width-desktop scroll-trigger animate--slide-in">
+    <ul
+      id="Slider-{{ section.id }}"
+      class="cardholder grid product-grid contains-card contains-card--product contains-card--standard g slider slider--tablet grid--peek"
+      role="list"
+      aria-label="{{ 'general.slider.name' | t }}">
+      <li
+        id="Slide-{{ section.id }}-0"
+        class="grid__item  scroll-trigger animate--slide-in"
+        data-cascadestyle="--animation-order:0;">
+        <div class="card">
+          {% if section.settings['home-florist-image1'] %}
+            <img src="{{ section.settings['home-florist-image1'] | img_url: 'master' }}" alt="Florist Card">
+          {% else %}
+            <img src="{{ 'floristcard1.png' | asset_url }}" alt="Florist Card">
+          {% endif %}
+          <h6>{{ section.settings['home-florist-image1-title'] }}</h6>
+          <p>{{ section.settings['home-florist-image1-description'] }}</p>
+        </div>
+      </li>
+      <li
+        id="Slide-{{ section.id }}-1"
+        class="mobilenone grid__item  scroll-trigger animate--slide-in"
+        data-cascadestyle="--animation-order:1;">
+        <div class="card mobilenone">
+          {% if section.settings['home-florist-image2'] %}
+            <img src="{{ section.settings['home-florist-image2'] | img_url: 'master' }}" alt="Florist Card">
+          {% else %}
+            <img src="{{ 'floristcard2.png' | asset_url }}" alt="Florist Card">
+          {% endif %}
+          <h6>{{ section.settings['home-florist-image2-title'] }}</h6>
+          <p>{{ section.settings['home-florist-image2-description'] }}</p>
+        </div>
+      </li>
+      <li
+        id="Slide-{{ section.id }}-2"
+        class="grid__item  scroll-trigger animate--slide-in"
+        data-cascadestyle="--animation-order:2;">
+        <div class="card">
+          {% if section.settings['home-florist-image3'] %}
+            <img src="{{ section.settings['home-florist-image3'] | img_url: 'master' }}" alt="Florist Card">
+          {% else %}
+            <img src="{{ 'floristcard3.png' | asset_url }}" alt="Florist Card">
+          {% endif %}
+          <h6>{{ section.settings['home-florist-image3-title'] }}</h6>
+          <p>{{ section.settings['home-florist-image3-description'] }}</p>
+        </div>
+      </li>
+      <li
+        id="Slide-{{ section.id }}-3"
+        class="grid__item  scroll-trigger animate--slide-in"
+        data-cascadestyle="--animation-order:3;">
+        <div class="card">
+          {% if section.settings['home-florist-image4'] %}
+            <img src="{{ section.settings['home-florist-image4'] | img_url: 'master' }}" alt="Florist Card">
+          {% else %}
+            <img src="{{ 'floristcard4.png' | asset_url }}" alt="Florist Card">
+          {% endif %}
+          <h6>{{ section.settings['home-florist-image4-title'] }}</h6>
+          <p>{{ section.settings['home-florist-image4-description'] }}</p>
+        </div>
+      </li>
+    </ul>
+    <div class="slider-buttons no-js-hidden">
+      <button
+        type="button"
+        class="slider-button slider-button--prev"
+        name="previous"
+        aria-label="{{ 'general.slider.previous_slide' | t }}"
+        aria-controls="Slider-{{ section.id }}">
+        {% render 'icon-caret' %}
+      </button>
+      <div class="slider-counter caption">
+        <span class="slider-counter--current">1</span>
+        <span aria-hidden="true">
+          /
+        </span>
+        <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+        <span class="slider-counter--total">{{ products_to_display }}</span>
+      </div>
+      <button
+        type="button"
+        class="slider-button slider-button--next"
+        name="next"
+        aria-label="{{ 'general.slider.next_slide' | t }}"
+        aria-controls="Slider-{{ section.id }}">
+        {% render 'icon-caret' %}
+      </button>
+    </div>
+  </slider-component>
+
+
+  <div class="roundcardholder">
+    <div class="cards">
+      <div class="content">
+        <h2>{{ section.settings['home-florist-roundcard1-title'] }}</h2>
+        <div class="svg">{% comment %} <svg
+          width="5.625vw"
+          height="1.597vw"
+          viewBox="0 0 81 23"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M79.9521 12.9474C80.5379 12.3616 80.5379 11.4118 79.9521 10.8261L70.4062 1.28012C69.8204 0.69433 68.8707 0.69433 68.2849 1.28012C67.6991 1.8659 67.6991 2.81565 68.2849 3.40144L76.7702 11.8867L68.2849 20.372C67.6991 20.9578 67.6991 21.9075 68.2849 22.4933C68.8707 23.0791 69.8204 23.0791 70.4062 22.4933L79.9521 12.9474ZM0 13.3867H78.8915V10.3867H0V13.3867Z" fill="black" />
+          </svg> {% endcomment %}
+        </div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="content">
+        <h2>{{ section.settings['home-florist-roundcard2-title'] }}</h2>
+        <div class="svg">{% comment %} <svg
+          width="5.625vw"
+          height="1.597vw"
+          viewBox="0 0 81 23"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M79.9521 12.9474C80.5379 12.3616 80.5379 11.4118 79.9521 10.8261L70.4062 1.28012C69.8204 0.69433 68.8707 0.69433 68.2849 1.28012C67.6991 1.8659 67.6991 2.81565 68.2849 3.40144L76.7702 11.8867L68.2849 20.372C67.6991 20.9578 67.6991 21.9075 68.2849 22.4933C68.8707 23.0791 69.8204 23.0791 70.4062 22.4933L79.9521 12.9474ZM0 13.3867H78.8915V10.3867H0V13.3867Z" fill="black" />
+          </svg> {% endcomment %}
+        </div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="content">
+        <h2>{{ section.settings['home-florist-roundcard3-title'] }}</h2>
+        <div class="svg">{% comment %} <svg
+          width="5.625vw"
+          height="1.597vw"
+          viewBox="0 0 81 23"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M79.9521 12.9474C80.5379 12.3616 80.5379 11.4118 79.9521 10.8261L70.4062 1.28012C69.8204 0.69433 68.8707 0.69433 68.2849 1.28012C67.6991 1.8659 67.6991 2.81565 68.2849 3.40144L76.7702 11.8867L68.2849 20.372C67.6991 20.9578 67.6991 21.9075 68.2849 22.4933C68.8707 23.0791 69.8204 23.0791 70.4062 22.4933L79.9521 12.9474ZM0 13.3867H78.8915V10.3867H0V13.3867Z" fill="black" />
+          </svg> {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Home Florist",
+    "settings": [
+      {
+        "type": "text",
+        "id": "home-florist-title",
+        "label": "Title",
+        "default": "The Florists Edit"
+      },
+      {
+        "type": "text",
+        "id": "home-florist-description",
+        "label": "Description",
+        "default": "Each week our faboulous florists pick and choose their favourite bouquets and gifts that put a smile on their face every day. They hope that you will get as much joy from their favourites as they do."
+      },
+      {
+        "type": "image_picker",
+        "id": "home-florist-image1",
+        "label": "Image 1"
+      },
+      {
+        "type": "text",
+        "id": "home-florist-image1-title",
+        "label": "Image 1 Title",
+        "default": "Fortune Favours"
+      }, {
+        "type": "text",
+        "id": "home-florist-image1-description",
+        "label": "Image 1 Description",
+        "default": "A bouquet that is the epitome of affordable luxury: passionate pinks, elegant whites and lively yellows in a bunch."
+      }, {
+        "type": "image_picker",
+        "id": "home-florist-image2",
+        "label": "Image 2"
+      }, {
+        "type": "text",
+        "id": "home-florist-image2-title",
+        "label": "Image 2 Title",
+        "default": "Pure Passion"
+      }, {
+        "type": "text",
+        "id": "home-florist-image2-description",
+        "label": "Image 2 Description",
+        "default": "Qorem ipsum dolor sit amet, consectetur adipiscing elit. dolor sit amet, consectetur adipiscing elit."
+      }, {
+        "type": "image_picker",
+        "id": "home-florist-image3",
+        "label": "Image 3"
+      }, {
+        "type": "text",
+        "id": "home-florist-image3-title",
+        "label": "Image 3 Title",
+        "default": "Sweet Nancy"
+      }, {
+        "type": "text",
+        "id": "home-florist-image3-description",
+        "label": "Image 3 Description",
+        "default": "Qorem ipsum dolor sit amet, consectetur adipiscing elit. dolor sit amet, consectetur adipiscing elit."
+      }, {
+        "type": "image_picker",
+        "id": "home-florist-image4",
+        "label": "Image 4"
+      }, {
+        "type": "text",
+        "id": "home-florist-image4-title",
+        "label": "Image 4 Title",
+        "default": "Red Rose Box"
+      }, {
+        "type": "text",
+        "id": "home-florist-image4-description",
+        "label": "Image 4 Description",
+        "default": "Qorem ipsum dolor sit amet, consectetur adipiscing elit. dolor sit amet, consectetur adipiscing elit."
+      }, {
+        "type": "text",
+        "id": "home-florist-roundcard1-title",
+        "label": "Round Card 1 Title",
+        "default": "Birthday Bouquets"
+      }, {
+        "type": "text",
+        "id": "home-florist-roundcard2-title",
+        "label": "Round Card 2 Title",
+        "default": "Gifts & Chocolates"
+      }, {
+        "type": "text",
+        "id": "home-florist-roundcard3-title",
+        "label": "Round Card 3 Title",
+        "default": "Thank You Flowers"
+      }
+    ]
+  }
+{% endschema %}

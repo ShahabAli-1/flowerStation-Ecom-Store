@@ -1,0 +1,105 @@
+{{ 'complaints-sec6.css' | asset_url | stylesheet_tag }}
+
+
+<div class="complaint-sec6-main">
+  <div class="sec6-text">
+    <h2>{{ section.settings.comp-sec6-mainheading }}</h2>
+    <p>
+      {{ section.settings.comp-sec6-subheading }}</p>
+  </div>
+  <div class="complaint-sec6-container">
+    <div class="complaint-sec6-left">
+      <div
+        class="left-box1"
+        {% if section.settings.comp-sec6-image1 %}
+        style="background-image: url({{ section.settings.comp-sec6-image1 | img_url}})"
+        {% endif %}>
+        <h2>{{ section.settings.complaint-sec6-l1-header }}</h2>
+      </div>
+      <div
+        class="left-box2"
+        {% if section.settings.comp-sec6-image2 %}
+        style="background-image: url({{ section.settings.comp-sec6-image2 | img_url}})"
+        {% endif %}>
+        <h2>{{ section.settings.complaint-sec6-l2-header }}</h2>
+      </div>
+    </div>
+    <div class="complaint-sec6-right">
+
+      <div
+        class="right-box1"
+        {% if section.settings.comp-sec6-image3 %}
+        style="background-image: url({{ section.settings.comp-sec6-image3 | img_url}})"
+        {% endif %}>
+        <h2>{{ section.settings.complaint-sec6-r1-header }}</h2>
+      </div>
+      <div
+        class="right-box2"
+        {% if section.settings.comp-sec6-image4 %}
+        style="background-image: url({{ section.settings.comp-sec6-image4 | img_url }})"
+        {% endif %}>
+        <h2>{{ section.settings.complaint-sec6-r2-header }}</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "complaints-sec6",
+    "settings": [
+      {
+        "type": "text",
+        "id": "comp-sec6-mainheading",
+        "label": "Enter Heading",
+        "default": "What we Offer"
+      },
+      {
+        "type": "text",
+        "id": "comp-sec6-subheading",
+        "label": "Enter Subheading",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices posuere lectus mattis sit lectus velit"
+      },
+      {
+        "type": "text",
+        "id": "complaint-sec6-l1-header",
+        "label": "Enter Image Heading 1",
+        "default": "Bespoke Floral Design"
+      },
+      {
+        "type": "text",
+        "id": "complaint-sec6-l2-header",
+        "label": "Enter Image Heading 2",
+        "default": "Vase Fire"
+      }, {
+        "type": "text",
+        "id": "complaint-sec6-r1-header",
+        "label": "Enter Image Heading 3",
+        "default": "Table Arrangements"
+      }, {
+        "type": "text",
+        "id": "complaint-sec6-r2-header",
+        "label": "Enter Image Heading 4",
+        "default": "Wedding Tables"
+      }, {
+        "type": "image_picker",
+        "id": "comp-sec6-image1",
+        "label": "Select Image 1"
+      }, {
+        "type": "image_picker",
+        "id": "comp-sec6-image2",
+        "label": "Select Image 2"
+      }, {
+        "type": "image_picker",
+        "id": "comp-sec6-image3",
+        "label": "Select Image 3"
+      }, {
+        "type": "image_picker",
+        "id": "comp-sec6-image4",
+        "label": "Select Image 4"
+      }
+
+    ]
+  }
+{% endschema %}

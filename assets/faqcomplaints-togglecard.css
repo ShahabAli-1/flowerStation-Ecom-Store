@@ -1,0 +1,133 @@
+.faq-wedding-toggle {
+    margin-top: 7.672vw;
+}
+.faq-wedding-toggle .faq-header {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-wedding-toggle .faq-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.faq-wedding-toggle .faq-card {
+    display: flex;
+    gap: 0;
+    align-items: flex-start;
+    padding:0 2.646vw;
+    padding-top: 6.250vw;
+}
+
+.faq-wedding-toggle .faq-card .faq-paragraph{
+    padding: 0 8.333vw;
+    width: 100%;
+}
+.faq-wedding-toggle .faq-card .faq-leftpart {
+    width: 64%;
+    padding: 0 5.688vw;
+}
+
+.faq-wedding-toggle .faq-paragraph p ,
+.faq-wedding-toggle .faq-leftpart p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.058vw;
+    font-weight: 400;
+    line-height: 1.720vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.faq-wedding-toggle .faq-header h2 {
+    width: 26.455vw;
+    text-align: center;
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 1.984vw;
+    font-weight: 300;
+    line-height: 5vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1.058vw;
+}
+.faq-wedding-toggle .faq-header h2:hover {
+    cursor: pointer;
+}
+
+.faq-wedding-toggle .faq-header h2:first-child {
+    border-bottom: 2px solid #4A4A4A;
+}
+
+.faq-wedding-toggle .faq-header h2:nth-child(2) {
+    border-bottom: 2px solid #B9B9B9;
+}
+.faq-wedding-toggle .faq-card:nth-child(3){
+    display: none;
+}
+@media (max-width: 989px) {
+    .faq-wedding-toggle .faq-card {
+        flex-direction: column;
+        padding: 0 12.260vw;
+        padding-top: 4.435vw;
+        gap: 5.376vw;
+    }
+
+    .faq-wedding-toggle .faq-card .faq-rightpart {
+        width: 100%;
+        padding: 0;
+    }
+
+    .faq-wedding-toggle .faq-card .faq-leftpart {
+        width: 100%;
+        padding: 0;
+    }
+
+    .faq-wedding-toggle .faq-paragraph p ,
+.faq-wedding-toggle .faq-leftpart p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.683vw;
+        font-weight: 600;
+        line-height: 2.404vw;
+    }
+
+    .faq-wedding-toggle .faq-header h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.644vw;
+        font-weight: 700;
+        line-height: 6vw;
+        width: 35vw;
+    }
+}
+
+@media (max-width: 749px) {
+    .faq-wedding-toggle .faq-card {
+        padding: 0 5.607vw;
+        padding-top: 39px;
+        gap: 25px;
+    }
+
+    .faq-wedding-toggle .faq-paragraph p ,
+.faq-wedding-toggle .faq-leftpart p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .faq-wedding-toggle .faq-header h2 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 10vw;
+        width: 74.065vw;
+        margin-top: 5px;
+    }
+
+    .faq-wedding-toggle .faq-header {
+        flex-direction: column;
+    }
+}

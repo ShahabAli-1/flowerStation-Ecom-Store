@@ -1,0 +1,269 @@
+.faq-recommendation h2 {
+    font-family: "Frank Ruhl Libre", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3.307vw;
+    font-weight: 300;
+    line-height: 4.299vw;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #353535;
+    margin: 0;
+    margin-top: 9.127vw;
+    margin-bottom: 1.073vw;
+}
+
+.faq-recommendation p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.058vw;
+    font-weight: 400;
+    line-height: 1.521vw;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #353535;
+    margin: 0;
+    margin-bottom: 3.042vw;
+}
+
+.faq-recommendation .card {
+    display: flex;
+    padding-right: 2.646vw;
+    margin-bottom: 3.307vw;
+}
+
+.faq-recommendation .card .rightpart svg {
+    width: 1.455vw;
+    height: 2.513vw;
+    z-index: 1;
+    position: absolute;
+    top: 45%;
+    left: 2.5%;
+}
+
+.faq-recommendation .card .rightpart svg:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.faq-recommendation .card .rightpart img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.faq-recommendation .card .rightpart .slider-button--prev {
+    position: absolute;
+    top: 14vw;
+    left: 5%;
+    width: 3.5vw;
+}
+
+.faq-recommendation .card .rightpart .slider-button--next svg,
+.faq-recommendation .card .rightpart .slider-button--prev svg {
+    width: 100%;
+    color: white;
+}
+
+.faq-recommendation .card .rightpart .slider-button--next {
+    position: absolute;
+    top: 14vw;
+    right: 5%;
+    width: 3.5vw;
+}
+
+.faq-recommendation .card .rightpart {
+    display: flex;
+    position: relative;
+    width: 60%;
+}
+
+.faq-recommendation .card .rightpart ul {
+    margin: 0;
+}
+
+.faq-recommendation .card .leftpart {
+    width: 40%;
+    background-color: #FFFAF4;
+    padding: 4vw 6.283vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.faq-recommendation .leftpart p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.058vw;
+    font-weight: 400;
+    line-height: 1.720vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #353535;
+    margin: 0;
+    margin-bottom: 1.323vw;
+}
+
+.faq-recommendation #seemorecardourrecommedation {
+    color: #727070;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.190vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    text-decoration-line: underline;
+}
+
+.faq-recommendation .leftpart h3 {
+    font-family: "Frank Ruhl Libre", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2.976vw;
+    font-weight: 300;
+    line-height: 5.291vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 0.529vw;
+}
+
+.faq-recommendation .slider--desktop.grid--1-col-desktop .grid__item {
+    display: flex;
+    width: calc((130% - var(--desktop-margin-left-first-item)) - var(--grid-desktop-horizontal-spacing) * 9);
+    margin: 0;
+}
+
+@media (max-width: 989px) {
+    .faq-recommendation .card .rightpart .slider-button--next,
+    .faq-recommendation .card .rightpart .slider-button--prev {
+        width: 4vw;
+    }
+
+    .faq-recommendation .card {
+        padding: 0;
+    }
+
+    .faq-recommendation .card .rightpart {
+        width: 43%;
+    }
+
+    .faq-recommendation .card .leftpart {
+        width: 57%;
+        padding: 3.755vw;
+    }
+
+    .faq-recommendation .leftpart p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.803vw;
+        font-weight: 400;
+        line-height: 2.644vw;
+        letter-spacing: 0em;
+    }
+
+    .faq-recommendation .leftpart h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.885vw;
+        font-weight: 700;
+        line-height: 5.168vw;
+        letter-spacing: 0em;
+    }
+
+    .faq-recommendation #seemorecardourrecommedation {
+        font-size: 2.163vw;
+    }
+
+    .faq-recommendation h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 3.365vw;
+        font-weight: 700;
+        line-height: 4.447vw;
+        margin: 0;
+        margin-top: 10.817vw;
+    }
+
+    .faq-recommendation p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.803vw;
+        font-weight: 400;
+        line-height: 2.614vw;
+        margin: 0 auto;
+        margin-top: 1.803vw;
+        margin-bottom: 6.611vw;
+        width: 44.591vw;
+        ;
+    }
+
+    .faq-recommendation .card .rightpart svg {
+        width: 2.163vw;
+        height: 3.735vw;
+        top: 45%;
+        left: 2.5%;
+    }
+}
+
+@media (max-width: 749px) {
+
+    .faq-recommendation .card .rightpart .slider-button--next,
+    .faq-recommendation .card .rightpart .slider-button--prev {
+        top: 22vw;
+        width: 6vw;
+    }
+
+    .faq-recommendation .slider--desktop.grid--1-col-desktop .grid__item {
+        width: 100%;
+    }
+
+    .faq-recommendation #seemorecardourrecommedation {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 9.259vw;
+    }
+
+    .faq-recommendation h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 6.075vw;
+        line-height: 8.098vw;
+        margin: 0;
+        margin-top: 16.355vw;
+    }
+
+    .faq-recommendation p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        line-height: 20.02px;
+        margin-top: 3.505vw;
+        margin-bottom: 9.346vw;
+        width: 80.140vw;
+        ;
+    }
+
+    .faq-recommendation .card {
+        flex-direction: column-reverse;
+    }
+
+    .faq-recommendation .card .rightpart {
+        width: 100%;
+    }
+
+    .faq-recommendation .card .leftpart {
+        width: 100%;
+        padding: 7.009vw 5.555vw;
+    }
+
+    .faq-recommendation .leftpart p {
+        font-size: 3.271vw;
+        line-height: 4.743vw;
+    }
+
+    .faq-recommendation .leftpart h3 {
+        font-size: 5.140vw;
+        line-height: 9.145vw;
+        letter-spacing: 0.11em;
+    }
+
+    .faq-recommendation .card .rightpart svg {
+        width: 3.240vw;
+        height: 5.555vw;
+        top: 45%;
+        left: 2.5%;
+    }
+}

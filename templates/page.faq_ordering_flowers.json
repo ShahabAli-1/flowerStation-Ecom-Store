@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "order-flowers-sec1": {
+      "type": "order-flowers-sec1",
+      "settings": {}
+    },
+    "order-flowers-sec2": {
+      "type": "order-flowers-sec2",
+      "settings": {}
+    },
+    "order-flowers-sec3": {
+      "type": "order-flowers-sec3",
+      "settings": {}
+    },
+    "order-flowers-sec4": {
+      "type": "order-flowers-sec4",
+      "settings": {}
+    },
+    "order-flowers-sec5": {
+      "type": "order-flowers-sec5",
+      "settings": {}
+    },
+    "order-flowers-sec6": {
+      "type": "order-flowers-sec6",
+      "settings": {}
+    },
+    "order-flowers-sec7": {
+      "type": "order-flowers-sec7",
+      "settings": {}
+    },
+    "order-flowers-sec8": {
+      "type": "order-flowers-sec8",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "order-flowers-sec1",
+    "order-flowers-sec2",
+    "order-flowers-sec3",
+    "order-flowers-sec4",
+    "order-flowers-sec5",
+    "order-flowers-sec6",
+    "order-flowers-sec7",
+    "order-flowers-sec8"
+  ]
+}

@@ -1,0 +1,49 @@
+<style>
+  .bestselling .shopbest {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .bestselling .shopbest .arrow {
+    align-self: flex-end;
+  }
+
+  .bestselling .shopbest .text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.736vw;
+    font-weight: 300;
+    line-height: 2.361vw;
+    letter-spacing: 0;
+    text-align: center;
+
+  }
+  @media screen and (max-width: 428px) {
+    .bestselling .shopbest .text {
+      font-family: "Open Sans", sans-serif;
+      font-size: 4.439vw;
+      font-weight: 300;
+      line-height: 26px;
+      letter-spacing: 0;
+    }
+
+    .bestselling .shopbest .arrow {
+      align-self: flex-end;
+    }
+
+  }
+</style>
+
+<div class="shopbest">
+  <div class="text">Shop Best Sellers</div>
+  <div class="arrow">
+    <svg
+      class="arrow-svg"
+      viewBox="0 0 129 8"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M128.354 4.35355C128.549 4.15829 128.549 3.84171 128.354 3.64645L125.172 0.464466C124.976 0.269204 124.66 0.269204 124.464 0.464466C124.269 0.659728 124.269 0.976311 124.464 1.17157L127.293 4L124.464 6.82843C124.269 7.02369 124.269 7.34027 124.464 7.53553C124.66 7.7308 124.976 7.7308 125.172 7.53553L128.354 4.35355ZM0 4.5H128V3.5H0V4.5Z" fill="#FFC7C7" />
+    </svg>
+  </div>
+</div>

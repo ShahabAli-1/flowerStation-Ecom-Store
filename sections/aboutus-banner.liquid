@@ -1,0 +1,47 @@
+{{ 'aboutus-banner.css' | asset_url | stylesheet_tag }}
+{% if section.settings.aboutus_banner != blank %}
+  <style>
+    .aboutus-banner {
+      background: url('{{ section.settings.aboutus_banner | img_url }}') no-repeat center center / cover, linear-gradient(rgba(211, 211, 211, 0.5), rgba(211, 211, 211, 0.5));
+    }
+  </style>
+{% else %}
+  <style>
+    .aboutus-banner {
+      background: url("{{ 'aboutus-banner.png' | asset_url }}") no-repeat center center / cover, linear-gradient(rgba(211, 211, 211, 0.5), rgba(211, 211, 211, 0.5));
+    }
+  </style>
+{% endif %}
+
+<div class="aboutus-banner">
+  <div class="aboutus-banner-heading">
+    <h2>{{ section.settings.aboutus_banner_heading }}</h2>
+  </div>
+</div>
+
+
+
+{% schema %}
+
+  {
+    "name": "About Us Banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "aboutus_banner",
+        "label": "About Us Banner"
+      }, {
+        "type": "text",
+        "id": "aboutus_banner_heading",
+        "label": "About Us Banner Heading",
+        "default": "Luxury <br/> floral <br/> Design"
+      }
+    ],
+    "presets": [
+      {
+        "name": "About Us Banner",
+        "category": "Banner"
+      }
+    ]
+  }
+{% endschema %}

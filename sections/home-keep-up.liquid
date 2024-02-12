@@ -1,0 +1,169 @@
+{{ 'home-keep-up.css' | asset_url | stylesheet_tag }}
+<div class="keepup">
+  <div class="leftbar">
+    <div class="text">
+      <h2>{{ section.settings.title }}</h2>
+      <p>{{ section.settings.subtitle }}</p>
+      {% include "pink-arrow" %}
+    </div>
+    <div class="card">
+      {% if section.settings.image1 != blank %}
+        <img src="{{ section.settings.image1 | img_url: 'master' }}">
+      {% else %}
+        <img src="{{ 'home-keep-up1.png' | asset_url }}">
+      {% endif %}
+      <div class="card-text">
+        <h3>{{ section.settings.title1 }}</h3>
+        <p>{{ section.settings.text1 }}</p>
+        <h6>Read More</h6>
+        {% include "pink-arrow" %}
+      </div>
+    </div>
+    <div class="card">
+      {% if section.settings.image2 != blank %}
+        <img src="{{ section.settings.image2 | img_url: 'master' }}">
+      {% else %}
+        <img src="{{ 'home-keep-up2.png' | asset_url }}">
+      {% endif %}
+      <div class="card-text">
+        <h3>{{ section.settings.title2 }}</h3>
+        <p>{{ section.settings.text2 }}</p>
+        <h6>Read More</h6>
+        {% include "pink-arrow" %}
+      </div>
+    </div>
+    <div class="card">
+      {% if section.settings.image3 != blank %}
+        <img src="{{ section.settings.image3 | img_url: 'master' }}">
+      {% else %}
+        <img src="{{ 'home-keep-up3.png' | asset_url }}">
+      {% endif %}
+      <div class="card-text">
+        <h3>{{ section.settings.title3 }}</h3>
+        <p>{{ section.settings.text3 }}</p>
+        <h6>Read More</h6>
+        {% include "pink-arrow" %}
+      </div>
+    </div>
+  </div>
+
+  <div class="middlebar">
+    <svg
+      width="0.7vw"
+      height="67.014vw"
+      viewBox="0 0 1 965"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <line
+        x1="0.5"
+        y1="2.18557e-08"
+        x2="0.499958"
+        y2="965"
+        stroke="#FFC7C7" />
+    </svg>
+  </div>
+  <div class="rightbar">
+    <h2 class="underlineHeading">{{ section.settings.right-title }}</h2>
+    <p>{{ section.settings.right-text1 }}</p>
+    <h2 class="underlineHeading">{{ section.settings.right-texthed1 }}</h2>
+
+    <h2 class="underlineHeading">{{ section.settings.right-texthed2 }}</h2>
+
+    <h2 class="underlineHeading">{{ section.settings.right-texthed3 }}</h2>
+
+    <h2 class="underlineHeading">{{ section.settings.right-texthed4 }}</h2>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Home Keep Up",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Keep Up With Flower Station"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle",
+        "default": "Read all articles"
+      },
+      {
+        "type": "image_picker",
+        "id": "image1",
+        "label": "Image 1"
+      },
+      {
+        "type": "text",
+        "id": "title1",
+        "label": "Title 1",
+        "default": "Boo-Tiful Flower Ideas To Incorporate Into This Halloween"
+      }, {
+        "type": "text",
+        "id": "text1",
+        "label": "Text 1",
+        "default": "Halloween is perhaps the most anticipated day of October."
+      }, {
+        "type": "image_picker",
+        "id": "image2",
+        "label": "Image 2"
+      }, {
+        "type": "text",
+        "id": "title2",
+        "label": "Title 2",
+        "default": "Best Winter Wedding Bouquet Ideas"
+      }, {
+        "type": "text",
+        "id": "text2",
+        "label": "Text 2",
+        "default": "Regardless of how glamorous or expensive your wedding dress is, your bridal look is not complete without a stunning bridal bouquet! Flowers are naturally beautiful and coming in."
+      }, {
+        "type": "image_picker",
+        "id": "image3",
+        "label": "Image 3"
+      }, {
+        "type": "text",
+        "id": "title3",
+        "label": "Title 3",
+        "default": "15 Atunning Autumn Wedding Flower Bouquets"
+      }, {
+        "type": "text",
+        "id": "text3",
+        "label": "Text 3",
+        "default": "Flowers are one of the most fundamental elements to a wedding, not only serving as the ultimate bridal accessory, but also being one of the main decorations of the wedding itsel."
+      }, {
+        "type": "text",
+        "id": "right-title",
+        "label": "Right Title",
+        "default": "Flowers"
+      }, {
+        "type": "text",
+        "id": "right-text1",
+        "label": "Right Text 1",
+        "default": "Flower Station is considered by many to be one of the UK's best florist. This is an accolade that takes time and commitment to achieve, and it is something our team are constantly working towards. Although a large part of our focus as a company is on customer service, quick delivery and reasonable prices, the thing that we focus on the most is the quality of our flowers and bouquets. <br/><br/> We only source the best flowers direct from sustainable farms and growers around the world, whether it be colourful tulips from Holland or exquisite Roses from Ecuador. Our flowers conform to the Fair Flowers Fair Plants (FFP) standards, stimulating the production of sustainable cut flowers and potted plants, minimizing the environmental impact of cut flower production on the natural environment and surrounding communities, and establishing good social conditions for workers on flower and plant farms. <br/><br/> Moving forward, Flower Station is making huge strides in efforts to become the UK's first, fully carbon neutral florist and online flower retailer. In order to do this, we are working very closely with British flower farms and growers to source amazing, home grown, high quality flowers and plants."
+      }, {
+        "type": "text",
+        "id": "right-texthed1",
+        "label": "Right Text Head 1",
+        "default": "About"
+      }, {
+        "type": "text",
+        "id": "right-texthed2",
+        "label": "Right Text Head 2",
+        "default": "Delivery"
+      }, {
+        "type": "text",
+        "id": "right-texthed3",
+        "label": "Right Text Head 3",
+        "default": "Local Florist Shops"
+      }, {
+        "type": "text",
+        "id": "right-texthed4",
+        "label": "Right Text Head 4",
+        "default": "Questions & Answers"
+      }
+    ]
+  }
+{% endschema %}

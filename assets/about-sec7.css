@@ -1,0 +1,204 @@
+/* * {
+  outline: 1px solid #f00 !important;
+} */
+.abt-sec7-container {
+  width: 100%;
+  background-image: url("./abt-sec7-bg.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: bottom;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  margin-top: 7vw;
+  margin-bottom: 7vw;
+}
+
+.abt-sec7-container > h2 {
+  font-size: 3.472vw;
+  font-weight: 300;
+  line-height: 4.483vw;
+  font-family: "Frank Ruhl Libre";
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.abt-sec7-container-inner {
+  width: 83.611vw;
+  display: flex;
+  justify-content: space-between;
+}
+.abt-sec7-container-inner div:nth-child(2) {
+  margin-top: 15px;
+}
+
+.abt-sec7-card {
+  width: 25.764vw;
+  display: flex;
+  flex-direction: column;
+}
+.abt-sec7-card-center {
+  width: 25.764vw;
+  display: flex;
+  flex-direction: column;
+}
+.card-img {
+  width: 25.764vw;
+  /* height: 34.028vw; */
+}
+.card-body {
+  width: 25.764vw;
+}
+
+.card-body > h3 {
+  font-size: 2.778vw;
+  font-family: "Frank Ruhl Libre";
+  font-weight: 100;
+  line-height: 1.319vw;
+  letter-spacing: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.card-body > p {
+  font-size: 1.111vw;
+  font-weight: 400;
+  line-height: 1.556vw;
+  font-family: "Open Sans";
+  letter-spacing: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 1.5vw;
+}
+
+.card-button {
+  display: flex;
+  font-size: 1.111vw;
+  font-weight: 700;
+  align-items: center;
+  gap: 1vw;
+}
+
+.card-button > img {
+  width: 5.556vw;
+  object-fit: contain;
+}
+
+.card-button > p {
+  line-height: 1.778vw;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+@media only screen and (max-width: 749px) {
+  .abt-sec7-container {
+    background: none;
+  }
+  .abt-sec7-container > h2 {
+    font-size: 36px;
+    line-height: 46.48px;
+  }
+  .abt-sec7-container-inner {
+    width: 100vw;
+    flex-direction: column;
+  }
+  .abt-sec7-card {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .abt-sec7-card-center {
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -40px;
+    margin-bottom: -40px;
+  }
+
+  .card-img-box {
+    width: 48.131vw;
+  }
+  .card-img {
+    width: 48.131vw;
+  }
+
+  .card-body {
+    width: 51.402vw;
+    height: 34.019vw;
+    background-color: #fcefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-body > h3 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .card-body > p {
+    font-size: 8px;
+
+    line-height: 11.98px;
+  }
+
+  .card-button {
+    font-size: 8px;
+    gap: 1vw;
+  }
+
+  .card-button > p {
+    line-height: 12.8px;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  .abt-sec7-container > h2 {
+    font-size: 4.301vw;
+
+    line-height: 4.704vw;
+  }
+
+  .abt-sec7-card {
+    width: 26.675vw;
+  }
+  .abt-sec7-card-center {
+    width: 26.675vw;
+  }
+  .card-img {
+    width: 26.675vw;
+  }
+  .card-body {
+    width: 26.675vw;
+  }
+
+  .card-body > h3 {
+    font-size: 2.688vw;
+    line-height: 2.957vw;
+  }
+
+  .card-body > p {
+    font-size: 1.075vw;
+
+    line-height: 1.61vw;
+  }
+
+  .card-button {
+    font-size: 1.075vw;
+    gap: 1vw;
+  }
+
+  .card-button > p {
+    line-height: 1.72vw;
+  }
+}

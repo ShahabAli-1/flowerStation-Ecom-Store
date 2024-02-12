@@ -1,0 +1,50 @@
+{{ 'complaints-sec3.css' | asset_url | stylesheet_tag }}
+
+<div class="complaint-sec3-container">
+  <div class="comp-sec3-inner-left">
+    {% if section.settings.comp-sec3-image != blank %}
+      <img src="{{ section.settings.comp-sec3-image | img_url }}" alt="" />
+    {% else %}
+      <img src="{{ 'complaint-sec3-img.png' | asset_url }}">
+    {% endif %}
+  </div>
+  <div class="comp-sec3-inner-right">
+    <div class="right-inner">
+      <h2>{{ section.settings.complaint-sec3-text-header }}</h2>
+      <p>
+        {{ section.settings.complaint-sec3-text-body }}
+      </p>
+      <button>{{ section.settings.complaint-sec3-text-button }}</button>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "complaints-sec3",
+    "settings": [
+      {
+        "type": "text",
+        "id": "complaint-sec3-text-header",
+        "label": "Enter Heading",
+        "default": "Free Consultation"
+      }, {
+        "type": "text",
+        "id": "complaint-sec3-text-body",
+        "label": "Enter Body Text",
+        "default": "Start uour wedding planning with a free consultation with wedding florists at our store in Marlylebone, London. Use the opportunity to browse our portfolio, get a feel for different wedding flower arrangements and consider options for vases, candelabras and plinths."
+      }, {
+        "type": "text",
+        "id": "complaint-sec3-text-button",
+        "label": "Enter Body Text",
+        "default": "Book Now"
+      }, {
+        "type": "image_picker",
+        "id": "comp-sec3-image",
+        "label": "Select Image"
+      }
+    ]
+  }
+{% endschema %}

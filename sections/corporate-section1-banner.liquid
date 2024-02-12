@@ -1,0 +1,34 @@
+{{ 'corporate-section1-banner.css' | asset_url | stylesheet_tag }}
+
+  <div>
+  {% comment %} Banner {% endcomment %}
+  <div class="banner-container" {% if section.settings.corp-sec1-banner != blank %}style="background-image: url({{ section.settings.corp-sec1-banner | img_url }});"{% endif %}>
+    <div class="banner-text">
+      <h2 class="banner-heading">{{ section.settings.corp-sec1-title }}</h2>
+      <p class="banner-description">{{ section.settings.corp-sec1-para }}</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "corporate-section1-banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "corp-sec1-banner",
+        "label": "Select Banner Image"
+      }, {
+        "type": "text",
+        "id": "corp-sec1-title",
+        "label": "Enter Your Title",
+        "default": "Corporate Flowers"
+      }, {
+        "type": "text",
+        "id": "corp-sec1-para",
+        "label": "Enter Text",
+        "default": "Weekly office flowers and floral services available for delivery in London. View our gallery below or contact our corporate team for your free consultation."
+      }
+    ]
+  }
+{% endschema %}

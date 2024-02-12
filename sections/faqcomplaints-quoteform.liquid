@@ -1,0 +1,94 @@
+{{ 'faqcomplaints-quoteform.css' | asset_url | stylesheet_tag }}
+<div class="faq-quoteform">
+  <h2>Get a Quote Below</h2>
+  <div class="faq-card">
+    <div class="faq-leftdiv">
+      <form action="">
+        <div class="faq-inputrow">
+          <div class="faq-input">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name">
+          </div>
+          <div class="faq-input">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="xyz@gmail.com">
+          </div>
+        </div>
+        <div class="faq-inputrow">
+          <div class="faq-input">
+            <label for="mobile">Mobile Number</label>
+            <div class="faq-mobile">
+              <select id="countryDropdown">
+                <option value="usa">us</option>
+                <option value="canada">pk</option>
+                <option value="uk">in</option>
+                <!-- Add more options for other countries -->
+              </select>
+              <input
+                type="phone"
+                name="mobile"
+                id="mobile"
+                placeholder="000-0000000">
+            </div>
+
+          </div>
+          <div class="faq-input">
+            <label for="budget">Your Budget</label>
+            <input
+              type="number"
+              name="budget"
+              id="budget"
+              placeholder="000.00">
+          </div>
+        </div>
+        <div class="faq-inputrowfull">
+          <div class="faq-input">
+            <label for="type_of_event">What type of event are you having?</label>
+            <input
+              type="text"
+              name="type_of_event"
+              id="type_of_event">
+          </div>
+        </div>
+        <div class="faq-inputrowfull ">
+          <div class="faq-input">
+            <label for="type_of_event">Additional Comments</label>
+            <input
+              type="text"
+              name="type_of_event"
+              id="type_of_event"
+              placeholder="Write your message">
+          </div>
+        </div>
+      </form>
+      <button>SEND</button>
+    </div>
+    <div class="faq-rightdiv">
+      {% comment %} if image available then showing that else this {% endcomment %}
+      {% if section.settings.faqcomplaints-quoteform-image != blank %}
+        <img src="{{ section.settings.faqcomplaints-quoteform-image | img_url: 'master' }}" alt="background image">
+      {% else %}
+        <img src="{{'faq-form.png' | asset_url}}" alt="background image">
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "faqcomplaints-quoteform",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "faqcomplaints-quoteform-image",
+        "label": "Image"
+      }
+    ]
+  }
+{% endschema %}

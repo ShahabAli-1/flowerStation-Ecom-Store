@@ -1,0 +1,158 @@
+{{ 'delivery-north-sec2.css' | asset_url | stylesheet_tag }}
+<div class="delivery-north-sec2">
+  <div class="delivery-north-container">
+    <div class="delivery-north-left">
+      {% if section.settings.delivery_north1 != blank %}
+        <img src="{{ section.settings.delivery_north1 | img_url: 'master' }}" alt="Delivery Image">
+      {% else %}
+        <img src="{{ 'delivery-north1.png' | asset_url}}" alt="Delivery Image">
+      {% endif %}
+    </div>
+    <div class="delivery-north-right">
+      <h2>{{ section.settings.delivery_north1_heading }}</h2>
+      <p>{{ section.settings.delivery_north1_p1 }}</p>
+      <p>{{ section.settings.delivery_north1_p2 }}</p>
+      <p>{{ section.settings.delivery_north1_p3 }}</p>
+      <div class="arrowtext">
+        <h3>{{ section.settings.delivery_north1_link }}</h3>
+        {% include 'pink-arrow' %}
+      </div>
+    </div>
+  </div>
+  <div class="delivery-north-container">
+    <div class="delivery-north-left">
+      {% if section.settings.delivery_north2 != blank %}
+        <img src="{{ section.settings.delivery_north2 | img_url: 'master' }}" alt="Delivery Image">
+      {% else %}
+        <img src="{{ 'delivery-north2.png' | asset_url}}" alt="Delivery Image">
+      {% endif %}
+    </div>
+    <div class="delivery-north-right">
+      <h2>{{ section.settings.delivery_north2_heading }}</h2>
+      <p>{{ section.settings.delivery_north2_p1 }}</p>
+      <p>{{ section.settings.delivery_north2_p2 }}</p>
+    </div>
+  </div>
+  <div class="delivery-north-container">
+    <div class="delivery-north-left">
+      {% if section.settings.delivery_north3 != blank %}
+        <img src="{{ section.settings.delivery_north3 | img_url: 'master' }}" alt="Delivery Image">
+      {% else %}
+        <img src="{{ 'delivery-north3.png' | asset_url}}" alt="Delivery Image">
+      {% endif %}
+    </div>
+    <div class="delivery-north-right">
+      <h2>{{ section.settings.delivery_north3_heading }}</h2>
+      <p>{{ section.settings.delivery_north3_p1 }}</p>
+      <div class="arrowtext">
+        <h3>{{ section.settings.delivery_north3_link }}</h3>
+        {% include 'pink-arrow' %}
+      </div>
+    </div>
+  </div>
+  <div class="delivery-north-container">
+    <div class="delivery-north-left">
+      {% if section.settings.delivery_north4 != blank %}
+        <img src="{{ section.settings.delivery_north4 | img_url: 'master' }}" alt="Delivery Image">
+      {% else %}
+        <img src="{{ 'delivery-north4.png' | asset_url}}" alt="Delivery Image">
+      {% endif %}
+    </div>
+    <div class="delivery-north-right">
+      <h2>{{ section.settings.delivery_north4_heading }}</h2>
+      <p>{{ section.settings.delivery_north4_p1 }}</p>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Delivery North Section 2",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "delivery_north1",
+        "label": "Delivery North Image 1"
+      },
+      {
+        "type": "text",
+        "id": "delivery_north1_heading",
+        "label": "Delivery North Heading 1",
+        "default": "Flower Shop in North West London"
+      },
+      {
+        "type": "text",
+        "id": "delivery_north1_p1",
+        "label": "Delivery North Text 1",
+        "default": "Flower Station's main branch is situated in the heart of North West London, just off Baker Street, and is open 24 hours a day, and offers delivery seven days a week. If you ever drive past or walk past 55 Park Road, near Regent's Park then there is a high chance you have seen our flower shop."
+      },
+      {
+        "type": "text",
+        "id": "delivery_north1_p2",
+        "label": "Delivery North Text 2",
+        "default": "What once used to be a petrol station has now become one of its kind, a \"drive-through\" florist in the heart of North West London."
+      }, {
+        "type": "text",
+        "id": "delivery_north1_p3",
+        "label": "Delivery North Text 3",
+        "default": "We serve local residents in North West London as well as, most likely, all local businesses on a weekly basis. We also offer free wedding flowers consultation at our main location. We have a wide range of birthday flowers, flowers for anniversaries, get-well flowers, congratulation flowers, or flowers for a friend or a loved one at the birth of a new baby."
+      }, {
+        "type": "text",
+        "id": "delivery_north1_link",
+        "label": "Delivery North Link",
+        "default": "Get Directions On Map"
+      }, {
+        "type": "image_picker",
+        "id": "delivery_north2",
+        "label": "Delivery North Image 2"
+      }, {
+        "type": "text",
+        "id": "delivery_north2_heading",
+        "label": "Delivery North Heading 2",
+        "default": "Same Day Flower Delivery"
+      }, {
+        "type": "text",
+        "id": "delivery_north2_p1",
+        "label": "Delivery North Text 4",
+        "default": "Order flowers on Sundays by 6 pm for same-day delivery. All bouquets are hand-tied and delivered in an aqua pack to ensure freshness and offer a true florist style presentation. Our North West London branch is able to take flower orders for same day delivery throughout Barnet, Camden, and Brent Cross whilst we also deliver flowers throughout the UK using either our relay service or an overnight courier. Please call us or visit our shop for daily specials and the best seasonal flowers."
+      }, {
+        "type": "text",
+        "id": "delivery_north2_p2",
+        "label": "Delivery North Text 5",
+        "default": "Our delivery times are between 9 am and 6 pm for all same day orders placed by 6 pm. Here is a special discount code just for those few who actually take time and read a bit more about our company and the florist services on offer. You can use code: northwestlondon on the checkout page and you will get 20 % off all orders over £34.99."
+      }, {
+        "type": "image_picker",
+        "id": "delivery_north3",
+        "label": "Delivery North Image 3"
+      }, {
+        "type": "text",
+        "id": "delivery_north3_heading",
+        "label": "Delivery North Heading 3",
+        "default": "Flower Delivery in North West London"
+      }, {
+        "type": "text",
+        "id": "delivery_north3_p1",
+        "label": "Delivery North Text 6",
+        "default": "Delivery in North West London is available on all bouquets, flower arrangements, and florist services seven days a week. Our North West London resident flower shop is open day and night. Our online service allows for orders by 6 pm for same day service, however, our customer service number is available throughout. All bouquets are made in our local flower shop and made using only fresh-cut flowers."
+      }, {
+        "type": "text",
+        "id": "delivery_north3_link",
+        "label": "Delivery North Link",
+        "default": "Order Your Bouquet"
+      }, {
+        "type": "image_picker",
+        "id": "delivery_north4",
+        "label": "Delivery North Image 4"
+      }, {
+        "type": "text",
+        "id": "delivery_north4_heading",
+        "label": "Delivery North Heading 4",
+        "default": "Wedding Flowers"
+      }, {
+        "type": "text",
+        "id": "delivery_north4_p1",
+        "label": "Delivery North Text 7",
+        "default": "We receive daily deliveries of fresh flowers, straight from the growers and our aim is to deliver a long-lasting and quality gift to all recipients. We offer the best of seasonal flowers as well as a great selection of tropical flowers and even plants. To inquire about garden plants or plants for your home or office please contact us. We stock a large selection in our NW shop at all times. Our Baker Street branch is located just a few minutes walk from the Marylebone Register Office, home to many weddings. Our wedding flowers team offers a free consultation at our main branch. Our main aim is to create great florist work on that special day. If you need advice or information on your wedding flowers in North West London, such as bridal bouquets, buttonholes, or even wedding reception flowers then please contact our wedding team and we will arrange a free consultation."
+      }
+    ]
+  }
+{% endschema %}

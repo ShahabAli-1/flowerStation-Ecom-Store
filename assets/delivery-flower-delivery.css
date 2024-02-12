@@ -1,0 +1,403 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span {
+    color: #2D2D2D;
+    text-decoration: none;
+}
+
+.delivery-section1 h1 {
+    color: #2D2D2D;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 4.444vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 4.861vw;
+    text-align: center;
+}
+
+.delivery-section1 .delivery-content {
+    width: 60.694vw;
+    color: #2D2D2D;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.111vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.556vw;
+    margin: auto;
+}
+
+.delivery-card1 {
+    margin-top: 3.889vw;
+    padding: 0 6.075vw;
+}
+
+.delivery-card2 {
+    margin-top: 3.889vw;
+    padding: 0 6.075vw;
+}
+
+.delivery-card2 .delivery-card {
+    flex-direction: row-reverse;
+}
+
+.delivery-card {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #E5E5E5;
+}
+
+.delivery-card1-img {
+    width: 50%;
+}
+
+.delivery-card1-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.delivery-card1-text {
+    width: 50%;
+    padding: 2.292vw 2.222vw 2.292vw 2.292vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.delivery-card1-text h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2.778vw;
+    font-weight: 400;
+    line-height: 3.056vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 2.222vw;
+    color: #2D2D2D;
+}
+
+.delivery-card1-text h6 {
+    font-family: 'Open Sans, sans-serif';
+    font-size: 1.111vw;
+    font-weight: 400;
+    line-height: 1.528vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1.111vw;
+}
+
+.delivery-card1-text span {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1.667vw;
+    font-weight: 700;
+    line-height: 1.806vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    color: #2D2D2D;
+}
+
+.delivery-card1-text p {
+    font-family: 'Open Sans';
+    font-size: 1.111vw;
+    font-weight: 400;
+    line-height: 1.528vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2D2D2D;
+    margin: 0;
+    margin-top: 0.556vw;
+    margin-bottom: 1.111vw;
+}
+
+.delivery-card1-text h5 {
+    font-size: 1.667vw;
+    font-weight: 700;
+    line-height: 1.806vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #EB9FA9;
+    margin: 0;
+    margin-top: 1.111vw;
+    margin-bottom: 0.556vw;
+}
+
+.delivery-button-continer button:nth-child(1) {
+    background-color: #2D2D2D;
+    font-family: "Open Sans";
+    font-size: 1.111vw;
+    font-weight: 400;
+    line-height: 1.513vw;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.delivery-button-continer button:nth-child(2) {
+    background: none;
+    border: 1px solid #2D2D2D;
+    font-family: 'Open Sans';
+    font-size: 1.111vw;
+    font-weight: 400;
+    line-height: 1.513vw;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.delivery-button-continer svg {
+    margin-right: 8px;
+}
+
+.delivery-button-continer button {
+    width: 13.194vw;
+    height: 3.333vw;
+    margin-bottom: 1.736vw;
+}
+
+.delivery-card2 h5,
+.delivery-card1 h4 {
+    font-family: 'Frank Ruhl Libre';
+    font-size: 1.389vw;
+    font-weight: 400;
+    line-height: 1.528vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2D2D2D;
+}
+
+.delivery-button-continer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.083vw;
+}
+
+@media screen and (max-width : 989px) {
+    .delivery-button-continer button:nth-child(1) {
+        background-color: #2D2D2D;
+        font-family: "Open Sans";
+        font-size: 2.151vw;
+        font-weight: 400;
+        line-height: 2.957vw;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .delivery-card2 h5,
+    .delivery-card1 h4 {
+        font-size: 1.613vw;
+        line-height: 2.957vw;
+        text-align: center;
+    }
+
+    .delivery-button-continer button:nth-child(2) {
+        margin-bottom: 2.151vw;
+        background-color: #FFFFFF;
+        font-family: "Open Sans";
+        font-size: 2.151vw;
+        font-weight: 400;
+        line-height: 2.957vw;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #2D2D2D;
+    }
+
+    .delivery-button-continer {
+        flex-direction: column;
+        gap: 8px;
+
+    }
+
+    .delivery-button-continer button {
+        margin: 0;
+        width: 25.538vw;
+        height: 6.452vw;
+    }
+
+    .delivery-section1 h1 {
+        font-size: 4.301vw;
+        line-height: 4.704vw;
+        font-weight: 400;
+    }
+
+    .delivery-card1-text p,
+    .delivery-card1-text h6 {
+        max-width: 33.602vw;
+    }
+
+    .delivery-card1-text {
+        padding: 2.151vw;
+        align-items: center;
+    }
+
+    .delivery-content {
+        padding: 0 3.427vw;
+    }
+
+    .delivery-card1-text h2 {
+        font-family: 'Frank Ruhl Libre';
+        font-size: 3.226vw;
+        line-height: 3.495vw;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 2.151vw;
+    }
+
+    .delivery-card1-text h6 {
+        font-size: 1.613vw;
+        line-height: 2.258vw;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 1.075vw;
+
+    }
+
+    .delivery-card1-text span {
+        font-size: 2.151vw;
+        line-height: 2.151vw;
+        text-align: center;
+    }
+
+    .delivery-card1-text p {
+        font-size: 1.613vw;
+        line-height: 2.258vw;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 2.151vw;
+    }
+
+    .delivery-card1-text h5 {
+        font-size: 1.882vw;
+        line-height: 2.957vw;
+        margin: 0;
+        margin-bottom: 1.075vw;
+        text-align: center;
+    }
+
+    .delivery-section1 .delivery-content {
+        font-size: 1.613vw;
+        line-height: 2.258vw;
+    }
+}
+
+@media screen and (max-width : 749px) {
+    .delivery-card2 h5,
+    .delivery-card1 h4 {
+        font-size: 12px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .delivery-button-continer button {
+        width: 190px;
+        height: 48px;
+    }
+    .delivery-button-continer button:nth-child(1) {
+        background-color: #2D2D2D;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .delivery-button-continer button:nth-child(2) {
+        margin-bottom: 16px;
+        background-color: #FFFFFF;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #2D2D2D;
+    }
+
+    .delivery-card2 .delivery-card {
+        flex-direction: column;
+    }
+
+    .delivery-section1 h1 {
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .delivery-section1 .delivery-content {
+        font-size: 12px;
+        line-height: 16.8px;
+        width: 79.439vw;
+        padding: 0;
+    }
+
+    .delivery-card {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 7.477vw;
+    }
+
+    .delivery-card1-img {
+        width: 100%;
+    }
+
+    .delivery-card1-text {
+        width: 100%;
+        padding: 5.607vw 4.206vw;
+    }
+
+    .delivery-card1 .delivery-card1-text h2 {
+        width: 45.561vw;
+    }
+
+    .delivery-card1-text h2 {
+        font-family: 'Frank Ruhl Libre';
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 3.738vw;
+    }
+
+    .delivery-card1-text h6 {
+        font-size: 12px;
+        line-height: 16.8px;
+        margin-bottom: 3.738vw;
+    }
+
+    .delivery-card1-text span {
+        font-size: 12px;
+        line-height: 16.8px;
+    }
+
+    .delivery-card1-text p {
+        font-size: 12px;
+        line-height: 16.8px;
+        margin-bottom: 3.738vw;
+    }
+
+    .delivery-card1-text h5 {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0;
+        margin-bottom: 3.738vw;
+    }
+
+    .delivery-card1-text p,
+    .delivery-card1-text h6 {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width : 385px) {
+    .delivery-card1 .delivery-card1-text h2 {
+        width: 100%;
+    }
+}

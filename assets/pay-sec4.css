@@ -1,0 +1,191 @@
+.pay-sec4-form {
+  width: 100%;
+  padding-left: 13%;
+  padding-right: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  margin-top: 8vw;
+}
+
+.form-fields {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.input-field {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+}
+.comments-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2vw;
+}
+
+.steric {
+  color: red;
+}
+
+.pay-sec4-form > h2 {
+  font-family: "Frank Ruhl Libre";
+  font-size: 3.889vw;
+  font-weight: 300;
+  line-height: 4.306vw;
+  letter-spacing: 0;
+  text-align: center;
+  margin-block-start: 0;
+}
+
+.submit-pay {
+  width: 15.972vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  font-size: 1.111vw;
+  font-weight: 400;
+  line-height: 1.513vw;
+  letter-spacing: 0;
+  font-family: "Open Sans";
+  color: white;
+  margin-top: 3vw;
+}
+
+.input-label {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 1.111vw;
+  color: black;
+  line-height: 1.514vw;
+  margin-bottom: 0.5vw;
+}
+
+.pay-input {
+  height: 40px;
+  border: 1px solid gray;
+  font-family: "Open Sans";
+  font-size: 0.972vw;
+  line-height: 1.206vw;
+  color: black;
+  padding-left: 0.5vw;
+  border: 1px solid black;
+}
+.pay-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.pay-textarea {
+  border: 1px solid gray;
+  font-family: "Open Sans";
+  font-size: 0.972vw;
+  line-height: 1.206vw;
+  color: black;
+  border: 1px solid black;
+  padding-left: 0.5vw;
+}
+.pay-textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+::placeholder {
+  color: lightgray;
+  /* padding-left: 0.5vw; */
+  padding-top: 0.5vw;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  .pay-sec4-form > h2 {
+    font-size: 5.376vw;
+    line-height: 5.914vw;
+  }
+
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+  }
+  .input-field {
+    width: 100%;
+  }
+  .pay-input {
+    height: 40px;
+    font-size: 1.882vw;
+    line-height: 2.333vw;
+    padding-left: 0.5vw;
+  }
+  .pay-textarea {
+    font-size: 1.882vw;
+    line-height: 2.333vw;
+    padding-left: 0.7vw;
+  }
+  .submit-pay {
+    width: 30.914vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    font-size: 2.151vw;
+    line-height: 2.944vw;
+  }
+  .input-label {
+    font-size: 2.151vw;
+    line-height: 2.93vw;
+  }
+  .comments-field {
+    margin-top: 4vw;
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  .pay-sec4-form > h2 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+  }
+  .input-field {
+    width: 100%;
+  }
+  .input-label {
+    margin-bottom: 2vw;
+  }
+  .pay-input {
+    height: 40px;
+    font-size: 14px;
+    line-height: 17.36px;
+    padding-left: 5px;
+  }
+  .pay-textarea {
+    font-size: 14px;
+    line-height: 17.36px;
+    padding-left: 5px;
+  }
+  .submit-pay {
+    width: 126px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .input-label {
+    font-size: 16px;
+    line-height: 21.79px;
+  }
+  .comments-field {
+    margin-top: 6vw;
+  }
+}

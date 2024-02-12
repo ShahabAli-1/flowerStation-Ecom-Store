@@ -1,0 +1,81 @@
+.faq-com-weddingpkg {
+    padding: 0 18.056vw;
+}
+
+.faq-com-weddingpkg h2 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 3.307vw;
+    font-weight: 300;
+    line-height: 4.299vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 6.614vw;
+    margin-bottom: 1.058vw;
+}
+
+.faq-com-weddingpkg p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.058vw;
+    font-weight: 400;
+    line-height: 1.521vw;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 49.405vw;
+    margin: 0 auto;
+}
+
+.faq-com-weddingpkg img {
+    margin-top: 2.646vw;
+    width: 100%;
+}
+
+@media (max-width: 989px) {
+    .faq-com-weddingpkg {
+        padding: 0 4.207vw;
+    }
+
+    .faq-com-weddingpkg h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 3.365vw;
+        font-weight: 700;
+        line-height: 3.365vw;
+        margin-top: 12.861vw;
+        margin-bottom: 1.803vw;
+    }
+
+    .faq-com-weddingpkg p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.803vw;
+        line-height: 2.614vw;
+        width: 61.418vw;
+    }
+
+    .faq-com-weddingpkg img {
+        margin-top: 4.808vw;
+    }
+}
+
+@media (max-width: 749px) {
+    .faq-com-weddingpkg {
+        padding: 0 4.673vw;
+    }
+
+    .faq-com-weddingpkg h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 6.075vw;
+        line-height: 8.098vw;
+        margin-top: 16.355vw;
+        margin-bottom: 3.505vw;
+    }
+
+    .faq-com-weddingpkg p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 3.271vw;
+        line-height: 4.678vw;
+        width: 77.336vw;
+    }
+
+    .faq-com-weddingpkg img {
+        margin-top: 4.808vw;
+    }
+}

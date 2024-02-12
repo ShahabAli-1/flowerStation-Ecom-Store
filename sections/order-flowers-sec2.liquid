@@ -1,0 +1,90 @@
+{{ 'order-flowers-sec2.css' | asset_url | stylesheet_tag }}
+
+<div class="ord-sec2-container">
+  <div class="ord-sec2-container-inner">
+    <div class="sec2-inner-left">
+      <h2 class="sec2-h2">{{ section.settings.ord-sec2-desk-title }}</h2>
+      <p class="sec2-text">{{ section.settings.ord-sec2-desk-para1 }}</p>
+      <p class="sec2-text">{{ section.settings.ord-sec2-desk-para2 }}</p>
+    </div>
+    <div class="sec2-inner-right">
+      {% if section.settings.ord-sec2-image != blank %}
+        <img src="{{ section.settings.ord-sec2-image | img_url }}" alt="">
+      {% else %}
+        <img src="{{'ord-flo-sec2-img.png' | asset_url}}" alt="">
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+<div class="ord-sec2-container-mob">
+  <div class="ord-sec2-mob-inner">
+    <h3 class="sec2-h3">{{ section.settings.ord-sec2-mob-title }}</h3>
+    <p class="date">{{ section.settings.ord-sec2-mob-date }}</p>
+    {% if section.settings.ord-sec2-image != blank %}
+      <img src="{{ section.settings.ord-sec2-image | img_url }}" alt="">
+    {% else %}
+      <img src="{{'ord-flo-sec2-img.png' | asset_url}}" alt="">
+    {% endif %}
+    <p class="sec2-body-text">
+      {{ section.settings.ord-sec2-mob-para1 }}
+    </p>
+    <p class="sec2-body-text">
+      {{ section.settings.ord-sec2-mob-para2 }}
+    </p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "order-sec2",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "ord-sec2-image",
+        "label": "Select Image"
+      },
+      {
+        "type": "text",
+        "id": "ord-sec2-desk-title",
+        "label": "Enter Title",
+        "default": "Family Like Culture"
+      },
+      {
+        "type": "text",
+        "id": "ord-sec2-desk-para1",
+        "label": "Enter Title",
+        "default": "Although our business has been expanding since we opened our first shop in 2001, our ethos has always remained the same."
+      },
+      {
+        "type": "text",
+        "id": "ord-sec2-desk-para2",
+        "label": "Enter Title",
+        "default": "Here at Flower Station, we foster a family culture built on the foundations of support and friendliness, that we extend to our customers too. We want to be great, but we also want to have fun along the way."
+      }, {
+        "type": "text",
+        "id": "ord-sec2-mob-title",
+        "label": "Enter Title",
+        "default": "The Flower Station Family"
+      }, {
+        "type": "text",
+        "id": "ord-sec2-mob-date",
+        "label": "Enter Date",
+        "default": "1/12"
+      }, {
+        "type": "text",
+        "id": "ord-sec2-mob-para1",
+        "label": "Enter Text",
+        "default": "Although our business has been expanding since we opened our first shop in 2001, our ethos has always remained the same."
+      }, {
+        "type": "text",
+        "id": "ord-sec2-mob-para2",
+        "label": "Enter Text",
+        "default": "Here at Flower Station, we foster a family culture built on the foundations of support and friendliness, that we extend to our customers too. We want to be great, but we also want to have fun along the way."
+      }
+
+
+    ]
+  }
+{% endschema %}

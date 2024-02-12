@@ -1,0 +1,166 @@
+.delivery-international {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10.556vw 31.944vw;
+    background-image: linear-gradient(to bottom, rgba(56, 58, 61, 0.7), rgba(56, 58, 61, 0.7)),
+        url("../assets/delivery-international.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-top: 3.889vw;
+}
+
+.delivery-international h2 {
+    font-family: 'Frank Ruhl Libre';
+    font-size: 2.778vw;
+    font-weight: 400;
+    line-height: 3.056vw;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 0.556vw;
+}
+
+.delivery-international p {
+    font-family: 'Open Sans';
+    font-size: 1.111vw;
+    font-weight: 400;
+    line-height: 1.528vw;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 0.556vw;
+}
+
+.delivery-button-continer1 {
+    margin: 0;
+    margin-top: 1.111vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.083vw;
+
+}
+
+.delivery-button-continer1 button {
+    margin: 0;
+    width: 13.194vw;
+    height: 3.333vw;
+}
+
+.delivery-button-continer1 button:nth-child(1) {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+}
+
+.delivery-button-continer1 button:nth-child(2) {
+    border: 2px solid #FFFFFF;
+    background: none;
+    color: #FFFFFF;
+}
+
+.delivery-international h6 {
+    font-family: 'Frank Ruhl Libre';
+    font-size: 1.389vw;
+    font-weight: 400;
+    line-height: 1.528vw;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: 1.667vw;
+
+}
+
+.delivery-international a {
+    font-family: 'Frank Ruhl Libre';
+    font-size: 1.389vw;
+    font-weight: 400;
+    line-height: 1.528vw;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 989px) {
+    .delivery-international {
+        padding: 15.054vw 17vw;
+    }
+
+    .delivery-international h2 {
+        font-size: 4.301vw;
+        line-height: 4.704vw;
+    }
+
+    .delivery-international p {
+        font-family: 'Open Sans';
+        font-size: 0.833vw;
+        font-weight: 400;
+        line-height: 1.167vw;
+    }
+
+    .delivery-international h6 {
+        font-size: 0.833vw;
+        line-height: 1.528vw;
+        margin-top: 1.111vw;
+    }
+
+    .delivery-international a {
+        font-size: 0.833vw;
+        line-height: 1.528vw;
+    }
+
+
+    .delivery-button-continer1 {
+        margin-top: 0.556vw;
+    }
+}
+
+@media screen and (max-width: 749px) {
+
+    .delivery-international p {
+        font-family: 'Open Sans';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+    }
+
+    .delivery-international h6 {
+        font-size: 12px;
+        line-height: 22px;
+        margin-top: 16px;
+    }
+
+    .delivery-international a {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .delivery-international {
+        padding: 7.477vw 6.075vw;
+        margin-top: 48px;
+    }
+
+    .delivery-international h2 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .delivery-button-continer1 {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .delivery-button-continer1 button {
+        width: 184.12px;
+        height: 46.52px;
+    }
+
+}

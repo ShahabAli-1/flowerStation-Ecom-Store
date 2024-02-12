@@ -1,0 +1,86 @@
+{{ 'order-flowers-sec3.css' | asset_url | stylesheet_tag }}
+
+<div class="aim-container">
+  <div class="aim-left">
+    <div class="aim-left-inner">
+      {% if section.settings.ord-sec3-img1 != blank %}
+        <img
+          class="aim-left-img1"
+          src="{{ section.settings.ord-sec3-img1 | img_url }}"
+          alt="">
+      {% else %}
+        <img
+          class="aim-left-img1"
+          src="{{'ord-flo-sec3-img2.png' | asset_url}}"
+          alt="">
+      {% endif %}
+      {% if section.settings.ord-sec3-img2 != blank %}
+        <img
+          class="aim-left-img2"
+          src="{{ section.settings.ord-sec3-img2 | img_url }}"
+          alt="">
+      {% else %}
+        <img
+          class="aim-left-img2"
+          src="{{'ord-flo-sec3-img1.png' | asset_url}}"
+          alt="">
+      {% endif %}
+
+    </div>
+  </div>
+  <div class="aim-right">
+    <div class="aim-right-inner">
+      <h2>{{ section.settings.ord-sec3-title }}</h2>
+      <p>{{ section.settings.ord-sec3-para }}
+      </p>
+      <p>
+        <strong>
+          {{ section.settings.ord-sec3-para-2-bold }}
+        </strong>
+        {{ section.settings.ord-sec3-para-2 }}</p>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "order-section3",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "ord-sec3-img1",
+        "label": "Select Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "ord-sec3-img2",
+        "label": "Select Image"
+      },
+      {
+        "type": "text",
+        "id": "ord-sec3-title",
+        "label": "Enter Your Heading",
+        "default": "We’ll help you grow, while you help us grow - it’s a partnership"
+      },
+      {
+        "type": "text",
+        "id": "ord-sec3-para",
+        "label": "Enter Your Text",
+        "default": "We have an outstanding HR department that will not only help you settle into the company upon joining but will also be there to help with any day-to-day issues. You will also be sure to receive guidance and training from both management and the company’s senior staff."
+      }, {
+        "type": "text",
+        "id": "ord-sec3-para-2-bold",
+        "label": "Enter Your Text",
+        "default": "We value career progression"
+      }, {
+        "type": "text",
+        "id": "ord-sec3-para-2",
+        "label": "Enter Your Text",
+        "default": "and will help you learn the necessary skills needed to climb to the top of your career ladder."
+      }
+
+    ]
+  }
+{% endschema %}

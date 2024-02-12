@@ -1,0 +1,429 @@
+.complaints-sec5-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vw;
+}
+
+.complaints-sec5-container-inner {
+  width: 95.229%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 47.714vw;
+  overflow: hidden;
+}
+
+.carousel-container > ul {
+  width: 100% !important;
+  overflow-y: hidden !important;
+  scroll-padding-left: 0 !important;
+}
+
+.carousel-container > ul > li {
+  width: 100% !important;
+  height: 47.714vw !important;
+  margin-left: 0 !important;
+  overflow-y: hidden !important;
+  margin-right: 0 !important;
+}
+.carousel-selected {
+  position: relative;
+}
+
+.carousel-arrows {
+  position: absolute;
+  top: 90%;
+
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.arrow {
+  font-size: 4.1vw;
+  cursor: pointer;
+  color: black;
+  width: 100px !important;
+  padding: 2vw;
+  margin: 0 10px;
+  pointer-events: all;
+}
+
+.icon-arrows {
+  color: black;
+  height: 1.5rem !important;
+  transform: rotate(0) !important;
+}
+
+.arrow:hover {
+  color: orange;
+}
+
+.carousel-selected img {
+  width: 100%;
+  height: 47vw;
+}
+
+.inner-top-text > h2 {
+  width: 100%;
+  margin-block-start: 0;
+  text-align: center;
+  font-family: "Frank Ruhl Libre";
+  font-size: 2.783vw;
+  font-weight: 300;
+  line-height: 3.593vw;
+  letter-spacing: 0;
+  margin-top: 7vw;
+}
+
+.inner-bottom-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-bottom-text > p {
+  width: 53.148vw;
+  font-size: 0.928vw;
+  line-height: 1.325vw;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-family: "Open Sans";
+}
+
+.inner-bottom-text > button {
+  width: 26.508vw;
+  height: 2.982vw;
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 1.06vw;
+  line-height: 1.444vw;
+  letter-spacing: 0;
+  font-family: "Open Sans";
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  .complaints-sec5-container-inner {
+    width: 89.209%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 44.604vw;
+    overflow: hidden;
+  }
+
+  .carousel-selected {
+    position: relative;
+  }
+
+  .carousel-arrows {
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .arrow {
+    font-size: 2.1vw;
+    cursor: pointer;
+    color: black;
+    margin: 0 10px;
+    pointer-events: all;
+  }
+
+  .icon-arrows {
+    color: black;
+    height: 1.5rem !important;
+    transform: rotate(0) !important;
+  }
+
+  .arrow:hover {
+    color: blue;
+  }
+
+  .carousel-container > ul > li {
+    width: 100% !important;
+    height: 100% !important;
+    margin-left: 0 !important;
+    overflow-y: hidden !important;
+    margin-right: 0 !important;
+  }
+
+  .carousel-selected > img {
+    width: 100%;
+    height: 44.604vw;
+    overflow-y: hidden;
+  }
+
+  .inner-top-text > h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.118vw;
+    font-weight: 400;
+    line-height: 4.156vw;
+    letter-spacing: 0;
+  }
+
+  .inner-bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner-bottom-text > p {
+    font-size: 1.799vw;
+    font-weight: 400;
+    line-height: 2.608vw;
+    text-align: center;
+    letter-spacing: 0;
+    width: 70%;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+  }
+
+  .inner-bottom-text > button {
+    width: 24.781vw;
+    height: 2.788vw;
+    background-color: black;
+    font-size: 1.1992vw;
+    line-height: 1.35vw;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 749px) {
+  .complaints-sec5-container-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+  }
+
+  .carousel-selected {
+    position: relative;
+  }
+
+  .carousel-arrows {
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .arrow {
+    font-size: 4.1vw;
+    cursor: pointer;
+    color: black;
+    padding: 1.2vw;
+    margin: 0 10px;
+    pointer-events: all;
+  }
+
+  .icon-arrows {
+    color: black;
+    height: 1.5rem !important;
+    transform: rotate(0) !important;
+  }
+  .arrow:hover {
+    color: blue;
+  }
+
+  .carousel-selected img {
+    width: 100%;
+    height: 50vw;
+  }
+
+  .carousel-container > ul > li {
+    height: 100% !important;
+  }
+
+  .inner-top-text > h2 {
+    font-family: "Frank Ruhl Libre";
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 34.66px;
+    letter-spacing: 0;
+  }
+
+  .inner-bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner-bottom-text > p {
+    width: 90%;
+    font-size: 14px;
+    line-height: 20.94px;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .inner-bottom-text > button {
+    width: 43%;
+    /* height: 3.124vw; */
+    background-color: black;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .complaints-sec5-container-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+  }
+
+  .carousel-selected {
+    position: relative;
+  }
+
+  .carousel-arrows {
+    position: absolute;
+    top: 85%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .arrow {
+    font-size: 4.1vw;
+    cursor: pointer;
+    color: black;
+    padding: 1.2vw;
+    margin: 0 10px;
+    pointer-events: all;
+  }
+
+  .icon-arrows {
+    color: black;
+    height: 1.5rem !important;
+    transform: rotate(0) !important;
+  }
+  .arrow:hover {
+    color: blue;
+  }
+
+  .carousel-selected img {
+    width: 100%;
+    height: 50vw;
+  }
+  .carousel-container > ul > li {
+    height: 100% !important;
+  }
+  .inner-top-text > h2 {
+    font-family: "Frank Ruhl Libre";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 34.66px;
+    letter-spacing: 0;
+  }
+
+  .inner-bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner-bottom-text > p {
+    width: 90%;
+    font-size: 14px;
+    line-height: 20.94px;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .inner-bottom-text > button {
+    width: 55%;
+    /* height: 3.124vw; */
+    background-color: black;
+    font-size: 3.6vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+  }
+}

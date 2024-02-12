@@ -1,0 +1,68 @@
+{{ 'about-sec6.css' | asset_url | stylesheet_tag }}
+
+
+<div class="abt-sec6-container">
+  <div class="abt-sec6-container-inner">
+    <div class="sec6-inner-right">
+      <h2>{{ section.settings.aboutus-sec6-title }}</h2>
+      <p>{{ section.settings.aboutus-sec6-para1 }}</p>
+      <p class="p-large-6">“{{ section.settings.aboutus-sec6-para2 }}”</p>
+    </div>
+    <div class="sec6-inner-left">
+      {% if section.settings.aboutus-sec6-img1 != blank %}
+        <img
+          class="sec6-img1"
+          src="{{section.settings.aboutus-sec6-img1 | img_url}}"
+          alt="">
+      {% else %}
+        <img class="sec6-img1" src="{{ 'abt-sec6-img1.png' | asset_url }}">
+      {% endif %}
+      {% if section.settings.aboutus-sec6-img2 != blank %}
+        <img
+          class="sec6-img2"
+          src="{{section.settings.aboutus-sec6-img2 | img_url}}"
+          alt="">
+      {% else %}
+        <img class="sec6-img2" src="{{ 'abt-sec6-img2.png' | asset_url }}">
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "aboutus-section4",
+    "settings": [
+      {
+        "type": "text",
+        "id": "aboutus-sec6-title",
+        "label": "Enter Title",
+        "default": "Sustainability"
+      },
+      {
+        "type": "image_picker",
+        "id": "aboutus-sec6-img1",
+        "label": "Select Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "aboutus-sec6-img2",
+        "label": "Select Image"
+      },
+      {
+        "type": "text",
+        "id": "aboutus-sec6-para1",
+        "label": "Enter Your Heading",
+        "default": "We source the highest quality flowers from sustainable farms and growers across the globe, whether this be vibrant tulips from Holland or colorful roses from Ecuador. All of our flowers conform to the Fair Flowers Fair Plants (FFP) standards, minimising the environmental impact of cut flower production on surrounding communities and the environment as a whole."
+      }, {
+        "type": "text",
+        "id": "aboutus-sec6-para2",
+        "label": "Enter Your Text",
+        "default": "We are currently aiming to become the United Kingdom’s first fully carbon-neutral florist and online flower retailer. To achieve this, we are working closely with British flower farms and growers to source high-quality, homegrown flowers and plants."
+      }
+
+    ]
+  }
+{% endschema %}

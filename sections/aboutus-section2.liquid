@@ -1,0 +1,90 @@
+{{ 'aboutus-section2.css' | asset_url | stylesheet_tag }}
+
+
+<div class="icons-container">
+  <div class="icons-container-inner">
+    <h2>{{ section.settings.aboutus-sec2-title }}</h2>
+    <div class="icons">
+      <div class="icons-left">
+        {% if section.settings.company-logo-1 != blank %}
+          <img src="{{section.settings.company-logo-1 | img_url}}" alt="">
+        {% else %}
+          <img src="{{ 'phrase1.png' | asset_url }}">
+        {% endif %}
+
+        {% if section.settings.company-logo-2 != blank %}
+          <img src="{{section.settings.company-logo-2 | img_url}}" alt="">
+        {% else %}
+          <img src="{{ 'phrase2.png' | asset_url }}">
+        {% endif %}
+
+        {% if section.settings.company-logo-3 != blank %}
+          <img src="{{section.settings.company-logo-3 | img_url}}" alt="">
+        {% else %}
+          <img src="{{ 'phrase3.png' | asset_url }}">
+        {% endif %}
+      </div>
+      <div class="icons-right">
+        {% if section.settings.company-logo-4 != blank %}
+          <img src="{{section.settings.company-logo-4 | img_url}}" alt="">
+        {% else %}
+          <img src="{{ 'phrase4.png' | asset_url }}">
+        {% endif %}
+
+        {% if section.settings.company-logo-5 != blank %}
+          <img src="{{section.settings.company-logo-5 | img_url}}" alt="">
+        {% else %}
+          <img src="{{ 'phrase5.png' | asset_url }}">
+        {% endif %}
+
+        {% if section.settings.company-logo-6 != blank %}
+          <img src="{{section.settings.company-logo-6 | img_url}}" alt="">
+        {% else %}
+          <img src="{{ 'phrase3.png' | asset_url }}">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "aboutus-section2",
+    "settings": [
+      {
+        "type": "text",
+        "id": "aboutus-sec2-title",
+        "label": "Enter Title",
+        "default": "The Flower Station Family of Companies"
+      },
+      {
+        "type": "image_picker",
+        "id": "company-logo-1",
+        "label": "Select Company Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "company-logo-2",
+        "label": "Select Company Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "company-logo-3",
+        "label": "Select Company Logo"
+      }, {
+        "type": "image_picker",
+        "id": "company-logo-4",
+        "label": "Select Company Logo"
+      }, {
+        "type": "image_picker",
+        "id": "company-logo-5",
+        "label": "Select Company Logo"
+      }, {
+        "type": "image_picker",
+        "id": "company-logo-6",
+        "label": "Select Company Logo"
+      }
+    ]
+
+  }
+{% endschema %}

@@ -1,0 +1,104 @@
+{
+  "sections": {
+    "aboutus-section1": {
+      "type": "aboutus-section1",
+      "settings": {}
+    },
+    "aboutus-section2": {
+      "type": "aboutus-section2",
+      "settings": {}
+    },
+    "aboutus-section3": {
+      "type": "aboutus-section3",
+      "settings": {}
+    },
+    "aboutus-section4": {
+      "type": "aboutus-section4",
+      "settings": {}
+    },
+    "aboutus-section5": {
+      "type": "aboutus-section5",
+      "settings": {}
+    },
+    "aboutus-section6": {
+      "type": "about-sec6",
+      "settings": {}
+    },
+    "aboutus-section7": {
+      "type": "about-sec7",
+      "settings": {}
+    },
+    "aboutus-section8": {
+      "type": "aboutus-section8",
+      "settings": {}
+    },
+
+    "aboutus-section9": {
+      "type": "about-sec9",
+      "settings": {}
+    },
+    "aboutus-section10": {
+      "type": "aboutus-section10",
+      "settings": {}
+    },
+    "aboutus-header": {
+      "type": "aboutus-header",
+      "settings": {}
+    },
+    "aboutus-navbar": {
+      "type": "aboutus-navbar",
+      "settings": {}
+    },
+    "aboutus-banner": {
+      "type": "aboutus-banner",
+      "settings": {}
+    },
+    "about-us-sec8": {
+      "type": "about-us-sec8"
+    },
+    "about-us-sec9": {
+      "type": "about-us-sec9"
+    },
+
+    "aboutus-review": {
+      "type": "aboutus-review",
+      "settings": {}
+    },
+    "aboutus-consultation": {
+      "type": "aboutus-consultation",
+      "settings": {}
+    },
+    "faqcomplaints-creviews": {
+      "type": "faqcomplaints-creviews",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "aboutus-section1",
+    "aboutus-section2",
+    "aboutus-section3",
+    "aboutus-section4",
+    "aboutus-section5",
+    "aboutus-section6",
+    "aboutus-section7",
+    "aboutus-section8",
+    "aboutus-section9",
+    "aboutus-section10",
+    "aboutus-header",
+    "aboutus-navbar",
+    "aboutus-banner",
+    "aboutus-review",
+    "aboutus-consultation",
+    "about-us-sec8",
+    "about-us-sec9",
+    "faqcomplaints-creviews"
+  ]
+}

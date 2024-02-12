@@ -1,0 +1,298 @@
+.faq-creviews .slider.slider--desktop .slider__slide {
+  min-width: 0;
+  width: 30%;
+}
+
+.faq-creviews slider-component ul {
+  flex-wrap: nowrap;
+}
+.faq-creviews slider-component {
+  padding: 0;
+}
+
+.faq-card-container {
+  gap: 1.5vw;
+}
+
+.faq-creviews .slider-buttons button {
+  margin-top: 10px;
+  width: 2.778vw;
+  display: none;
+}
+
+.faq-creviews .slider-buttons button svg {
+  width: 100%;
+  height: 100%;
+}
+
+.faq-creviews {
+  padding: 0 4.5vw;
+  margin-top: 2vw;
+}
+
+.faq-creviews h2 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 2.917vw;
+  font-weight: 300;
+  line-height: 3.75vw;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2.361vw;
+  margin-top: 4.762vw;
+}
+
+.faq-creviews h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.111vw;
+  font-weight: 600;
+  line-height: 1.528vw;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+
+.faq-creviews p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.972vw;
+  font-weight: 400;
+  line-height: 1.389vw;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2.361vw;
+}
+
+.faq-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2.361vw;
+}
+
+.faq-card-container .faqcard {
+  width: 28.472vw;
+  border: 0.5px solid #2d2d2d;
+  border-radius: 0.833vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 0.556vw;
+}
+
+.faqcard h3 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 1.111vw;
+  font-weight: 700;
+  line-height: 1.875vw;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+  margin-top: 0.9vw;
+  margin-bottom: 0.8vw;
+}
+
+.faqcard p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.972vw;
+  font-weight: 400;
+  line-height: 1.389vw;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 0.9vw;
+}
+
+.faqcard .faq-rating .rating-svg {
+  width: 7.083vw;
+  height: 1.111vw;
+  height: 1.111vw;
+}
+
+.faqcard .faq-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.556vw;
+  width: 100%;
+}
+
+.faqcard h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.972vw;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.875vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(45, 45, 45, 0.5);
+  margin: 0;
+}
+
+.faq-svg-button {
+  display: none;
+}
+
+@media screen and (max-width: 989px) {
+  .slider--tablet.grid--peek.grid--2-col-tablet .grid__item,
+  .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item {
+    width: 40vw;
+    scroll-snap-align: end;
+    margin-left: 0;
+  }
+
+  .faq-creviews .slider-buttons button {
+    margin-top: 10px;
+    width: 2.778vw;
+    display: block;
+  }
+
+  .faq-creviews {
+    padding: 0 5.376vw;
+  }
+
+  .faq-creviews h2 {
+    font-size: 5.645vw;
+    line-height: 7.288vw;
+    margin-bottom: 1.613vw;
+  }
+
+  .faq-creviews h5 {
+    font-size: 2.151vw;
+    line-height: 2.929vw;
+  }
+
+  .faq-creviews p {
+    font-size: 1.882vw;
+    line-height: 2.688vw;
+    margin-bottom: 3.629vw;
+  }
+
+  .faq-card-container {
+    gap: 2.2vw;
+  }
+
+  .faq-card-container .faqcard {
+    width: 43.683vw;
+    border-radius: 1.613vw;
+    padding: 1.613vw;
+  }
+
+  .faqcard h3 {
+    font-size: 2.151vw;
+    line-height: 3.629vw;
+    margin: 0;
+    margin-bottom: 3.629vw;
+  }
+
+  .faqcard p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.882vw;
+    line-height: 2.688vw;
+    margin-bottom: 0.806vw;
+  }
+
+  .faqcard .faq-rating .rating-svg {
+    width: 13.71vw;
+    height: 2.151vw;
+  }
+
+  .faqcard .faq-rating {
+    margin: 0;
+  }
+
+  .faqcard h6 {
+    font-size: 1.882vw;
+    line-height: 3.629vw;
+  }
+
+  .faq-svg-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 27px;
+  }
+
+  .faq-creviews .slider.slider--tablet {
+    scroll-padding-left: 4vw;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .faq-creviews .slider-buttons button {
+    margin-top: 10px;
+    width: 25px;
+  }
+
+  .faq-creviews .slider.slider--tablet {
+    scroll-padding-left: 1vw;
+  }
+
+  .grid__item,
+  .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item {
+    width: 80vw;
+    max-width: 100%;
+    scroll-snap-align: start;
+    margin: 0 1vw;
+  }
+
+  .faq-creviews {
+    padding: 0 6.308vw;
+  }
+
+  .faq-card-container {
+    gap: 0;
+  }
+
+  .faq-creviews h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  .faq-creviews h5 {
+    font-size: 10px;
+    line-height: 13.62px;
+  }
+
+  .faq-creviews p {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 14px;
+  }
+
+  .faq-card-container .faqcard {
+    width: 87.617vw;
+    border-radius: 2.804vw;
+    padding: 2.804vw;
+  }
+
+  .faqcard h3 {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 12px;
+  }
+
+  .faqcard p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 26px;
+  }
+
+  .faqcard .faq-rating .rating-svg {
+    width: 28.037vw;
+    height: 3.738vw;
+  }
+
+  .faqcard .faq-rating {
+    margin: 0;
+  }
+
+  .faqcard h6 {
+    font-size: 14px;
+    line-height: 27px;
+  }
+}

@@ -1,0 +1,227 @@
+.main-bg {
+  min-height: 51.111vw;
+  width: 100%;
+  background-color: #fcefef;
+  margin-bottom: 3vw;
+  padding-bottom: 2vw;
+}
+.main-h1 {
+  display: flex;
+  justify-content: center;
+}
+.why-choose-h2 {
+  font-size: 2.917vw;
+  line-height: 3.765vw;
+  font-weight: 300;
+  font-family: "Frank Ruhl Libre";
+  margin-block-end: 0;
+  margin-bottom: 2.5vw;
+}
+.main-text {
+  text-align: center; /* Horizontally center the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-text-p {
+  margin-block-start: 0;
+  width: 77%;
+  text-align: center;
+  font-size: 0.972vw;
+  line-height: 1.389vw;
+  font-family: "Open Sans";
+  letter-spacing: 0;
+}
+
+.centered-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.text-sec {
+  max-width: 73.403vw;
+  margin-top: 0.75vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-sec-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: -1.11vw;
+}
+.text-sec-top > h3 {
+  font-size: 1.111vw;
+  line-height: 1.513vw;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+.text-sec-top img {
+  margin-right: 0.6vw;
+  height: 1.11vw;
+  /* Add some space between the image and the heading */
+}
+
+.text-sec-bottom {
+  width: 100%; /* Take the complete width of the text-sec div */
+}
+
+.text-sec-bottom > p {
+  font-size: 0.972vw;
+  margin-left: 1.68vw;
+  line-height: 1.389vw;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-family: "Open Sans";
+}
+
+/* Devices above iPhone 14 Plus and till iPad Mini */
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  .main-bg {
+    /* min-height: 98.925vw; */
+    width: 100%;
+    background-color: #fcefef;
+  }
+  .main-h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .why-choose-h2 {
+    font-size: 4.301vw;
+    font-weight: 300;
+    line-height: 5.552vw;
+    margin-bottom: 1vw;
+    width: 100%;
+    text-align: center;
+  }
+  .main-text {
+    text-align: center; /* Horizontally center the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-text-p {
+    font-size: 1.613vw;
+    line-height: 2.096vw;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .centered-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-sec {
+    max-width: 89.113vw;
+    margin-top: 0.75vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-sec-top {
+    display: flex;
+    align-items: center;
+  }
+  .text-sec-top > h3 {
+    font-size: 2.151vw;
+    line-height: 2.929vw;
+    margin-block-end: 0;
+    margin-block-start: 0;
+  }
+  .text-sec-top img {
+    margin-right: 1.9vw;
+    height: 1.11vw;
+    /* Add some space between the image and the heading */
+  }
+
+  .text-sec-bottom {
+    width: 100%; /* Take the complete width of the text-sec div */
+  }
+
+  .text-sec-bottom > p {
+    font-size: 1.613vw;
+    line-height: 2.096vw;
+    font-weight: 400;
+
+    margin-left: 2.9vw;
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  .main-bg {
+    /* min-height: 98.925vw; */
+    width: 100%;
+    background-color: #fcefef;
+  }
+  .main-h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .why-choose-h2 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25.82px;
+    margin-bottom: 1vw;
+    width: 100%;
+    text-align: center;
+  }
+  .main-text {
+    text-align: center; /* Horizontally center the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-text-p {
+    font-size: 8px;
+    line-height: 10px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .centered-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -0.8vw;
+  }
+
+  .text-sec {
+    max-width: 89.113vw;
+    margin-top: 0.75vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-sec-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: -2.11vw;
+  }
+  .text-sec-top > h3 {
+    font-size: 10px;
+    line-height: 13.82px;
+  }
+  .text-sec-top img {
+    margin-right: 1.9vw;
+    height: 1.11vw;
+    /* Add some space between the image and the heading */
+  }
+
+  .text-sec-bottom {
+    width: 100%; /* Take the complete width of the text-sec div */
+  }
+
+  .text-sec-bottom > p {
+    font-size: 8px;
+    line-height: 12px;
+    font-weight: 400;
+    margin-top: 1.2vw;
+    margin-left: 3vw;
+  }
+}

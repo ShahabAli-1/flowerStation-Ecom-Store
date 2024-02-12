@@ -1,0 +1,118 @@
+.faqcompliants-faq {
+    margin: 0;
+    margin-top: 3.611vw;
+    padding: 0 3.611vw;
+    display: flex;
+}
+
+.faqc-left {
+    display: flex;
+    width: 50%;
+}
+
+.faqc-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% 0; 
+}
+
+.faqc-right {
+    padding: 0 8.135vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.faqc-right h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2.917vw;
+    font-weight: 300;
+    line-height: 3.750vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#353535;
+    margin: 0;
+    margin-bottom: 3.611vw;
+}
+
+.faqc-right h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.111vw;
+    font-weight: 600;
+    line-height: 1.528vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 0.833vw;
+}
+
+.faqc-right p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.972vw;
+    font-weight: 400;
+    line-height: 1.389vw;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #353535;
+    margin: 0;
+    margin-bottom: 2.361vw;
+}
+@media screen and (max-width:989px) {
+        
+.faqc-right h2 {
+    font-size: 4.301vw;
+    line-height: 5.552vw;
+    margin-bottom: 1.613vw;
+}
+
+.faqc-right h3 {
+    font-size: 2.151vw;
+    line-height:2.929vw;
+    margin-bottom: 0.860vw;
+}
+
+.faqc-right p {
+    font-size: 1.613vw;
+    line-height: 2.151vw;
+    margin-bottom: 1.613vw;
+}
+.faqc-right {
+    padding: 0 0 0 4.167vw;
+
+}
+}
+
+@media screen and (max-width:749px) {
+    .faqcompliants-faq{
+        flex-direction: column;
+        padding: 0;
+    }
+    .faqc-left {
+        width: 100%;
+    }
+
+    .faqc-right {
+        width: 100%;
+        padding: 20px 26px 26px 26px;
+    }
+    .faqc-right h2 {
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .faqc-right h3 {
+        font-size: 24px;
+        line-height:26px;
+        margin-bottom: 12px;
+    }
+    
+    .faqc-right p {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+}

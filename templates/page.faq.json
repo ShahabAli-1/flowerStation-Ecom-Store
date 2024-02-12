@@ -1,0 +1,75 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "corporate-section1-banner": {
+      "type": "corporate-section1-banner",
+      "settings": {}
+    },
+    "corporate-section2-text": {
+      "type": "corporate-section2-text",
+      "settings": {}
+    },
+    "corporate-section3-images": {
+      "type": "corporate-section3-images",
+      "settings": {}
+    },
+    "corporate-section4-services": {
+      "type": "corporate-section4-services",
+      "settings": {}
+    },
+    "corporate-section5-why": {
+      "type": "corporate-section5-why",
+      "settings": {}
+    },
+    "corporate-section6-carousal": {
+      "type": "corporate-section6-carousal",
+      "settings": {}
+    },
+    "corporate-section7-frequency": {
+      "type": "corporate-section7-frequency",
+      "settings": {}
+    },
+    "corporate-section8-form": {
+      "type": "corporate-section8-form",
+      "settings": {}
+    },
+    "corporate-section9-learnmore": {
+      "type": "corporate-section9-learnmore",
+      "settings": {}
+    },
+    "corporate-section10-reviews": {
+      "type": "corporate-section10-reviews",
+      "settings": {}
+    },
+    "hotels-sec1": { "type": "hotels-sec1" },
+    "hotels-sec2": { "type": "hotels-sec2" },
+    "hotels-sec3": { "type": "hotels-sec3" },
+    "hotels-sec4": { "type": "hotels-sec4" },
+    "hotels-sec5": { "type": "hotels-sec5" }
+  },
+  "order": [
+    "main",
+    "corporate-section1-banner",
+    "corporate-section2-text",
+    "corporate-section3-images",
+    "corporate-section4-services",
+    "corporate-section5-why",
+    "corporate-section6-carousal",
+    "corporate-section7-frequency",
+    "corporate-section8-form",
+    "corporate-section9-learnmore",
+    "corporate-section10-reviews",
+    "hotels-sec1",
+    "hotels-sec2",
+    "hotels-sec3",
+    "hotels-sec4",
+    "hotels-sec5"
+  ]
+}

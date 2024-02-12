@@ -1,0 +1,260 @@
+{{ 'aboutus-review.css' | asset_url | stylesheet_tag }}
+<div class="aboutus-reviews">
+  <div class="aboutus-review">
+    <div class="aboutusr-content">
+      {% include 'home-rating-svg' %}
+      <h6>{{ section.settings.aboutus_review_image1-subheading }}</h6>
+      <h2>{{ section.settings.aboutus_review_image1-heading }}</h2>
+      <p>{{ section.settings.aboutus_review_image1-content }}</p>
+      <button>{{ section.settings.aboutus_review_image1-button }}</button>
+    </div>
+    <div class="aboutusr-images">
+      {% if section.settings.aboutus_review_image1-image1 != blank %}
+        <img src="{{ section.settings.aboutus_review_image1-image1 | img_url: 'master' }}" alt="card image">
+      {% else %}
+        <img src="{{ 'aboutus-review1-1.png' | asset_url }}" alt="card image">
+      {% endif %}
+      {% if section.settings.aboutus_review_image1-image2 != blank %}
+        <img src="{{ section.settings.aboutus_review_image1-image2 | img_url: 'master' }}" alt="card image">
+      {% else %}
+        <img src="{{ 'aboutus-review1-2.png' | asset_url }}" alt="card image">
+      {% endif %}
+    </div>
+  </div>
+  <div class="aboutus-review">
+    <div class="aboutusr-content">
+      {% include 'home-rating-svg' %}
+      <h6>{{ section.settings.aboutus_review_image2-subheading }}</h6>
+      <h2>{{ section.settings.aboutus_review_image2-heading }}</h2>
+      <p>{{ section.settings.aboutus_review_image2-content }}</p>
+      <button>{{ section.settings.aboutus_review_image2-button }}</button>
+    </div>
+    <div class="aboutusr-images">
+      {% if section.settings.aboutus_review_image2-image1 != blank %}
+        <img src="{{ section.settings.aboutus_review_image2-image1 | img_url: 'master' }}" alt="card image">
+      {% else %}
+        <img src="{{ 'aboutus-review2-1.png' | asset_url }}" alt="card image">
+      {% endif %}
+      {% if section.settings.aboutus_review_image2-image2 != blank %}
+        <img src="{{ section.settings.aboutus_review_image2-image2 | img_url: 'master' }}" alt="card image">
+      {% else %}
+        <img src="{{ 'aboutus-review2-2.png' | asset_url }}" alt="card image">
+      {% endif %}
+    </div>
+  </div>
+  <div class="aboutus-review">
+    <div class="aboutusr-content">
+      {% include 'home-rating-svg' %}
+      <h6>{{ section.settings.aboutus_review_image3-subheading }}</h6>
+      <h2>{{ section.settings.aboutus_review_image3-heading }}</h2>
+      <p>{{ section.settings.aboutus_review_image3-content }}</p>
+      <button>{{ section.settings.aboutus_review_image3-button }}</button>
+    </div>
+    <div class="aboutusr-images">
+      {% if section.settings.aboutus_review_image3-image1 != blank %}
+        <img src="{{ section.settings.aboutus_review_image3-image1 | img_url: 'master' }}" alt="card image">
+      {% else %}
+        <img src="{{ 'aboutus-review3-1.png' | asset_url }}" alt="card image">
+      {% endif %}
+      {% if section.settings.aboutus_review_image3-image2 != blank %}
+        <img src="{{ section.settings.aboutus_review_image3-image2 | img_url: 'master' }}" alt="card image">
+      {% else %}
+        <img src="{{ 'aboutus-review3-2.png' | asset_url }}" alt="card image">
+      {% endif %}
+    </div>
+  </div>
+  <div class="aboutus-review">
+    <div class="aboutusr-content">
+      {% include 'home-rating-svg' %}
+      <h6>{{ section.settings.aboutus_review_image4-subheading }}</h6>
+      <h2>{{ section.settings.aboutus_review_image4-heading }}</h2>
+      <p>{{ section.settings.aboutus_review_image4-content }}</p>
+      <button>{{ section.settings.aboutus_review_image4-button }}</button>
+    </div>
+    <div class="aboutusr-images">
+      {% if section.settings.aboutus_review_image4-image1 != blank %}
+        <img src="{{ section.settings.aboutus_review_image4-image1 | img_url: 'master' }}" alt="card image">
+      {% else %}
+        <img src="{{ 'aboutus-review4-1.png' | asset_url }}" alt="card image">
+      {% endif %}
+      {% if section.settings.aboutus_review_image4-image2 != blank %}
+        <img src="{{ section.settings.aboutus_review_image4-image2 | img_url: 'master' }}" alt="card image">
+      {% else %}
+        <img src="{{ 'aboutus-review4-2.png' | asset_url }}" alt="card image">
+      {% endif %}
+    </div>
+  </div>
+  <div class="aboutus-review">
+    <div class="aboutusr-content">
+      {% include 'home-rating-svg' %}
+      <h6>{{ section.settings.aboutus_review_image5-subheading }}</h6>
+      <h2>{{ section.settings.aboutus_review_image5-heading }}</h2>
+      <p>{{ section.settings.aboutus_review_image5-content }}</p>
+      <button>{{ section.settings.aboutus_review_image5-button }}</button>
+    </div>
+    <div class="aboutusr-images">
+      {% if section.settings.aboutus_review_image5-image1 != blank %}
+        <img src="{{ section.settings.aboutus_review_image5-image1 | img_url: 'master' }}" alt="card image">
+      {% else %}
+        <img src="{{ 'aboutus-review5-1.png' | asset_url }}" alt="card image">
+      {% endif %}
+      {% if section.settings.aboutus_review_image5-image2 != blank %}
+        <img src="{{ section.settings.aboutus_review_image5-image2 | img_url: 'master' }}" alt="card image">
+      {% else %}
+        <img src="{{ 'aboutus-review5-2.png' | asset_url }}" alt="card image">
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "About Us Review",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "aboutus_review_image1-image1",
+        "label": "Image 1 Image 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "aboutus_review_image1-image2",
+        "label": "Image 1 Image 2"
+      },
+      {
+        "type": "text",
+        "id": "aboutus_review_image1-subheading",
+        "label": "Image 1 Subheading",
+        "default": "Wedding, Parties and Events"
+      },
+      {
+        "type": "text",
+        "id": "aboutus_review_image1-heading",
+        "label": "Image 1 Heading",
+        "default": "Flower Arches"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image1-content",
+        "label": "Image 1 Content",
+        "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image1-button",
+        "label": "Image 1 Button",
+        "default": "Explore More"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image2-subheading",
+        "label": "Image 2 Subheading",
+        "default": "Wedding, Parties and Events"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image2-heading",
+        "label": "Image 2 Heading",
+        "default": "Flower Installations"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image2-content",
+        "label": "Image 2 Content",
+        "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image2-button",
+        "label": "Image 2 Button",
+        "default": "Explore More"
+      }, {
+        "type": "image_picker",
+        "id": "aboutus_review_image2-image1",
+        "label": "Image 2 Image 1"
+      }, {
+        "type": "image_picker",
+        "id": "aboutus_review_image2-image2",
+        "label": "Image 2 Image 2"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image3-subheading",
+        "label": "Image 3 Subheading",
+        "default": "Wedding, Parties and Events"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image3-heading",
+        "label": "Image 3 Heading",
+        "default": "Bespoke Flowers"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image3-content",
+        "label": "Image 3 Content",
+        "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image3-button",
+        "label": "Image 3 Button",
+        "default": "Explore More"
+      }, {
+        "type": "image_picker",
+        "id": "aboutus_review_image3-image1",
+        "label": "Image 3 Image 1"
+      }, {
+        "type": "image_picker",
+        "id": "aboutus_review_image3-image2",
+        "label": "Image 3 Image 2"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image4-subheading",
+        "label": "Image 4 Subheading",
+        "default": "Wedding, Parties and Events"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image4-heading",
+        "label": "Image 4 Heading",
+        "default": "Luxury Christmas Trees"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image4-content",
+        "label": "Image 4 Content",
+        "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image4-button",
+        "label": "Image 4 Button",
+        "default": "Explore More"
+      }, {
+        "type": "image_picker",
+        "id": "aboutus_review_image4-image1",
+        "label": "Image 4 Image 1"
+      }, {
+        "type": "image_picker",
+        "id": "aboutus_review_image4-image2",
+        "label": "Image 4 Image 2"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image5-subheading",
+        "label": "Image 5 Subheading",
+        "default": "Wedding, Parties and Events"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image5-heading",
+        "label": "Image 5 Heading",
+        "default": "Luxury Bouquets"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image5-content",
+        "label": "Image 5 Content",
+        "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna"
+      }, {
+        "type": "text",
+        "id": "aboutus_review_image5-button",
+        "label": "Image 5 Button",
+        "default": "Explore More"
+      }, {
+        "type": "image_picker",
+        "id": "aboutus_review_image5-image1",
+        "label": "Image 5 Image 1"
+      }, {
+        "type": "image_picker",
+        "id": "aboutus_review_image5-image2",
+        "label": "Image 5 Image 2"
+      }
+    ]
+  }
+{% endschema %}

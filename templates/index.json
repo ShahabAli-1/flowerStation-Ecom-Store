@@ -1,0 +1,146 @@
+{
+  "sections": {
+    "home-navbar": {
+      "type": "home-navbar",
+      "settings": {}
+    },
+    "home-navbar2": {
+      "type": "home-navbar2",
+      "settings": {}
+    },
+    "home-section1": {
+      "type": "home-section1",
+      "settings": {}
+    },
+    "home-sec2": {
+      "type": "home-sec2",
+      "settings": {}
+    },
+    "find-the-right-gift": {
+      "type": "find-the-right-gift",
+      "settings": {}
+    },
+    "home-sec4-head": {
+      "type": "home-sec4-head",
+      "settings": {}
+    },
+    "best-selling-flowers": {
+      "type": "best-selling-flowers",
+      "settings": {}
+    },
+    "home-sec4-shop": {
+      "type": "home-sec4-shop",
+      "settings": {}
+    },
+    "potted-plants": {
+      "type": "potted-plants",
+      "settings": {}
+    },
+    "home-payments-brands": {
+      "type": "home-payments-brands",
+      "settings": {}
+    },
+    "home-florist": {
+      "type": "home-florist",
+      "settings": {}
+    },
+    "home-excellence-delivered": {
+      "type": "home-excellence-delivered",
+      "settings": {}
+    },
+    "home-keep-up": {
+      "type": "home-keep-up",
+      "settings": {}
+    },
+    "home-featured-collection": {
+      "type": "home-featured-collection",
+      "settings": {}
+    },
+    "image-banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "home-navbar",
+    "home-navbar2",
+    "home-section1",
+    "home-sec2",
+    "find-the-right-gift",
+    "home-featured-collection",
+    "home-sec4-shop",
+    "home-sec4-head",
+    "best-selling-flowers",
+    "home-sec4-shop",
+    "home-payments-brands",
+    "potted-plants",
+    "home-excellence-delivered",
+    "home-florist",
+    "home-keep-up",
+    "image-banner",
+    "featured-collection"
+  ]
+}

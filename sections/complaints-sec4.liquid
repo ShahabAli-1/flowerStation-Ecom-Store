@@ -1,0 +1,60 @@
+{{ 'complaints-sec4.css' | asset_url | stylesheet_tag }}
+
+<div class="complaint-sec4-container">
+  <div class="complaints-sec4-inner-container">
+    <div class="inner-box-left">
+      <h2 class="custom-border">{{ section.settings.complaint-sec4-text-header }}</h2>
+      <p>
+        {{ section.settings.complaint-sec4-text-body }}
+      </p>
+    </div>
+    <div class="inner-box-right">
+      {% if section.settings.image-1 != blank %}
+        <img
+          class="inner-box-right-img1"
+          src="{{ section.settings.comp-sec4-image-1 | img_url }}"
+          alt="" />
+      {% else %}
+        <img class="inner-box-right-img1" src="{{ 'comp-sec4-img1.png' | asset_url }}">
+      {% endif %}
+      {% if section.settings.comp-sec4-image-2 != blank %}
+        <img
+          class="inner-box-right-img2"
+          src="{{ section.settings.comp-sec4-image-2 | img_url }}"
+          alt="" />
+      {% else %}
+        <img class="inner-box-right-img2" src="{{ 'comp-sec4-img2.png' | asset_url }}">
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "complaints-sec4",
+    "settings": [
+      {
+        "type": "text",
+        "id": "complaint-sec4-text-header",
+        "label": "Enter Heading",
+        "default": "Plan your Dream Wedding with Us"
+      }, {
+        "type": "text",
+        "id": "complaint-sec4-text-body",
+        "label": "Enter Body Text",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices posuere lectus mattis sit lectus velit. Feugiat viverra diam integer lectus turpis elit rhoncus. Amet urna, odio amet pellentesque libero placerat cras. Etiam pellentesque nisl turpis lectus porta turpis."
+      }, {
+        "type": "image_picker",
+        "id": "comp-sec4-image-1",
+        "label": "Select Image 1"
+      }, {
+        "type": "image_picker",
+        "id": "comp-sec4-image-2",
+        "label": "Select Image 2"
+      }
+    ]
+  }
+{% endschema %}

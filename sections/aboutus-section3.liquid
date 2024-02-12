@@ -1,0 +1,80 @@
+{{ 'aboutus-section3.css' | asset_url | stylesheet_tag }}
+
+<div class="about-container">
+  <div class="about-container-inner">
+    <div class="about-desc">
+      <h2>{{ section.settings.aboutus-sec3-title }}</h2>
+      <p>{{ section.settings.aboutus-sec3-text-para-1 }}</p>
+      <p class="red_p">
+        <strong>{{ section.settings.aboutus-sec3-text-para-2 }}
+        </strong>
+      </p>
+      <p>{{ section.settings.aboutus-sec3-text-para-3 }}</p>
+      <p>{{ section.settings.aboutus-sec3-text-para-4 }}</p>
+      <p>
+        {{ section.settings.aboutus-sec3-text-para-5 }}</p>
+    </div>
+    {% comment %} {% if section.settings.company-logo-1 != blank %}
+    <img src="{{section.settings.aboutus-sec3-image | img_url}}" alt="">
+    {% else %}
+    <img src="{{ 'section3-image.png' | asset_url }}">
+    {% endif %} {% endcomment %}
+    <div class="abt-sec3-image">
+      {% if section.settings.aboutus-sec3-image != blank %}
+        <img src="{{ section.settings.aboutus-sec3-image | img_url }}" alt="">
+      {% else %}
+        <picture>
+          <source media="(min-width: 750px) and (max-width:989px)" srcset="{{ 'abt-sec3-tab-img.png' | asset_url }}">
+          <source media="(min-width: 990px)" srcset="{{ 'section3-image.png' | asset_url }}">
+          <img src="{{ 'abt-us-sec3-mob-img.png' | asset_url }}" alt="Responsive Image">
+        </picture>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "aboutus-section3",
+    "settings": [
+      {
+        "type": "text",
+        "id": "aboutus-sec3-title",
+        "label": "Enter Section Title",
+        "default": "Flower Station"
+      },
+      {
+        "type": "text",
+        "id": "aboutus-sec3-text-para-1",
+        "label": "Enter Text",
+        "default": "Flower Station's journey started towards the end of 2001 with what still remains its flagship flower shop. It was set up in place of, what was once, a petrol station perfectly situated on London's Park Road, North London's gates to Central London."
+      },
+      {
+        "type": "text",
+        "id": "aboutus-sec3-text-para-2",
+        "label": "Enter Text",
+        "default": "We are London’s first ever drive-through florist, which is open 24 hours a day, 7 days a week and is easily accessible to all."
+      },
+      {
+        "type": "text",
+        "id": "aboutus-sec3-text-para-3",
+        "label": "Enter Text",
+        "default": "As well as several shops, a garden centre and cafes, we are also proud to be a leading online florist. We are regarded across London and the rest of the United Kingdom as the number one florist. This is an accomplishment we are proud to hold, yet one that we are always striving to maintain."
+      }, {
+        "type": "text",
+        "id": "aboutus-sec3-text-para-4",
+        "label": "Enter Text",
+        "default": "In the early years, Flower Station was a little florist barely serving customers within a mile radius and struggling to survive yet there was great potential. Directors had a vision and decided to persist and invest every resource into their plan for the business. This dedication to customer service and passion for the business has led Flower Station from being just your local flower shop to a recognised London brand."
+      }, {
+        "type": "text",
+        "id": "aboutus-sec3-text-para-5",
+        "label": "Enter Text",
+        "default": "Chance is these days you will most likely come across one or many of its delivery vans buzzing around London on daily basis. Yes, today, Flower Station is proud to be one of the leading florists in London and UK with several shops scattered across London as well as having a sister company equally as large."
+      }, {
+        "type": "image_picker",
+        "id": "aboutus-sec3-image",
+        "label": "Select Image"
+      }
+    ]
+  }
+{% endschema %}

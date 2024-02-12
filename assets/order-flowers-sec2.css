@@ -1,0 +1,114 @@
+
+
+.ord-sec2-container {
+  width: 100%;
+  margin-top: 7vw;
+}
+.ord-sec2-container-inner {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ord-sec2-container-mob {
+  display: none;
+}
+.sec2-inner-left {
+  width: 45%;
+}
+
+.sec2-h2 {
+  font-family: "Frank Ruhl Libre";
+  font-size: 3.889vw;
+  line-height: 4.306vw;
+  margin-block-start: 0;
+  font-weight: 300;
+  letter-spacing: 0;
+  text-align: left;
+}
+.sec2-text {
+  font-family: "Open Sans";
+  font-size: 0.972vw;
+  line-height: 1.361vw;
+  font-weight: 300;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.sec2-inner-right {
+  width: 49%;
+}
+.sec2-inner-right > img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  .sec2-text {
+    font-size: 1.613vw;
+    width: 90%;
+    font-weight: 300;
+    line-height: 2.258vw;
+    text-align: left;
+  }
+  .sec2-h2 {
+    font-size: 4.301vw;
+    line-height: 4.704vw;
+    margin-bottom: 2vw;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  .ord-sec2-container-inner {
+    display: none;
+  }
+  .ord-sec2-container-mob {
+    display: flex;
+    width: 100%;
+    /* height: ; */
+    padding-top: 6%;
+    padding-bottom: 6%;
+
+    background-color: #fcefef;
+  }
+  .ord-sec2-mob-inner {
+    width: 100%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    background-color: #ebf7ff;
+  }
+  .ord-sec2-mob-inner > img {
+    width: 100%;
+    /* object-fit: contain; */
+  }
+  .sec2-h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Frank Ruhl Libre";
+    line-height: 26px;
+    letter-spacing: 0;
+  }
+  .date {
+    font-size: 18px;
+    line-height: 25.2px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: 400;
+    text-align: end;
+    font-family: "Open Sans";
+  }
+  .sec2-body-text {
+    font-size: 12px;
+    line-height: 16.8px;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-family: "Open Sans";
+  }
+}

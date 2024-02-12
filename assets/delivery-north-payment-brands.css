@@ -1,0 +1,81 @@
+.delivery-brands-parent {
+    max-width: 100%;
+    height: 14.167vw;
+    background-color: #9AC0E3;
+    margin: 3.611vw 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7vw;
+}
+
+.delivery-brands-parent h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.083vw;
+    font-weight: 300;
+    line-height: 2.847vw;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.delivery-brands-parent .logos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3.750vw;
+
+}
+
+.delivery-brands-parent .logos img {
+    width: 21.528vw;
+}
+
+
+@media screen and (max-width: 989px) {
+    .delivery-brands-parent {
+        height: 18.817vw;
+        margin: 3.629vw 0;
+    }
+
+    .delivery-brands-parent h3 {
+        font-size: 2.688vw;
+        font-weight: 400;
+        line-height: 3.629vw;
+    }
+
+    .delivery-brands-parent .logos {
+        gap: 6.317vw;
+
+    }
+
+    .delivery-brands-parent .logos img {
+        width: 26.344vw;
+    }
+
+}
+
+@media screen and (max-width: 749px) {
+    .delivery-brands-parent {
+        height: 29.206vw;
+        margin: 7.243vw 0;
+    }
+
+    .delivery-brands-parent h3 {
+        font-size: 4.206vw;
+        font-weight: 300;
+        line-height: 5.727vw;
+    }
+
+    .delivery-brands-parent .logos {
+        gap: 5.841vw;
+
+    }
+
+    .delivery-brands-parent .logos img {
+        width: 34.579vw;
+    }
+}
